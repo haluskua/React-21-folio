@@ -1,11 +1,11 @@
 import React from 'react';
 import Particles from 'react-particles-js';
 import { makeStyles } from "@material-ui/core/styles";
-import Box from "@material-ui/core/Box";
 
 const useStyles = makeStyles(() => ({
     comp_container: {
         backgroundColor: "#000000",
+        backgroundImage: 'url(https://storge.pic2.me/upload/266/590cd0b18bc22.jpg)',
         height: "100vh",
     }
 }));
@@ -13,7 +13,7 @@ const Resume = () => {
     const classes = useStyles();
     return (
         <React.Fragment>
-            <Box className={classes.comp_container}>
+            <div className={classes.comp_container}>
                 <h1>React Particles</h1>
                 <Particles
                     params={{
@@ -28,7 +28,7 @@ const Resume = () => {
                         },
                     }}
                 />
-            </Box>
+            </div>
         </React.Fragment>
     );
 
