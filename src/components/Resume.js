@@ -4,9 +4,10 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(() => ({
     comp_container: {
-        backgroundColor: "#000000",
-        backgroundImage: 'url(https://storge.pic2.me/upload/266/590cd0b18bc22.jpg)',
+        backgroundImage: 'url(https://www.strategies.co.uk/wp-content/uploads/sites/4/2018/01/Trade-3.jpg)',
         height: "100vh",
+        backgroundPosition: "center",
+        backgroundSize: 'cover'
     }
 }));
 const Resume = () => {

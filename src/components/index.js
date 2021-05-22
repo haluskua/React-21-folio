@@ -5,11 +5,8 @@ import Particles from './Particles';
 const Home = () => {
     return (
         <React.Fragment>
-            <div className="App">
-
-                <Header />
-                <Particles />
-            </div>
+            <Header />
+            <Particles />
         </React.Fragment>
 
 
