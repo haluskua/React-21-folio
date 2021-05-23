@@ -65,7 +65,9 @@ const Navbar = () => {
     // Creating the functionality for SIDE-PANEL
 
     const sideList = () => (
-        <Box component="nav">
+        <Box className={classes.menuSliderContainer} component="div">
+            <Avatar className={classes.avatar} src={avatar} alt="Omphalus H. Kua" />
+            <Divider />
             <AppBar position="static" className={classes.appbar}>
                 <Toolbar>
                     <IconButton onClick={() => setOpen(true)}>
