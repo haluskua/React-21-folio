@@ -6,15 +6,13 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
     particlesCanvas: {
         backgroundColor: "#000000",
-        backgroundImage: 'url(https://www.strategies.co.uk/wp-content/uploads/sites/4/2018/01/Trade-3.jpg)',
+        backgroundImage: 'url(https://cdn.wallpapersafari.com/81/12/N9oBIc.png)',
         height: "100vh !important",
         opacity: 1,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        // position: "fixed",
-        opacity: "0.96"
-
-
+        position: "fixed",
+        opacity: "0.98"
     },
 }));
 
@@ -39,11 +37,11 @@ const Particles = () => {
                         type: "circle",
                         stroke: {
                             width: 1,
-                            color: "tomato",
                         },
+
                     },
                     size: {
-                        value: 8,
+                        value: 1,
                         random: true,
                         anim: {
                             enable: false,
@@ -61,6 +59,9 @@ const Particles = () => {
                             opacity_min: 0.1,
                             sync: false,
                         },
+                    },
+                    "color": {
+                        "value": "red"
                     },
                 },
             }}

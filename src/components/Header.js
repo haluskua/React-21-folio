@@ -14,14 +14,14 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(1),
     },
     title: {
-        color: "#ff6666",
+        color: "#0099cc",
         fontWeight: "bold",
-        // textTransform: "uppercase"
+        textTransform: "uppercase"
     },
     subtitle: {
-        // color: "#ffffff",
-        textTransform: "uppercase",
-        // fontSize: "1.1rem"
+        color: "#ccf2ff",
+        // textTransform: "uppercase",
+        fontSize: "1.4rem"
     },
     typedContainer: {
         position: "absolute",
@@ -42,7 +42,7 @@ const Header = () => {
                 <Avatar className={classes.avatar} src={avatar} alt="Mahmudul Alam" />
             </Grid>
             <Typography className={classes.title} variant="h4">
-                <Typed strings={["Omphalus Kua"]} typeSpeed={40} />
+                <Typed strings={["Omphalus H. Kua"]} typeSpeed={40} />
             </Typography>
 
             <Typography className={classes.subtitle} variant="h5">
@@ -52,8 +52,8 @@ const Header = () => {
                         "Backend Developer",
                         "Web & Grafix Developer",
                     ]}
-                    typeSpeed={40}
-                    backSpeed={50}
+                    typeSpeed={20}
+                    backSpeed={80}
                     loop
                 />
             </Typography>
