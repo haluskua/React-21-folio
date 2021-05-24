@@ -49,27 +49,12 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+
 const menuItems = [
-    {
-        listIcon: <Home />,
-        listText: "Home",
-        listPath: <Route exact path="/" ></Route>
-    },
-    {
-        listIcon: <AssignmentInd />,
-        listText: "Resume",
-        listPath: <Route exact path="/resume"></Route>
-    },
-    {
-        listIcon: <Apps />,
-        listText: "Portfolio",
-        listPath: <Route exact path="/portfolio"></Route>
-    },
-    {
-        listIcon: <ContactMail />,
-        listText: "Contact",
-        listPath: <Route exact path="/contact"></Route>
-    },
+    { listIcon: <Home />, listText: "Home", listPath: "/" },
+    { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
+    { listIcon: <Apps />, listText: "Portfolio", listPath: "/portfolio" },
+    { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
 ];
 
 const Navbar = () => {
@@ -88,7 +73,7 @@ const Navbar = () => {
                         key={i}
                         className={classes.listItem}
                         onClick={() => setOpen(false)}
-                        // component={Link}
+                        component={Link}
                         to={item.listPath}
                     >
                         <ListItemIcon className={classes.listItem}>
