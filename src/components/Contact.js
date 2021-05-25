@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
         color: "tomato",
         borderColor: "tan",
     },
-    form: {
+    formStyle: {
         top: "50%",
         left: "50%",
         transform: "translate(-50%, -50%)",
@@ -76,7 +76,7 @@ const Contact = () => {
     return (
         <Box component="div" className={classes.contactContainer}>
             <Grid container justify="center">
-                <Box component="form" className={classes.form}>
+                <Box component="form" className={classes.formStyle}>
                     <Typography variant="h5" className className={classes.heading}>
                         Hire or work with me ..
                     </Typography>

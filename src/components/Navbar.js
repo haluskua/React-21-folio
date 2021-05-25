@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Drawer from "@material-ui/core/Drawer";
 import Box from "@material-ui/core/Box";
 import AppBar from "@material-ui/core/AppBar";
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     },
     menuSliderContainer: {
         width: 250,
-        background: "#511",
+        // background: "#511",
         background: "#ocococ",
         height: "100%",
     },

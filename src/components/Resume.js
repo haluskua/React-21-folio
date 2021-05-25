@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
     },
     timeLineYear: {
         textAlign: "center",
-        maxWidth: "9.375rem",
+        maxWidth: "16.375rem",
         margin: "0 3rem 0 auto",
         fontSize: "1.8rem",
         color: "#fff",
@@ -114,14 +114,14 @@ const Resume = () => {
     return (
         <Box component="header" className={classes.mainContainer}>
             <Typography variant="h4" align="center" className={classes.heading}>
-                Working Experience
+                Working & Lerning Experience
       </Typography>
             <Box component="div" className={classes.timeLine}>
                 <Typography
                     variant="h2"
                     className={`${classes.timeLineYear} ${classes.timeLineItem}`}
                 >
-                    2013
+                    2010 - 2014
         </Typography>
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography

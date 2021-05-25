@@ -8,7 +8,6 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "#000000",
         backgroundImage: 'url(https://cdn.wallpapersafari.com/81/12/N9oBIc.png)',
         height: "100vh !important",
-        opacity: 1,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         position: "fixed",
