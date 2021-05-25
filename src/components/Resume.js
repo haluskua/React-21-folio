@@ -47,7 +47,19 @@ const useStyels = makeStyles((theme) => ({
             borderWidth: '.625rem',
             transform: 'rotate(45deg)',
         },
-    }
+    },
+    subHeading: {
+        color: "#fff",
+        padding: 0,
+        textTransform: "uppercase",
+    },
+    body1: {
+        color: "tomato",
+    },
+    subtitle1: {
+        color: "tan",
+    },
+
 
 }));
 
@@ -67,6 +79,30 @@ const Resume = () => {
                     className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
                     2013
                     </Typography>
+                <Box component="div" className={classes.timeLineItem}>
+                    <Typography
+                        variant="h5"
+                        align="center"
+                        className={classes.subHeading}
+                    >
+                        web design
+                    </Typography>
+                    <Typography variant="body1" align="center" className={classes.body1}>
+                        company name where worked
+                    </Typography>
+                    <Typography
+                        variant="subtitle1"
+                        align="center"
+                        className={classes.subtitle1}>
+
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, officia odio in quasi culpa, necessitatibus nulla sint sequi provident molestiae accusamus totam labore!
+                        </Typography>
+                </Box>
+                <Typography
+                    variant="h2"
+                    className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                    2014
+                </Typography>
             </Box>
 
         </Box>
