@@ -1,7 +1,75 @@
 import React from 'react';
+import Box from "@material-ui/core/Box";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
+
+
+const useStyels = makeStyles((theme) => ({
+    mainContainer: {
+        background: "#233",
+        padding: '1rem',
+        margin: '0 auto',
+        "&:before": {
+            content: "''",
+            position: 'absolute',
+            height: '40px',
+            top: 0,
+        },
+        "&:after": {
+            content: "''",
+            display: 'table',
+            clear: 'both'
+        }
+    },
+    heading: {
+        color: "tomato",
+        padding: "3rem 0",
+        textTransform: "uppercase",
+    },
+
+    timeLineItem: {
+        padding: '1rem',
+        borderBottom: '2px solid tan',
+        position: 'relative',
+        margin: '1rem 3rem 1rem 1rem',
+        clear: 'both',
+        "&:after": {
+            content: "''",
+            position: 'absolute',
+        },
+        "&:before": {
+            content: "''",
+            position: "absolute",
+            right: '-0.625rem',
+            top: 'calc(50% - 5px)',
+            borderStyle: 'solid',
+            borderColor: 'tomato tomato transparent transparent',
+            borderWidth: '.625rem',
+            transform: 'rotate(45deg)',
+        },
+    }
+
+}));
+
+
+
 const Resume = () => {
+    const classes = useStyels();
     return (
-        <h1>This is the Resume section</h1>
+        <Box component="header" className={classes.mainContainer}>
+            <Typography variant="h4" align="center" className={classes.heading}>
+                Working and Studying experience
+        </Typography>
+
+            <Box component="div" className={classes.timeLine}>
+                <Typography
+                    variant="h2"
+                    className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                    2013
+                    </Typography>
+            </Box>
+
+        </Box>
     );
 };
 
