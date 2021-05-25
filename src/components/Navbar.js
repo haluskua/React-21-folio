@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
     menuSliderContainer: {
         width: 250,
         background: "#511",
+        background: "#ocococ",
         height: "100%",
     },
     avatar: {
@@ -46,6 +47,9 @@ const useStyles = makeStyles((theme) => ({
     },
     listItem: {
         color: "tan",
+    },
+    textColor: {
+        color: '#233',
     },
 }));
 
@@ -79,7 +83,7 @@ const Navbar = () => {
                         <ListItemIcon className={classes.listItem}>
                             {item.listIcon}
                         </ListItemIcon>
-                        <ListItemText primary={item.listText} />
+                        <ListItemText primary={item.listText} className={classes.textColor} />
                     </ListItem>
                 ))}
             </List>
