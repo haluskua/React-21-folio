@@ -91,6 +91,7 @@ const useStyles = makeStyles((theme) => ({
             },
         },
     },
+
     heading: {
         color: "tomato",
         padding: "3rem 0",
@@ -140,10 +141,7 @@ const Resume = () => {
                         align="center"
                         className={classes.subtitle1}
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-                        ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-                        Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-                        repudiandae, rerum necessitatibus nisi mollitia.
+                        This course has allowed me to grow and refine my inter-personal skills by writing training and dietary programs. I learned to build trust, communication and confidence both for the clients and myself.
           </Typography>
                 </Box>
                 <Typography
@@ -168,10 +166,7 @@ const Resume = () => {
                         align="center"
                         className={classes.subtitle1}
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-                        ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-                        Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-                        repudiandae, rerum necessitatibus nisi mollitia.
+                        My major is in Digital Media. I also became very familiar with the Adobe suit. Understanding the 'Creative Industry' on a deeper level and the creative process involved from beginning to end.
           </Typography>
                 </Box>
                 <Typography
@@ -196,10 +191,7 @@ const Resume = () => {
                         align="center"
                         className={classes.subtitle1}
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-                        ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-                        Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-                        repudiandae, rerum necessitatibus nisi mollitia.
+                        Introduction to Web Desigin. Html, css, Javascript, Php, WordPress (CMS).
           </Typography>
                 </Box>
                 <Typography
@@ -224,10 +216,7 @@ const Resume = () => {
                         align="center"
                         className={classes.subtitle1}
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-                        ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-                        Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-                        repudiandae, rerum necessitatibus nisi mollitia.
+                        Networking and building simple Websites and Graphics for clients.
           </Typography>
 
                 </Box>
@@ -259,6 +248,32 @@ const Resume = () => {
                         repudiandae, rerum necessitatibus nisi mollitia.
           </Typography>
 
+                </Box>
+                <Typography
+                    variant="h2"
+                    className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+                >
+                    2021
+        </Typography>
+                <Box component="div" className={classes.timeLineItem}>
+                    <Typography
+                        variant="h5"
+                        align="center"
+                        className={classes.subHeading}
+                    >
+                        Job Hunting
+          </Typography>
+                    <Typography variant="body1" align="center" className={classes.body1}>
+                        Web Designer & Graphic Designer
+          </Typography>
+                    <Typography
+                        variant="subtitle1"
+                        align="center"
+                        className={classes.subtitle1}
+                    >
+                        I am good with Designing UX and UX interface for apps.
+                        I also have a good knowledge and Experience in Backend development. My niche is in Frontend web development and Graphic design.
+          </Typography>
                 </Box>
             </Box>
         </Box>
