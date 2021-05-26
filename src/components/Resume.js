@@ -102,10 +102,11 @@ const useStyles = makeStyles((theme) => ({
         textTransform: "uppercase",
     },
     body1: {
-        color: "tomato",
+        color: "#1ac6ff",
     },
     subtitle1: {
         color: "tan",
+        textAlign: "center"
     },
 }));
 
@@ -121,7 +122,7 @@ const Resume = () => {
                     variant="h2"
                     className={`${classes.timeLineYear} ${classes.timeLineItem}`}
                 >
-                    2010 - 2014
+                    2012
         </Typography>
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography
@@ -129,10 +130,10 @@ const Resume = () => {
                         align="center"
                         className={classes.subHeading}
                     >
-                        web design
+                        Diploma in Exercise Science
           </Typography>
                     <Typography variant="body1" align="center" className={classes.body1}>
-                        company name where worked
+                        Wellington Institue of Technologies
           </Typography>
                     <Typography
                         variant="subtitle1"
@@ -157,10 +158,10 @@ const Resume = () => {
                         align="center"
                         className={classes.subHeading}
                     >
-                        html & css
+                        Bachelor in Creative Technologies
           </Typography>
                     <Typography variant="body1" align="center" className={classes.body1}>
-                        company name where worked
+                        Wellington Institue of Technologies
           </Typography>
                     <Typography
                         variant="subtitle1"
@@ -177,7 +178,7 @@ const Resume = () => {
                     variant="h2"
                     className={`${classes.timeLineYear} ${classes.timeLineItem}`}
                 >
-                    2015
+                    2016
         </Typography>
                 <Box component="div" className={classes.timeLineItem}>
                     <Typography
@@ -185,10 +186,10 @@ const Resume = () => {
                         align="center"
                         className={classes.subHeading}
                     >
-                        Fullstack Javascript
+                        Diploma in Web Design
           </Typography>
                     <Typography variant="body1" align="center" className={classes.body1}>
-                        company name where worked
+                        Yoobee School of Design
           </Typography>
                     <Typography
                         variant="subtitle1"
@@ -213,10 +214,10 @@ const Resume = () => {
                         align="center"
                         className={classes.subHeading}
                     >
-                        Django & React
+                        Graphics and Web Developer
           </Typography>
                     <Typography variant="body1" align="center" className={classes.body1}>
-                        company name where worked
+                        Self-employed (Freelancer)
           </Typography>
                     <Typography
                         variant="subtitle1"
@@ -228,6 +229,36 @@ const Resume = () => {
                         Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
                         repudiandae, rerum necessitatibus nisi mollitia.
           </Typography>
+
+                </Box>
+                <Typography
+                    variant="h2"
+                    className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+                >
+                    2019
+        </Typography>
+                <Box component="div" className={classes.timeLineItem}>
+                    <Typography
+                        variant="h5"
+                        align="center"
+                        className={classes.subHeading}
+                    >
+                        Bootcamp App Development
+          </Typography>
+                    <Typography variant="body1" align="center" className={classes.body1}>
+                        Enspiral Dev Academy
+          </Typography>
+                    <Typography
+                        variant="subtitle1"
+                        align="center"
+                        className={classes.subtitle1}
+                    >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
+                        ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
+                        Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
+                        repudiandae, rerum necessitatibus nisi mollitia.
+          </Typography>
+
                 </Box>
             </Box>
         </Box>
