@@ -242,10 +242,7 @@ const Resume = () => {
                         align="center"
                         className={classes.subtitle1}
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-                        ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-                        Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-                        repudiandae, rerum necessitatibus nisi mollitia.
+                        Full stack web development. Coded more than 700+ hours with React Js, API, Node and Knex databse with server-side-rendering. Simulated work environment included Agile development, sprints and kanban board with 10+ group and solo projects.
           </Typography>
 
                 </Box>
@@ -272,7 +269,7 @@ const Resume = () => {
                         className={classes.subtitle1}
                     >
                         I am good with Designing UX and UX interface for apps.
-                        I also have a good knowledge and Experience in Backend development. My niche is in Frontend web development and Graphic design.
+                        I also have a good knowledge and understanding of Backend development. My niche is in Frontend web development and Graphic design.
           </Typography>
                 </Box>
             </Box>
