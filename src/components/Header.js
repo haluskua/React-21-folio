@@ -7,15 +7,18 @@ import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../avatar.png";
 
+
+
 const useStyles = makeStyles((theme) => ({
     avatar: {
-        width: theme.spacing(15),
-        height: theme.spacing(15),
+        width: theme.spacing(25),
+        height: theme.spacing(25),
         margin: theme.spacing(1),
     },
     title: {
-        color: "#0099cc",
-        fontWeight: "bold",
+        color: "#ffc2b3",
+
+        // fontWeight: "bold",
         textTransform: "uppercase"
     },
     subtitle: {

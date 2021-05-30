@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Drawer from "@material-ui/core/Drawer";
 import Box from "@material-ui/core/Box";
@@ -22,7 +22,16 @@ import avatar from "../avatar.png";
 
 import Footer from "../components/Footer";
 
+
+// :::::::::::::::::::
+//--//styling
 const useStyles = makeStyles((theme) => ({
+
+    navbar: {
+        background: "#fff",
+        padding: "1rem"
+    },
+
     appbar: {
         background: "#222",
         margin: 0,
@@ -53,6 +62,8 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+// :::::::::::::::::::
+//--//List items
 
 const menuItems = [
     { listIcon: <Home />, listText: "Home", listPath: "/" },
@@ -61,10 +72,36 @@ const menuItems = [
     { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
 ];
 
+// :::::::::::::::::::
+//--//component initiated
+
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+    // const [navbar, setNavbar] = useState(false);
 
     const classes = useStyles();
+
+    // :::::::::::::::::::
+    //--//UseEffect Hook
+
+    // const changeBackground = () => {
+    //     // console.log(window.scrollY);
+    //     if (window.scrollY >= 85) {
+    //         setNavbar(true);
+
+    //     } else {
+    //         setNavbar(false);
+    //     }
+    // };
+
+
+    // window.addEventListener('scroll', changeBackground);
+
+
+
+    // :::::::::::::::::::
+    //--//Drawer component Logic
+
 
     const sideList = () => (
         <Box className={classes.menuSliderContainer} component="div">
@@ -90,25 +127,26 @@ const Navbar = () => {
         </Box>
     );
 
+
     return (
         <React.Fragment>
-            <Box component="nav">
+            <Box component="nav" className={classes.navbar ? classes.active : navbar}>
                 <AppBar position="static" className={classes.appbar}>
                     <Toolbar>
                         <IconButton onClick={() => setOpen(true)}>
                             <ArrowBack className={classes.arrow} />
                         </IconButton>
-                        <Typography variant="h5" className={classes.title}>
+                        <Typography variant="h5" className={classes.title} gutterBottom>
                             Portfolio
-            </Typography>
+                            </Typography>
                     </Toolbar>
                 </AppBar>
-            </Box>
+            </Box >
             <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>
                 {sideList()}
                 <Footer />
             </Drawer>
-        </React.Fragment>
+        </React.Fragment >
     );
 };
 
