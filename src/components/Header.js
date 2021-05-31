@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     subtitle: {
         color: "#ccf2ff",
         // textTransform: "uppercase",
-        fontSize: "1.4rem"
+        fontSize: "1.4rem",
     },
     typedContainer: {
         position: "absolute",
