@@ -2,14 +2,14 @@
 
 A portfolio single page application using React and Material UI
 
-### Demof of this site is available here [...]
+### Demof of this site is available here https://haluskua.github.io/React-21-folio/
 
 ### Installing
 
 Clont the repository using the following command or download
 
 ```
-git clone ____________
+git clone https://github.com/haluskua/React-21-folio.git
 ```
 
 ### To install dependencies
@@ -18,7 +18,7 @@ git clone ____________
 npm install
 ```
 
-### To state the server 
+### To state the server
 
 ```
 npm start
@@ -26,16 +26,11 @@ npm start
 
 Server will be available at http://localhost:3000
 
-
-
 ### Project snapshot
 
 ## For Respective pages
 
-
-
-
-## Author 
+## Author
 
 <blockquote>
 Omphalus Kua
