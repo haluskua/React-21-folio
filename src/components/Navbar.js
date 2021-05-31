@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Drawer from "@material-ui/core/Drawer";
 import Box from "@material-ui/core/Box";
@@ -77,30 +77,8 @@ const menuItems = [
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-    // const [navbar, setNavbar] = useState(false);
 
     const classes = useStyles();
-
-    // :::::::::::::::::::
-    //--//UseEffect Hook
-
-    // const changeBackground = () => {
-    //     // console.log(window.scrollY);
-    //     if (window.scrollY >= 85) {
-    //         setNavbar(true);
-
-    //     } else {
-    //         setNavbar(false);
-    //     }
-    // };
-
-
-    // window.addEventListener('scroll', changeBackground);
-
-
-
-    // :::::::::::::::::::
-    //--//Drawer component Logic
 
 
     const sideList = () => (
@@ -127,10 +105,9 @@ const Navbar = () => {
         </Box>
     );
 
-
     return (
         <React.Fragment>
-            <Box component="nav" className={classes.navbar ? classes.active : navbar}>
+            <Box component="nav" className={classes.navbar}>
                 <AppBar position="static" className={classes.appbar}>
                     <Toolbar>
                         <IconButton onClick={() => setOpen(true)}>
