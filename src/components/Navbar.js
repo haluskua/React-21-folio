@@ -105,7 +105,7 @@ const Navbar = () => {
 
     const sideList = () => (
         <Box className={classes.menuSliderContainer} component="div">
-            <Avatar className={classes.avatar} src={avatar} alt="Omphalus H. Kua" />
+            <Avatar className={classes.avatar} src={avatar} alt="Ompa" />
             <Divider />
             <List>
                 {menuItems.map((item, i) => (
