@@ -29,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
 
     navbar: {
         background: "#fff",
-        padding: "1rem"
     },
 
     appbar: {
