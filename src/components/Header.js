@@ -16,9 +16,9 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(1),
     },
     title: {
-        color: "#ffc2b3",
+        color: "#da5756",
 
-        // fontWeight: "bold",
+        fontWeight: "bold",
         textTransform: "uppercase"
     },
     subtitle: {
