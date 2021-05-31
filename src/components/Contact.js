@@ -80,7 +80,7 @@ const Contact = () => {
         <Box component="div" className={classes.contactContainer}>
             <Grid container justify="center">
                 <Box component="form" className={classes.formStyle}>
-                    <Typography variant="h5" className className={classes.heading}>
+                    <Typography variant="h5" className={classes.heading}>
                         Hire or work with me ..
                     </Typography>
 
