@@ -5,7 +5,7 @@ import Box from "@material-ui/core/Box";
 
 const useStyles = makeStyles((theme) => ({
     mainContainer: {
-        background: "#222",
+        background: "#0a0919",
         // backgroundColor: '#f7ff82',
     },
     timeLine: {
@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
             content: "''",
             position: "absolute",
             height: "100%",
-            border: "1px solid tan",
+            border: "0.6px solid grey",
             right: "40px",
             top: 0,
         },
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     },
     timeLineItem: {
         padding: "1rem",
-        borderBottom: ".8px solid tan",
+        // borderBottom: ".05px solid grey",
         position: "relative",
         margin: "1rem 3rem 1rem 1rem",
         clear: "both",
@@ -72,9 +72,9 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         maxWidth: "16.375rem",
         margin: "0 3rem 0 auto",
-        fontSize: "1.8rem",
+        fontSize: "1.4rem",
         color: "#fff",
-        background: "tomato",
+        background: "#3d5367",
         lineHeight: 1,
         padding: "0.5rem 1rem",
         "&:before": {
@@ -94,11 +94,13 @@ const useStyles = makeStyles((theme) => ({
     },
 
     heading: {
+        fontSize: "1.45rem",
         color: "tomato",
         padding: "3rem 0",
         textTransform: "uppercase",
     },
     subHeading: {
+        fontSize: "1.2rem",
         color: "#fff",
         padding: 0,
         textTransform: "uppercase",
