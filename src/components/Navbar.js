@@ -12,7 +12,8 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Avatar from "@material-ui/core/Avatar";
 import Divider from "@material-ui/core/Divider";
 import Typography from "@material-ui/core/Typography";
-import ArrowBack from "@material-ui/icons/ArrowBack";
+// import ArrowBack from "@material-ui/icons/ArrowBack";
+import MenuIcon from '@material-ui/icons/Menu';
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import Home from "@material-ui/icons/Home";
 import Apps from "@material-ui/icons/Apps";
@@ -35,11 +36,12 @@ const useStyles = makeStyles((theme) => ({
         background: "#222",
         margin: 0,
     },
-    arrow: {
+    hamburger: {
         color: "tomato",
     },
     title: {
         color: "tan",
+        margin: 0,
     },
     menuSliderContainer: {
         width: 250,
@@ -110,7 +112,7 @@ const Navbar = () => {
                 <AppBar position="static" className={classes.appbar}>
                     <Toolbar>
                         <IconButton onClick={() => setOpen(true)}>
-                            <ArrowBack className={classes.arrow} />
+                            <MenuIcon className={classes.hamburger} />
                         </IconButton>
                         <Typography variant="h5" className={classes.title} gutterBottom>
                             Portfolio
