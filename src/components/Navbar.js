@@ -20,6 +20,8 @@ import Apps from "@material-ui/icons/Apps";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../avatar.png";
+import { motion } from 'framer-motion';
+
 
 import Footer from "../components/Footer";
 
@@ -31,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
     navbar: {
         background: "#fff",
     },
-
     appbar: {
         background: "#222",
         margin: 0,
@@ -61,7 +62,17 @@ const useStyles = makeStyles((theme) => ({
     textColor: {
         color: '#233',
     },
+    hamburger: {
+        background: "#233",
+        color: "#fff",
+        borderRadius: "5px",
+        width: "50px",
+        border: "1px solid #00b3b3",
+        cursor: "pointer"
+
+    }
 }));
+
 
 // :::::::::::::::::::
 //--//List items
@@ -73,6 +84,20 @@ const menuItems = [
     { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
 ];
 
+
+const buttonVariants = {
+    hover: {
+        scale: 1.05,
+        textShadow: "0 0 6px rgb(255, 255, 255)",
+        boxShadow: "0px 0px 8px rgb(179, 255, 255)",
+        transition: {
+            duration: .44,
+            yoyo: 6
+        }
+
+    }
+};
+
 // :::::::::::::::::::
 //--//component initiated
 
@@ -81,7 +106,6 @@ const Navbar = () => {
 
     const classes = useStyles();
 
-
     const sideList = () => (
         <Box className={classes.menuSliderContainer} component="div">
             <Avatar className={classes.avatar} src={avatar} alt="Ompa" />
@@ -89,6 +113,8 @@ const Navbar = () => {
             <List>
                 {menuItems.map((item, i) => (
                     <ListItem
+                        variants={buttonVariants}
+                        whileHover="hover"
                         button
                         key={i}
                         className={classes.listItem}
@@ -111,8 +137,14 @@ const Navbar = () => {
             <Box component="nav" className={classes.navbar}>
                 <AppBar position="static" className={classes.appbar}>
                     <Toolbar>
-                        <IconButton onClick={() => setOpen(true)}>
-                            <MenuIcon className={classes.hamburger} />
+                        <IconButton >
+                            <motion.button className={classes.hamburger}
+                                onClick={() => setOpen(true)}
+                                variants={buttonVariants}
+                                whileHover="hover">
+                                <MenuIcon
+                                    className={classes.hamburger} />
+                            </motion.button>
                         </IconButton>
                         <Typography variant="h5" className={classes.title} gutterBottom>
                             Portfolio
