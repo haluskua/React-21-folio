@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
     textColor: {
         color: '#233',
     },
-    hamburger: {
+    hamburger_lines: {
         background: "#233",
         color: "#fff",
         borderRadius: "5px",
@@ -138,12 +138,12 @@ const Navbar = () => {
                 <AppBar position="static" className={classes.appbar}>
                     <Toolbar>
                         <IconButton >
-                            <motion.button className={classes.hamburger}
+                            <motion.button className={classes.hamburger_lines}
                                 onClick={() => setOpen(true)}
                                 variants={buttonVariants}
                                 whileHover="hover">
                                 <MenuIcon
-                                    className={classes.hamburger} />
+                                    className={classes.hamburger_lines} />
                             </motion.button>
                         </IconButton>
                         <Typography variant="h5" className={classes.title} gutterBottom>
