@@ -102,7 +102,7 @@ const MyLogo = styled(motion.div)`
     }
 `;
 
-export default function NikeCard(props) {
+export default function FrontCard(props) {
     const x = useMotionValue(0);
     const y = useMotionValue(0);
     const rotateX = useTransform(y, [-100, 100], [30, -30]);

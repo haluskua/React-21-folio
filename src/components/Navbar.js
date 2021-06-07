@@ -87,12 +87,12 @@ const menuItems = [
 
 const buttonVariants = {
     hover: {
-        scale: 1.05,
+        scale: [1, 1.03],
         textShadow: "0 0 6px rgb(255, 255, 255)",
         boxShadow: "0px 0px 8px rgb(179, 255, 255)",
         transition: {
-            duration: .44,
-            yoyo: 6
+            duration: .5,
+            yoyo: Infinity
         }
 
     }
