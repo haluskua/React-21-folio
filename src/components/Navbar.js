@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
         color: "tomato",
     },
     title: {
-        color: "tan",
+        color: "fff",
         margin: 0,
 
     },
