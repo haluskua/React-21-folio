@@ -22,7 +22,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../avatar.png";
 import { motion } from 'framer-motion';
 
-
 import Footer from "../components/Footer";
 
 
@@ -43,18 +42,22 @@ const useStyles = makeStyles((theme) => ({
     title: {
         color: "tan",
         margin: 0,
+
     },
     menuSliderContainer: {
         width: 250,
-        // background: "#511",
-        background: "#ocococ",
+        // backgroundColor: "#511",
+        backgroundColor: "#fff",
         height: "100%",
+        border: "0.21px solid #003333"
     },
+
     avatar: {
         display: "block",
         margin: "0.5rem auto",
         width: theme.spacing(13),
         height: theme.spacing(13),
+        border: "none"
     },
     listItem: {
         color: "tan",
@@ -67,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
         color: "#fff",
         borderRadius: "5px",
         width: "50px",
-        border: "1px solid #00b3b3",
+        border: "1px solid #d7f3f3",
         cursor: "pointer"
 
     }
@@ -86,6 +89,7 @@ const menuItems = [
 
 
 const buttonVariants = {
+
     hover: {
         scale: [1, 1.03],
         textShadow: "0 0 6px rgb(255, 255, 255)",
@@ -97,6 +101,9 @@ const buttonVariants = {
 
     }
 };
+
+
+
 
 // :::::::::::::::::::
 //--//component initiated
@@ -132,6 +139,7 @@ const Navbar = () => {
         </Box>
     );
 
+
     return (
         <React.Fragment>
             <Box component="nav" className={classes.navbar}>
@@ -152,12 +160,14 @@ const Navbar = () => {
                     </Toolbar>
                 </AppBar>
             </Box >
-            <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>
+            <Drawer open={open} anchor="right" onClose={() => setOpen(false)}
+            >
                 {sideList()}
                 <Footer />
             </Drawer>
         </React.Fragment >
     );
+
 };
 
 export default Navbar;

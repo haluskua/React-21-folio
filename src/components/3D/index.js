@@ -23,8 +23,9 @@ const CardContainer = styled(motion.div)`
     display: flex;
     flex-direction: column;
     border-radius: 25px;
-    box-shadow: 0 2px 7px 1px rgba(31,31, 31, 0.2);
-    background-color: #1d1f21;
+    // box-shadow: 0 2px 7px 1px rgba(31,31, 31, 0.2);
+    box-shadow: -2px 0px 18px 3px rgba(255,250,250,0.24);
+    background-color: #4aa6c5;
     color: #fff;
     position: relative;
     cursor: grab;

@@ -42,7 +42,7 @@ const BuyButton = styled.button`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 10px 16px;
+  padding: 6px;
   background-color: #fbbe01;
   color: #233;
   text-transform: uppercase;
@@ -55,7 +55,7 @@ const BuyButton = styled.button`
   &:hover {
     background-color: transparent;
     color: #fff;
-    border: 2px solid #fbbe01;
+    border: 1.5px solid #fbbe01;
   }
 `;
 
