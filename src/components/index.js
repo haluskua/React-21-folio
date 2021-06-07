@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header';
+// import Header from './Header';
 import Particles from './Particles';
 
 import FrontCard from '../components/3D/index';
