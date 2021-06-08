@@ -30,7 +30,8 @@ export default function FrontCard(props) {
                                 x, y, rotateX, rotateY,
                                 rotate: "-25deg", z: 10000
                             }}
-                            drag dragElatic={0.8}
+                            drag dragElastic={0.8}
+                            dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
                             whileTap={{ cursor: "grabbing" }}
                         >
                             <img src={Logo} alt="logo" />
