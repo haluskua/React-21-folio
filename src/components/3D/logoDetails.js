@@ -121,7 +121,7 @@ export function LogoDetails(props) {
         <Marginer direction="vertical" margin="1.2em" />
         <Box component="div" className={classes.centerLL}>
             <SpacedHorizontalContainer>
-                <MediumText> Fullstack Developer</MediumText>
+                <MediumText> Frontend Developer</MediumText>
                 <SmallText> 2021</SmallText>
             </SpacedHorizontalContainer>
         </Box >
