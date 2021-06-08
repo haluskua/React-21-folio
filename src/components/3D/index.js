@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Logo from "../../../src/images/background-man-min.png";
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { LogoDetails } from './logoDetails';
 import TextAnimation from './TextAnimations';
+import TextAnimation2 from './TextAnimation2';
+import LogoAnimation from './LogoAnimation';
 
 
 export default function FrontCard(props) {
@@ -34,10 +35,11 @@ export default function FrontCard(props) {
                             dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
                             whileTap={{ cursor: "grabbing" }}
                         >
-                            <img src={Logo} alt="logo" />
+                            <LogoAnimation />
                         </MyLogo>
                     </LogoWrapper>
-                    <TextAnimation>oMPA lus</TextAnimation>
+                    <TextAnimation />
+                    <TextAnimation2 />
                 </TopContainer>
                 <BottomContainer>
                     <LogoDetails />
@@ -60,19 +62,23 @@ const CardContainer = styled(motion.div)`
     border: 2.2px solid #00ccff;
     margin-top: 4.3rem;
     width: 285px;
-    height: 589px;
+    height: 585px;
     display: flex;
     flex-direction: column;
-    border-radius: 25px;
     box-shadow: -2px 0px 18px 3px rgba(255,250,250,0.24);
     background-color: #4aa6c5;
     color: #fff;
     position: relative;
     cursor: grab;
-    z-index: 6;
+    z-index: 16;
     overflow: hidden;
+    border-radius: 25px;
+    
+    -ms-overflow-style: none; 
+    ::-webkit-scrollbar {
+        display: none;
+    }
 `;
-
 const CircleWrapper = styled.div`
     position: absolute;
     top: 10px;
@@ -120,18 +126,12 @@ const LogoWrapper = styled.div`
 `;
 
 const MyLogo = styled(motion.div)`
-    width: auto;
-    height: 210px;
     z-index: 99;
     user-select: none;
-    margin-top: 3em;
+    margin-top: -10em;
     margin-right: 3em;
+    position: absolute;
     
-    img {
-        width: auto;
-        height: 100%;
-        user-select: none;
-    }
 `;
 
 

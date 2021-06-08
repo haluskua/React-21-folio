@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
     menuSliderContainer: {
         width: 250,
         // backgroundColor: "#511",
-        backgroundColor: "#fff",
+        backgroundColor: "#255362",
         height: "100%",
         border: "0.21px solid #003333"
     },
@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
         color: "tan",
     },
     textColor: {
-        color: '#233',
+        color: '#fff',
     },
     hamburger_lines: {
         background: "#233",

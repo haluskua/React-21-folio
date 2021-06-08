@@ -2,8 +2,8 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-export default function TextAnimation() {
-    const reactArray = 'Omphalus'.split("");
+export default function TextAnimation2() {
+    const reactArray = 'Kua'.split("");
 
 
     return <Wrapper>{reactArray.map((item, index) => (
@@ -54,30 +54,13 @@ const Wrapper = styled.span`
         }
     
     span:nth-child(1) {
-        animation-delay: .15s;
+        animation-delay: .63s;
     }
     span:nth-child(2) {
-        animation-delay: .3s;
+        animation-delay: .9s;
     }
     span:nth-child(3) {
-        animation-delay: .45s;
+        animation-delay: 1.28s;
     }
-    span:nth-child(4) {
-        animation-delay: .60s;
-    }
-    span:nth-child(5) {
-        animation-delay: 1.15s;
-    }
-    span:nth-child(6) {
-        animation-delay: 1.3s;
-    }
-    span:nth-child(7) {
-        animation-delay: 1.45s;
-    }
-    span:nth-child(8) {
-        animation-delay: 2s;
-    }
-    // span:nth-child(9) {
-    //     animation-delay: 2.05s;
-    // }
+    
 `;
