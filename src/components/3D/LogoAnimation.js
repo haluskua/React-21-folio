@@ -6,7 +6,7 @@ export default function LogoAnimation() {
 
     return (
         <Wrapper>
-            <img className="LogoSymbol" src={Logo} alt="logo" />
+            <img src={Logo} alt="logo" />
         </Wrapper>
 
     );
@@ -17,8 +17,8 @@ export default function LogoAnimation() {
 const animation = keyframes`
  0% {
      opacity: 0.05; 
-     transform: translateY(-75px) skewY(5deg) skewX(10deg) rotateZ(10deg);
-     filter: blur(5px);
+     transform: translateY(-75px) skewY(10deg) skewX(10deg) rotateZ(10deg);
+     filter: blur(10px);
      }
  20% { 
       opacity: 1; 
@@ -27,15 +27,15 @@ const animation = keyframes`
  85% { 
       opacity: 1; 
       transform: translateY(0px) skewY(0deg) skewX(0deg) rotateZ(0deg);
-      filter: blur(1px) }
+      filter: blur(0px) }
  97% { 
        opacity: 0.41; 
-       transform: translateY(-5px) skewY(10deg) skewX(10deg) rotateZ(7deg);
+       transform: translateY(0px) skewY(0deg) skewX(0deg) rotateZ(0deg);
        filter: blur(5px) }
  100% { 
        opacity: 0; 
-       transform: translateY(-75px) skewY(5deg) skewX(10deg) rotateZ(7deg);
-       filter: blur(2px) }
+       transform: translateY(-75px) skewY(10deg) skewX(10deg) rotateZ(30deg);
+       filter: blur(10px) }
 `;
 
 

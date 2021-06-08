@@ -18,18 +18,21 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 18px;
+  font-size: 23px;
   color: #fff;
   font-weight: 800;
   text-transform: uppercase;
-`;
+  font-family: Heebo;
+  letter-spacing: 0.05rem;
+  `;
 
 const SmallText = styled.span`
-  font-size: 13px;
+  font-size: 19px;
+  font-family: Heebo;
   color: #fff;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 600;
   text-align: center;
+  letter-spacing: 0.05rem;
 `;
 
 const SpacedHorizontalContainer = styled.div`
@@ -89,13 +92,15 @@ const useStyles = makeStyles((theme) => ({
         width: "210px",
         height: "37px",
         border: "none",
-        color: "#233",
-        letterSpacing: "1.3px",
+        color: "#fff",
+        letterSpacing: "1px",
         cursor: "pointer",
         borderRadius: ".21rem",
-        fontSize: "20px",
-        fontWeight: "bold",
+        fontSize: "24px",
+        fontWeight: "400",
         padding: "5px",
+        fontFamily: "Heebo",
+        lineHeight: "1.4rem",
     }
 
 }));
@@ -121,7 +126,7 @@ export function LogoDetails(props) {
         <Marginer direction="vertical" margin="1.2em" />
         <Box component="div" className={classes.centerLL}>
             <SpacedHorizontalContainer>
-                <MediumText> Frontend Developer</MediumText>
+                <MediumText> Web & Grafix Developer</MediumText>
                 <SmallText> 2021</SmallText>
             </SpacedHorizontalContainer>
         </Box >

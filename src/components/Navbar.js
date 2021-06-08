@@ -40,14 +40,15 @@ const useStyles = makeStyles((theme) => ({
         color: "tomato",
     },
     title: {
-        color: "fff",
+        color: "#fff",
         margin: 0,
+        fontFamily: "Heebo",
 
     },
     menuSliderContainer: {
         width: 250,
         // backgroundColor: "#511",
-        backgroundColor: "#255362",
+        backgroundColor: "#1e5b6f",
         height: "100%",
         border: "0.21px solid #003333"
     },
@@ -66,11 +67,11 @@ const useStyles = makeStyles((theme) => ({
         color: '#fff',
     },
     hamburger_lines: {
-        background: "#233",
+        background: "#277c98",
         color: "#fff",
         borderRadius: "5px",
         width: "50px",
-        border: "1px solid #d7f3f3",
+        border: "1px solid #2e5256",
         cursor: "pointer"
 
     }

@@ -37,12 +37,13 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
     display: inline-block;
-    color: #fff;
+    color: #fbbe01;
     text-transform: uppercase;
     margin: 0;
-    z-index: 10;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 900;
+    font-family: Zilla Slab Highlight;
+
     span {
             display: inline-block;
             opacity: 0;
