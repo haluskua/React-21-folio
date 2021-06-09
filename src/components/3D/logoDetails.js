@@ -105,7 +105,7 @@ const useStyles = makeStyles((theme) => ({
         padding: "5px",
         lineHeight: "1.4rem",
         fontFamily: "Amatic SC",
-        boxShadow: "2px 5px 10px rgba(0, 0, 0, 0.82)",
+        boxShadow: "2px 5px 10px rgba(0, 0, 0, 0.32)",
         hover: {
             color: "#fff",
         }
