@@ -95,7 +95,7 @@ const Circle = styled.div`
     width: 250px;
     top: -4.2em;
     right: -10em;
-    background-color: rgb(0 0 0 / 34%);
+    background-color: rgb(8 93 115);
     border-radius: 50%;
 `;
 
@@ -107,7 +107,7 @@ const TopContainer = styled.div`
     position: relative;
     align-items: center;
     justify-content: flex-end;
-    padding: 1em 15px;
+    padding: 1em 8px;
     `;
 
 const BottomContainer = styled.div`

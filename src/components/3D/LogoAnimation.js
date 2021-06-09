@@ -5,13 +5,10 @@ import styled, { keyframes } from 'styled-components';
 export default function LogoAnimation() {
 
     return (
-        <Wrapper>
+        <AniLogo>
             <img src={Logo} alt="logo" />
-        </Wrapper>
-
+        </AniLogo>
     );
-
-
 }
 
 const animation = keyframes`
@@ -39,7 +36,7 @@ const animation = keyframes`
 `;
 
 
-const Wrapper = styled.span`
+const AniLogo = styled.div`
     display: inline-block;
     width: auto;
     height: 210px;

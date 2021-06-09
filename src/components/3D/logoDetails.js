@@ -22,13 +22,12 @@ const MediumText = styled.span`
   color: #fff;
   font-weight: 800;
   text-transform: uppercase;
-  font-family: Heebo;
-  letter-spacing: 0.05rem;
+  font-family: Zilla Slab Highlight;
+  letter-spacing: 0.1rem;
   `;
 
 const SmallText = styled.span`
   font-size: 19px;
-  font-family: Heebo;
   color: #fff;
   font-weight: 600;
   text-align: center;
@@ -45,7 +44,7 @@ const BuyButton = styled.button`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 6px;
+  padding: 3px;
   background-color: #fbbe01;
   color: #233;
   text-transform: uppercase;
@@ -58,7 +57,7 @@ const BuyButton = styled.button`
   &:hover {
     background-color: transparent;
     color: #fff;
-    border: 1.5px solid #fbbe01;
+    border: 2.3px solid #fbbe01;
   }
 `;
 
@@ -92,15 +91,18 @@ const useStyles = makeStyles((theme) => ({
         width: "210px",
         height: "37px",
         border: "none",
-        color: "#fff",
+        color: "#1a5264",
         letterSpacing: "1px",
         cursor: "pointer",
         borderRadius: ".21rem",
-        fontSize: "24px",
-        fontWeight: "400",
+        fontSize: "22px",
+        fontWeight: "600",
         padding: "5px",
         fontFamily: "Heebo",
         lineHeight: "1.4rem",
+        hover: {
+            color: "#fff",
+        }
     }
 
 }));
@@ -122,11 +124,11 @@ export function LogoDetails(props) {
     const classes = useStyles();
 
     return <DetailsContainer>
-        <SmallText>Experienced Intermediate</SmallText>
+        <SmallText>FRONTEND UI | UX FULLSTACK </SmallText>
         <Marginer direction="vertical" margin="1.2em" />
         <Box component="div" className={classes.centerLL}>
             <SpacedHorizontalContainer>
-                <MediumText> Web & Grafix Developer</MediumText>
+                <MediumText>WEB DEVELOPER</MediumText>
                 <SmallText> 2021</SmallText>
             </SpacedHorizontalContainer>
         </Box >
