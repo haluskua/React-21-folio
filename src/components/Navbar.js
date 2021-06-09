@@ -24,7 +24,6 @@ import { motion } from 'framer-motion';
 
 import Footer from "../components/Footer";
 
-
 // :::::::::::::::::::
 //--//styling
 const useStyles = makeStyles((theme) => ({
@@ -90,7 +89,6 @@ const menuItems = [
 
 
 const buttonVariants = {
-
     hover: {
         scale: [1, 1.03],
         textShadow: "0 0 6px rgb(255, 255, 255)",
@@ -156,7 +154,7 @@ const Navbar = () => {
                             </motion.button>
                         </IconButton>
                         <Typography variant="h5" className={classes.title} gutterBottom>
-                            Portfolio
+                            Menu
                             </Typography>
                     </Toolbar>
                 </AppBar>

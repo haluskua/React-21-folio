@@ -27,19 +27,19 @@ const MediumText = styled.span`
   `;
 
 const SmallText = styled.span`
-  font-size: 17px;
+  font-size: 22px;
   color: #fff;
-  font-family: Heebo;
+  font-family: Amatic SC;
   font-weight: 400;
   text-align: center;
-  letter-spacing: 0.11rem;
+  letter-spacing: 0..9rem;
 `;
 
 const SpacedHorizontalContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 `;
 const BuyButton = styled.button`
   width: 100%;
@@ -96,14 +96,16 @@ const useStyles = makeStyles((theme) => ({
         border: "none",
         color: "#1a5264",
         color: "#fff",
-        letterSpacing: "1px",
+        letterSpacing: "2px",
         cursor: "pointer",
-        borderRadius: ".21rem",
-        fontSize: "18px",
+        borderRadius: "3.21rem",
+        fontSize: "21px",
         borderBottom: ".4px dotted #222",
-        fontWeight: "300",
+        fontWeight: "500",
         padding: "5px",
         lineHeight: "1.4rem",
+        fontFamily: "Amatic SC",
+        boxShadow: "2px 5px 10px rgba(0, 0, 0, 0.82)",
         hover: {
             color: "#fff",
         }
