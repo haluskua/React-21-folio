@@ -19,7 +19,7 @@ const DetailsContainer = styled.div`
 
 const MediumText = styled.span`
   font-size: 23px;
-  color: #fff;
+  color: #a8d3de;
   font-weight: 800;
   text-transform: uppercase;
   font-family: Zilla Slab Highlight;
@@ -27,11 +27,12 @@ const MediumText = styled.span`
   `;
 
 const SmallText = styled.span`
-  font-size: 19px;
+  font-size: 17px;
   color: #fff;
-  font-weight: 600;
+  font-family: Heebo;
+  font-weight: 400;
   text-align: center;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.11rem;
 `;
 
 const SpacedHorizontalContainer = styled.div`
@@ -45,19 +46,20 @@ const BuyButton = styled.button`
   display: flex;
   justify-content: center;
   padding: 3px;
-  background-color: #fbbe01;
+  background-color: transparent;
   color: #233;
   text-transform: uppercase;
   font-size: 16.8px;
   font-weight: 700;
-  border: 2.3px solid #fff;
+//   border: 2.3px solid #fff;
+border: none;
   outline: none;
   transition: all 290ms ease-in-out;
   border-radius: 8px;
   &:hover {
     background-color: transparent;
     color: #fff;
-    border: 2.3px solid #fbbe01;
+    // border: 2.3px solid #fbbe01;
   }
 `;
 
@@ -87,18 +89,20 @@ const useStyles = makeStyles((theme) => ({
         padding: "2px",
     },
     miniButton: {
-        backgroundColor: "#fbbe01",
+        // backgroundColor: "#fbbe01",
+        background: "transparent",
         width: "210px",
         height: "37px",
         border: "none",
         color: "#1a5264",
+        color: "#fff",
         letterSpacing: "1px",
         cursor: "pointer",
         borderRadius: ".21rem",
-        fontSize: "22px",
-        fontWeight: "600",
+        fontSize: "18px",
+        borderBottom: ".4px dotted #222",
+        fontWeight: "300",
         padding: "5px",
-        fontFamily: "Heebo",
         lineHeight: "1.4rem",
         hover: {
             color: "#fff",
@@ -139,7 +143,7 @@ export function LogoDetails(props) {
                 <motion.button className={classes.miniButton}
                     variants={buttonVariants}
                     whileHover="hover"
-                >Menu</motion.button>
+                >Portfolio</motion.button>
             </Link>
         </BuyButton>
         <Box component="div" className={classes.centerLL}>
