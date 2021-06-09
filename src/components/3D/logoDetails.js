@@ -94,7 +94,6 @@ const useStyles = makeStyles((theme) => ({
         width: "210px",
         height: "37px",
         border: "none",
-        color: "#1a5264",
         color: "#fff",
         letterSpacing: "2px",
         cursor: "pointer",
