@@ -11,15 +11,13 @@ export default function LogoAnimation() {
     );
 }
 
-
 const AniLogo = styled.div`
     display: inline-block;
     width: auto;
     height: 200px;
     img {
         width: auto;
-        height: 92%;
+        height: 117%;
         user-select: none;
     }
-
 `;

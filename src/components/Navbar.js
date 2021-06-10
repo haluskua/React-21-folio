@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
         background: "#fff",
     },
     appbar: {
-        background: "rgb(52 84 132 / 23%)",
+        background: "#d4d4d4",
         margin: 0,
         position: "absolute",
     },

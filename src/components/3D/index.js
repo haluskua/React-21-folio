@@ -59,7 +59,7 @@ const CardWrapper = styled.div`
     
 `;
 const CardContainer = styled(motion.div)`
-    border: 10px solid rgb(95 147 160 / 54%);
+    border: 10px solid rgb(191 186 186);
     margin-top: 4.3rem;
     width: 285px;
     height: 585px;
@@ -107,13 +107,14 @@ const TopContainer = styled.div`
     position: relative;
     align-items: center;
     justify-content: flex-end;
-    padding: 8px 0 56px 0;
+    padding: 8px 0 44px 0;
     `;
 
 const BottomContainer = styled.div`
     display: flex;
     flex: 1;
     padding: 0 2em;
+    margin-bottom: -3rem;
 `;
 
 const LogoWrapper = styled.div`

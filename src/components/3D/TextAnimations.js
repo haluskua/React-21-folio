@@ -3,12 +3,19 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 export default function TextAnimation() {
-    const reactArray = 'Omphalus'.split("");
+    const reactArray = 'Portfolio'.split("");
 
 
-    return <Wrapper>{reactArray.map((item, index) => (
-        <span key={index}>{item}</span>
-    ))}</Wrapper>;
+    return (
+        <React.Fragment>
+            <Wrapper>{reactArray.map((item, index) => (
+                <span key={index}>{item}</span>
+            ))}</Wrapper>
+
+            <SmallText>OMPHALUS H. KUA</SmallText>
+
+        </React.Fragment>
+    );
 }
 
 const animation = keyframes`
@@ -39,13 +46,13 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
     display: inline-block;
-    color: #25373c;
+    color: #4b6167;
     text-transform: uppercase;
     margin: 0;
-    font-size: 19.25px;
+    font-size: 28.35px;
     font-weight: bold;
-    // font-family: Zilla Slab Highlight;
-    font-family: 'Padauk', Open Sans condensed;
+    font-family: Zilla Slab Highlight;
+    // font-family: 'Padauk', Open Sans condensed;
     
 
     span {
@@ -85,14 +92,22 @@ const Wrapper = styled.span`
     span:nth-child(9) {
         animation-delay: 2.15s;
     }
-    // span:nth-child(10) {
-    //     animation-delay: 2.3s;
-    // }
+    span:nth-child(10) {
+        animation-delay: 2.3s;
+    }
     // span:nth-child(11) {
     //     animation-delay: 2.45s;
     // }
     // span:nth-child(12) {
     //     animation-delay: 2.9s;
-    }
+    // }
 
+`;
+
+const SmallText = styled.span`
+  font-size: 12.5px;
+  color: #25373c;
+  font-family: 'Padauk', Open Sans;
+  font-weight: 400;
+  text-align: left;
 `;

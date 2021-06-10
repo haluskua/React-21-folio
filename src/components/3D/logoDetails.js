@@ -71,7 +71,7 @@ export function LogoDetails(props) {
             </SpacedHorizontalContainer>
         </Box >
         <Marginer direction="vertical" margin=".1.5em" />
-        <SmallText>Creativity is something I enjoy most!</SmallText>
+        <SmallText>Creativity is something I enjoy most.</SmallText>
 
         <Toolbar>
             <Link to="/portfolio">
@@ -107,7 +107,7 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 19px;
+  font-size: 18.4px;
   color: #172f35;
   font-weight: 800;
   text-transform: uppercase;
