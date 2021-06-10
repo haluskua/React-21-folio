@@ -55,11 +55,11 @@ const CardWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
     
 `;
 const CardContainer = styled(motion.div)`
-    border: 2.2px solid #00ccff;
+    border: 10px solid rgb(95 147 160 / 54%);
     margin-top: 4.3rem;
     width: 285px;
     height: 585px;

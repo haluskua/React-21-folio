@@ -3,9 +3,17 @@ import Marginer from '../Marginer/index';
 import styled from 'styled-components';
 import LogoImg from '../../../src/avatar.png';
 import Box from "@material-ui/core/Box";
+import Toolbar from "@material-ui/core/Toolbar";
+import MenuIcon from '@material-ui/icons/Menu';
+import ArrowBack from "@material-ui/icons/ArrowBack";
+
+import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
+import IconButton from "@material-ui/core/IconButton";
+import { ArrowForward } from '@material-ui/icons';
+
 
 
 const DetailsContainer = styled.div`
@@ -41,27 +49,6 @@ const SpacedHorizontalContainer = styled.div`
   justify-content: space-between;
   align-items: flex-end;
 `;
-const BuyButton = styled.button`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 3px;
-  background-color: transparent;
-  color: #233;
-  text-transform: uppercase;
-  font-size: 16.8px;
-  font-weight: 700;
-//   border: 2.3px solid #fff;
-border: none;
-  outline: none;
-  transition: all 290ms ease-in-out;
-  border-radius: 8px;
-  &:hover {
-    background-color: transparent;
-    color: #fff;
-    // border: 2.3px solid #fbbe01;
-  }
-`;
 
 const Logo = styled.div`
   width: 100%;
@@ -88,39 +75,39 @@ const useStyles = makeStyles((theme) => ({
     centerOne: {
         padding: "2px",
     },
-    miniButton: {
-        // backgroundColor: "#fbbe01",
-        background: "transparent",
-        width: "210px",
-        height: "37px",
-        border: "none",
+    hamburger_lines: {
+        display: "flex",
+        justifyContent: "center",
+        background: "rgb(48 144 169 / 58%)",
         color: "#fff",
-        letterSpacing: "2px",
+        borderRadius: "50%",
         cursor: "pointer",
-        borderRadius: "3.21rem",
-        fontSize: "21px",
-        borderBottom: ".4px dotted #222",
-        fontWeight: "500",
-        padding: "5px",
-        lineHeight: "1.4rem",
-        fontFamily: "Amatic SC",
+        margin: "5px",
+        padding: "1px",
+        border: "none",
         boxShadow: "2px 5px 10px rgba(0, 0, 0, 0.32)",
-        hover: {
-            color: "#fff",
-        }
-    }
 
+
+    },
+    title: {
+        color: "#fff",
+        margin: 0,
+        fontSize: "18.5px",
+        letterSpacing: "1.3px",
+        fontFamily: "Amatic SC",
+
+    },
 }));
 
 const buttonVariants = {
     hover: {
         scale: [1, 1.03],
         textShadow: "0 0 6px rgb(255, 255, 255)",
+        boxShadow: "0px 0px 8px rgb(179, 255, 255)",
         transition: {
             duration: .5,
             yoyo: Infinity
         }
-
     }
 };
 
@@ -138,14 +125,24 @@ export function LogoDetails(props) {
         </Box >
 
         <Marginer direction="vertical" margin=".2em" />
-        <BuyButton >
+        <Toolbar>
+            <Typography variant="h5" className={classes.title} gutterBottom>
+                Portfolio
+                </Typography>
             <Link to="/portfolio">
-                <motion.button className={classes.miniButton}
-                    variants={buttonVariants}
-                    whileHover="hover"
-                >Portfolio</motion.button>
+                <IconButton >
+                    <motion.button className={classes.hamburger_lines}
+                        variants={buttonVariants}
+                        whileHover="hover">
+                        <ArrowBack
+                            className={classes.hamburger_lines} />
+                    </motion.button>
+                </IconButton>
             </Link>
-        </BuyButton>
+
+
+        </Toolbar>
+
         <Box component="div" className={classes.centerLL}>
             <Logo className={classes.centerOne}>
                 <img src={LogoImg} alt="logo"></img>
