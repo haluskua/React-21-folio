@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from "../../../src/images/background-man-min.png";
+import Logo from "../../../src/avatar.png";
 import styled, { keyframes } from 'styled-components';
 
 export default function LogoAnimation() {
@@ -35,25 +35,14 @@ const animation = keyframes`
        filter: blur(10px) }
 `;
 
-
 const AniLogo = styled.div`
     display: inline-block;
     width: auto;
-    height: 210px;
-    
+    height: 200px;
     img {
         width: auto;
         height: 100%;
         user-select: none;
     }
 
-    span {
-        display: inline-block;
-        opacity: 0;
-        animation-name: ${animation};
-        animation-duration: 5.5s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: infinite;
-        animation-timing-function: cubic-bezier(0.75,.82,.165, 1);
-    }
 `;

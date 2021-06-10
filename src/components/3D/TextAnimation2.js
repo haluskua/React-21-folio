@@ -43,7 +43,7 @@ const Wrapper = styled.span`
     text-transform: uppercase;
     margin: 0;
     z-index: 10;
-    font-size: 35px;
+    font-size: 36px;
     font-weight: 600;
     font-family: Zilla Slab Highlight;
     

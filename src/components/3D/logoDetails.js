@@ -11,58 +11,14 @@ import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
 import IconButton from "@material-ui/core/IconButton";
 
-const DetailsContainer = styled.div`
-    width: 100%:
-    height; 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 2.5em 6px 0 6px;
-    line-height: 1.4;
-`;
 
-const MediumText = styled.span`
-  font-size: 18px;
-  color: #172f35;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-family: Open Sans Condensed;
-  padding: 0 10px;
-  `;
-
-const SmallText = styled.span`
-  font-size: 18.6px;
-  color: #000;
-  font-family: Open Sans Condensed;
-  font-weight: 400;
-  text-align: center;
-`;
-
-const SpacedHorizontalContainer = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-`;
-
-const Logo = styled.div`
-  width: 100%;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  img {
-      width: auto;
-      height: 48px;
-  }
-`;
 
 const useStyles = makeStyles((theme) => ({
 
     centerLL: {
         display: "flex",
         justifyContent: "center",
-        padding: "1.3rem",
+        padding: ".03rem",
         with: "100%",
         height: "auto",
     },
@@ -109,17 +65,15 @@ export function LogoDetails(props) {
 
     return <DetailsContainer>
         <SmallText>FRONTEND UI | UX FULLSTACK </SmallText>
-        <Marginer direction="vertical" margin="1.2em" />
+        <Marginer direction="vertical" margin=".3em" />
         <Box component="div" className={classes.centerLL}>
             <SpacedHorizontalContainer>
-                <MediumText>WEB DEVELOPER</MediumText><br></br>
+                <MediumText>WEB DEVELOPER</MediumText>
                 <SmallText> 2021</SmallText>
             </SpacedHorizontalContainer>
         </Box >
 
-        <Marginer direction="vertical" margin=".2em" />
         <Toolbar>
-
             <Link to="/portfolio">
                 <IconButton >
                     <motion.button className={classes.hamburger_lines}
@@ -130,6 +84,7 @@ export function LogoDetails(props) {
                     </motion.button>
                 </IconButton>
             </Link>
+            <Marginer direction="vertical" margin="8.2em" />
             <Typography variant="h5" className={classes.title} gutterBottom>
                 Portfolio
                 </Typography>
@@ -143,3 +98,49 @@ export function LogoDetails(props) {
         </Box >
     </DetailsContainer >;
 };
+
+const DetailsContainer = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    line-height: 1.4;
+`;
+
+const MediumText = styled.span`
+  font-size: 21.5px;
+  color: #172f35;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: Open Sans Condensed;
+  line-height: 1.5rem;
+  `;
+
+const SmallText = styled.span`
+  font-size: 18.6px;
+  color: #000;
+  font-family: Open Sans Condensed;
+  font-weight: 400;
+  text-align: center;
+`;
+
+const SpacedHorizontalContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+`;
+
+const Logo = styled.div`
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  img {
+      width: auto;
+      height: 48px;
+  }
+`;

@@ -29,7 +29,7 @@ export default function FrontCard(props) {
                         <MyLogo
                             style={{
                                 x, y, rotateX, rotateY,
-                                rotate: "-25deg", z: 10000
+                                rotate: "0deg", z: 0
                             }}
                             drag dragElastic={0.8}
                             dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
@@ -128,8 +128,7 @@ const LogoWrapper = styled.div`
 const MyLogo = styled(motion.div)`
     z-index: 99;
     user-select: none;
-    margin-top: -10em;
-    margin-right: 3em;
+    margin-top: -14.3em;
     position: absolute;
     
 `;
