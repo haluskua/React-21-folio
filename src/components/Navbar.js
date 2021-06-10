@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
         background: "#fff",
     },
     appbar: {
-        background: "#d4d4d4",
+        background: "transparent",
         margin: 0,
         position: "absolute",
     },
@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
         color: "tomato",
     },
     title: {
-        color: "#35464a",
+        color: "#8faab1",
         margin: 0,
         fontSize: "17.4px",
         fontFamily: "Open Sans Condensed",
