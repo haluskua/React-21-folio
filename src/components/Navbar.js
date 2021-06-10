@@ -40,8 +40,8 @@ const useStyles = makeStyles((theme) => ({
     title: {
         color: "#fff",
         margin: 0,
-        fontSize: "28px",
-        fontFamily: "Amatic SC",
+        fontSize: "20px",
+        fontFamily: "Open Sans Condensed",
 
     },
     menuSliderContainer: {

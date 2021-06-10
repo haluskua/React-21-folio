@@ -11,8 +11,6 @@ import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
 import IconButton from "@material-ui/core/IconButton";
 
-
-
 const DetailsContainer = styled.div`
     width: 100%:
     height; 100%;
@@ -23,21 +21,20 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 23px;
-  color: #a8d3de;
+  font-size: 18px;
+  color: #172f35;
   font-weight: 800;
   text-transform: uppercase;
-  font-family: Zilla Slab Highlight;
-  letter-spacing: 0.1rem;
+  font-family: Open Sans Condensed;
+  padding: 0 10px;
   `;
 
 const SmallText = styled.span`
-  font-size: 22px;
-  color: #fff;
-  font-family: Amatic SC;
+  font-size: 18.6px;
+  color: #000;
+  font-family: Open Sans Condensed;
   font-weight: 400;
   text-align: center;
-  letter-spacing: 0..9rem;
 `;
 
 const SpacedHorizontalContainer = styled.div`
@@ -83,15 +80,14 @@ const useStyles = makeStyles((theme) => ({
         padding: "1px",
         border: "none",
         boxShadow: "2px 5px 10px rgba(0, 0, 0, 0.32)",
-
-
     },
     title: {
-        color: "#fff",
+        color: "#000",
         margin: 0,
-        fontSize: "18.5px",
-        letterSpacing: "1.3px",
-        fontFamily: "Amatic SC",
+        textTransform: "uppercase",
+        fontSize: "17px",
+        letterSpacing: ".3px",
+        fontFamily: "Open Sans Condensed",
 
     },
 }));
@@ -116,16 +112,14 @@ export function LogoDetails(props) {
         <Marginer direction="vertical" margin="1.2em" />
         <Box component="div" className={classes.centerLL}>
             <SpacedHorizontalContainer>
-                <MediumText>WEB DEVELOPER</MediumText>
+                <MediumText>WEB DEVELOPER</MediumText><br></br>
                 <SmallText> 2021</SmallText>
             </SpacedHorizontalContainer>
         </Box >
 
         <Marginer direction="vertical" margin=".2em" />
         <Toolbar>
-            <Typography variant="h5" className={classes.title} gutterBottom>
-                Portfolio
-                </Typography>
+
             <Link to="/portfolio">
                 <IconButton >
                     <motion.button className={classes.hamburger_lines}
@@ -136,7 +130,9 @@ export function LogoDetails(props) {
                     </motion.button>
                 </IconButton>
             </Link>
-
+            <Typography variant="h5" className={classes.title} gutterBottom>
+                Portfolio
+                </Typography>
 
         </Toolbar>
 

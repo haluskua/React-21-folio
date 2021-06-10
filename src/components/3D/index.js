@@ -66,7 +66,7 @@ const CardContainer = styled(motion.div)`
     display: flex;
     flex-direction: column;
     box-shadow: -2px 0px 18px 3px rgba(255,250,250,0.24);
-    background-color: rgb(47 149 183 / 83%);
+    background-color: rgb(255 255 255 / 83%);
     color: #fff;
     position: relative;
     cursor: grab;
@@ -95,7 +95,7 @@ const Circle = styled.div`
     width: 250px;
     top: -4.2em;
     right: -10em;
-    background-color: rgb(8 93 115);
+    background-color: rgb(160 183 189);
     border-radius: 50%;
 `;
 
