@@ -149,8 +149,7 @@ const Navbar = () => {
                                 onClick={() => setOpen(true)}
                                 variants={buttonVariants}
                                 whileHover="hover">
-                                <MenuIcon
-                                    className={classes.hamburger_lines} />
+                                <MenuIcon className={classes.hamburger_lines} />
                             </motion.button>
                         </IconButton>
                         <Typography variant="h5" className={classes.title} gutterBottom>

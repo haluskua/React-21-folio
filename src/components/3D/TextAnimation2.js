@@ -3,7 +3,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 export default function TextAnimation2() {
-    const reactArray = 'OHK'.split("");
+    const reactArray = '```'.split("");
 
 
     return <Wrapper>{reactArray.map((item, index) => (

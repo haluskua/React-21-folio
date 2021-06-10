@@ -1,6 +1,7 @@
 
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import Dots from '../../components/3D/TextAnimation2';
 
 export default function TextAnimation() {
     const reactArray = 'Portfolio'.split("");
@@ -8,6 +9,7 @@ export default function TextAnimation() {
 
     return (
         <React.Fragment>
+            <Dots />
             <Wrapper>{reactArray.map((item, index) => (
                 <span key={index}>{item}</span>
             ))}</Wrapper>
