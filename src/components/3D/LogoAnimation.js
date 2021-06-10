@@ -14,10 +14,10 @@ export default function LogoAnimation() {
 const AniLogo = styled.div`
     display: inline-block;
     width: auto;
-    height: 200px;
+    height: 172px;
     img {
         width: auto;
-        height: 117%;
+        height: 92%;
         user-select: none;
     }
 `;

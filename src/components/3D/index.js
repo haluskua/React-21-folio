@@ -129,7 +129,7 @@ const LogoWrapper = styled.div`
 const MyLogo = styled(motion.div)`
     z-index: 99;
     user-select: none;
-    margin-top: -14.3em;
+    margin-top: -11em;
     position: absolute;
     
 `;

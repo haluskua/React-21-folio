@@ -86,7 +86,7 @@ export function LogoDetails(props) {
             </Link>
             <Marginer direction="vertical" margin="8.2em" />
             <Typography variant="h5" className={classes.title} gutterBottom>
-                Portfolio
+                Projects
                 </Typography>
         </Toolbar>
         <Box component="div" className={classes.centerLL}>

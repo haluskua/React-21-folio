@@ -38,15 +38,15 @@ const useStyles = makeStyles((theme) => ({
         color: "tomato",
     },
     title: {
-        color: "#fff",
+        color: "#35464a",
         margin: 0,
-        fontSize: "20px",
+        fontSize: "17.4px",
         fontFamily: "Open Sans Condensed",
 
     },
     menuSliderContainer: {
         width: 250,
-        backgroundColor: "#1e5b6f",
+        backgroundColor: "#d4d4d4",
         height: "100%",
         border: "0.21px solid #003333"
     },
@@ -59,10 +59,13 @@ const useStyles = makeStyles((theme) => ({
         border: "none"
     },
     listItem: {
-        color: "tan",
+        color: "#35464a",
     },
     textColor: {
-        color: '#fff',
+        color: '#35464a',
+        fontFamily: 'Padauk',
+
+
     },
     hamburger_lines: {
         display: "flex",
