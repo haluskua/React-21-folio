@@ -38,12 +38,12 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: "2px 5px 10px rgba(0, 0, 0, 0.32)",
     },
     title: {
-        color: "#000",
+        color: "#233",
         margin: 0,
         textTransform: "uppercase",
-        fontSize: "17px",
+        fontSize: "16px",
         letterSpacing: ".3px",
-        fontFamily: "Open Sans Condensed",
+        fontFamily: "Padauk",
 
     },
 }));
@@ -64,14 +64,14 @@ export function LogoDetails(props) {
     const classes = useStyles();
 
     return <DetailsContainer>
-        <SmallText>FRONTEND UI | UX FULLSTACK </SmallText>
-        <Marginer direction="vertical" margin=".3em" />
         <Box component="div" className={classes.centerLL}>
             <SpacedHorizontalContainer>
                 <MediumText>WEB DEVELOPER</MediumText>
                 <SmallText> 2021</SmallText>
             </SpacedHorizontalContainer>
         </Box >
+        <Marginer direction="vertical" margin=".1.5em" />
+        <SmallText>Creativity is something I enjoy most!</SmallText>
 
         <Toolbar>
             <Link to="/portfolio">
@@ -88,9 +88,7 @@ export function LogoDetails(props) {
             <Typography variant="h5" className={classes.title} gutterBottom>
                 Portfolio
                 </Typography>
-
         </Toolbar>
-
         <Box component="div" className={classes.centerLL}>
             <Logo className={classes.centerOne}>
                 <img src={LogoImg} alt="logo"></img>
@@ -104,25 +102,25 @@ const DetailsContainer = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 1.5em;
-    line-height: 1.4;
+    padding: .5em;
+    padding: 8px 0 55px 0px;
 `;
 
 const MediumText = styled.span`
-  font-size: 21.5px;
+  font-size: 19px;
   color: #172f35;
   font-weight: 800;
   text-transform: uppercase;
-  font-family: Open Sans Condensed;
+  font-family: 'Asap', Open Sans condensed;
   line-height: 1.5rem;
   `;
 
 const SmallText = styled.span`
-  font-size: 18.6px;
-  color: #000;
-  font-family: Open Sans Condensed;
+  font-size: 12.5px;
+  color: #25373c;
+  font-family: 'Padauk', Open Sans;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
 `;
 
 const SpacedHorizontalContainer = styled.div`

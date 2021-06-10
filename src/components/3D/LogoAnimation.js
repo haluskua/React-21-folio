@@ -35,13 +35,14 @@ const animation = keyframes`
        filter: blur(10px) }
 `;
 
+
 const AniLogo = styled.div`
     display: inline-block;
     width: auto;
     height: 200px;
     img {
         width: auto;
-        height: 100%;
+        height: 92%;
         user-select: none;
     }
 

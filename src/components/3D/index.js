@@ -103,17 +103,17 @@ const TopContainer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    flex: 1.2;
+    flex: 1;
     position: relative;
     align-items: center;
     justify-content: flex-end;
-    padding: 1em 8px;
+    padding: 8px 0 56px 0;
     `;
 
 const BottomContainer = styled.div`
-    display: fles;
-    flex: 0.8;
-    padding: 0 1em;
+    display: flex;
+    flex: 1;
+    padding: 0 2em;
 `;
 
 const LogoWrapper = styled.div`
