@@ -5,7 +5,6 @@ import LogoImg from '../../../src/avatar.png';
 import Box from "@material-ui/core/Box";
 import Toolbar from "@material-ui/core/Toolbar";
 import ArrowBack from "@material-ui/icons/ArrowBack";
-
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import { motion } from 'framer-motion';
