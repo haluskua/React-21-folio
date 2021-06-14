@@ -4,7 +4,6 @@ import { motion, useMotionValue, useTransform } from 'framer-motion';
 import Marginer from '../Marginer/index';
 import { LogoDetails } from './logoDetails';
 import TextAnimation from './TextAnimations';
-import TextAnimation2 from './TextAnimation2';
 import LogoAnimation from './LogoAnimation';
 
 
@@ -40,7 +39,6 @@ export default function FrontCard(props) {
                         </MyLogo>
                     </LogoWrapper>
                     <TextAnimation />
-                    {/* <TextAnimation2 /> */}
                     <Marginer direction="vertical" margin="2.2em" />
 
 
