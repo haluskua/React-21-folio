@@ -3,7 +3,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 export default function TextAnimation2() {
-    const reactArray = '```'.split("");
+    const reactArray = '~~~'.split("");
 
 
     return <Wrapper>{reactArray.map((item, index) => (
@@ -42,9 +42,10 @@ const Wrapper = styled.span`
     color: #25373c;
     text-transform: uppercase;
     margin: 0;
+    opacity: .44;
     line-height: 1.43rem;
     z-index: 10;
-    font-size: 19.25px;
+    font-size: 15.25px;
     font-weight: 600;
     font-family: 'Padauk', Open Sans condensed;
     // font-family: Zilla Slab Highlight;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from "../../../src/images/logo_2.png";
+import Logo from "../../../src/images/newlogo.png";
 import styled from 'styled-components';
 
 export default function LogoAnimation() {

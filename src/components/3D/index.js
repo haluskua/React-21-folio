@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
+import Marginer from '../Marginer/index';
 import { LogoDetails } from './logoDetails';
 import TextAnimation from './TextAnimations';
 import TextAnimation2 from './TextAnimation2';
@@ -39,7 +40,11 @@ export default function FrontCard(props) {
                         </MyLogo>
                     </LogoWrapper>
                     <TextAnimation />
-                    <TextAnimation2 />
+                    {/* <TextAnimation2 /> */}
+                    <Marginer direction="vertical" margin="2.2em" />
+
+
+
                 </TopContainer>
                 <BottomContainer>
                     <LogoDetails />
@@ -60,12 +65,12 @@ const CardWrapper = styled.div`
 `;
 const CardContainer = styled(motion.div)`
     border: 2px solid rgb(191 186 186);
-    margin-top: 4.3rem;
+    margin-top: 1.3rem;
     width: 254px;
     height: 522px;
     display: flex;
     flex-direction: column;
-    box-shadow: -2px 0px 18px 3px rgba(255,250,250,.74);
+    box-shadow: -2px 0px 11px 3px rgba(255,250,250,.6);
     background-color: rgb(255 255 255 / 95%);
     color: #fff;
     position: relative;

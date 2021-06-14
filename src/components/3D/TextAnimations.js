@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components';
 import Dots from '../../components/3D/TextAnimation2';
 
 export default function TextAnimation() {
-    const reactArray = 'Portfolio'.split("");
+    const reactArray = 'OMPHALUS-KUA'.split("");
 
 
     return (
@@ -23,7 +23,7 @@ export default function TextAnimation() {
 const animation = keyframes`
 0% {
     opacity: 0; 
-    transform: translateY(-4px) skewY(5deg) skewX(6deg) rotateZ(2deg);
+    transform: translateY(-1px) skewY(5deg) skewX(6deg) rotateZ(2deg);
     filter: blur(1px);
     }
 20% { 
@@ -52,12 +52,12 @@ const Wrapper = styled.span`
     color: #76939a;
     text-transform: uppercase;
     margin: 0;
-    font-size: 39px;
+    font-size: 35px;
     font-weight: 900;
-    letter-spacing: .1rem;
-    font-family: Zilla Slab Highlight;
+    letter-spacing: .15rem;
+    // font-family: Zilla Slab Highlight;
     // font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    // font-family: "Staatliches", sans-serif;
+    font-family: "Staatliches", sans-serif;
     
     
 
@@ -65,7 +65,7 @@ const Wrapper = styled.span`
             display: inline-block;
             opacity: 0;
             animation-name: ${animation};
-            animation-duration: 16.5s;
+            animation-duration: 8s;
             animation-fill-mode: forwards;
             animation-iteration-count: infinite;
             animation-timing-function: cubic-bezier(0.75,.82,.165, 1);
@@ -101,20 +101,18 @@ const Wrapper = styled.span`
     span:nth-child(10) {
         animation-delay: 2.3s;
     }
-    // span:nth-child(11) {
-    //     animation-delay: 2.45s;
-    // }
-    // span:nth-child(12) {
-    //     animation-delay: 2.9s;
-    // }
+    span:nth-child(11) {
+        animation-delay: 2.45s;
+    }
+    span:nth-child(12) {
+        animation-delay: 2.9s;
+    }
 `;
 
 const SmallText = styled.span`
-  font-size: 14.5px;
+  font-size: 13px;
   color: #63787d;
-  font-weight: 600;
-  text-align: left;
-  z-index: 900;
+  text-align: center;
   letter-spacing: .06rem;
   font-family: "Staatliches", sans-serif;
   

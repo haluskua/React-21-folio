@@ -9,7 +9,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import Avatar from "@material-ui/core/Avatar";
+// import Avatar from "@material-ui/core/Avatar";
 import Divider from "@material-ui/core/Divider";
 import MenuIcon from '@material-ui/icons/Menu';
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
@@ -17,9 +17,10 @@ import Home from "@material-ui/icons/Home";
 import Apps from "@material-ui/icons/Apps";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../avatar.png";
+// import avatar from "../avatar.png";
 import { motion } from 'framer-motion';
-import Footer from "../components/Footer";
+import Footer from "../../src/components/Footer";
+
 
 import '../../src/components/Navbar.scss';
 
@@ -50,9 +51,14 @@ const useStyles = makeStyles((theme) => ({
     },
 
     menuSliderContainer: {
-
-        // width: 250,
-        // backgroundColor: "#fbfbfb",
+        backgroundColor: "white",
+        marginTop: "12rem",
+        height: "100%",
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+        alignItems: "flex-start",
+        borderRadius: "8rem 0"
     },
 
 
@@ -122,7 +128,7 @@ const Navbar = () => {
 
     const sideList = () => (
         <Box className={classes.menuSliderContainer} component="div">
-            <Avatar className={classes.avatar} src={avatar} alt="Ompa" />
+            {/* <Avatar className={classes.avatar} src={avatar} alt="Ompa" /> */}
             <Divider />
             <List>
                 {menuItems.map((item, i) => (
@@ -146,7 +152,6 @@ const Navbar = () => {
         </Box>
     );
 
-
     return (
         <React.Fragment>
             <Box component="nav" className={classes.navbar}>
@@ -160,15 +165,12 @@ const Navbar = () => {
                                 <MenuIcon className={classes.hamburger_lines} />
                             </motion.button>
                         </IconButton>
-
-
                     </Toolbar>
                 </AppBar>
             </Box >
             <Drawer
                 open={open} anchor="right"
-                onClose={() => setOpen(false)}
-            >
+                onClose={() => setOpen(false)}>
                 {sideList()}
                 <Footer />
             </Drawer>

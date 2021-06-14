@@ -1,7 +1,6 @@
 import React from 'react';
 import Marginer from '../Marginer/index';
 import styled from 'styled-components';
-import LogoImg from '../../../src/avatar.png';
 import Box from "@material-ui/core/Box";
 import Toolbar from "@material-ui/core/Toolbar";
 import ArrowBack from "@material-ui/icons/ArrowBack";
@@ -10,7 +9,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
 import IconButton from "@material-ui/core/IconButton";
-
 
 
 const useStyles = makeStyles((theme) => ({
@@ -70,7 +68,7 @@ export function LogoDetails(props) {
         <Marginer direction="vertical" margin=".525em" />
         <Box component="div" className={classes.centerLL}>
             <SpacedHorizontalContainer>
-                <MediumText>Omphalus Kua</MediumText>
+                <MediumText>MY PORTFOLIO</MediumText>
             </SpacedHorizontalContainer>
         </Box >
         <Toolbar>
@@ -89,11 +87,7 @@ export function LogoDetails(props) {
                 Projects
                 </Typography>
         </Toolbar>
-        <Box component="div" className={classes.centerLL}>
-            <Logo className={classes.centerOne}>
-                <img src={LogoImg} alt="logo"></img>
-            </Logo>
-        </Box >
+
     </DetailsContainer >;
 };
 
