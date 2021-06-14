@@ -8,14 +8,15 @@ import Instagram from "@material-ui/icons/Instagram";
 
 const useStyles = makeStyles({
     bottomNavContainer: {
-        background: "#222",
+        background: "#f3f3f3",
+        padding: "1px",
+        height: "auto"
     },
     root: {
         "& .MuiSvgIcon-root": {
-            fill: "tan",
+            fill: "rgb(185 184 176 / 58%))",
             "&:hover": {
                 fill: "tomato",
-                fontSize: "1.8rem",
             },
         },
     },

@@ -40,10 +40,11 @@ const useStyles = makeStyles((theme) => ({
     title: {
         color: "#233",
         margin: 0,
+        fontWeight: "600",
         textTransform: "uppercase",
-        fontSize: "16px",
+        fontSize: "13.5px",
         letterSpacing: ".3px",
-        fontFamily: "Padauk",
+        fontFamily: "Pangolin",
 
     },
 }));
@@ -64,15 +65,14 @@ export function LogoDetails(props) {
     const classes = useStyles();
 
     return <DetailsContainer>
+
+        <SmallText>DESIGNER | DEVELOPER</SmallText>
+        <Marginer direction="vertical" margin=".525em" />
         <Box component="div" className={classes.centerLL}>
             <SpacedHorizontalContainer>
-                <MediumText>WEB DEVELOPER</MediumText>
-                <SmallText> 2021</SmallText>
+                <MediumText>Omphalus Kua</MediumText>
             </SpacedHorizontalContainer>
         </Box >
-        <Marginer direction="vertical" margin=".1.5em" />
-        <SmallText>Creativity is something I enjoy most.</SmallText>
-
         <Toolbar>
             <Link to="/portfolio">
                 <IconButton >
@@ -102,25 +102,31 @@ const DetailsContainer = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: .5em;
-    padding: 8px 0 55px 0px;
+    padding: 0em;
 `;
 
 const MediumText = styled.span`
-  font-size: 18.4px;
+  font-size: 21px;
   color: #172f35;
-  font-weight: 800;
+  font-weight: 900;
+  letter-spacing: 0.15rem;
   text-transform: uppercase;
-  font-family: 'Asap', Open Sans condensed;
+  font-family: 'Staatliches', Open Sans condensed;
   line-height: 1.5rem;
+  text-align: center;
+  width: 100%;
   `;
 
 const SmallText = styled.span`
-  font-size: 12.5px;
+  font-size: 15.5px;
   color: #25373c;
-  font-family: 'Padauk', Open Sans;
-  font-weight: 400;
-  text-align: left;
+  font-family: 'Staatliches', Open Sans;
+  font-weight: 600;
+  line-height: 1.3rem;
+  letter-spacing: 0.3rem;
+  
+  text-align: center;
+  text-transform: uppercase;
 `;
 
 const SpacedHorizontalContainer = styled.div`

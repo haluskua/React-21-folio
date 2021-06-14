@@ -14,7 +14,7 @@ export default function TextAnimation() {
                 <span key={index}>{item}</span>
             ))}</Wrapper>
 
-            <SmallText>OMPHALUS H. KUA</SmallText>
+            <SmallText>Creativity is something I enjoy most!</SmallText>
 
         </React.Fragment>
     );
@@ -35,7 +35,7 @@ const animation = keyframes`
      transform: translateY(0px) skewY(0deg) skewX(0deg) rotateZ(0deg);
      filter: blur(.21px) }
 97% { 
-      opacity: 0.41; 
+      opacity: 0.841; 
       transform: translateY(0px) skewY(0deg) skewX(0deg) rotateZ(0deg);
       filter: blur(.1px) }
 100% { 
@@ -48,13 +48,17 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
     display: inline-block;
-    color: #86959a;
+    // color: #dc5656;
+    color: #76939a;
     text-transform: uppercase;
     margin: 0;
-    font-size: 28.35px;
-    font-weight: bold;
+    font-size: 39px;
+    font-weight: 900;
+    letter-spacing: .1rem;
     font-family: Zilla Slab Highlight;
-    // font-family: 'Padauk', Open Sans condensed;
+    // font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    // font-family: "Staatliches", sans-serif;
+    
     
 
     span {
@@ -103,13 +107,15 @@ const Wrapper = styled.span`
     // span:nth-child(12) {
     //     animation-delay: 2.9s;
     // }
-
 `;
 
 const SmallText = styled.span`
-  font-size: 12.5px;
-  color: #25373c;
-  font-family: 'Padauk', Open Sans;
-  font-weight: 400;
+  font-size: 14.5px;
+  color: #63787d;
+  font-weight: 600;
   text-align: left;
+  z-index: 900;
+  letter-spacing: .06rem;
+  font-family: "Staatliches", sans-serif;
+  
 `;

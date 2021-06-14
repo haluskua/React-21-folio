@@ -1,0 +1,29 @@
+.swiper-button-next {
+  background-image: url("https://image.flaticon.com/icons/png/512/1761/1761786.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  z-index: 9999999999999999999999999999999999999999;
+}
+.swiper-button-prev {
+  background-image: url("https://image.flaticon.com/icons/png/512/1761/1761783.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  z-index: 9999999999999999999999999999999999999999;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+//overight MUI STYLING
+.MuiDrawer-paper {
+  height: auto !important;
+  // position: absolute;
+  border-radius: 1rem;
+  top: 18% !important;
+  border: 4px solid #bfbaba;
+  box-shadow: 0px 0px 10px 3px #fffafabd !important;
+}

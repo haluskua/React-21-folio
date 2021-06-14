@@ -11,7 +11,6 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import Avatar from "@material-ui/core/Avatar";
 import Divider from "@material-ui/core/Divider";
-import Typography from "@material-ui/core/Typography";
 import MenuIcon from '@material-ui/icons/Menu';
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import Home from "@material-ui/icons/Home";
@@ -22,17 +21,22 @@ import avatar from "../avatar.png";
 import { motion } from 'framer-motion';
 import Footer from "../components/Footer";
 
+import '../../src/components/Navbar.scss';
+
 // :::::::::::::::::::
 //--//styling
 const useStyles = makeStyles((theme) => ({
-
     navbar: {
-        background: "#fff",
+        width: "auto",
     },
+
     appbar: {
         background: "transparent",
         margin: 0,
-        position: "absolute",
+        position: "fixed",
+        width: "auto",
+        boxShadow: "none",
+        right: 0,
     },
     hamburger: {
         color: "tomato",
@@ -44,12 +48,13 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "Open Sans Condensed",
 
     },
+
     menuSliderContainer: {
-        width: 250,
-        backgroundColor: "#d4d4d4",
-        height: "100%",
-        border: "0.21px solid #003333"
+
+        // width: 250,
+        // backgroundColor: "#fbfbfb",
     },
+
 
     avatar: {
         display: "block",
@@ -59,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
         border: "none"
     },
     listItem: {
-        color: "#35464a",
+        color: "rgb(48 144 169 / 58%)",
     },
     textColor: {
         color: '#35464a',
@@ -155,14 +160,14 @@ const Navbar = () => {
                                 <MenuIcon className={classes.hamburger_lines} />
                             </motion.button>
                         </IconButton>
-                        <Typography variant="h5" className={classes.title} gutterBottom>
-                            Menu
-                            </Typography>
+
 
                     </Toolbar>
                 </AppBar>
             </Box >
-            <Drawer open={open} anchor="right" onClose={() => setOpen(false)}
+            <Drawer
+                open={open} anchor="right"
+                onClose={() => setOpen(false)}
             >
                 {sideList()}
                 <Footer />

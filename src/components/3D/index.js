@@ -59,14 +59,14 @@ const CardWrapper = styled.div`
     
 `;
 const CardContainer = styled(motion.div)`
-    border: 10px solid rgb(191 186 186);
+    border: 2px solid rgb(191 186 186);
     margin-top: 4.3rem;
-    width: 285px;
-    height: 585px;
+    width: 254px;
+    height: 522px;
     display: flex;
     flex-direction: column;
-    box-shadow: -2px 0px 18px 3px rgba(255,250,250,0.24);
-    background-color: rgb(255 255 255 / 83%);
+    box-shadow: -2px 0px 18px 3px rgba(255,250,250,.74);
+    background-color: rgb(255 255 255 / 95%);
     color: #fff;
     position: relative;
     cursor: grab;
@@ -81,7 +81,7 @@ const CardContainer = styled(motion.div)`
 `;
 const CircleWrapper = styled.div`
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: 0;
     min-width: 100%;
     min-height: 100%:
@@ -93,10 +93,8 @@ const Circle = styled.div`
     position: absolute;
     height: 250px;
     width: 250px;
-    top: -4.2em;
-    right: -10em;
-    background-color: rgb(160 183 189);
-    border-radius: 50%;
+    top: 0px;
+    // border-radius: 50%;
 `;
 
 const TopContainer = styled.div`
@@ -113,7 +111,7 @@ const TopContainer = styled.div`
 const BottomContainer = styled.div`
     display: flex;
     flex: 1;
-    padding: 0 2em;
+    padding: 0 0.5rem;
     margin-bottom: -3rem;
 `;
 
