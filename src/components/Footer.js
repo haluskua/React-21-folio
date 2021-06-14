@@ -10,14 +10,15 @@ const useStyles = makeStyles({
     bottomNavContainer: {
         padding: "1px",
         height: "auto",
-        backgroundColor: "transparent",
+        background: "linear-gradient(#a3a4a3, #cccec9b8) !important",
+
     },
     root: {
         "& .MuiSvgIcon-root": {
-            fill: "rgb(185 184 176 / 58%))",
+            fill: "gainsboro",
             width: "70px",
             "&:hover": {
-                fill: "tomato",
+                fill: "#5aaabf",
             },
         },
     },

@@ -62,10 +62,9 @@ const CardWrapper = styled.div`
     
 `;
 const CardContainer = styled(motion.div)`
-    border: 2px solid rgb(191 186 186);
-    margin-top: 1.3rem;
-    width: 254px;
-    height: 522px;
+    // border: 2px solid rgb(191 186 186);
+    width: 90vw;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     box-shadow: -2px 0px 11px 3px rgba(255,250,250,.6);

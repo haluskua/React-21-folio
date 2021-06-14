@@ -9,7 +9,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-// import Avatar from "@material-ui/core/Avatar";
+import Avatar from "@material-ui/core/Avatar";
 import Divider from "@material-ui/core/Divider";
 import MenuIcon from '@material-ui/icons/Menu';
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
@@ -17,7 +17,7 @@ import Home from "@material-ui/icons/Home";
 import Apps from "@material-ui/icons/Apps";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
-// import avatar from "../avatar.png";
+import avatar from "../../src/images/newlogo.png";
 import { motion } from 'framer-motion';
 import Footer from "../../src/components/Footer";
 
@@ -51,14 +51,13 @@ const useStyles = makeStyles((theme) => ({
     },
 
     menuSliderContainer: {
-        backgroundColor: "white",
-        marginTop: "12rem",
         height: "100%",
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "flex-start",
-        borderRadius: "8rem 0"
+        borderRadius: "8rem 0",
+        background: "none"
     },
 
 
@@ -70,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
         border: "none"
     },
     listItem: {
-        color: "rgb(48 144 169 / 58%)",
+        color: "#5aaabf",
     },
     textColor: {
         color: '#35464a',
@@ -128,7 +127,7 @@ const Navbar = () => {
 
     const sideList = () => (
         <Box className={classes.menuSliderContainer} component="div">
-            {/* <Avatar className={classes.avatar} src={avatar} alt="Ompa" /> */}
+            <Avatar className={classes.avatar} src={avatar} alt="Ompa" />
             <Divider />
             <List>
                 {menuItems.map((item, i) => (
