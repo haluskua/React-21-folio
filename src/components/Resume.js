@@ -5,8 +5,7 @@ import Box from "@material-ui/core/Box";
 
 const useStyles = makeStyles((theme) => ({
     mainContainer: {
-        background: "#0a0919",
-        // backgroundColor: '#f7ff82',
+        background: "#f3f3f3",
     },
     timeLine: {
         position: "relative",
@@ -94,22 +93,29 @@ const useStyles = makeStyles((theme) => ({
     },
 
     heading: {
-        fontSize: "1.45rem",
+        fontSize: "1.75rem",
         color: "tomato",
         padding: "3rem 0",
+        fontWeight: "bold",
         textTransform: "uppercase",
+        fontFamily: "'Staatliches', Open Sans"
+
     },
     subHeading: {
-        fontSize: "1.2rem",
-        color: "#fff",
+        fontSize: "1.4rem",
+        color: "#3d5367",
+        letterSpacing: "0.9px",
         padding: 0,
+        fontWeight: "bold",
         textTransform: "uppercase",
+        fontFamily: "'Staatliches', Open Sans"
+
     },
     body1: {
-        color: "#ff6347",
+        color: "#59a5b8",
     },
     subtitle1: {
-        color: "#bdbdbd",
+        color: "#3d5367",
         textAlign: "center"
     },
 }));

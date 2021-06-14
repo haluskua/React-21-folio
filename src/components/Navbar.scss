@@ -22,7 +22,7 @@
 .MuiDrawer-paper {
   width: 223px;
   height: 82%;
-  border-radius: 8rem 0 0 0;
+  border-radius: 5rem 0 0 0;
 }
 
 .MuiBottomNavigationAction-root {
@@ -49,5 +49,10 @@
   background: radial-gradient(#dad9cb, #ffffff40) !important;
 }
 .MuiDrawer-paperAnchorRight {
-  background: linear-gradient(#a3a4a3, #cccec9b8) !important;
+  // background: linear-gradient(#a3a4a3, #cccec9b8) !important;
+  background: linear-gradient(#fff6f6, #ece8e88c) !important;
+}
+
+.makeStyles-formStyle-14 {
+  width: 90vw !important;
 }

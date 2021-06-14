@@ -22,16 +22,15 @@ import project6 from "../images/serv-side-api.png";
 const useStyles = makeStyles((theme) => ({
 
     mainContainer: {
-        background: "#233",
-        backgroundImage: `url(https://res.allmacwallpaper.com/get/MacBook-Pro-12-inch-4K-Retina-wallpapers/Research-Station-2304x1440/7353-14.jpg)`,
+        background: "gainsboro",
 
-        backgroundSize: "cover",
-        backgroundPosition: "fixed",
-        backgroundRepeat: "repeat",
     },
     cardContainer: {
         maxWidth: 345,
         margin: "3rem auto",
+        hover: {
+            background: "floralWhite",
+        }
     },
     boldTypo: {
         fontWeight: "bolder",
@@ -47,6 +46,9 @@ const useStyles = makeStyles((theme) => ({
         },
 
     },
+    projectName: {
+        fontFamily: "Staatliches"
+    }
 
 }));
 
@@ -118,7 +120,7 @@ const Portfolio = () => {
                                     image={project.image}
                                 />
                                 <CardContent>
-                                    <Typography variant="h5" gutterBottom>
+                                    <Typography variant="h5" gutterBottom className={classes.projectName}>
                                         {project.name}
                                     </Typography>
                                     <Typography variant="body2" color="textSecondary">
