@@ -9,6 +9,9 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import LogoAnimation from '../../src/components/3D/LogoAnimation';
+
+import '../components/portfolio.scss';
 
 //importing images from folder/files
 
@@ -22,12 +25,20 @@ import project6 from "../images/serv-side-api.png";
 const useStyles = makeStyles((theme) => ({
 
     mainContainer: {
-        background: "gainsboro",
+        background: "mintcream",
 
     },
     cardContainer: {
         maxWidth: 345,
         margin: "3rem auto",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        borderRadius: "6rem 0",
+        boxShadow: "2px 1px 8px rgb(96 113 117)",
+
+
+
         hover: {
             background: "floralWhite",
         }
@@ -48,8 +59,21 @@ const useStyles = makeStyles((theme) => ({
     },
     projectName: {
         fontFamily: "Staatliches"
-    }
+    },
 
+    cardImage: {
+        display: "flex",
+        width: "100%",
+        justifyContent: "flex-start",
+        backgroundColor: "#e3ece8",
+        margin: "0.51rem",
+        borderRadius: "8rem 0 3rem 0",
+
+    },
+    imgComponent: {
+        width: "100%",
+        border: "2px solid red !important",
+    }
 }));
 
 
@@ -126,6 +150,9 @@ const Portfolio = () => {
                                     <Typography variant="body2" color="textSecondary">
                                         {project.description}
                                     </Typography>
+                                    <Box component="div" className={classes.cardImage}>
+                                        <LogoAnimation className={classes.imgComponent} />
+                                    </Box>
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
