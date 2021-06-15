@@ -112,6 +112,6 @@ const SmallText = styled.span`
   color: #63787d;
   text-align: center;
   letter-spacing: .06rem;
-//   font-family: "Staatliches", sans-serif;
+
   
 `;

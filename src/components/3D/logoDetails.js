@@ -112,14 +112,16 @@ const MediumText = styled.span`
   `;
 
 const SmallText = styled.span`
-  font-size: 17px;
+  font-size: 22px;
   color: #25373c;
   fontFamily: "Pangolin",
-  font-weight: 600;
+  font-weight: 900;
   line-height: 1.53rem;
   letter-spacing: 0.2rem;
   text-align: center;
   text-transform: uppercase;
+  font-family: 'Staatliches', Open Sans condensed;
+  
 `;
 
 const SpacedHorizontalContainer = styled.div`
