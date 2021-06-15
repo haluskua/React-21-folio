@@ -1,6 +1,5 @@
 import React from 'react';
 import FrontCard from '../components/3D/index';
-import Resume from '../components/Resume';
 // import Header from './Header';
 import Particles from './Particles';
 // Import Swiper React components
