@@ -38,12 +38,11 @@ const useStyles = makeStyles((theme) => ({
     title: {
         color: "#233",
         margin: 0,
-        fontWeight: "600",
+        // fontWeight: "600",   
         textTransform: "uppercase",
+        fontFamily: "'Staatliches', Open Sans condensed",
         fontSize: "13.5px",
         letterSpacing: ".3px",
-        fontFamily: "Pangolin",
-
     },
 }));
 
@@ -64,11 +63,12 @@ export function LogoDetails(props) {
 
     return <DetailsContainer>
 
-        <SmallText>DESIGNER | DEVELOPER</SmallText>
+        <Marginer direction="vertical" margin="1.525em" />
+        <SmallText>DESIGNER & DEVELOPER</SmallText>
         <Marginer direction="vertical" margin=".525em" />
         <Box component="div" className={classes.centerLL}>
             <SpacedHorizontalContainer>
-                <MediumText>MY PORTFOLIO</MediumText>
+                <MediumText>Frontend | Fullstack</MediumText>
             </SpacedHorizontalContainer>
         </Box >
         <Toolbar>
@@ -84,7 +84,7 @@ export function LogoDetails(props) {
             </Link>
             <Marginer direction="vertical" margin="8.2em" />
             <Typography variant="h5" className={classes.title} gutterBottom>
-                Projects
+                My Portfolio
                 </Typography>
         </Toolbar>
 
@@ -100,10 +100,10 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 21px;
-  color: #172f35;
-  font-weight: 900;
-  letter-spacing: 0.15rem;
+  font-size: 16px;
+  color: #77939a;
+//   font-weight: 900;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
   font-family: 'Staatliches', Open Sans condensed;
   line-height: 1.5rem;
@@ -112,13 +112,12 @@ const MediumText = styled.span`
   `;
 
 const SmallText = styled.span`
-  font-size: 15.5px;
+  font-size: 17px;
   color: #25373c;
-  font-family: 'Staatliches', Open Sans;
+  fontFamily: "Pangolin",
   font-weight: 600;
-  line-height: 1.3rem;
-  letter-spacing: 0.3rem;
-  
+  line-height: 1.53rem;
+  letter-spacing: 0.2rem;
   text-align: center;
   text-transform: uppercase;
 `;

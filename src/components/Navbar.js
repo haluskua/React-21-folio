@@ -51,22 +51,23 @@ const useStyles = makeStyles((theme) => ({
     },
 
     menuSliderContainer: {
-        height: "100%",
+        height: "90%",
+        marginTop: "7px",
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "flex-start",
         borderRadius: "8rem 0",
-        background: "none"
+        background: "radial-gradient(#efefef, #2b6775)",
+        boxShadow: "2px 1px 8px rgb(203, 204, 192)",
     },
 
 
     avatar: {
         display: "block",
-        margin: "0.5rem auto",
-        width: theme.spacing(13),
-        height: theme.spacing(13),
-        border: "none"
+        height: "192px",
+        border: "none",
+        width: "100%",
     },
     listItem: {
         color: "#5aaabf",
@@ -74,6 +75,7 @@ const useStyles = makeStyles((theme) => ({
     textColor: {
         color: '#35464a',
         fontFamily: 'Padauk',
+        fontSize: '0.85rem',
 
 
     },

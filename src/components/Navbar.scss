@@ -22,9 +22,13 @@
 
 //overight MUI STYLING
 .MuiDrawer-paper {
-  width: 223px;
+  width: 236px;
   height: 82%;
   border-radius: 5rem 0 0 0;
+}
+
+.MuiAvatar-img {
+  height: 82% !important;
 }
 
 .MuiBottomNavigationAction-root {
@@ -32,11 +36,16 @@
   min-width: 0 !important;
 }
 
+.MuiPaper-root {
+  border-radius: 8rem 0 4rem 0;
+  height: 93vh !important;
+}
+
 .MuiList-root {
   width: 100%;
   border-radius: 3px;
   .MuiListItem-gutters {
-    background-color: #faf7ff;
+    background-color: #fdfff1;
     margin: 7px 0 7px 0;
     border-radius: 0.42rem;
   }
@@ -48,12 +57,13 @@
 
 .MuiList-padding {
   padding: 8px !important;
-  background: radial-gradient(#efeeec9c, #ffffff40) !important;
-  border-radius: 8rem 0;
+  background: radial-gradient(#5aaabf, #174d5b) !important;
+
+  border-radius: 0 6rem 8rem 0;
+  // background: none;
 }
 .MuiDrawer-paperAnchorRight {
-  // background: linear-gradient(#a3a4a3, #cccec9b8) !important;
-  background: linear-gradient(#fff6f6, #ece8e88c) !important;
+  background: #659faa !important;
 }
 
 .makeStyles-formStyle-14 {
@@ -61,22 +71,22 @@
 }
 
 .MuiList-root .MuiListItem-gutters:nth-child(1) {
-  border-radius: 8rem 0;
-  margin-left: 2.82rem;
-  width: 95%;
+  border-radius: 4rem 8rem 0.3rem 0;
+  width: 79%;
+  box-shadow: 2px 1px 8px rgb(203, 204, 192);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(2) {
-  margin-left: 1.6rem;
-  border-radius: 8rem 0;
+  border-radius: 0 3.85rem 0.4rem 0;
   width: 91%;
+  box-shadow: 2px 1px 8px rgb(203, 204, 192);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(3) {
-  margin-left: 0.91rem;
-  border-radius: 8rem 0;
-  width: 90%;
+  border-radius: 0 0.4rem 3.85rem;
+  width: 91%;
+  box-shadow: 2px 1px 8px rgb(203, 204, 192);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(4) {
-  margin-left: 0.05rem;
-  border-radius: 8rem 0;
-  width: 77%;
+  border-radius: 0 0 8rem 4rem;
+  width: 79%;
+  box-shadow: 2px 1px 8px rgb(203, 204, 192);
 }

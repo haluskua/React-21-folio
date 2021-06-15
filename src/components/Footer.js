@@ -10,7 +10,7 @@ const useStyles = makeStyles({
     bottomNavContainer: {
         padding: "1px",
         height: "auto",
-        background: "linear-gradient(#a3a4a3, #cccec9b8) !important",
+        background: "rgb(255 0 0 / 0%)",
 
     },
     root: {

@@ -14,7 +14,7 @@ export default function TextAnimation() {
                 <span key={index}>{item}</span>
             ))}</Wrapper>
 
-            <SmallText>Swipe to now more</SmallText>
+            <SmallText>Swipe to know more</SmallText>
 
         </React.Fragment>
     );
@@ -48,15 +48,12 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
     display: inline-block;
-    // color: #dc5656;
     color: #76939a;
     text-transform: uppercase;
     margin: 0;
-    font-size: 35px;
-    font-weight: 900;
+    font-size: 28px;
+    // font-weight: 900;
     letter-spacing: .15rem;
-    // font-family: Zilla Slab Highlight;
-    // font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-family: "Staatliches", sans-serif;
     
     
@@ -115,6 +112,6 @@ const SmallText = styled.span`
   color: #63787d;
   text-align: center;
   letter-spacing: .06rem;
-  font-family: "Staatliches", sans-serif;
+//   font-family: "Staatliches", sans-serif;
   
 `;
