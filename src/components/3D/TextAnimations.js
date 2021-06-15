@@ -14,7 +14,7 @@ export default function TextAnimation() {
                 <span key={index}>{item}</span>
             ))}</Wrapper>
 
-            <SmallText>Creativity is something I enjoy most!</SmallText>
+            <SmallText>Swipe to now more</SmallText>
 
         </React.Fragment>
     );
@@ -97,6 +97,7 @@ const Wrapper = styled.span`
     }
     span:nth-child(9) {
         animation-delay: 2.15s;
+        color: #fff;
     }
     span:nth-child(10) {
         animation-delay: 2.3s;

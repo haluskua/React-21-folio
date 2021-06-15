@@ -4,6 +4,7 @@
   background-size: 100% auto;
   background-position: center;
   z-index: 9999999999999999999999999999999999999999;
+  margin-right: 46%;
 }
 .swiper-button-prev {
   background-image: url("https://image.flaticon.com/icons/png/512/1761/1761783.png");
@@ -11,6 +12,7 @@
   background-size: 100% auto;
   background-position: center;
   z-index: 9999999999999999999999999999999999999999;
+  margin-left: 46%;
 }
 
 .swiper-button-next::after,
@@ -46,7 +48,8 @@
 
 .MuiList-padding {
   padding: 8px !important;
-  background: radial-gradient(#dad9cb, #ffffff40) !important;
+  background: radial-gradient(#efeeec9c, #ffffff40) !important;
+  border-radius: 8rem 0;
 }
 .MuiDrawer-paperAnchorRight {
   // background: linear-gradient(#a3a4a3, #cccec9b8) !important;
@@ -55,4 +58,25 @@
 
 .makeStyles-formStyle-14 {
   width: 90vw !important;
+}
+
+.MuiList-root .MuiListItem-gutters:nth-child(1) {
+  border-radius: 8rem 0;
+  margin-left: 2.82rem;
+  width: 95%;
+}
+.MuiList-root .MuiListItem-gutters:nth-child(2) {
+  margin-left: 1.6rem;
+  border-radius: 8rem 0;
+  width: 91%;
+}
+.MuiList-root .MuiListItem-gutters:nth-child(3) {
+  margin-left: 0.91rem;
+  border-radius: 8rem 0;
+  width: 90%;
+}
+.MuiList-root .MuiListItem-gutters:nth-child(4) {
+  margin-left: 0.05rem;
+  border-radius: 8rem 0;
+  width: 77%;
 }

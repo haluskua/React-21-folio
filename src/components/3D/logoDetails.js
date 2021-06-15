@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     hamburger_lines: {
         display: "flex",
         justifyContent: "center",
-        background: "rgb(48 144 169 / 58%)",
+        background: "rgb(53 181 214)",
         color: "#fff",
         borderRadius: "50%",
         cursor: "pointer",

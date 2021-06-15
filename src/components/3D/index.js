@@ -40,9 +40,6 @@ export default function FrontCard(props) {
                     </LogoWrapper>
                     <TextAnimation />
                     <Marginer direction="vertical" margin="2.2em" />
-
-
-
                 </TopContainer>
                 <BottomContainer>
                     <LogoDetails />

@@ -93,10 +93,11 @@ const useStyles = makeStyles((theme) => ({
     },
 
     heading: {
-        fontSize: "1.75rem",
+        fontSize: "2.7rem",
         color: "tomato",
         padding: "3rem 0",
         fontWeight: "bold",
+        letterSpacing: "4px",
         textTransform: "uppercase",
         fontFamily: "'Staatliches', Open Sans"
 
@@ -116,7 +117,11 @@ const useStyles = makeStyles((theme) => ({
     },
     subtitle1: {
         color: "#3d5367",
-        textAlign: "center"
+        textAlign: "left",
+        width: "100%",
+        display: "flex",
+        fontSize: "0.9rem",
+        justifyContent: "center",
     },
 }));
 

@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
         position: "fixed",
         opacity: "1",
         height: "100% !important",
-        backgroundSize: "cover",
 
         // backgroundImage: `url(https://res.allmacwallpaper.com/get/MacBook-Pro-12-inch-4K-Retina-wallpapers/Research-Station-2304x1440/7353-14.jpg)`,
         // backgroundImage: `url(https://www.publicdomainpictures.net/pictures/100000/velka/black-and-white-moon.jpg)`,
@@ -38,13 +37,13 @@ const Particles = () => {
                         }
                     },
                     color: {
-                        value: "#b3ffff"
+                        value: "red"
                     },
                     shape: {
                         type: "circle",
                         stroke: {
                             width: 0,
-                            color: "#fff"
+                            color: "#233"
                         },
 
                     },
@@ -71,7 +70,7 @@ const Particles = () => {
                     line_linked: {
                         enable_auto: true,
                         distance: 100,
-                        color: "#fff",
+                        color: "#000",
                         opacity: 1,
                         width: 1,
                         condensed_mode: {

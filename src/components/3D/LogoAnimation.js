@@ -15,8 +15,8 @@ const AniLogo = styled.div`
     display: inline-block;
     width: auto;
     height: 159px;
-    box-shadow: 0px 0px 10px 3px #fffafabd !important;
-    border-radius: 2rem;
+    // box-shadow: 0px 0px 10px 3px #fffafabd !important;
+    border-radius: 3rem;
     padding-top: 3rem;
     
     img {
