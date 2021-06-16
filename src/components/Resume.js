@@ -3,6 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 
+import '../components/resume.scss';
+
 const useStyles = makeStyles((theme) => ({
     mainContainer: {
         background: "#f3f3f3",
@@ -11,6 +13,8 @@ const useStyles = makeStyles((theme) => ({
         position: "relative",
         padding: "1rem",
         margin: "o auto",
+
+
         "&:before": {
             content: "''",
             position: "absolute",
@@ -33,11 +37,14 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     timeLineItem: {
-        padding: "1rem",
+        padding: "2rem",
         // borderBottom: ".05px solid grey",
         position: "relative",
         margin: "1rem 3rem 1rem 1rem",
         clear: "both",
+        background: "mintcream",
+        borderRadius: "4rem 0 4rem 0",
+        boxShadow: "2px 2px 3px slategrey",
         "&:after": {
             content: "''",
             position: "absolute",
