@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: "column",
         justifyContent: "space-between",
         borderRadius: "6rem 0",
-        boxShadow: "2px 1px 8px rgb(96 113 117)",
+        boxShadow: "2px 1px 20px rgb(180 189 191)",
 
 
 
