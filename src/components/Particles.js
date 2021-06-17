@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
     particlesCanvas: {
-        backgroundColor: "gainsboro",
+        backgroundColor: "#000",
 
 
         position: "fixed",

@@ -28,7 +28,6 @@ const Home = () => {
             >
                 <SwiperSlide><FrontCard /></SwiperSlide>
                 <SwiperSlide><FrontCard /></SwiperSlide>
-                <SwiperSlide><FrontCard /></SwiperSlide>
 
 
                 {/* <Header /> */}

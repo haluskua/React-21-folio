@@ -65,8 +65,8 @@ const CardContainer = styled(motion.div)`
     height: 90vh;
     display: flex;
     flex-direction: column;
-    box-shadow: -2px 0px 11px 3px rgba(255,250,250,.6);
-    background-color: rgb(255 255 255 / 95%);
+    box-shadow: 0px 0px 4px 1px rgb(53 181 214 / 55%);
+    background-color: rgb(255 255 255 / 6%);
     color: #fff;
     position: relative;
     cursor: grab;

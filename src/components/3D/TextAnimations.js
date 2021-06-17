@@ -9,6 +9,7 @@ export default function TextAnimation() {
 
     return (
         <React.Fragment>
+            {/* <IntroTxt>Hello </IntroTxt> */}
             <Dots />
             <Wrapper>{reactArray.map((item, index) => (
                 <span key={index}>{item}</span>

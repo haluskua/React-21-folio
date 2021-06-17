@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
             content: "''",
             position: "absolute",
             height: "100%",
-            border: "0.6px solid mintcream",
+            border: "0.6px solid #3d5367",
             right: "40px",
             top: 0,
         },
@@ -102,18 +102,19 @@ const useStyles = makeStyles((theme) => ({
 
     heading: {
         fontSize: "2.57rem",
-        color: "#3d5367",
+        color: "mintcream",
         padding: "3rem 0",
         fontWeight: "bold",
         letterSpacing: "4px",
         textTransform: "uppercase",
+        background: "#3d5367",
         fontFamily: "'Staatliches', Open Sans"
 
     },
     subHeading: {
-        fontSize: "1.4rem",
+        fontSize: "1.56rem",
         color: "#3d5367",
-        letterSpacing: "0.9px",
+        letterSpacing: "1.9px",
         padding: 0,
         fontWeight: "bold",
         textTransform: "uppercase",
@@ -121,7 +122,7 @@ const useStyles = makeStyles((theme) => ({
 
     },
     body1: {
-        color: "#59a5b8",
+        color: "tomato",
     },
     subtitle1: {
         color: "#3d5367",

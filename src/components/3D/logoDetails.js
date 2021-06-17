@@ -36,13 +36,12 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: "2px 5px 10px rgba(0, 0, 0, 0.32)",
     },
     title: {
-        color: "#233",
-        margin: 0,
-        // fontWeight: "600",   
+        color: "#769299",
+        marginTop: "1rem",
         textTransform: "uppercase",
         fontFamily: "'Staatliches', Open Sans condensed",
-        fontSize: "13.5px",
-        letterSpacing: ".3px",
+        fontSize: "14.5px",
+        letterSpacing: ".43px",
     },
 }));
 
@@ -102,7 +101,6 @@ const DetailsContainer = styled.div`
 const MediumText = styled.span`
   font-size: 16px;
   color: #77939a;
-//   font-weight: 900;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
   font-family: 'Staatliches', Open Sans condensed;
@@ -112,8 +110,8 @@ const MediumText = styled.span`
   `;
 
 const SmallText = styled.span`
-  font-size: 22px;
-  color: #25373c;
+  font-size: 27px;
+  color: #35b5d6;
   fontFamily: "Pangolin",
   font-weight: 900;
   line-height: 1.53rem;
