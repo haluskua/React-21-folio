@@ -25,7 +25,7 @@ import project6 from "../images/serv-side-api.png";
 const useStyles = makeStyles((theme) => ({
 
     mainContainer: {
-        background: "mintcream",
+        background: "#c7d3d6",
 
     },
     cardContainer: {

@@ -56,16 +56,16 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
-        alignItems: "flex-start",
+        alignItems: "center",
         borderRadius: "8rem 0",
-        background: "radial-gradient(#efefef, #2b6775)",
-        boxShadow: "2px 1px 8px rgb(203, 204, 192)",
+        background: "radial-gradient(#82c7dabd, #2b6775)",
+        boxShadow: "2px 1px 8px rgb(28 84 98)",
     },
 
 
     avatar: {
         display: "block",
-        height: "192px",
+        height: "152px",
         border: "none",
         width: "100%",
     },

@@ -14,7 +14,7 @@ export default function TextAnimation() {
                 <span key={index}>{item}</span>
             ))}</Wrapper>
 
-            <SmallText>Swipe to know more</SmallText>
+            <SmallText>Swipe for more</SmallText>
 
         </React.Fragment>
     );

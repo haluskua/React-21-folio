@@ -13,13 +13,13 @@ const useStyles = makeStyles((theme) => ({
         position: "relative",
         padding: "1rem",
         margin: "o auto",
-
+        background: "radial-gradient(#edfbff, #3c93ad)",
 
         "&:before": {
             content: "''",
             position: "absolute",
             height: "100%",
-            border: "0.6px solid grey",
+            border: "0.6px solid mintcream",
             right: "40px",
             top: 0,
         },
@@ -37,14 +37,14 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     timeLineItem: {
-        padding: "2rem",
+        padding: "1.7rem",
         // borderBottom: ".05px solid grey",
         position: "relative",
-        margin: "1rem 3rem 1rem 1rem",
+        margin: "1rem 2rem 1rem 1rem",
         clear: "both",
         background: "mintcream",
         borderRadius: "4rem 0 4rem 0",
-        boxShadow: "2px 2px 3px slategrey",
+        boxShadow: "1px 1px 6px 1px rgb(105 135 138 / 42%)",
         "&:after": {
             content: "''",
             position: "absolute",
@@ -78,11 +78,12 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         maxWidth: "16.375rem",
         margin: "0 3rem 0 auto",
-        fontSize: "1.4rem",
+        fontSize: "1.74rem",
+        fontWeight: "bold",
         color: "#fff",
         background: "#3d5367",
-        lineHeight: 1,
-        padding: "0.5rem 1rem",
+        lineHeight: "1rem",
+        padding: "1rem",
         "&:before": {
             display: "none",
         },
@@ -100,8 +101,8 @@ const useStyles = makeStyles((theme) => ({
     },
 
     heading: {
-        fontSize: "2.7rem",
-        color: "tomato",
+        fontSize: "2.57rem",
+        color: "#3d5367",
         padding: "3rem 0",
         fontWeight: "bold",
         letterSpacing: "4px",
@@ -263,7 +264,7 @@ const Resume = () => {
                         align="center"
                         className={classes.subtitle1}
                     >
-                        Full stack web development. Coded more than 700+ hours with React Js, API, Node and Knex databse with server-side-rendering. Simulated work environment included Agile development, sprints and kanban board with 10+ group and solo projects.
+                        Certificate in Full stack web development. Coded more than 700+ hours with React Js, API, Node and Knex databse with server-side-rendering. Simulated work environment included Agile development, sprints and kanban board with 10+ group and solo projects.
           </Typography>
 
                 </Box>

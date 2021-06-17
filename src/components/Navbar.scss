@@ -40,9 +40,9 @@
   border-radius: 8rem 0 4rem 0;
   height: 72vh !important;
 }
-.MuiBackdrop-root {
-  background-color: #f7f7eec2 !important;
-}
+// .MuiBackdrop-root {
+//   background-color: #f7f7eec2 !important;
+// }
 
 .MuiList-root {
   width: 100%;
@@ -55,14 +55,14 @@
 }
 
 .MuiListItem-gutters:hover {
-  background: radial-gradient(#5aaabf, #2d555e) !important;
+  background: radial-gradient(#7cc7dd80, #73c2d373) !important;
   // background: linear-gradient(#fffffff7, #36496bb0) !important;
 }
 
 .MuiList-padding {
-  padding: 8px !important;
-  background: linear-gradient(#5aaabf, #174d5b) !important;
-  box-shadow: 1px 1px 12px 1px mintcream;
+  padding: 15px !important;
+  background: radial-gradient(#5aaabf, #174d5b) !important;
+  box-shadow: 1px 1px 6px 1px rgba(213, 251, 255, 0.419);
 
   border-radius: 0 6rem 8rem 0;
   // background: none;
@@ -78,24 +78,35 @@
 .MuiList-root .MuiListItem-gutters:nth-child(1) {
   border-radius: 4rem 8rem 0.3rem 0;
   width: 79%;
-  box-shadow: 2px 1px 2px #cbccc0d7;
-  background-color: linear-gradient(#d7fff95c, #32809294);
+  // border: 0.5px solid cadetblue;
+  box-shadow: 2px 4px 3px 0px #1a6d86;
+  background: linear-gradient(#6bb2c3, #2e7d9200);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(2) {
   border-radius: 0.3rem 3.85rem 0.4rem 0.3rem;
   width: 91%;
-  box-shadow: 2px 1px 2px #cbccc0d7;
-  background-color: linear-gradient(#d7fff95c, #32809294);
+  // border: 0.5px solid cadetblue;
+  box-shadow: 2px 4px 3px 0px #1a6d86;
+  background: linear-gradient(#6bb2c3, #2e7d9200);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(3) {
   border-radius: 0.3rem 0.4rem 3.85rem 0.3rem;
   width: 91%;
-  box-shadow: 2px 1px 2px #cbccc0d7;
-  background-color: linear-gradient(#d7fff95c, #32809294);
+  // border: 0.5px solid cadetblue;
+  box-shadow: 2px 4px 3px 0px #1a6d86;
+  background: linear-gradient(#6bb2c3, #2e7d9200);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(4) {
   border-radius: 0 0 8rem 4rem;
   width: 79%;
-  box-shadow: 2px 1px 2px #cbccc0d7;
-  background-color: linear-gradient(#d7fff95c, #32809294);
+  // border: 0.5px solid cadetblue;
+  box-shadow: 2px 4px 3px 0px #1a6d86;
+  background: linear-gradient(#6bb2c3, #2e7d9200);
+}
+
+.MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly {
+  background: radial-gradient(#3b6975, #4d7d8aa6) !important;
+  border-radius: 8px 0;
+  margin: 6.7px !important;
+  padding: 2px !important;
 }
