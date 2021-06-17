@@ -8,7 +8,7 @@ const particlesConfig = {
             }
         },
         "color": {
-            "value": "#ffffff"
+            "value": "#124a5a"
         },
         "shape": {
             "type": "circle",
@@ -40,7 +40,7 @@ const particlesConfig = {
             "random": true,
             "anim": {
                 "enable": false,
-                "speed": 40,
+                "speed": 20,
                 "size_min": 0.1,
                 "sync": false
             }
@@ -48,13 +48,13 @@ const particlesConfig = {
         "line_linked": {
             "enable": true,
             "distance": 150,
-            "color": "#ffffff",
-            "opacity": 0.4,
-            "width": 1
+            "color": "#124a5a",
+            "opacity": 0.34,
+            "width": 0.81
         },
         "move": {
             "enable": true,
-            "speed": 1,
+            "speed": 0.77,
             "direction": "none",
             "random": false,
             "straight": false,
@@ -84,7 +84,7 @@ const particlesConfig = {
             "grab": {
                 "distance": 400,
                 "line_linked": {
-                    "opacity": 1
+                    "opacity": 0.85,
                 }
             },
             "bubble": {
