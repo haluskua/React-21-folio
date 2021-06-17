@@ -70,10 +70,10 @@ const useStyles = makeStyles((theme) => ({
         width: "100%",
     },
     listItem: {
-        color: "#5aaabf",
+        color: "#f7f7eec2",
     },
     textColor: {
-        color: '#35464a',
+        color: '#daeaef',
         fontFamily: 'Padauk',
         fontSize: '0.85rem',
 
