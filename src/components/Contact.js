@@ -22,11 +22,7 @@ const useStyles = makeStyles((theme) => ({
         // backgroundSize: "cover",
         // backgroundColor: "white",
     },
-    button: {
-        marginTop: "1rem",
-        color: "tomato",
-        borderColor: "tan",
-    },
+
     formStyle: {
         top: "50%",
         left: "50%",
