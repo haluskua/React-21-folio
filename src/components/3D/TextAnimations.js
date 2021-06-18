@@ -49,10 +49,11 @@ const Wrapper = styled.span`
     color: #d2e2df;
     text-transform: uppercase;
     margin: 0;
-    font-size: 28px;
-    // font-weight: 900;
+    font-size: 22px;
+    font-weight: bold;
     letter-spacing: .15rem;
-    font-family: "Staatliches", sans-serif;
+    padding: 1rem 0 0 0;
+    font-family: "Asap", sans-serif;
     
     
 
