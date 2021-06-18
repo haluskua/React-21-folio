@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
         position: "relative",
         margin: "1rem 2rem 1rem 1rem",
         clear: "both",
-        background: "mintcream",
+        background: "#d9f6ff",
         borderRadius: "4rem 0 4rem 0",
         boxShadow: "1px 1px 6px 1px rgb(105 135 138 / 42%)",
         "&:after": {
@@ -112,10 +112,10 @@ const useStyles = makeStyles((theme) => ({
 
     },
     subHeading: {
-        fontSize: "1.56rem",
+        fontSize: "1.86rem",
         color: "#3d5367",
         letterSpacing: "1.9px",
-        padding: 0,
+        padding: "9px 0 2px 0",
         fontWeight: "bold",
         textTransform: "uppercase",
         fontFamily: "'Staatliches', Open Sans"
@@ -123,6 +123,10 @@ const useStyles = makeStyles((theme) => ({
     },
     body1: {
         color: "tomato",
+        fontFamily: "Asap",
+        fontSize: "1rem",
+        padding: "8px",
+        textTransform: "uppercase"
     },
     subtitle1: {
         color: "#3d5367",
@@ -139,7 +143,7 @@ const Resume = () => {
     return (
         <Box component="header" className={classes.mainContainer}>
             <Typography variant="h4" align="center" className={classes.heading}>
-                Work & Lerning Experience
+                Work & Learning Experience
       </Typography>
             <Box component="div" className={classes.timeLine}>
                 <Typography

@@ -11,6 +11,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import LogoAnimation from '../../src/components/3D/LogoAnimation';
 
+
 import '../components/portfolio.scss';
 
 //importing images from folder/files
@@ -22,26 +23,22 @@ import project4 from "../images/react-redux.png";
 import project5 from "../images/react.png";
 import project6 from "../images/serv-side-api.png";
 
+
 const useStyles = makeStyles((theme) => ({
 
     mainContainer: {
-        background: "#c7d3d6",
+        background: "radial-gradient(#edfbff, #3c93ad)",
 
     },
     cardContainer: {
-        maxWidth: 345,
+        maxWidth: "78%",
         margin: "3rem auto",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        borderRadius: "6rem 0",
-        boxShadow: "2px 1px 20px rgb(180 189 191)",
+        borderRadius: "3rem 0",
+        boxShadow: "2px 4px 8px 2px #1a6d86ad",
 
-
-
-        hover: {
-            background: "floralWhite",
-        }
     },
     boldTypo: {
         fontWeight: "bolder",
@@ -65,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         width: "100%",
         justifyContent: "flex-start",
-        backgroundColor: "#e3ece8",
+        backgroundColor: "#cacaca24",
         margin: "0.51rem",
         borderRadius: "8rem 0 3rem 0",
 

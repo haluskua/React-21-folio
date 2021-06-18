@@ -109,11 +109,8 @@ const Wrapper = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 20px;
+  font-size: 13px;
   color: #63787d;
   text-align: center;
-  letter-spacing: .06rem;
-  font-family:'Caveat', cursive;
 
-  
 `;

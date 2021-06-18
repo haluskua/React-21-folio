@@ -1,5 +1,5 @@
 .swiper-button-next {
-  background-image: url("https://image.flaticon.com/icons/png/512/1761/1761786.png");
+  background-image: url("https://image.flaticon.com/icons/png/512/1287/1287060.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
@@ -7,7 +7,7 @@
   margin-right: 50%;
 }
 .swiper-button-prev {
-  background-image: url("https://image.flaticon.com/icons/png/512/1761/1761783.png");
+  background-image: url("https://image.flaticon.com/icons/png/512/1287/1287060.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
@@ -38,11 +38,11 @@
 
 .MuiPaper-root {
   border-radius: 8rem 0 4rem 0;
-  height: 72vh !important;
+  // height: 72vh !important;
 }
-// .MuiBackdrop-root {
-//   background-color: #f7f7eec2 !important;
-// }
+.MuiBackdrop-root {
+  background-color: #000000cf !important;
+}
 
 .MuiList-root {
   width: 100%;
@@ -61,7 +61,7 @@
 
 .MuiList-padding {
   padding: 15px !important;
-  background: radial-gradient(#5aaabf, #174d5b) !important;
+  // background: radial-gradient(#5aaabf, #174d5b) !important;
   box-shadow: 1px 1px 6px 1px rgba(213, 251, 255, 0.419);
 
   border-radius: 0 6rem 8rem 0;

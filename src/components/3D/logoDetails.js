@@ -99,9 +99,9 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 16px;
+  font-size: 18px;
   color: #77939a;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.09rem;
   text-transform: uppercase;
   font-family: 'Staatliches', Open Sans condensed;
   line-height: 1.5rem;
