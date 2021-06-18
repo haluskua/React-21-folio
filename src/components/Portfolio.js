@@ -11,7 +11,6 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import LogoAnimation from '../../src/components/3D/LogoAnimation';
 
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 
 
