@@ -111,7 +111,7 @@ const MediumText = styled.span`
 
 const SmallText = styled.span`
   font-size: 27px;
-  color: #35b5d6;
+  color: #9ffff0;
   fontFamily: "Pangolin",
   font-weight: 900;
   line-height: 1.53rem;

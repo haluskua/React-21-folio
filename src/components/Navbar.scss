@@ -23,8 +23,9 @@
 //overight MUI STYLING
 .MuiDrawer-paper {
   width: 236px;
-  height: 82% !important;
+  height: auto !important;
   border-radius: 5rem 0 0 0;
+  padding: 3px 0;
 }
 
 .MuiAvatar-img {
@@ -56,16 +57,12 @@
 
 .MuiListItem-gutters:hover {
   background: radial-gradient(#7cc7dd80, #73c2d373) !important;
-  // background: linear-gradient(#fffffff7, #36496bb0) !important;
 }
 
 .MuiList-padding {
   padding: 15px !important;
-  // background: radial-gradient(#5aaabf, #174d5b) !important;
-  box-shadow: 1px 1px 6px 1px rgba(213, 251, 255, 0.419);
-
+  // box-shadow: 1px 1px 36px 1px rgb(31 112 136 / 46%);
   border-radius: 0 6rem 8rem 0;
-  // background: none;
 }
 .MuiDrawer-paperAnchorRight {
   background: #376b79 !important;
@@ -106,5 +103,5 @@
 
 .MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly {
   border-radius: 8px 0;
-  margin: 3.7px !important;
+  // margin: 3.7px !important;
 }

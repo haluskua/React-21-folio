@@ -11,6 +11,9 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import LogoAnimation from '../../src/components/3D/LogoAnimation';
 
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+
+
 
 import '../components/portfolio.scss';
 
@@ -38,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "space-between",
         borderRadius: "3rem 0",
         boxShadow: "2px 4px 8px 2px #1a6d86ad",
+
 
     },
     boldTypo: {
@@ -126,6 +130,7 @@ const projects = [
 
 const Portfolio = () => {
     const classes = useStyles();
+
     return (
         <Box component="div" className={classes.mainContainer}>
             <Grid container justify="center">
@@ -133,6 +138,7 @@ const Portfolio = () => {
                 {projects.map((project, i) => (
                     <Grid item xs={12} sm={8} md={4} key={i}>
                         <Card className={classes.cardContainer}>
+
                             <CardActionArea>
                                 <CardMedia
                                     component="img"
@@ -176,5 +182,7 @@ const Portfolio = () => {
         </Box>
     );
 };
+
+
 
 export default Portfolio;

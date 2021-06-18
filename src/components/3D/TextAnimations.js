@@ -1,7 +1,6 @@
 
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import Dots from '../../components/3D/TextAnimation2';
 
 export default function TextAnimation() {
     const reactArray = 'OMPHALUS-KUA'.split("");
@@ -9,13 +8,11 @@ export default function TextAnimation() {
 
     return (
         <React.Fragment>
-            {/* <IntroTxt>Hello </IntroTxt> */}
-            <Dots />
             <Wrapper>{reactArray.map((item, index) => (
                 <span key={index}>{item}</span>
             ))}</Wrapper>
 
-            <SmallText>Swipe for more</SmallText>
+            <SmallText>Creative Technologist</SmallText>
 
         </React.Fragment>
     );
@@ -49,7 +46,7 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
     display: inline-block;
-    color: #76939a;
+    color: #d2e2df;
     text-transform: uppercase;
     margin: 0;
     font-size: 28px;
@@ -109,8 +106,9 @@ const Wrapper = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 13px;
-  color: #63787d;
+  font-size: 18px;
+  color: #315e69;
   text-align: center;
+  font-family: 'Caveat';
 
 `;

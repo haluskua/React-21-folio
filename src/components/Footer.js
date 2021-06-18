@@ -5,17 +5,18 @@ import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import Facebook from "@material-ui/icons/Facebook";
 import Twitter from "@material-ui/icons/Twitter";
 import Instagram from "@material-ui/icons/Instagram";
+import SclMedia from "./MediaQuery/Footer/Mq_Footer";
+
 
 const useStyles = makeStyles({
     bottomNavContainer: {
         padding: "1px",
         height: "auto",
         background: "rgb(255 0 0 / 0%)",
-
     },
     root: {
         "& .MuiSvgIcon-root": {
-            fill: "gainsboro",
+            fill: "#18424c",
             width: "70px",
             "&:hover": {
                 fill: "#5aaabf",
@@ -27,11 +28,16 @@ const useStyles = makeStyles({
 const Footer = () => {
     const classes = useStyles();
 
+
+
     return (
         <BottomNavigation className={classes.bottomNavContainer}>
-            <BottomNavigationAction icon={<Facebook />} className={classes.root} />
-            <BottomNavigationAction icon={<Twitter />} className={classes.root} />
-            <BottomNavigationAction icon={<Instagram />} className={classes.root} />
+            <SclMedia>
+                <BottomNavigationAction icon={<Facebook />} className={classes.root} />
+                <BottomNavigationAction icon={<Twitter />} className={classes.root} />
+                < BottomNavigationAction icon={<Instagram />} className={classes.root} />
+            </SclMedia>
+
         </BottomNavigation>
     );
 };

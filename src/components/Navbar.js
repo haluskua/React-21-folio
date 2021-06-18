@@ -23,6 +23,7 @@ import Footer from "../../src/components/Footer";
 
 
 import '../../src/components/Navbar.scss';
+import TextAnimation from "./3D/TextAnimations";
 
 // :::::::::::::::::::
 //--//styling
@@ -130,6 +131,7 @@ const Navbar = () => {
     const sideList = () => (
         <Box className={classes.menuSliderContainer} component="div">
             <Avatar className={classes.avatar} src={avatar} alt="Ompa" />
+            <TextAnimation />
             <Divider />
             <List>
                 {menuItems.map((item, i) => (
