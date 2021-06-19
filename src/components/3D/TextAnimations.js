@@ -1,6 +1,7 @@
 
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import Marginer from '../Marginer/index';
 import { device } from '../MediaQuery/device';
 
 export default function TextAnimation() {
@@ -14,6 +15,8 @@ export default function TextAnimation() {
             ))}</Wrapper>
 
             <SmallText>Creative Technologist</SmallText>
+            <Marginer direction="vertical" margin="1.2rem" />
+
 
         </React.Fragment>
     );

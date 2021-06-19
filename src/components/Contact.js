@@ -32,12 +32,14 @@ const useStyles = makeStyles((theme) => ({
         padding: "2rem",
         boxShadow: "2px 2px 21px -1px #1e2121a8",
         borderRadius: "3rem 0",
-        background: "linear-gradient(58deg, #2a3538, transparent)",
+        background: "linear-gradient(58deg, #00151b, transparent)",
     },
     heading: {
         color: "#2fcdf5",
-        textAlign: "uppercase",
         marginBottom: "1rem",
+        fontFamily: "Asap",
+        fontWeight: "normal",
+        fontSize: "1.72rem",
     },
     field: {
         margin: "0rem",

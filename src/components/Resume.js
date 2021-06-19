@@ -112,7 +112,7 @@ const useStyles = makeStyles((theme) => ({
 
     },
     subHeading: {
-        fontSize: "1.68rem",
+        fontSize: "1.58rem",
         color: "#3d5367",
         letterSpacing: "0.71px",
         padding: "9px 0 2px 0",
@@ -120,6 +120,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: "bold",
         textTransform: "uppercase",
         fontFamily: "'Asap', Open Sans"
+
 
     },
     body1: {

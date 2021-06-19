@@ -61,12 +61,12 @@
 
 .MuiList-padding {
   padding: 15px !important;
-  // box-shadow: 1px 1px 12px 1px #4b7e8a;
+  // box-shadow: 1px 1px 12px 1px #ffffff61;
   border-radius: 0 6rem 8rem 0;
   margin: 21px 0;
 }
 .MuiDrawer-paperAnchorRight {
-  background: #7fb6c4 !important;
+  background: #c9e9f1 !important;
 }
 
 .makeStyles-formStyle-14 {
@@ -105,4 +105,13 @@
 .MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly {
   border-radius: 8px 0;
   // margin: 3.7px !important;
+}
+
+.MuiListItemIcon-root {
+  min-width: 43px !important;
+}
+
+.MuiTypography-body1 {
+  font-size: 1.05rem !important;
+  letter-spacing: 0.03rem !important;
 }

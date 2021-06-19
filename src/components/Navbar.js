@@ -69,14 +69,14 @@ const useStyles = makeStyles((theme) => ({
         height: "152px",
         border: "none",
         width: "100%",
+        marginBottom: "-41px",
     },
     listItem: {
         color: "#f7f7eec2",
     },
     textColor: {
-        color: '#daeaef',
-        fontFamily: 'Padauk',
-        fontSize: '0.85rem',
+        color: '#eafbff',
+        fontSize: '1.06rem',
 
 
     },
@@ -85,6 +85,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         background: "rgb(48 144 169 / 58%)",
         color: "#fff",
+        textShadow: "grey",
         borderRadius: "50%",
         cursor: "pointer",
         padding: "5px",

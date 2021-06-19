@@ -125,8 +125,8 @@ const SmallText = styled.span`
   text-transform: uppercase;
   font-family: 'Staatliches', Open Sans condensed;
   @media ${device.laptop}{
-      font-size: 36.72px;
-      line-height: 2.33rem;
+      font-size: 33.72px;
+      line-height: 2.133rem;
   }
   
 `;
