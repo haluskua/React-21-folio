@@ -66,9 +66,10 @@ const CardContainer = styled(motion.div)`
     height: 90vh;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 109px 1px rgb(12 181 224 / 55%);
+    box-shadow: 0px 0px 98px 1px rgb(12 181 224 / 55%);
     // background: radial-gradient(#ffffff,#e1fcff);
     // background: #deffff;
+    background: #f1fffc;
     color: #fff;
     position: relative;
     cursor: grab;
