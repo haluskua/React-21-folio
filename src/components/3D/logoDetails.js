@@ -11,6 +11,8 @@ import { Link } from "react-router-dom";
 import IconButton from "@material-ui/core/IconButton";
 
 
+import { device } from '../MediaQuery/device';
+
 const useStyles = makeStyles((theme) => ({
 
     centerLL: {
@@ -99,7 +101,7 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 18px;
+  font-size: 16.3px;
   color: #77939a;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
@@ -107,17 +109,25 @@ const MediumText = styled.span`
   line-height: 1.5rem;
   text-align: center;
   width: 100%;
+  @media ${device.laptop} {
+      
+      font-size: 18px;
+}
   `;
 
 const SmallText = styled.span`
-  font-size: 34.5px;
-  color: #2b99b7;
+  font-size: 24px;
+  color: #35b5d6;
   font-weight: 400;
-  line-height: 2.29rem;
-  letter-spacing: 0.12rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.174rem;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Staatliches', Open Sans condensed;
+  @media ${device.laptop}{
+      font-size: 36.72px;
+      line-height: 2.33rem;
+  }
   
 `;
 

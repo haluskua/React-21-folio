@@ -1,6 +1,7 @@
 
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { device } from '../MediaQuery/device';
 
 export default function TextAnimation() {
     const reactArray = 'OMPHALUS-KUA'.split("");
@@ -46,14 +47,17 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
     display: inline-block;
-    color: #d2e2df;
+    color: #356673;
     text-transform: uppercase;
     margin: 0;
-    font-size: 22px;
+    font-size: 18.4px;
     font-weight: bold;
-    letter-spacing: .15rem;
+    letter-spacing: .05rem;
     padding: 1rem 0 0 0;
     font-family: "Asap", sans-serif;
+    @media ${device.laptop} {
+        font-size: 22px;
+    }
     
     
 

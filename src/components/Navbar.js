@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: "column",
         alignItems: "center",
         borderRadius: "8rem 0",
-        background: "radial-gradient(#82c7dabd, #2b6775)",
+        background: "radial-gradient(#fdfdfdbd, #7bafbb)",
         boxShadow: "2px 1px 8px rgb(28 84 98)",
     },
 

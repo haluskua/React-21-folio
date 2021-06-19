@@ -112,28 +112,30 @@ const useStyles = makeStyles((theme) => ({
 
     },
     subHeading: {
-        fontSize: "1.86rem",
+        fontSize: "1.68rem",
         color: "#3d5367",
-        letterSpacing: "1.9px",
+        letterSpacing: "0.71px",
         padding: "9px 0 2px 0",
+        lineHeight: "2rem",
         fontWeight: "bold",
         textTransform: "uppercase",
-        fontFamily: "'Staatliches', Open Sans"
+        fontFamily: "'Asap', Open Sans"
 
     },
     body1: {
-        color: "tomato",
+        color: "#82ad3c",
         fontFamily: "Asap",
         fontSize: "1rem",
         padding: "8px",
-        textTransform: "uppercase"
+        textTransform: "uppercase",
+        fontWeight: "bold",
     },
     subtitle1: {
         color: "#3d5367",
         textAlign: "left",
         width: "100%",
         display: "flex",
-        fontSize: "0.9rem",
+        lineHeight: "1.5rem",
         justifyContent: "center",
     },
 }));

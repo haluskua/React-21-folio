@@ -5,6 +5,7 @@ import Marginer from '../Marginer/index';
 import { LogoDetails } from './logoDetails';
 import TextAnimation from './TextAnimations';
 import LogoAnimation from './LogoAnimation';
+import { device } from '../MediaQuery/device';
 
 
 export default function FrontCard(props) {
@@ -65,18 +66,23 @@ const CardContainer = styled(motion.div)`
     height: 90vh;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 4px 1px rgb(53 181 214 / 55%);
-    background-color: rgb(255 255 255 / 6%);
+    box-shadow: 0px 0px 79px 1px rgb(12 181 224 / 55%);
+    background: radial-gradient(#94f0ff9c,#1ce5ff6b);
+    background: #deffff;
     color: #fff;
     position: relative;
     cursor: grab;
     z-index: 16;
     overflow: hidden;
-    border-radius: 25px;
+    border-radius: 6rem 0 6rem 0;
     
     -ms-overflow-style: none; 
     ::-webkit-scrollbar {
-        display: none;
+        display: none;    
+    }
+    @media ${device.laptopL} {
+        min-width: 1200px;
+        border-radius: 12rem 0 12rem 0;
     }
 `;
 const CircleWrapper = styled.div`
