@@ -68,11 +68,12 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: "-41px",
     },
     listItem: {
-        color: "#588d9a",
+        color: "#ddeff3",
     },
     textColor: {
-        color: '#588d9a',
+        color: '#ddeff3',
         fontSize: '1.06rem',
+
     },
     hamburger_lines: {
         display: "flex",
