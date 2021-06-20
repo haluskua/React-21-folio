@@ -10,14 +10,21 @@ import SclMedia from "./MediaQuery/Footer/Mq_Footer";
 
 const useStyles = makeStyles({
     bottomNavContainer: {
+        display: "flex",
+        justifyContent: "center",
         padding: "1px",
         height: "auto",
         background: "rgb(255 0 0 / 0%)",
+        marginLeft: "-2.3rem",
+        backgroundColor: "#f5fffa5c",
+        marginTop: "11px",
+
     },
     root: {
         "& .MuiSvgIcon-root": {
-            fill: "#18424c",
-            width: "70px",
+            fill: "#588d9a",
+            width: "18px",
+
             "&:hover": {
                 fill: "#5aaabf",
             },

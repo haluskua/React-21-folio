@@ -100,7 +100,7 @@ const Wrapper = styled.span`
     }
     span:nth-child(9) {
         animation-delay: 2.15s;
-        color: #fff;
+        color: #5f9ea000;
     }
     span:nth-child(10) {
         animation-delay: 2.3s;
