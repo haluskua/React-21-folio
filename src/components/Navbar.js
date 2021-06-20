@@ -31,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
     navbar: {
         width: "auto",
     },
-
     appbar: {
         background: "transparent",
         margin: 0,
@@ -50,7 +49,6 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "Open Sans Condensed",
 
     },
-
     menuSliderContainer: {
         height: "90%",
         marginTop: "7px",
@@ -59,11 +57,9 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: "column",
         alignItems: "center",
         borderRadius: "8rem 0",
-        background: "radial-gradient(#fdfdfdbd, #7bafbb)",
-        boxShadow: "2px 1px 8px rgb(28 84 98)",
+        background: "linear-gradient(#fdfdfdbd, #c2e2ea)",
+        // boxShadow: "2px 1px 3px rgb(113 161 173)",
     },
-
-
     avatar: {
         display: "block",
         height: "152px",
@@ -72,13 +68,11 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: "-41px",
     },
     listItem: {
-        color: "#f7f7eec2",
+        color: "#588d9a",
     },
     textColor: {
-        color: '#eafbff',
+        color: '#588d9a',
         fontSize: '1.06rem',
-
-
     },
     hamburger_lines: {
         display: "flex",
@@ -88,9 +82,7 @@ const useStyles = makeStyles((theme) => ({
         textShadow: "grey",
         borderRadius: "50%",
         cursor: "pointer",
-        padding: "5px",
-        border: "none",
-
+        padding: "5px", border: "none",
     }
 }));
 

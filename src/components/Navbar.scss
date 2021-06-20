@@ -60,10 +60,11 @@
 }
 
 .MuiList-padding {
-  padding: 15px !important;
-  // box-shadow: 1px 1px 12px 1px #ffffff61;
+  padding: 25px 25px 25px 18px !important;
+  box-shadow: 0px 7px 8px 1px #aecfd6;
   border-radius: 0 6rem 8rem 0;
   margin: 21px 0;
+  // background: #c1e0e8;
 }
 .MuiDrawer-paperAnchorRight {
   background: #c9e9f1 !important;
@@ -72,34 +73,45 @@
 .makeStyles-formStyle-14 {
   width: 90vw !important;
 }
+.MuiList-root .MuiListItem-gutters {
+  margin: 10px 0 10px 0 !important;
+}
 
 .MuiList-root .MuiListItem-gutters:nth-child(1) {
   border-radius: 4rem 8rem 0.3rem 0;
+  border-radius: 2rem;
   width: 79%;
-  // border: 0.5px solid cadetblue;
-  box-shadow: 2px 4px 5px 0px #4a7c88;
-  background: linear-gradient(#77b8c7, #2e7d9269);
+  background: #edfbffa1;
+  border: 0.3px solid #97b4b5;
+  // border-radius: 8rem;
 }
 .MuiList-root .MuiListItem-gutters:nth-child(2) {
   border-radius: 0.3rem 3.85rem 0.4rem 0.3rem;
+  border-radius: 2rem;
   width: 91%;
-  // border: 0.5px solid cadetblue;
-  box-shadow: 2px 4px 5px 0px #4a7c88;
-  background: linear-gradient(#77b8c7, #2e7d9269);
+  background: #edfbffa1;
+  border: 0.3px solid #97b4b5;
+  // border-radius: 8rem;
 }
 .MuiList-root .MuiListItem-gutters:nth-child(3) {
   border-radius: 0.3rem 0.4rem 3.85rem 0.3rem;
+  border-radius: 2rem;
   width: 91%;
-  // border: 0.5px solid cadetblue;
-  box-shadow: 2px 4px 5px 0px #4a7c88;
-  background: linear-gradient(#77b8c7, #2e7d9269);
+  background: #edfbffa1;
+  border: 0.3px solid #97b4b5;
+  // border-radius: 8rem;
 }
 .MuiList-root .MuiListItem-gutters:nth-child(4) {
   border-radius: 0 0 8rem 4rem;
+  border-radius: 2rem;
   width: 79%;
-  // border: 0.5px solid cadetblue;
-  box-shadow: 2px 4px 5px 0px #4a7c88;
-  background: linear-gradient(#77b8c7, #2e7d9269);
+  background: #edfbffa1;
+  border: 0.3px solid #97b4b5;
+  // border-radius: 8rem;
+}
+
+.MuiList-root .MuiListItem-gutters:hover {
+  background: #fff !important;
 }
 
 .MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly {
@@ -113,9 +125,4 @@
 
 .MuiListItemIcon-root {
   min-width: 43px !important;
-}
-
-.MuiTypography-body1 {
-  font-size: 1.05rem !important;
-  letter-spacing: 0.03rem !important;
 }

@@ -16,8 +16,9 @@ const useStyles = makeStyles({
         height: "auto",
         background: "rgb(255 0 0 / 0%)",
         marginLeft: "-2.3rem",
-        backgroundColor: "#f5fffa5c",
+        // backgroundColor: "#f5fffa5c",
         marginTop: "11px",
+        background: "linear-gradient(180deg, #c9e9f1, #adccd4)"
 
     },
     root: {
