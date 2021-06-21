@@ -10,9 +10,9 @@ import Send from "@material-ui/icons/Send";
 import Particles from 'react-particles-js';
 import particlesConfig from './particlesConfig';
 
+import emailjs from "emailjs-com";
+
 import '../components/contact.scss';
-
-
 
 const useStyles = makeStyles((theme) => ({
     contactContainer: {
@@ -58,9 +58,6 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-
-
-
 const InputField = withStyles({
     root: {
         "& label.Mui-focused": {
@@ -73,7 +70,9 @@ const InputField = withStyles({
             "& fieldset": {
                 borderColor: "#233",
                 borderRadius: "0 3rem 0 1.3rem ",
+                backgroun: "green",
             },
+
             "&:hover fieldset": {
                 borderColor: "#acc2c7",
             },
@@ -85,44 +84,84 @@ const InputField = withStyles({
     },
 })(TextField);
 
-
 const Contact = () => {
     const classes = useStyles();
 
+    function sendEmail(e) {
+        e.preventDefault();
+        console.log("test");
+
+        emailjs.sendForm('service_1xl5re5', 'template_r9tr80r', e.target, 'user_VyRtTZDbtDnqNvRZiDeEL')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
+    }
 
     return (
         <React.Fragment>
             <Box
                 component="div" className={classes.contactContainer}
 
-
             >
                 <div>
                     <Particles height="100vh" width="100vw" params={particlesConfig} />
                 </div>
+
                 <Grid container justify="center">
-                    <Box component="form" className={classes.formStyle}>
+
+                    <Box component="form" className={classes.formStyle} onSubmit={sendEmail}>
                         <Typography variant="h5" className={classes.heading}>
                             Hire or work with me ..
-                    </Typography>
+                        </Typography>
 
+                        {/* <label>name</label>
+                        <input type="text" name="name" className="form-control" /> */}
                         <InputField
-
                             fullWidth={true}
-                            label="Email"
+                            label="Name"
+                            name="name"
+                            type="text"
                             variant="outlined"
                             inputProps={{ className: classes.input }}
                             className={classes.field}
                         />
+
+
+                        {/* <label>Email</label>
+                        <input type="email" name="user_email" className="form-control" /> */}
+
+                        <InputField
+                            fullWidth={true}
+                            label="Email"
+                            type="email"
+                            name="user_email"
+                            variant="outlined"
+                            inputProps={{ className: classes.input }}
+                            className={classes.field}
+                        />
+                        {/* <label>Message</label> */}
+                        {/* <textarea name="message" rows="4" className="form-control" /> */}
                         <InputField
                             fullWidth={true}
                             label="Message"
+                            type="email"
+                            name="message"
                             variant="outlined"
                             multiline
                             rows={4}
                             inputProps={{ className: classes.input }}
+                            className={classes.field}
                         />
+
+                        {/* <input type="submit" value="Send" className="form-control btn btn-primary" /> */}
+
                         <Button
+                            label="Message"
+                            type="submit"
+                            value="send"
                             halfWidth={true}
                             variant="outlined"
                             endIcon={<Send />}
