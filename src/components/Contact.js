@@ -101,6 +101,7 @@ const Contact = () => {
                     <Particles height="100vh" width="100vw" params={particlesConfig} />
                 </div>
                 <Grid container justify="center">
+
                     <Box component="form" className={classes.formStyle}
 
                         name="portfolio-form"
@@ -154,6 +155,7 @@ const Contact = () => {
                         <Button
                             halfWidth={true}
                             variant="outlined"
+                            type="submit"
                             endIcon={<Send />}
                             className={classes.button}
                         >Contact Me</Button>
