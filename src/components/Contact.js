@@ -8,12 +8,10 @@ const Contact = () => {
         <React.Fragment>
             <form
 
-                name="contact v1"
-                method="post"
-                data-netlify="true"
-                onSubmit="submit"
-            >
-                <input type="hidden" name="form-name" value="contact v1" />
+                name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+
+                {/* You still need to add the hidden input with the form name to your JSX form */}
+                <input type="hidden" name="form-name" value="contact" />
                 <div>
                     <label>
                         First name <br />
