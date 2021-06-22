@@ -10,8 +10,111 @@ import Send from "@material-ui/icons/Send";
 import Particles from 'react-particles-js';
 import particlesConfig from './particlesConfig';
 
+import { useState, useEffect } from "react";
+
+
+
+
 import '../components/contact.scss';
 
+
+
+
+
+const Contact = () => {
+    const classes = useStyles();
+
+    const [success, setSuccess] = useState(false);
+
+    useEffect(() => {
+        if (window.location.search.includes('success=true')) {
+            setSuccess(true);
+        }
+    }, []);
+
+
+
+    return (
+        <React.Fragment>
+            <Box
+                component="div" className={classes.contactContainer}
+
+            >
+                <div>
+                    <Particles height="100vh" width="100vw" params={particlesConfig} />
+                </div>
+                {success && (
+                    <p style={{ color: "green" }}>Thanks for your message! </p>
+                )}
+                <Grid container justify="center">
+
+                    <Box component="form" className={classes.formStyle}
+
+                        name="portfolio-form"
+                        method="POST"
+                        data-netlify="true"
+                        action="/contact/?success=true"
+
+                    >
+                        <input type="hidden" name="form-name" value="portfolio-form" />
+
+                        <Typography variant="h5" className={classes.heading}>
+                            Hire or work with me ..
+                        </Typography>
+
+                        <InputField
+
+                            fullWidth={true}
+                            label="First name"
+                            name="name"
+                            variant="outlined"
+                            inputProps={{ className: classes.input }}
+                            className={classes.field}
+                        />
+                        <InputField
+
+                            fullWidth={true}
+                            label="Last name"
+                            name="name"
+                            variant="outlined"
+                            inputProps={{ className: classes.input }}
+                            className={classes.field}
+                        />
+                        <InputField
+
+                            fullWidth={true}
+                            label="Email"
+                            name="email"
+                            variant="outlined"
+                            inputProps={{ className: classes.input }}
+                            className={classes.field}
+                        />
+                        <InputField
+                            fullWidth={true}
+                            label="Message"
+                            name="message"
+                            variant="outlined"
+                            multiline
+                            rows={4}
+                            inputProps={{ className: classes.input }}
+                        />
+                        <Button
+                            halfWidth={true}
+                            variant="outlined"
+                            type="submit"
+                            endIcon={<Send />}
+                            className={classes.button}
+                        >Contact Me</Button>
+
+                    </Box>
+                </Grid>
+            </Box>
+        </React.Fragment >
+
+    );
+
+
+};
 
 
 const useStyles = makeStyles((theme) => ({
@@ -84,89 +187,6 @@ const InputField = withStyles({
         },
     },
 })(TextField);
-
-
-const Contact = () => {
-    const classes = useStyles();
-
-
-    return (
-        <React.Fragment>
-            <Box
-                component="div" className={classes.contactContainer}
-
-
-            >
-                <div>
-                    <Particles height="100vh" width="100vw" params={particlesConfig} />
-                </div>
-                <Grid container justify="center">
-
-                    <Box component="form" className={classes.formStyle}
-
-                        name="portfolio-form"
-                        method="POST"
-                        data-netlify="true"
-                        action="/contact"
-
-                    >
-                        <input type="hidden" name="form-name" value="portfolio-form" />
-
-                        <Typography variant="h5" className={classes.heading}>
-                            Hire or work with me ..
-                        </Typography>
-
-                        <InputField
-
-                            fullWidth={true}
-                            label="First name"
-                            name="name"
-                            variant="outlined"
-                            inputProps={{ className: classes.input }}
-                            className={classes.field}
-                        />
-                        <InputField
-
-                            fullWidth={true}
-                            label="Last name"
-                            name="name"
-                            variant="outlined"
-                            inputProps={{ className: classes.input }}
-                            className={classes.field}
-                        />
-                        <InputField
-
-                            fullWidth={true}
-                            label="Email"
-                            name="email"
-                            variant="outlined"
-                            inputProps={{ className: classes.input }}
-                            className={classes.field}
-                        />
-                        <InputField
-                            fullWidth={true}
-                            label="Message"
-                            name="message"
-                            variant="outlined"
-                            multiline
-                            rows={4}
-                            inputProps={{ className: classes.input }}
-                        />
-                        <Button
-                            halfWidth={true}
-                            variant="outlined"
-                            type="submit"
-                            endIcon={<Send />}
-                            className={classes.button}
-                        >Contact Me</Button>
-
-                    </Box>
-                </Grid>
-            </Box>
-        </React.Fragment >
-
-    );
-};
 
 
 export default Contact;
