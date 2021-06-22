@@ -101,10 +101,11 @@ const Contact = () => {
                 <Grid container justify="center">
 
                     <Box component="form" className={classes.formStyle}
-                        name="contact v1"
+                        name="contact"
                         method="post"
                         data-netlify="true"
                         onSubmit="submit"
+                        netlify
 
                     >
                         <Typography variant="h5" className={classes.heading}>
