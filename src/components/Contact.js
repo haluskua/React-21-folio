@@ -10,7 +10,7 @@ import Send from "@material-ui/icons/Send";
 import Particles from 'react-particles-js';
 import particlesConfig from './particlesConfig';
 
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
 
 import '../components/contact.scss';
 
@@ -66,6 +66,7 @@ const InputField = withStyles({
         "& label": {
             color: "#acc2c7",
         },
+
         "& .MuiOutlinedInput-root": {
             "& fieldset": {
                 borderColor: "#233",
@@ -87,19 +88,6 @@ const InputField = withStyles({
 const Contact = () => {
     const classes = useStyles();
 
-    function sendEmail(e) {
-        e.preventDefault();
-        console.log("test");
-
-        emailjs.sendForm('service_1xl5re5', 'template_r9tr80r', e.target, 'user_VyRtTZDbtDnqNvRZiDeEL')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-        e.target.reset();
-    }
-
     return (
         <React.Fragment>
             <Box
@@ -112,43 +100,47 @@ const Contact = () => {
 
                 <Grid container justify="center">
 
-                    <Box component="form" className={classes.formStyle} onSubmit={sendEmail}>
+                    <Box component="form" className={classes.formStyle}
+                        name="contact v1"
+                        method="post"
+                        data-netlify="true"
+                        onSubmit="submit"
+
+                    >
                         <Typography variant="h5" className={classes.heading}>
                             Hire or work with me ..
                         </Typography>
 
-                        {/* <label>name</label>
-                        <input type="text" name="name" className="form-control" /> */}
                         <InputField
-                            fullWidth={true}
-                            label="Name"
-                            name="name"
-                            type="text"
-                            variant="outlined"
+                            type="hidden"
+                            name="form-name"
+                            value="contact v1"
                             inputProps={{ className: classes.input }}
                             className={classes.field}
                         />
 
 
-                        {/* <label>Email</label>
-                        <input type="email" name="user_email" className="form-control" /> */}
+                        <InputField
+                            label="First name"
+                            name="First name"
+                            type="text"
+                            inputProps={{ className: classes.input }}
+                            fullWidth={true}
+                        />
 
                         <InputField
-                            fullWidth={true}
                             label="Email"
                             type="email"
-                            name="user_email"
-                            variant="outlined"
+                            name="email"
                             inputProps={{ className: classes.input }}
-                            className={classes.field}
+                            fullWidth={true}
                         />
-                        {/* <label>Message</label> */}
-                        {/* <textarea name="message" rows="4" className="form-control" /> */}
+
                         <InputField
                             fullWidth={true}
-                            label="Message"
-                            type="email"
-                            name="message"
+                            label="Any Comments?"
+                            type="text"
+                            name="comments"
                             variant="outlined"
                             multiline
                             rows={4}
@@ -156,10 +148,8 @@ const Contact = () => {
                             className={classes.field}
                         />
 
-                        {/* <input type="submit" value="Send" className="form-control btn btn-primary" /> */}
 
                         <Button
-                            label="Message"
                             type="submit"
                             value="send"
                             halfWidth={true}
