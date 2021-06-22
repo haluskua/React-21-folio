@@ -1,41 +1,37 @@
 import React from 'react';
 
-
-
-const Contact = () => {
+export default function Contact() {
 
     return (
-        <React.Fragment>
-            <form
+        <section >
+            <h2>CONTACT</h2>
+            <div>
+                <form
+                    name="contact-form"
+                    method="POST"
+                    // action="/contact/?success=true"
+                    data-netlify="true"
+                >
 
-                name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact-form" />
+                    <div>
+                        <label htmlFor="name">Name</label>
+                        <input type="text" id="name" name="name" />
 
-                {/* You still need to add the hidden input with the form name to your JSX form */}
-                <input type="hidden" name="form-name" value="contact" />
-                <div>
-                    <label>
-                        First name <br />
-                        <input type="text" name="first-name" />
-                    </label>
-                </div>
-                <div>
-                    <labe thmlFor="email">Email</labe> <br />
-                    <input id="email" type="email" name="email" />
-                </div>
-
-                <div>
-                    <label>
-                        Any Comments <br />
-                        <textArea name="comments"></textArea>
-                    </label>
-                </div>
-
-                <button type="text" name="first-name">Send me your email</button>
-            </form>
-
-        </React.Fragment>
-
+                    </div>
+                    <div>
+                        <label htmlFor>Email</label>
+                        <input type="text" id="email" name="email" />
+                    </div>
+                    <div>
+                        <label htmlFor>Message</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     );
-};
-
-export default Contact;;
+}
