@@ -32,8 +32,6 @@ const Contact = () => {
         }
     }, []);
 
-
-
     return (
         <React.Fragment>
             <Box
