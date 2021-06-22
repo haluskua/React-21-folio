@@ -107,7 +107,7 @@ const Contact = () => {
                         name="portfolio-form"
                         method="POST"
                         data-netlify="true"
-                        action="/"
+                        action="/contact"
 
                     >
                         <input type="hidden" name="form-name" value="portfolio-form" />
