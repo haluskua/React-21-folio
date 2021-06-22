@@ -109,7 +109,7 @@ const Contact = () => {
                         action="/"
 
                     >
-                        <input type="hidden" name="form-name" value="contact-form" />
+                        <input type="hidden" name="form-name" value="portfolio-form" />
 
                         <Typography variant="h5" className={classes.heading}>
                             Hire or work with me ..
