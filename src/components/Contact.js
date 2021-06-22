@@ -90,7 +90,7 @@ const Contact = () => {
 
     return (
         <React.Fragment>
-            <Box
+            {/* <Box
                 component="div" className={classes.contactContainer}
 
             >
@@ -161,7 +161,20 @@ const Contact = () => {
 
                     </Box>
                 </Grid>
-            </Box>
+            </Box> */}
+
+
+            <form name="contact" netlify>
+                <p>
+                    <label>Name <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Email <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+            </form>
         </React.Fragment>
 
     );
