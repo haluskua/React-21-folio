@@ -51,7 +51,7 @@ const Contact = () => {
                         name="portfolio-form"
                         method="POST"
                         data-netlify="true"
-                        action="/?success=true"
+                        action="/contact/?success=true"
 
                     >
                         <input type="hidden" name="form-name" value="portfolio-form" />
