@@ -51,7 +51,7 @@ const Contact = () => {
                         name="portfolio-form"
                         method="POST"
                         data-netlify="true"
-                        action="/contact/?success=true"
+                        action="/?success=true"
 
                     >
                         <input type="hidden" name="form-name" value="portfolio-form" />
@@ -65,7 +65,7 @@ const Contact = () => {
                             fullWidth={true}
                             label="First name"
                             name="name"
-                            variant="outlined"
+                            // variant="outlined"
                             inputProps={{ className: classes.input }}
                             className={classes.field}
                         />
@@ -74,7 +74,7 @@ const Contact = () => {
                             fullWidth={true}
                             label="Last name"
                             name="name"
-                            variant="outlined"
+                            // variant="outlined"
                             inputProps={{ className: classes.input }}
                             className={classes.field}
                         />
@@ -83,7 +83,7 @@ const Contact = () => {
                             fullWidth={true}
                             label="Email"
                             name="email"
-                            variant="outlined"
+                            // variant="outlined"
                             inputProps={{ className: classes.input }}
                             className={classes.field}
                         />
@@ -91,14 +91,14 @@ const Contact = () => {
                             fullWidth={true}
                             label="Message"
                             name="message"
-                            variansat="outlined"
+                            // variansat="outlined"
                             multiline
                             rows={4}
                             inputProps={{ className: classes.input }}
                         />
                         <Button
                             halfWidth={true}
-                            variant="outlined"
+                            // variant="outlined"
                             type="submit"
                             endIcon={<Send />}
                             className={classes.button}
