@@ -91,7 +91,7 @@ const Contact = () => {
                             fullWidth={true}
                             label="Message"
                             name="message"
-                            variant="outlined"
+                            variansat="outlined"
                             multiline
                             rows={4}
                             inputProps={{ className: classes.input }}
