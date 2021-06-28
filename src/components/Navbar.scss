@@ -59,58 +59,64 @@
 
 .MuiList-padding {
   padding: 25px 25px 25px 18px !important;
-  // box-shadow: 3px 7px 0px 0px #97b5bb45;
   border-radius: 0 6rem 8rem 0;
   margin: 21px 0;
-  // background: #c1e0e8;
+  box-shadow: 1px 1px 25px 0px #a9cdd64f;
+  border-radius: 1rem 8.7rem 8.7rem 1rem;
+  margin-left: 1rem;
+  width: 95%;
+  background: radial-gradient(#d9ecf0, #bedee6);
 }
 .MuiDrawer-paperAnchorRight {
-  background: #c9e9f1 !important;
+  background: #174c5d !important;
+}
+
+.MuiPaper-root,
+.MuiDrawer-paper,
+.MuiDrawer-paperAnchorRight,
+.MuiPaper-elevation16 {
+  border-radius: 9rem 0rem 2rem 2rem !important;
 }
 
 .makeStyles-formStyle-14 {
   width: 90vw !important;
 }
 .MuiList-root .MuiListItem-gutters {
-  margin: 10px 0 10px 0 !important;
+  margin: 6px 8px !important;
 }
 
 .MuiList-root .MuiListItem-gutters:nth-child(1) {
-  border-radius: 4rem 8rem 0.3rem 0;
-  border-radius: 2rem;
+  border: 1px solid azure;
+  border-radius: 0.7rem 4rem 0.7rem 1rem;
   width: 79%;
-  background: radial-gradient(#38b7d4, #2a8fa9fc);
-  border: 0.3px solid #b6cdce;
-  box-shadow: 0px 0px 0px 1px #b1ccd4;
+  background: linear-gradient(#ffffff, #e3f3f7);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(2) {
-  border-radius: 0.3rem 3.85rem 0.4rem 0.3rem;
-  border-radius: 2rem;
+  border: 1px solid azure;
+
+  border-radius: 0.7rem 4rem 0.7rem 1rem;
   width: 91%;
-  background: radial-gradient(#38b7d4, #2a8fa9fc);
-  border: 0.3px solid #b6cdce;
-  box-shadow: 0px 0px 0px 1px #b1ccd4;
+  background: linear-gradient(#ffffff, #e3f3f7);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(3) {
-  border-radius: 0.3rem 0.4rem 3.85rem 0.3rem;
-  border-radius: 2rem;
+  border: 1px solid azure;
+
+  border-radius: 1rem 0.7rem 4rem 0.7rem;
   width: 91%;
-  background: radial-gradient(#38b7d4, #2a8fa9fc);
-  border: 0.3px solid #b6cdce;
-  box-shadow: 0px 0px 0px 1px #b1ccd4;
+  background: linear-gradient(#ffffff, #e3f3f7);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(4) {
+  border: 1px solid azure;
   border-radius: 0 0 8rem 4rem;
-  border-radius: 2rem;
+  border-radius: 1rem 0.7rem 4rem 0.7rem;
   width: 79%;
-  background: radial-gradient(#38b7d4, #2a8fa9fc);
-  border: 0.3px solid #b6cdce;
-  box-shadow: 0px 0px 0px 1px #b1ccd4;
+  background: linear-gradient(#ffffff, #e3f3f7);
 }
 
 .MuiList-root .MuiListItem-gutters:hover {
   // background: #fff !important;
-  background: linear-gradient(#59afc9e0, #19a8cc73) !important;
+  background: #fff !important;
+  color: white !important;
 }
 
 .MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly {

@@ -1,25 +1,23 @@
-
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import Marginer from '../Marginer/index';
-import { device } from '../MediaQuery/device';
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import Marginer from "../Marginer/index";
+import { device } from "../MediaQuery/device";
 
 export default function TextAnimation() {
-    const reactArray = 'OMPHALUS-KUA'.split("");
+  const reactArray = "OMPHALUS-KUA".split("");
 
+  return (
+    <React.Fragment>
+      <Wrapper>
+        {reactArray.map((item, index) => (
+          <span key={index}>{item}</span>
+        ))}
+      </Wrapper>
 
-    return (
-        <React.Fragment>
-            <Wrapper>{reactArray.map((item, index) => (
-                <span key={index}>{item}</span>
-            ))}</Wrapper>
-
-            <SmallText>Creative Technologist</SmallText>
-            <Marginer direction="vertical" margin="1.2rem" />
-
-
-        </React.Fragment>
-    );
+      <SmallText>Creative Technologist</SmallText>
+      <Marginer direction="vertical" margin="1.2rem" />
+    </React.Fragment>
+  );
 }
 
 const animation = keyframes`
@@ -47,76 +45,73 @@ const animation = keyframes`
       }
 `;
 
-
 const Wrapper = styled.span`
-    display: inline-block;
-    color: #356673;
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 18.4px;
-    font-weight: bold;
-    letter-spacing: .05rem;
-    padding: 1rem 0 0 0;
-    font-family: "Asap", sans-serif;
-    @media ${device.laptop} {
-        font-size: 22px;
-    }
-    
-    
+  display: inline-block;
+  color: #dc5656;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 18.4px;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  padding: 1rem 0 0 0;
+  font-family: "Zen dots", sans-serif;
+  @media ${device.laptop} {
+    font-size: 42px;
+    letter-spacing: 0.24rem;
+  }
 
-    span {
-            display: inline-block;
-            opacity: 0;
-            animation-name: ${animation};
-            animation-duration: 8s;
-            animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
-            animation-timing-function: cubic-bezier(0.75,.82,.165, 1);
-        }
-    
-    span:nth-child(1) {
-        animation-delay: .15s;
-    }
-    span:nth-child(2) {
-        animation-delay: .3s;
-    }
-    span:nth-child(3) {
-        animation-delay: .45s;
-    }
-    span:nth-child(4) {
-        animation-delay: .60s;
-    }
-    span:nth-child(5) {
-        animation-delay: 1.15s;
-    }
-    span:nth-child(6) {
-        animation-delay: 1.3s;
-    }
-    span:nth-child(7) {
-        animation-delay: 1.45s;
-    }
-    span:nth-child(8) {
-        animation-delay: 2s;
-    }
-    span:nth-child(9) {
-        animation-delay: 2.15s;
-        color: #5f9ea000;
-    }
-    span:nth-child(10) {
-        animation-delay: 2.3s;
-    }
-    span:nth-child(11) {
-        animation-delay: 2.45s;
-    }
-    span:nth-child(12) {
-        animation-delay: 2.9s;
-    }
+  span {
+    display: inline-block;
+    opacity: 0;
+    animation-name: ${animation};
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+  }
+
+  span:nth-child(1) {
+    animation-delay: 0.15s;
+  }
+  span:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  span:nth-child(3) {
+    animation-delay: 0.45s;
+  }
+  span:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  span:nth-child(5) {
+    animation-delay: 1.15s;
+  }
+  span:nth-child(6) {
+    animation-delay: 1.3s;
+  }
+  span:nth-child(7) {
+    animation-delay: 1.45s;
+  }
+  span:nth-child(8) {
+    animation-delay: 2s;
+  }
+  span:nth-child(9) {
+    animation-delay: 2.15s;
+    color: #5f9ea000;
+  }
+  span:nth-child(10) {
+    animation-delay: 2.3s;
+  }
+  span:nth-child(11) {
+    animation-delay: 2.45s;
+  }
+  span:nth-child(12) {
+    animation-delay: 2.9s;
+  }
 `;
 
 const SmallText = styled.span`
-  font-size: 18px;
+  font-size: 17px;
   color: #315e69;
   text-align: center;
-  font-family: 'Caveat';
-
+  font-family: "Kanit";
 `;
