@@ -127,7 +127,7 @@ const Portfolio = () => {
           <Grid item xs={12} sm={8} md={4} key={i}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
-                <CardMedia45
+                <CardMedia
                   component="img"
                   alt="Project 1"
                   height="140"
