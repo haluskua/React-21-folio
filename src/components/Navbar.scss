@@ -49,7 +49,7 @@
   width: 100%;
   border-radius: 3px;
   .MuiListItem-gutters {
-    padding: 6px 16px !important;
+    padding: 2px 16px !important;
   }
 }
 
@@ -61,11 +61,11 @@
   padding: 25px 25px 25px 18px !important;
   border-radius: 0 6rem 8rem 0;
   margin: 21px 0;
-  box-shadow: 1px 1px 25px 0px #a9cdd64f;
+  box-shadow: 1px 1px 25px 0px #5a95a34f;
   border-radius: 1rem 8.7rem 8.7rem 1rem;
   margin-left: 1rem;
   width: 95%;
-  background: radial-gradient(#d9ecf0, #bedee6);
+  background: radial-gradient(#d9ecf0b3, #00686870);
 }
 .MuiDrawer-paperAnchorRight {
   background: #174c5d !important;
@@ -86,12 +86,14 @@
 }
 
 .MuiList-root .MuiListItem-gutters:nth-child(1) {
+  box-shadow: 1px 1px 2px 1px #ffffff5e;
   border: 1px solid azure;
   border-radius: 0.7rem 4rem 0.7rem 1rem;
   width: 79%;
   background: linear-gradient(#ffffff, #e3f3f7);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(2) {
+  box-shadow: 1px 1px 2px 1px #ffffff5e;
   border: 1px solid azure;
 
   border-radius: 0.7rem 4rem 0.7rem 1rem;
@@ -99,6 +101,7 @@
   background: linear-gradient(#ffffff, #e3f3f7);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(3) {
+  box-shadow: 1px 1px 2px 1px #ffffff5e;
   border: 1px solid azure;
 
   border-radius: 1rem 0.7rem 4rem 0.7rem;
@@ -106,6 +109,7 @@
   background: linear-gradient(#ffffff, #e3f3f7);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(4) {
+  box-shadow: 1px 1px 2px 1px #ffffff5e;
   border: 1px solid azure;
   border-radius: 0 0 8rem 4rem;
   border-radius: 1rem 0.7rem 4rem 0.7rem;
@@ -115,7 +119,7 @@
 
 .MuiList-root .MuiListItem-gutters:hover {
   // background: #fff !important;
-  background: #fff !important;
+  background: rgb(255, 203, 203) !important;
   color: white !important;
 }
 

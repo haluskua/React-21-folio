@@ -21,7 +21,7 @@ import avatar from "../../src/images/newlogo.png";
 import { motion } from "framer-motion";
 import Footer from "../../src/components/Footer";
 import "../../src/components/Navbar.scss";
-import TextAnimation from "./3D/TextAnimations";
+import NameAnimation from "../components/3D/NameAnimate";
 
 // :::::::::::::::::::
 //--//styling
@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     borderRadius: "8rem 0",
-    background: "linear-gradient(#fdfdfdbd, #00475d)",
+    background: "linear-gradient(#000000bd, #00475d)",
   },
   avatar: {
     display: "block",
@@ -69,9 +69,8 @@ const useStyles = makeStyles((theme) => ({
   textColor: {
     "& span": {
       color: "#6f9aa5",
-      fontSize: "1.086rem",
-      letterSpacing: "0.01rem",
-      fontFamily: "Kanit",
+      fontFamily: "Lexend",
+      fontWeight: "500",
     },
   },
   hamburger_lines: {
@@ -120,7 +119,7 @@ const Navbar = () => {
   const sideList = () => (
     <Box className={classes.menuSliderContainer} component="div">
       <Avatar className={classes.avatar} src={avatar} alt="Ompa" />
-      <TextAnimation />
+      <NameAnimation />
       <Divider />
       <List>
         {menuItems.map((item, i) => (

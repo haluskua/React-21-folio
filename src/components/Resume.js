@@ -108,7 +108,7 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: "4px",
     textTransform: "uppercase",
     background: "#3d5367",
-    fontFamily: "'Zen dots', Open Sans",
+    fontFamily: "'Audiowide', Open Sans",
   },
   subHeading: {
     fontSize: "1.58rem",

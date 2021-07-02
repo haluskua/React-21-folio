@@ -1,9 +1,8 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import Marginer from "../Marginer/index";
-import { device } from "../MediaQuery/device";
 
-export default function TextAnimation() {
+export default function NameAnimation() {
   const reactArray = "OMPHALUS-KUA".split("");
 
   return (
@@ -53,16 +52,12 @@ const Wrapper = styled.span`
   color: #dc5656;
   text-transform: uppercase;
   margin: 0;
-  font-size: 16.4px;
+  font-size: 18.74px;
   font-weight: bold;
   letter-spacing: 0.05rem;
   padding: 1rem 0 0 0;
   font-family: "Zen dots", sans-serif;
   /* font-family: "GFS Neohellenic", sans-serif; */
-  @media ${device.laptop} {
-    font-size: 23px;
-    letter-spacing: 0.24rem;
-  }
 
   span {
     display: inline-block;
@@ -114,7 +109,7 @@ const Wrapper = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 20px;
+  font-size: 17px;
   color: #a0cdd8;
   letter-spacing: 0.1rem;
   text-align: center;

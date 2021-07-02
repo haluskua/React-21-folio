@@ -65,23 +65,18 @@ const CardWrapper = styled.div`
   height: 100vh;
 `;
 const CardContainer = styled(motion.div)`
-  // border: 2px solid rgb(191 186 186);
   width: 85vw;
   height: 85vh;
   display: flex;
   flex-direction: column;
-  /* box-shadow: 0px 0px 98px 1px rgb(12 181 224 / 32%);
-  background: #042833cf; */
-
-  box-shadow: 0px 0px 34px 11px rgb(14 123 140 / 36%);
-  background: #042833cf;
   color: #fff;
   position: relative;
   cursor: grab;
   z-index: 16;
   overflow: hidden;
+  /* box-shadow: 0px 0px 34px 11px rgba(14, 123, 140, 0.24);
   border-radius: 5rem 1rem 6rem 1rem;
-  border: 5px solid #042833cf;
+  border: 5px solid #04283370; */
 
   -ms-overflow-style: none;
   ::-webkit-scrollbar {

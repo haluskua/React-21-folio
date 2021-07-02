@@ -121,9 +121,9 @@ const SmallText = styled.span`
   letter-spacing: 0.174rem;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Zen dots", Open Sans condensed;
+  font-family: "Audiowide", Open Sans condensed;
   @media ${device.laptop} {
-    font-size: 25.72px;
+    font-size: 28px;
     line-height: 2.133rem;
   }
 `;
