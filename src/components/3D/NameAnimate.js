@@ -56,8 +56,7 @@ const Wrapper = styled.span`
   font-weight: bold;
   letter-spacing: 0.05rem;
   padding: 1rem 0 0 0;
-  font-family: "Zen dots", sans-serif;
-  /* font-family: "GFS Neohellenic", sans-serif; */
+  font-family: "Audiowide", Open Sans condensed;
 
   span {
     display: inline-block;

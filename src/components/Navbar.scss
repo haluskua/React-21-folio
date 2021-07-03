@@ -61,14 +61,14 @@
   padding: 25px 25px 25px 18px !important;
   border-radius: 0 6rem 8rem 0;
   margin: 21px 0;
-  box-shadow: 1px 1px 25px 0px #5a95a34f;
+  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
   border-radius: 1rem 8.7rem 8.7rem 1rem;
   margin-left: 1rem;
   width: 95%;
-  background: radial-gradient(#d9ecf0b3, #00686870);
+  background: #f5f7ff;
 }
 .MuiDrawer-paperAnchorRight {
-  background: #174c5d !important;
+  background: #f8f9fd !important;
 }
 
 .MuiPaper-root,
@@ -86,14 +86,14 @@
 }
 
 .MuiList-root .MuiListItem-gutters:nth-child(1) {
-  box-shadow: 1px 1px 2px 1px #ffffff5e;
+  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
   border: 1px solid azure;
   border-radius: 0.7rem 4rem 0.7rem 1rem;
   width: 79%;
   background: linear-gradient(#ffffff, #e3f3f7);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(2) {
-  box-shadow: 1px 1px 2px 1px #ffffff5e;
+  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
   border: 1px solid azure;
 
   border-radius: 0.7rem 4rem 0.7rem 1rem;
@@ -101,7 +101,7 @@
   background: linear-gradient(#ffffff, #e3f3f7);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(3) {
-  box-shadow: 1px 1px 2px 1px #ffffff5e;
+  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
   border: 1px solid azure;
 
   border-radius: 1rem 0.7rem 4rem 0.7rem;
@@ -109,7 +109,7 @@
   background: linear-gradient(#ffffff, #e3f3f7);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(4) {
-  box-shadow: 1px 1px 2px 1px #ffffff5e;
+  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
   border: 1px solid azure;
   border-radius: 0 0 8rem 4rem;
   border-radius: 1rem 0.7rem 4rem 0.7rem;
