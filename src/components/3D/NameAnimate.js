@@ -49,14 +49,14 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #dc5656;
+  color: #414242;
   text-transform: uppercase;
   margin: 0;
-  font-size: 18.74px;
+  font-size: 23.74px;
   font-weight: bold;
   letter-spacing: 0.05rem;
   padding: 1rem 0 0 0;
-  font-family: "Audiowide", Open Sans condensed;
+  font-family: "Bebas neue", Open Sans condensed;
 
   span {
     display: inline-block;
@@ -108,9 +108,7 @@ const Wrapper = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 17px;
-  color: #a0cdd8;
-  letter-spacing: 0.1rem;
+  font-size: 12px;
+  color: #85afb9;
   text-align: center;
-  font-family: "Bebas Neue";
 `;

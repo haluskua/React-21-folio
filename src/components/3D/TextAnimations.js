@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import Marginer from "../Marginer/index";
 import { device } from "../MediaQuery/device";
 
 export default function TextAnimation() {
@@ -13,8 +12,7 @@ export default function TextAnimation() {
           <span key={index}>{item}</span>
         ))}
       </Wrapper>
-      <SmallText>Creative Technologist</SmallText>
-      <Marginer direction="vertical" margin="1.2rem" />
+      <SmallText> Web Application </SmallText>
     </React.Fragment>
   );
 }
@@ -53,15 +51,14 @@ const Wrapper = styled.span`
   color: #dc5656;
   text-transform: uppercase;
   margin: 0;
-  font-size: 16.4px;
+  font-size: 35.4px;
   font-weight: bold;
-  letter-spacing: 0.05rem;
-  padding: 1rem 0 0 0;
-  font-family: "Zen dots", sans-serif;
+  letter-spacing: 0.1rem;
+  font-family: "Bebas neue", sans-serif;
   /* font-family: "GFS Neohellenic", sans-serif; */
   @media ${device.laptop} {
-    font-size: 23px;
-    letter-spacing: 0.24rem;
+    font-size: 39px;
+    letter-spacing: 0.2rem;
   }
 
   span {
@@ -114,9 +111,9 @@ const Wrapper = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 20px;
+  font-size: 22px;
   color: #a0cdd8;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
   text-align: center;
   font-family: "Bebas Neue";
 `;

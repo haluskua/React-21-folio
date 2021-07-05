@@ -64,11 +64,11 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "-41px",
   },
   listItem: {
-    color: "#93c7d4",
+    color: "#4895ac",
   },
   textColor: {
     "& span": {
-      color: "#6f9aa5",
+      color: "#4895ac",
       fontFamily: "Lexend",
       fontWeight: "500",
     },
@@ -78,7 +78,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     background: "rgb(48 144 169 / 58%)",
     color: "#fff",
-    textShadow: "grey",
     borderRadius: "50%",
     cursor: "pointer",
     padding: "5px",

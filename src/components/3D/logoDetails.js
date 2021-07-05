@@ -12,39 +12,6 @@ import IconButton from "@material-ui/core/IconButton";
 
 import { device } from "../MediaQuery/device";
 
-const useStyles = makeStyles((theme) => ({
-  centerLL: {
-    display: "flex",
-    justifyContent: "center",
-    padding: ".03rem",
-    with: "100%",
-    height: "auto",
-  },
-  centerOne: {
-    padding: "2px",
-  },
-  hamburger_lines: {
-    display: "flex",
-    justifyContent: "center",
-    background: "rgb(53 181 214)",
-    color: "#fff",
-    borderRadius: "50%",
-    cursor: "pointer",
-    margin: "5px",
-    padding: "1px",
-    border: "none",
-    boxShadow: "2px 5px 10px rgba(0, 0, 0, 0.32)",
-  },
-  title: {
-    color: "#769299",
-    marginTop: "1rem",
-    textTransform: "uppercase",
-    fontFamily: "'Staatliches', Open Sans condensed",
-    fontSize: "14.5px",
-    letterSpacing: ".43px",
-  },
-}));
-
 const buttonVariants = {
   hover: {
     scale: [1, 1.03],
@@ -62,9 +29,9 @@ export function LogoDetails(props) {
 
   return (
     <DetailsContainer>
-      <Marginer direction="vertical" margin="1.525em" />
+      <Marginer direction="vertical" margin="1em" />
       <SmallText>DESIGNER & DEVELOPER</SmallText>
-      <Marginer direction="vertical" margin=".525em" />
+      <Marginer direction="vertical" margin=".5em" />
       <Box component="div" className={classes.centerLL}>
         <SpacedHorizontalContainer>
           <MediumText>Frontend | Fullstack</MediumText>
@@ -72,7 +39,7 @@ export function LogoDetails(props) {
       </Box>
       <Toolbar>
         <Link to="/portfolio">
-          <IconButton>
+          <IconButton className={classes.main_button}>
             <motion.button
               className={classes.hamburger_lines}
               variants={buttonVariants}
@@ -115,7 +82,7 @@ const MediumText = styled.span`
 
 const SmallText = styled.span`
   font-size: 24px;
-  color: #35b5d6;
+  color: ghostwhite;
   font-weight: 400;
   line-height: 1.6rem;
   letter-spacing: 0.174rem;
@@ -134,3 +101,42 @@ const SpacedHorizontalContainer = styled.div`
   justify-content: space-between;
   align-items: flex-end;
 `;
+
+const useStyles = makeStyles((theme) => ({
+  centerLL: {
+    display: "flex",
+    justifyContent: "center",
+    padding: ".03rem",
+    with: "100%",
+    height: "auto",
+  },
+  centerOne: {
+    padding: "2px",
+  },
+  hamburger_lines: {
+    display: "flex",
+    justifyContent: "center",
+    background: "rgb(53 181 214)",
+    color: "#fff",
+    borderRadius: "50%",
+    cursor: "pointer",
+    margin: "5px",
+    padding: "1px",
+    border: "none",
+    boxShadow: "2px 5px 10px rgba(0, 0, 0, 0.32)",
+  },
+
+  main_button: {
+    background: "#2a4f58",
+
+    padding: "1rem",
+  },
+  title: {
+    color: "#769299",
+    marginTop: "1rem",
+    textTransform: "uppercase",
+    fontFamily: "'Staatliches', Open Sans condensed",
+    fontSize: "14.5px",
+    letterSpacing: ".43px",
+  },
+}));

@@ -113,20 +113,19 @@ const useStyles = makeStyles((theme) => ({
   subHeading: {
     fontSize: "1.58rem",
     color: "#3d5367",
-    letterSpacing: "0.71px",
+    letterSpacing: "0.9px",
     padding: "9px 0 2px 0",
     lineHeight: "2rem",
     fontWeight: "bold",
     textTransform: "uppercase",
-    fontFamily: "'Zen dots', Open Sans",
+    fontFamily: "'Bebas Neue', Open Sans",
   },
   body1: {
     color: "#82ad3c",
-    fontFamily: "Asap",
-    fontSize: "1rem",
+    fontFamily: "Bebas Neue",
+    fontSize: "1.22rem",
     padding: "8px",
     textTransform: "uppercase",
-    fontWeight: "bold",
   },
   subtitle1: {
     color: "#3d5367",
@@ -135,7 +134,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     lineHeight: "1.5rem",
     justifyContent: "center",
-    fontFamily: "Kanit",
+    fontFamily: "Lexend",
   },
 }));
 

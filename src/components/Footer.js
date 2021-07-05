@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     marginLeft: "-2.3rem",
     marginTop: "11px",
     // background: "linear-gradient(180deg, #c9e9f1, #adccd4)",
-    boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
+    // boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
     background: "#f8f9fd",
   },
   root: {

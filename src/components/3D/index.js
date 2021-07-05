@@ -47,7 +47,7 @@ export default function FrontCard(props) {
           <TextAnimation />
           <Marginer direction="vertical" margin="0em" />
         </TopContainer>
-        <Marginer direction="vertical" margin="4.5em" />
+        <Marginer direction="vertical" margin="0.5em" />
         <BottomContainer>
           <LogoDetails />
         </BottomContainer>
@@ -113,7 +113,11 @@ const TopContainer = styled.div`
   position: relative;
   align-items: center;
   justify-content: flex-end;
-  padding: 8px 0 44px 0;
+  padding: 8px 0 36px 0;
+
+  @media ${device.laptop} {
+    padding: 8px 0 60px 0;
+  }
 `;
 
 const BottomContainer = styled.div`
@@ -135,6 +139,6 @@ const LogoWrapper = styled.div`
 const MyLogo = styled(motion.div)`
   z-index: 99;
   user-select: none;
-  margin-top: -11em;
+  margin-top: 0em;
   position: absolute;
 `;
