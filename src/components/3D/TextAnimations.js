@@ -48,16 +48,15 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #dc5656;
+  color: #3e7380;
   text-transform: uppercase;
   margin: 0;
   font-size: 35.4px;
   font-weight: bold;
   letter-spacing: 0.1rem;
   font-family: "Bebas neue", sans-serif;
-  /* font-family: "GFS Neohellenic", sans-serif; */
   @media ${device.laptop} {
-    font-size: 39px;
+    font-size: 36px;
     letter-spacing: 0.2rem;
   }
 
@@ -113,7 +112,7 @@ const Wrapper = styled.span`
 const SmallText = styled.span`
   font-size: 22px;
   color: #a0cdd8;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.082rem;
   text-align: center;
   font-family: "Bebas Neue";
 `;

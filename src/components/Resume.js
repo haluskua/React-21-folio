@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     padding: "1rem",
     margin: "o auto",
-    background: "radial-gradient(#edfbff, #3c93ad)",
+    background: "#f8f9fd",
 
     "&:before": {
       content: "''",
@@ -42,9 +42,9 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     margin: "1rem 2rem 1rem 1rem",
     clear: "both",
-    background: "#d9f6ff",
-    borderRadius: "4rem 0 4rem 0",
-    boxShadow: "1px 1px 6px 1px rgb(105 135 138 / 42%)",
+    background: "linear-gradient(#ffffff, #eaf3fd)",
+    borderRadius: "4rem 1rem 4rem 1rem",
+    boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
     "&:after": {
       content: "''",
       position: "absolute",
@@ -81,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.74rem",
     fontWeight: "bold",
     color: "#fff",
-    background: "#3d5367",
+    background: "#ff9797",
     lineHeight: "1rem",
     padding: "1rem",
     "&:before": {
@@ -101,30 +101,31 @@ const useStyles = makeStyles((theme) => ({
   },
 
   heading: {
-    fontSize: "2.57rem",
+    fontSize: "2.057rem",
     color: "mintcream",
     padding: "3rem 0",
     fontWeight: "bold",
     letterSpacing: "4px",
     textTransform: "uppercase",
-    background: "#3d5367",
+    background: "#ff9797",
     fontFamily: "'Audiowide', Open Sans",
   },
   subHeading: {
-    fontSize: "1.58rem",
-    color: "#3d5367",
-    letterSpacing: "0.9px",
+    fontSize: "1.34rem",
+    color: "#576a7c",
+    letterSpacing: "0.2px",
     padding: "9px 0 2px 0",
     lineHeight: "2rem",
     fontWeight: "bold",
     textTransform: "uppercase",
-    fontFamily: "'Bebas Neue', Open Sans",
+    fontFamily: "'Kanit', Open Sans",
+    textShadow: "0px 0px #ff9797",
   },
   body1: {
-    color: "#82ad3c",
+    color: "#868686",
     fontFamily: "Bebas Neue",
     fontSize: "1.22rem",
-    padding: "8px",
+    padding: "0px 0 8px 0",
     textTransform: "uppercase",
   },
   subtitle1: {
@@ -143,7 +144,7 @@ const Resume = () => {
   return (
     <Box component="header" className={classes.mainContainer}>
       <Typography variant="h4" align="center" className={classes.heading}>
-        Work & Learning Experience
+        Learning experiences
       </Typography>
       <Box component="div" className={classes.timeLine}>
         <Typography

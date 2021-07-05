@@ -24,7 +24,7 @@ import project6 from "../images/serv-side-api.png";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "radial-gradient(#edfbff, #3c93ad)",
+    background: "#f8f9fd",
   },
   cardContainer: {
     maxWidth: "78%",
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "space-between",
     borderRadius: "3rem 0",
-    boxShadow: "2px 4px 8px 2px #1a6d86ad",
+    boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
   },
   boldTypo: {
     fontWeight: "bolder",

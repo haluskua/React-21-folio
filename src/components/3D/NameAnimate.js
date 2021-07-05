@@ -12,7 +12,7 @@ export default function NameAnimation() {
           <span key={index}>{item}</span>
         ))}
       </Wrapper>
-      <SmallText>Creative Technologist</SmallText>
+      <SmallText>Designer & Developer</SmallText>
       <Marginer direction="vertical" margin="1.2rem" />
     </React.Fragment>
   );

@@ -116,7 +116,7 @@ const useStyles = makeStyles((theme) => ({
   hamburger_lines: {
     display: "flex",
     justifyContent: "center",
-    background: "rgb(53 181 214)",
+    background: "#dc5656",
     color: "#fff",
     borderRadius: "50%",
     cursor: "pointer",
@@ -128,15 +128,14 @@ const useStyles = makeStyles((theme) => ({
 
   main_button: {
     background: "#2a4f58",
-
     padding: "1rem",
   },
   title: {
     color: "#769299",
     marginTop: "1rem",
     textTransform: "uppercase",
-    fontFamily: "'Staatliches', Open Sans condensed",
     fontSize: "14.5px",
     letterSpacing: ".43px",
+    marginLeft: "0.61rem",
   },
 }));
