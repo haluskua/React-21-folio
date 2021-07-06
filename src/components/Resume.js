@@ -8,8 +8,16 @@ import "../components/resume.scss";
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#f3f3f3",
-    [theme.breakpoints.up("md")]: {
-      padding: "2rem 18rem",
+    padding: "0 1rem",
+
+    [theme.breakpoints.up("768")]: {
+      padding: "0rem 5rem",
+    },
+    [theme.breakpoints.up("1024")]: {
+      padding: "0rem 8rem",
+    },
+    [theme.breakpoints.up("1440")]: {
+      padding: "0rem 18rem",
     },
   },
   timeLine: {
@@ -48,6 +56,10 @@ const useStyles = makeStyles((theme) => ({
     background: "ghostwhite",
     borderRadius: "4rem 1rem 4rem 1rem",
     boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
+    // [theme.breakpoints.up("768")]: {
+    //   padding: "1rem 4rem",
+    //   marginLeft: "4rem",
+    // },
     "&:after": {
       content: "''",
       position: "absolute",
@@ -62,6 +74,7 @@ const useStyles = makeStyles((theme) => ({
       borderWidth: "0.625rem",
       transform: "rotate(45deg)",
     },
+
     [theme.breakpoints.up("md")]: {
       width: "44%",
       margin: "1rem",

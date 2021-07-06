@@ -24,7 +24,18 @@ import project6 from "../images/serv-side-api.png";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#f8f9fd",
+    background: "#f3f3f3",
+    padding: "0 1rem",
+
+    [theme.breakpoints.up("768")]: {
+      padding: "0rem 5rem",
+    },
+    [theme.breakpoints.up("1024")]: {
+      padding: "0rem 8rem",
+    },
+    [theme.breakpoints.up("1440")]: {
+      padding: "0rem 18rem",
+    },
   },
   cardContainer: {
     maxWidth: "78%",
