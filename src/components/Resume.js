@@ -8,6 +8,9 @@ import "../components/resume.scss";
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#f3f3f3",
+    [theme.breakpoints.up("md")]: {
+      padding: "2rem 18rem",
+    },
   },
   timeLine: {
     position: "relative",
@@ -37,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   timeLineItem: {
-    padding: "1.7rem",
+    padding: "1rem",
     // borderBottom: ".05px solid grey",
     position: "relative",
     margin: "1rem 2rem 1rem 1rem",
@@ -62,6 +65,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       width: "44%",
       margin: "1rem",
+      padding: "1.7rem",
       "&:nth-of-type(2n)": {
         float: "right",
         margin: "1rem",
@@ -76,11 +80,12 @@ const useStyles = makeStyles((theme) => ({
   },
   timeLineYear: {
     textAlign: "center",
-    maxWidth: "16.375rem",
+    maxWidth: "10.375rem",
     margin: "0 3rem 0 auto",
     fontSize: "1.74rem",
     fontWeight: "bold",
     color: "#fff",
+    fontFamily: "Caveat",
     background: "#ff9797",
     lineHeight: "1rem",
     padding: "1rem",
@@ -89,11 +94,13 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("md")]: {
       textAlign: "center",
+      maxWidth: "14.375rem",
       margin: "0 auto",
       "&:nth-of-type(2n)": {
         float: "none",
         margin: "0 auto",
       },
+
       "&:nth-of-type(2n):before": {
         display: "none",
       },
@@ -101,41 +108,54 @@ const useStyles = makeStyles((theme) => ({
   },
 
   heading: {
-    fontSize: "2.057rem",
+    fontSize: "1.6rem",
     color: "mintcream",
-    padding: "3rem 0",
+    padding: "1rem 0",
     fontWeight: "bold",
-    letterSpacing: "4px",
     textTransform: "uppercase",
     background: "#ff9797",
     fontFamily: "'Audiowide', Open Sans",
+    [theme.breakpoints.up("md")]: {
+      fontSize: "2.6rem",
+    },
   },
   subHeading: {
-    fontSize: "1.34rem",
-    color: "#576a7c",
-    letterSpacing: "0.2px",
+    fontSize: "1.5rem",
+    fontWeight: "600",
+    color: "#868686",
     padding: "9px 0 2px 0",
-    lineHeight: "2rem",
-    fontWeight: "bold",
-    textTransform: "uppercase",
-    fontFamily: "'Kanit', Open Sans",
+    lineHeight: "1.5rem",
+    fontFamily: "Caveat",
     textShadow: "0px 0px #ff9797",
+    [theme.breakpoints.up("md")]: {
+      fontSize: "2.31rem",
+    },
   },
   body1: {
     color: "#868686",
-    fontFamily: "Bebas Neue",
-    fontSize: "1.22rem",
-    padding: "0px 0 8px 0",
+    fontSize: "0.9rem",
+    fontFamily: "Asap",
     textTransform: "uppercase",
+    lineHeight: "1.2rem",
+    fontWeight: "bold",
+    padding: "0px 0 8px 0",
+    [theme.breakpoints.up("md")]: {
+      fontSize: "1.03rem",
+      lineHeight: "2.5rem",
+    },
   },
   subtitle1: {
-    color: "#3d5367",
+    color: "gray",
     textAlign: "left",
     width: "100%",
     display: "flex",
     lineHeight: "1.5rem",
     justifyContent: "center",
-    fontFamily: "Lexend",
+    fontFamily: "Padauk",
+    fontSize: "1.021rem",
+    [theme.breakpoints.up("md")]: {
+      fontSize: "1.1rem",
+    },
   },
 }));
 
@@ -159,10 +179,10 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Diploma in Exercise Science
+            Wellington Institute of Technologies
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            Wellington Institue of Technologies
+            Diploma in Exercise Science
           </Typography>
           <Typography
             variant="subtitle1"
@@ -186,10 +206,10 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Bachelor in Creative Technologies
+            Wellington Institute of Technologies
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            Wellington Institue of Technologies
+            Bachelor in Creative Technologies
           </Typography>
           <Typography
             variant="subtitle1"
@@ -213,10 +233,10 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Diploma in Web Design
+            Yoobee School of Design
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            Yoobee School of Design
+            Diploma in Web Design
           </Typography>
           <Typography
             variant="subtitle1"
@@ -239,10 +259,10 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Graphics and Web Developer
+            Self-employed (Freelancer)
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            Self-employed (Freelancer)
+            Graphics and Web Developer
           </Typography>
           <Typography
             variant="subtitle1"
@@ -264,10 +284,10 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Bootcamp App Development
+            Enspiral Dev Academy
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            Enspiral Dev Academy
+            Bootcamp App Development
           </Typography>
           <Typography
             variant="subtitle1"
@@ -293,10 +313,10 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Job Hunting
+            Web Designer & Graphic Designer
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            Web Designer & Graphic Designer
+            Job Hunting
           </Typography>
           <Typography
             variant="subtitle1"
