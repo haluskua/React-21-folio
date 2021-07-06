@@ -49,13 +49,13 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #414242;
+  color: #221012;
   text-transform: uppercase;
   margin: 0;
   font-size: 23.74px;
   font-weight: bold;
   letter-spacing: 0.05rem;
-  padding: 1rem 0 0 0;
+  padding: 2.2rem 0 0 0;
   font-family: "Bebas neue", Open Sans condensed;
 
   span {

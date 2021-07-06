@@ -41,11 +41,11 @@ const useStyles = makeStyles((theme) => ({
   },
   timeLineItem: {
     padding: "1rem",
-    // borderBottom: ".05px solid grey",
+    marginLeft: "0",
     position: "relative",
     margin: "1rem 2rem 1rem 1rem",
     clear: "both",
-    background: "linear-gradient(#ffffff, #fffef79e)",
+    background: "ghostwhite",
     borderRadius: "4rem 1rem 4rem 1rem",
     boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
     "&:after": {
@@ -86,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     color: "#fff",
     fontFamily: "Caveat",
-    background: "#e66262",
+    background: "rgb(47 133 155)",
     lineHeight: "1rem",
     padding: "1rem",
     "&:before": {
@@ -113,22 +113,38 @@ const useStyles = makeStyles((theme) => ({
     padding: "1rem",
     fontWeight: "bold",
     textTransform: "uppercase",
-    background: "#e66262",
+    background: "rgb(255 99 71)",
     fontFamily: "'Audiowide', Open Sans",
     [theme.breakpoints.up("md")]: {
       fontSize: "2.6rem",
     },
   },
   subHeading: {
-    fontSize: "1.65rem",
-    fontWeight: "600",
-    color: "#868686",
-    padding: "9px 0 2px 0",
-    lineHeight: "2.15rem",
-    fontFamily: "Caveat",
-    textShadow: "0px 0px #e66262",
+    fontSize: "1rem",
+    color: "rgb(47 133 155)",
+    padding: "9px 0 1px 0",
+    lineHeight: "1.5rem",
+    textShadow: "0px 0px rgb(34 16 18)",
+    textAlign: "left",
     [theme.breakpoints.up("md")]: {
-      fontSize: "2.21rem",
+      fontSize: "1.14rem",
+      lineHeight: "1.2rem",
+      textAlign: "center",
+    },
+  },
+  subtitle1: {
+    color: "#2f859b",
+    fontSize: "1.35rem",
+    lineHeight: "1.41rem",
+    fontFamily: "Oxygen",
+    fontWeight: "600",
+    padding: "0px 0 22px 0",
+    textAlign: "left",
+    [theme.breakpoints.up("md")]: {
+      textAlign: "center",
+      fontSize: "1.65rem",
+      lineHeight: "1.55rem",
+      paddingTop: "3px",
     },
   },
   body1: {
@@ -140,23 +156,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     fontFamily: "Padauk",
     letterSpacing: "0",
-    fontSize: "1.13rem",
+    fontSize: "1.12rem",
     [theme.breakpoints.up("md")]: {
       fontSize: "1.1rem",
       padding: "0 1.52rem",
-    },
-  },
-  subtitle1: {
-    color: "#868686",
-    fontSize: "0.94rem",
-    fontFamily: "Asap",
-    textTransform: "uppercase",
-    lineHeight: "1.2rem",
-    fontWeight: "bold",
-    padding: "0px 0 8px 0",
-    [theme.breakpoints.up("md")]: {
-      fontSize: "1.03rem",
-      lineHeight: "2.5rem",
     },
   },
 }));
@@ -173,7 +176,7 @@ const Resume = () => {
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2012
+          2021
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -181,7 +184,7 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Wellington Institute of Technologies
+            Web & Grafix Designer
           </Typography>
 
           <Typography
@@ -189,19 +192,18 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Diploma in Exercise Science
+            Freelancer
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            This course has allowed me to grow and refine my inter-personal
-            skills by writing training and dietary programs. I learned to build
-            trust, communication and confidence both for the clients and myself.
+            I am currently a Freelance web app developer and designer.
           </Typography>
         </Box>
+
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2014
+          2019
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -209,7 +211,7 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Wellington Institute of Technologies
+            Enspiral Dev Academy
           </Typography>
 
           <Typography
@@ -217,12 +219,14 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Bachelor in Creative Technologies
+            App Development - Bootcamp
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            My major is in Digital Media. I also became very familiar with the
-            Adobe suit. Understanding the 'Creative Industry' on a deeper level
-            and the creative process involved from beginning to end.
+            Certificate in Full stack web development. Coded more than 700+
+            hours with ReactJs, API, NodeJs and Knex database with
+            server-side-rendering and more. Simulated work environment included
+            Agile development, sprints and Kanban board with 10+ group and solo
+            projects.
           </Typography>
         </Box>
         <Typography
@@ -247,15 +251,15 @@ const Resume = () => {
             Diploma in Web Design
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            Introduction to Web Desigin. Html, css, Javascript, Php, WordPress
-            (CMS)
+            Introduction to Web Design. Html, css, Javascript, Php, Jquery,
+            WordPress (CMS) and version control with Git & github.
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2017
+          2014
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -263,24 +267,26 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Self-employed (Freelancer)
+            Wellington Institute of Technology
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Graphics and Web Developer
+            Bachelor in Creative Technology
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            Networking and building simple Websites and Graphics for clients.
+            Graduating with a major in Digital Media has allowed me to become
+            experienced with the Adobe suite. The most valuable lesson learned
+            was to do plenty of background research before starting any project.
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2019
+          2011
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -288,28 +294,24 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Enspiral Dev Academy
+            Wellington Institute of Technology
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Bootcamp App Development
+            Bachelor in Exercise Science
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            Certificate in Full stack web development. Coded more than 700+
-            hours with React Js, API, Node and Knex databse with
-            server-side-rendering. Simulated work environment included Agile
-            development, sprints and kanban board with 10+ group and solo
-            projects.
+            Personal Trainer: Sports Science
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2021
+          2008
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -317,19 +319,17 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Web & Graphic Designer
+            Canberra Raiders Reserve Grade
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Job Hunting
+            Semi-Pro Rugby League Player
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            I am good with Designing UI and UX for great web apps. I also have a
-            good knowledge and understanding of Backend development. My niche is
-            in Frontend web development and Graphic design.
+            Contracted to play Rugby League for the Queenbean Roos in Canberra.
           </Typography>
         </Box>
       </Box>
