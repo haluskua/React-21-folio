@@ -10,14 +10,17 @@ const useStyles = makeStyles((theme) => ({
     background: "#f3f3f3",
     padding: "0 1rem",
 
-    [theme.breakpoints.up("768")]: {
+    [theme.breakpoints.up("sm")]: {
       padding: "0rem 5rem",
     },
-    [theme.breakpoints.up("1024")]: {
+    [theme.breakpoints.up("md")]: {
       padding: "0rem 8rem",
     },
-    [theme.breakpoints.up("1440")]: {
+    [theme.breakpoints.up("lg")]: {
       padding: "0rem 18rem",
+    },
+    [theme.breakpoints.up("xl")]: {
+      padding: "0rem 22rem",
     },
   },
   timeLine: {
@@ -56,10 +59,7 @@ const useStyles = makeStyles((theme) => ({
     background: "ghostwhite",
     borderRadius: "4rem 1rem 4rem 1rem",
     boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
-    // [theme.breakpoints.up("768")]: {
-    //   padding: "1rem 4rem",
-    //   marginLeft: "4rem",
-    // },
+
     "&:after": {
       content: "''",
       position: "absolute",

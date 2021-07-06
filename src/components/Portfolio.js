@@ -27,24 +27,30 @@ const useStyles = makeStyles((theme) => ({
     background: "#f3f3f3",
     padding: "0 1rem",
 
-    [theme.breakpoints.up("768")]: {
-      padding: "0rem 5rem",
+    [theme.breakpoints.up("sm")]: {
+      padding: "0rem ",
     },
-    [theme.breakpoints.up("1024")]: {
+    [theme.breakpoints.up("md")]: {
+      padding: "0",
+    },
+    [theme.breakpoints.up("lg")]: {
       padding: "0rem 8rem",
     },
-    [theme.breakpoints.up("1440")]: {
-      padding: "0rem 18rem",
+    [theme.breakpoints.up("xl")]: {
+      padding: "0rem 16rem",
     },
   },
   cardContainer: {
-    maxWidth: "78%",
+    maxWidth: "80%",
     margin: "3rem auto",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
     borderRadius: "3rem 0",
     boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
+    [theme.breakpoints.up("768")]: {
+      maxWidth: "90% ",
+    },
   },
   boldTypo: {
     fontWeight: "bolder",
