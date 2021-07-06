@@ -86,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     color: "#fff",
     fontFamily: "Caveat",
-    background: "#ff9797",
+    background: "#e66262",
     lineHeight: "1rem",
     padding: "1rem",
     "&:before": {
@@ -113,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "1rem",
     fontWeight: "bold",
     textTransform: "uppercase",
-    background: "#ff9797",
+    background: "#e66262",
     fontFamily: "'Audiowide', Open Sans",
     [theme.breakpoints.up("md")]: {
       fontSize: "2.6rem",
@@ -126,14 +126,14 @@ const useStyles = makeStyles((theme) => ({
     padding: "9px 0 2px 0",
     lineHeight: "2.15rem",
     fontFamily: "Caveat",
-    textShadow: "0px 0px #ff9797",
+    textShadow: "0px 0px #e66262",
     [theme.breakpoints.up("md")]: {
       fontSize: "2.21rem",
     },
   },
   body1: {
     color: "#868686",
-    fontSize: "0.82rem",
+    fontSize: "0.94rem",
     fontFamily: "Asap",
     textTransform: "uppercase",
     lineHeight: "1.2rem",
@@ -152,7 +152,7 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "1.4rem",
     justifyContent: "center",
     fontFamily: "Padauk",
-    fontSize: "1.021rem",
+    fontSize: "1.13rem",
     [theme.breakpoints.up("md")]: {
       fontSize: "1.1rem",
       padding: "0 1.52rem",
