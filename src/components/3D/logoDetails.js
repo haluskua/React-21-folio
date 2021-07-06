@@ -137,5 +137,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "14.5px",
     letterSpacing: ".43px",
     marginLeft: "0.61rem",
+    fontFamily: "Kanit",
+    lineHeight: "1.5rem",
+    [theme.breakpoints.up("md")]: {
+      fontSize: "20px",
+    },
   },
 }));

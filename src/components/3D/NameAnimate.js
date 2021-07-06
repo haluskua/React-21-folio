@@ -108,7 +108,7 @@ const Wrapper = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 12px;
-  color: #85afb9;
+  font-size: 11.2px;
+  color: #858e91;
   text-align: center;
 `;
