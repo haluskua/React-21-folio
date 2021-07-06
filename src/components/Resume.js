@@ -132,6 +132,21 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   body1: {
+    color: "gray",
+    textAlign: "left",
+    width: "100%",
+    display: "flex",
+    lineHeight: "1.4rem",
+    justifyContent: "center",
+    fontFamily: "Padauk",
+    letterSpacing: "0",
+    fontSize: "1.13rem",
+    [theme.breakpoints.up("md")]: {
+      fontSize: "1.1rem",
+      padding: "0 1.52rem",
+    },
+  },
+  subtitle1: {
     color: "#868686",
     fontSize: "0.94rem",
     fontFamily: "Asap",
@@ -142,20 +157,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       fontSize: "1.03rem",
       lineHeight: "2.5rem",
-    },
-  },
-  subtitle1: {
-    color: "gray",
-    textAlign: "left",
-    width: "100%",
-    display: "flex",
-    lineHeight: "1.4rem",
-    justifyContent: "center",
-    fontFamily: "Padauk",
-    fontSize: "1.13rem",
-    [theme.breakpoints.up("md")]: {
-      fontSize: "1.1rem",
-      padding: "0 1.52rem",
     },
   },
 }));
@@ -182,14 +183,15 @@ const Resume = () => {
           >
             Wellington Institute of Technologies
           </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Diploma in Exercise Science
-          </Typography>
+
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
+            Diploma in Exercise Science
+          </Typography>
+          <Typography variant="body1" align="center" className={classes.body1}>
             This course has allowed me to grow and refine my inter-personal
             skills by writing training and dietary programs. I learned to build
             trust, communication and confidence both for the clients and myself.
@@ -209,14 +211,15 @@ const Resume = () => {
           >
             Wellington Institute of Technologies
           </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Bachelor in Creative Technologies
-          </Typography>
+
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
+            Bachelor in Creative Technologies
+          </Typography>
+          <Typography variant="body1" align="center" className={classes.body1}>
             My major is in Digital Media. I also became very familiar with the
             Adobe suit. Understanding the 'Creative Industry' on a deeper level
             and the creative process involved from beginning to end.
@@ -236,16 +239,16 @@ const Resume = () => {
           >
             Yoobee School of Design
           </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Diploma in Web Design
-          </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
+            Diploma in Web Design
+          </Typography>
+          <Typography variant="body1" align="center" className={classes.body1}>
             Introduction to Web Desigin. Html, css, Javascript, Php, WordPress
-            (CMS).
+            (CMS)
           </Typography>
         </Box>
         <Typography
@@ -262,14 +265,14 @@ const Resume = () => {
           >
             Self-employed (Freelancer)
           </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Graphics and Web Developer
-          </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
+            Graphics and Web Developer
+          </Typography>
+          <Typography variant="body1" align="center" className={classes.body1}>
             Networking and building simple Websites and Graphics for clients.
           </Typography>
         </Box>
@@ -287,14 +290,14 @@ const Resume = () => {
           >
             Enspiral Dev Academy
           </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Bootcamp App Development
-          </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
+            Bootcamp App Development
+          </Typography>
+          <Typography variant="body1" align="center" className={classes.body1}>
             Certificate in Full stack web development. Coded more than 700+
             hours with React Js, API, Node and Knex databse with
             server-side-rendering. Simulated work environment included Agile
@@ -314,16 +317,16 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Web Designer & Graphic Designer
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Job Hunting
+            Web & Graphic Designer
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
+            Job Hunting
+          </Typography>
+          <Typography variant="body1" align="center" className={classes.body1}>
             I am good with Designing UI and UX for great web apps. I also have a
             good knowledge and understanding of Backend development. My niche is
             in Frontend web development and Graphic design.
