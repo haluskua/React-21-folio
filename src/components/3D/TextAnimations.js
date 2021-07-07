@@ -48,15 +48,15 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #3e7380;
+  color: #a79b67;
   text-transform: uppercase;
   margin: 0;
-  font-size: 35.4px;
+  font-size: 16.4px;
   font-weight: bold;
-  letter-spacing: 0.1rem;
-  font-family: "Bebas neue", sans-serif;
+  /* letter-spacing: 3px; */
+  font-family: "Audiowide", sans-serif;
   @media ${device.laptop} {
-    font-size: 36px;
+    font-size: 22.5px;
     letter-spacing: 0.2rem;
   }
 

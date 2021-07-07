@@ -63,6 +63,9 @@ const CardWrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  @media ${device.tablet} {
+    padding-top: 2rem;
+  }
 `;
 const CardContainer = styled(motion.div)`
   width: 85vw;

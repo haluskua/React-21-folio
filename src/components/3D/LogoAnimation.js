@@ -1,6 +1,7 @@
 import React from "react";
-import Logo from "../../avatar.png";
+import Logo from "../../images/banner_trans.png";
 import styled from "styled-components";
+import { device } from "../MediaQuery/device";
 
 export default function LogoAnimation() {
   return (
@@ -13,9 +14,14 @@ export default function LogoAnimation() {
 const AniLogo = styled.div`
   display: inline-block;
   width: auto;
-  height: 160px;
-  // box-shadow: 0px 0px 10px 3px #fffafabd !important;
+  height: 264px;
   border-radius: 1rem;
+  @media ${device.tablet} {
+    height: 400px;
+  }
+  @media ${device.laptopL} {
+    height: 330px;
+  }
 
   img {
     width: auto;

@@ -15,12 +15,12 @@ import "../components/portfolio.scss";
 
 //importing images from folder/files
 
-import project1 from "../images/html-css-javascript-1.png";
-import project2 from "../images/html-css-javascript-2.png";
-import project3 from "../images/mern-stack.png";
-import project4 from "../images/react-redux.png";
-import project5 from "../images/react.png";
-import project6 from "../images/serv-side-api.png";
+import project1 from "../images/banner.png";
+import project2 from "../images/banner.png";
+import project3 from "../images/banner.png";
+import project4 from "../images/banner.png";
+import project5 from "../images/banner.png";
+import project6 from "../images/banner.png";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -41,14 +41,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   cardContainer: {
-    maxWidth: "80%",
+    maxWidth: "88%",
     margin: "3rem auto",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
     borderRadius: "3rem 0",
     boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
-    [theme.breakpoints.up("768")]: {
+    [theme.breakpoints.up("md")]: {
       maxWidth: "90% ",
     },
   },
@@ -66,7 +66,34 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   projectName: {
-    fontFamily: "Staatliches",
+    color: "#2f859b",
+    fontSize: "1.35rem",
+    lineHeight: "1.41rem",
+    fontFamily: "Audiowide",
+    textTransform: "uppercase",
+    fontWeight: "600",
+    padding: "0px 0 22px 0",
+    textAlign: "center",
+    [theme.breakpoints.up("md")]: {
+      fontSize: "1.65rem",
+      lineHeight: "1.55rem",
+      paddingTop: "3px",
+    },
+  },
+  pro_text: {
+    color: "gray",
+    textAlign: "left",
+    width: "100%",
+    display: "flex",
+    lineHeight: "1.4rem",
+    justifyContent: "center",
+    fontFamily: "Padauk",
+    letterSpacing: "0",
+    fontSize: "1.12rem",
+    [theme.breakpoints.up("md")]: {
+      fontSize: "1.1rem",
+      padding: "0 1.52rem",
+    },
   },
 
   cardImage: {
@@ -88,46 +115,46 @@ const useStyles = makeStyles((theme) => ({
 const projects = [
   {
     name: "Initial Portfolio",
-    description: `One of my original Portfolio website. Built with a Sass, Autoprefixer with github hosting. More details on the project is found on my github page `,
+    description: `Updating this site over the years has improved my coding ability as a developer. Built with Html, Sass, Js, Autoprefixer, version control with Git and hosted with gh-pages on github, This has been the foundation for my passion web development. `,
     image: project1,
   },
   {
     name: "Project 2",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-        consequatur magni quod nesciunt necessitatibus molestiae non\
-        eligendi, magnam est aliquam recusandae? Magnam soluta minus\
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+        consequatur magni quod nesciunt necessitatibus molestiae non
+        eligendi, magnam est aliquam recusandae? Magnam soluta minus
         iste alias sunt veritatis nisi dolores!`,
     image: project2,
   },
   {
     name: "Project 3",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-        consequatur magni quod nesciunt necessitatibus molestiae non\
-        eligendi, magnam est aliquam recusandae? Magnam soluta minus\
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+        consequatur magni quod nesciunt necessitatibus molestiae non
+        eligendi, magnam est aliquam recusandae? Magnam soluta minus
         iste alias sunt veritatis nisi dolores!`,
     image: project3,
   },
   {
     name: "Project 4",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-        consequatur magni quod nesciunt necessitatibus molestiae non\
-        eligendi, magnam est aliquam recusandae? Magnam soluta minus\
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+        consequatur magni quod nesciunt necessitatibus molestiae non
+        eligendi, magnam est aliquam recusandae? Magnam soluta minus
         iste alias sunt veritatis nisi dolores!`,
     image: project4,
   },
   {
     name: "Project 5",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-        consequatur magni quod nesciunt necessitatibus molestiae non\
-        eligendi, magnam est aliquam recusandae? Magnam soluta minus\
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+        consequatur magni quod nesciunt necessitatibus molestiae non
+        eligendi, magnam est aliquam recusandae? Magnam soluta minus
         iste alias sunt veritatis nisi dolores!`,
     image: project5,
   },
   {
     name: "Project 6",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-        consequatur magni quod nesciunt necessitatibus molestiae non\
-        eligendi, magnam est aliquam recusandae? Magnam soluta minus\
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+        consequatur magni quod nesciunt necessitatibus molestiae non
+        eligendi, magnam est aliquam recusandae? Magnam soluta minus
         iste alias sunt veritatis nisi dolores!`,
     image: project6,
   },
@@ -147,9 +174,10 @@ const Portfolio = () => {
                 <CardMedia
                   component="img"
                   alt="Project 1"
-                  height="140"
+                  height="auto"
                   image={project.image}
                 />
+
                 <CardContent>
                   <Typography
                     variant="h5"
@@ -158,7 +186,11 @@ const Portfolio = () => {
                   >
                     {project.name}
                   </Typography>
-                  <Typography variant="body2" color="textSecondary">
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    className={classes.pro_text}
+                  >
                     {project.description}
                   </Typography>
                   <Box component="div" className={classes.cardImage}>
