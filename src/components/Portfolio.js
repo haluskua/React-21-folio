@@ -9,18 +9,17 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import LogoAnimation from "../../src/components/3D/LogoAnimation";
 
 import "../components/portfolio.scss";
 
 //importing images from folder/files
 
-import project1 from "../images/banner.png";
-import project2 from "../images/banner.png";
-import project3 from "../images/banner.png";
-import project4 from "../images/banner.png";
-import project5 from "../images/banner.png";
-import project6 from "../images/banner.png";
+import project1 from "../images/crest_trans_ompa.png";
+import project2 from "../images/full-stack.png";
+import project3 from "../images/html-css-javascript-1.png";
+import project4 from "../images/crest_trans_ompa.png";
+import project5 from "../images/crest_trans_ompa.png";
+import project6 from "../images/crest_trans_ompa.png";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -105,7 +104,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "8rem 0 3rem 0",
   },
   imgComponent: {
-    width: "100%",
+    width: "40%",
     border: "2px solid red !important",
   },
 }));
@@ -193,9 +192,6 @@ const Portfolio = () => {
                   >
                     {project.description}
                   </Typography>
-                  <Box component="div" className={classes.cardImage}>
-                    <LogoAnimation className={classes.imgComponent} />
-                  </Box>
                 </CardContent>
               </CardActionArea>
               <CardActions>

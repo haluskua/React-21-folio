@@ -12,7 +12,7 @@ export default function TextAnimation() {
           <span key={index}>{item}</span>
         ))}
       </Wrapper>
-      <SmallText> Web Application </SmallText>
+      <SmallText> Web Applications </SmallText>
     </React.Fragment>
   );
 }
@@ -48,16 +48,16 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #a79b67;
+  color: #a94a46;
   text-transform: uppercase;
   margin: 0;
-  font-size: 16.4px;
+  font-size: 17.84px;
   font-weight: bold;
-  /* letter-spacing: 3px; */
-  font-family: "Audiowide", sans-serif;
+  letter-spacing: 2px;
+  font-family: "STIX Two Math", sans-serif;
   @media ${device.laptop} {
-    font-size: 22.5px;
-    letter-spacing: 0.2rem;
+    font-size: 26px;
+    letter-spacing: 0.3rem;
   }
 
   span {
@@ -110,9 +110,15 @@ const Wrapper = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 22px;
-  color: #a0cdd8;
-  letter-spacing: 0.082rem;
+  font-size: 24px;
+  color: #a86c57;
   text-align: center;
-  font-family: "Bebas Neue";
+  font-family: "Bebas neue";
+  letter-spacing: 0.24rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  @media ${device.laptop} {
+    font-size: 34px;
+    letter-spacing: 0.45rem;
+  }
 `;

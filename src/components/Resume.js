@@ -126,7 +126,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "1rem",
     fontWeight: "bold",
     textTransform: "uppercase",
-    background: "rgb(255 99 71)",
+    background: "#2e7587",
     fontFamily: "'Audiowide', Open Sans",
     [theme.breakpoints.up("md")]: {
       fontSize: "2.6rem",
