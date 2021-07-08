@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { device } from "../MediaQuery/device";
 
 export default function TextAnimation() {
-  const reactArray = "OMPHALUS-KUA".split("");
+  const reactArray = "Web.&.Graphic".split("");
 
   return (
     <React.Fragment>
@@ -12,7 +12,7 @@ export default function TextAnimation() {
           <span key={index}>{item}</span>
         ))}
       </Wrapper>
-      <SmallText> Web Applications </SmallText>
+      {/* <SmallText> Web Applications </SmallText> */}
     </React.Fragment>
   );
 }
@@ -40,7 +40,7 @@ const animation = keyframes`
       filter: blur(.1px) }
 
 100% { 
-      opacity: 0; 
+      opacity: 0.5; 
       transform: translateY(0px) skewY(0deg) skewX(0deg) rotateZ(0deg);
       filter: blur(1px) 
       }
@@ -48,15 +48,19 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #a94a46;
+  color: #a94241;
   text-transform: uppercase;
   margin: 0;
-  font-size: 17.84px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  font-family: "STIX Two Math", sans-serif;
+  font-size: 23.5px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  font-family: "Padauk", sans-serif;
+  @media ${device.tablet} {
+    font-size: 37.5px;
+    letter-spacing: 0.3rem;
+  }
   @media ${device.laptop} {
-    font-size: 26px;
+    font-size: 33px;
     letter-spacing: 0.3rem;
   }
 
@@ -64,7 +68,7 @@ const Wrapper = styled.span`
     display: inline-block;
     opacity: 0;
     animation-name: ${animation};
-    animation-duration: 8s;
+    animation-duration: 9s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
@@ -80,13 +84,15 @@ const Wrapper = styled.span`
     animation-delay: 0.45s;
   }
   span:nth-child(4) {
-    animation-delay: 0.6s;
+    animation-delay: 1s;
+    color: #5f9ea000;
   }
   span:nth-child(5) {
     animation-delay: 1.15s;
   }
   span:nth-child(6) {
     animation-delay: 1.3s;
+    color: #5f9ea000;
   }
   span:nth-child(7) {
     animation-delay: 1.45s;
@@ -96,7 +102,6 @@ const Wrapper = styled.span`
   }
   span:nth-child(9) {
     animation-delay: 2.15s;
-    color: #5f9ea000;
   }
   span:nth-child(10) {
     animation-delay: 2.3s;
@@ -105,7 +110,10 @@ const Wrapper = styled.span`
     animation-delay: 2.45s;
   }
   span:nth-child(12) {
-    animation-delay: 2.9s;
+    animation-delay: 3s;
+  }
+  span:nth-child(13) {
+    animation-delay: 3.15s;
   }
 `;
 

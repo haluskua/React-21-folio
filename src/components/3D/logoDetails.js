@@ -67,24 +67,27 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 16.3px;
-  color: #77939a;
-  letter-spacing: 0.1rem;
+  font-size: 14px;
+  color: #e4c8c0;
   text-transform: uppercase;
-  font-family: "Staatliches", Open Sans condensed;
-  line-height: 1.5rem;
+  font-family: "Montserrat", Open Sans condensed;
   text-align: center;
+  font-weight: 500;
   width: 100%;
+  @media ${device.tablet} {
+    font-size: 21px;
+  }
+
   @media ${device.laptop} {
     font-size: 18px;
   }
 `;
 
 const SmallText = styled.span`
-  font-size: 24px;
+  font-size: 25.5px;
   color: ghostwhite;
   font-weight: 400;
-  line-height: 1.6rem;
+  line-height: 1.8rem;
   letter-spacing: 0.174rem;
   text-align: center;
   text-transform: uppercase;
@@ -127,20 +130,24 @@ const useStyles = makeStyles((theme) => ({
   },
 
   main_button: {
-    background: "#2a4f58",
+    background: "#241214",
     padding: "1rem",
   },
   title: {
-    color: "#769299",
+    color: "#e4c8c0",
     marginTop: "1rem",
-    textTransform: "uppercase",
-    fontSize: "14.5px",
+    // textTransform: "uppercase",
+    fontSize: "15.5px",
     letterSpacing: ".43px",
     marginLeft: "0.61rem",
-    fontFamily: "Kanit",
+    fontStyle: "italic",
+    fontFamily: "Montserrat",
     lineHeight: "1.5rem",
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "21px",
+    },
     [theme.breakpoints.up("md")]: {
-      fontSize: "20px",
+      fontSize: "22px",
     },
   },
 }));

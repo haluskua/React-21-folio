@@ -49,7 +49,7 @@ const Wrapper = styled.span`
   z-index: 10;
   font-size: 15.25px;
   font-weight: 600;
-  font-family: "Padauk", Open Sans condensed;
+  font-family: "Padauk";
   // font-family: Zilla Slab Highlight;
 
   span {
