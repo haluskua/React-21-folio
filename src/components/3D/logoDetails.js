@@ -72,7 +72,6 @@ const MediumText = styled.span`
   text-transform: uppercase;
   font-family: "Montserrat", Open Sans condensed;
   text-align: center;
-  font-weight: 500;
   width: 100%;
   @media ${device.tablet} {
     font-size: 21px;
@@ -147,7 +146,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "21px",
     },
     [theme.breakpoints.up("md")]: {
-      fontSize: "22px",
+      fontSize: "18px",
     },
   },
 }));

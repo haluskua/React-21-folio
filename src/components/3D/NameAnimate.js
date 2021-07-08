@@ -55,7 +55,7 @@ const Wrapper = styled.span`
   font-size: 23.74px;
   font-weight: bold;
   letter-spacing: 0.05rem;
-  padding: 2.2rem 0 0 0;
+  padding: 3rem 0 0 0;
   font-family: "Bebas neue", Open Sans condensed;
 
   span {

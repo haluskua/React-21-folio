@@ -57,8 +57,8 @@ const useStyles = makeStyles((theme) => ({
     background: "#f8f9fd",
   },
   avatar: {
-    display: "block",
-    height: "152px",
+    display: "flex",
+    height: "173px",
     border: "none",
     width: "100%",
     marginBottom: "-41px",
