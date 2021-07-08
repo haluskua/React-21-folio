@@ -116,10 +116,9 @@ const TopContainer = styled.div`
   position: relative;
   align-items: center;
   justify-content: flex-end;
-  padding: 8px 0 36px 0;
 
   @media ${device.laptop} {
-    padding: 8px 0 60px 0;
+    /* padding: 8px 0 60px 0; */
   }
 `;
 

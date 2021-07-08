@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { device } from "../MediaQuery/device";
 
 export default function TextAnimation() {
-  const reactArray = "Graphic.&.Web".split("");
+  const reactArray = "Wagai.weh.I.am.a".split("");
 
   return (
     <React.Fragment>
@@ -48,11 +48,11 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #a94241;
+  color: #e8b69b;
   margin: 0;
-  font-size: 26px;
-  font-weight: bold;
-  font-family: "Sen", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: "Padauk", sans-serif;
   @media ${device.tablet} {
     font-size: 37.5px;
   }
@@ -65,7 +65,7 @@ const Wrapper = styled.span`
     display: inline-block;
     opacity: 0;
     animation-name: ${animation};
-    animation-duration: 9s;
+    animation-duration: 12s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
@@ -73,6 +73,15 @@ const Wrapper = styled.span`
 
   span:nth-child(1) {
     animation-delay: 0.15s;
+    font-family: "Caveat";
+    font-size: 1.9rem;
+    @media ${device.tablet} {
+      font-size: 3.4rem;
+    }
+    @media ${device.laptop} {
+      font-size: 2.5rem;
+      font-weight: 100;
+    }
   }
   span:nth-child(2) {
     animation-delay: 0.3s;
@@ -87,30 +96,63 @@ const Wrapper = styled.span`
     animation-delay: 1.15s;
   }
   span:nth-child(6) {
-    animation-delay: 1.3s;
-  }
-  span:nth-child(7) {
-    animation-delay: 1.45s;
-  }
-  span:nth-child(8) {
-    animation-delay: 2s;
+    animation-delay: 0.5s;
     color: #5f9ea000;
   }
+  span:nth-child(7) {
+    animation-delay: 1.3s;
+    font-family: "Caveat";
+  }
+  span:nth-child(8) {
+    animation-delay: 1.45s;
+    font-family: "Caveat";
+  }
   span:nth-child(9) {
-    animation-delay: 2.15s;
+    animation-delay: 2s;
   }
   span:nth-child(10) {
-    animation-delay: 2.3s;
+    animation-delay: 0.5s;
     color: #5f9ea000;
   }
   span:nth-child(11) {
-    animation-delay: 2.45s;
+    animation-delay: 2.15s;
+    font-size: 1.9rem;
+    @media ${device.tablet} {
+      font-size: 3.4rem;
+    }
+    @media ${device.laptop} {
+      font-size: 2.5rem;
+      font-weight: 100;
+    }
   }
   span:nth-child(12) {
-    animation-delay: 3s;
+    animation-delay: 0.5s;
+    color: #5f9ea000;
   }
   span:nth-child(13) {
+    animation-delay: 2.45s;
+  }
+  span:nth-child(14) {
+    animation-delay: 3s;
+  }
+  span:nth-child(15) {
+    animation-delay: 0.5s;
+    color: #5f9ea000;
+  }
+  span:nth-child(16) {
     animation-delay: 3.15s;
+    font-size: 1.9rem;
+    font-family: "Caveat";
+    @media ${device.tablet} {
+      font-size: 3.4rem;
+    }
+    @media ${device.laptop} {
+      font-size: 2.5rem;
+      font-weight: 100;
+    }
+  }
+  span:nth-child(17) {
+    animation-delay: 3.3s;
   }
 `;
 

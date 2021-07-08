@@ -30,13 +30,13 @@ export function LogoDetails(props) {
   return (
     <DetailsContainer>
       <Marginer direction="vertical" margin="1em" />
-      <SmallText>DESIGNER & DEVELOPER</SmallText>
-      <Marginer direction="vertical" margin=".5em" />
       <Box component="div" className={classes.centerLL}>
         <SpacedHorizontalContainer>
-          <MediumText>Frontend | Fullstack</MediumText>
+          <MediumText>Web Application</MediumText>
         </SpacedHorizontalContainer>
       </Box>
+      <SmallText>DESIGNER & DEVELOPER</SmallText>
+      <Marginer direction="vertical" margin=".5em" />
       <Toolbar>
         <Link to="/portfolio">
           <IconButton className={classes.main_button}>
@@ -68,9 +68,10 @@ const DetailsContainer = styled.div`
 
 const MediumText = styled.span`
   font-size: 16px;
-  color: #e4c8c0;
-  font-family: "Sen";
+  color: #78bdd7;
+  font-family: "Audiowide";
   text-align: center;
+  text-transform: uppercase;
   width: 100%;
   @media ${device.tablet} {
     font-size: 21px;
