@@ -117,14 +117,14 @@ const Wrapper = styled.span`
   }
 `;
 
-const SmallText = styled.span`
-  font-size: 24px;
-  color: #a86c57;
-  text-align: center;
-  font-family: "Cinzel";
-  text-transform: uppercase;
-  font-weight: bold;
-  @media ${device.laptop} {
-    font-size: 34px;
-  }
-`;
+// const SmallText = styled.span`
+//   font-size: 24px;
+//   color: #a86c57;
+//   text-align: center;
+//   font-family: "Cinzel";
+//   text-transform: uppercase;
+//   font-weight: bold;
+//   @media ${device.laptop} {
+//     font-size: 34px;
+//   }
+// `;
