@@ -67,18 +67,20 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 14px;
+  font-size: 16px;
   color: #e4c8c0;
-  text-transform: uppercase;
-  font-family: "Montserrat", Open Sans condensed;
+  font-family: "Sen";
   text-align: center;
   width: 100%;
   @media ${device.tablet} {
     font-size: 21px;
   }
+  @media ${device.laptop} {
+    font-size: 29px;
+  }
 
   @media ${device.laptop} {
-    font-size: 18px;
+    font-size: 22px;
   }
 `;
 
@@ -135,12 +137,11 @@ const useStyles = makeStyles((theme) => ({
   title: {
     color: "#e4c8c0",
     marginTop: "1rem",
-    // textTransform: "uppercase",
     fontSize: "15.5px",
     letterSpacing: ".43px",
     marginLeft: "0.61rem",
     fontStyle: "italic",
-    fontFamily: "Montserrat",
+    fontFamily: "Sen",
     lineHeight: "1.5rem",
     [theme.breakpoints.up("sm")]: {
       fontSize: "21px",

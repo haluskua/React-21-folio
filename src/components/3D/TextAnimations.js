@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { device } from "../MediaQuery/device";
 
 export default function TextAnimation() {
-  const reactArray = "Web.&.Graphic".split("");
+  const reactArray = "Graphic.&.Web".split("");
 
   return (
     <React.Fragment>
@@ -49,19 +49,16 @@ const animation = keyframes`
 const Wrapper = styled.span`
   display: inline-block;
   color: #a94241;
-  text-transform: uppercase;
   margin: 0;
-  font-size: 23.5px;
-  font-weight: 400;
-  letter-spacing: 2.5px;
-  font-family: "Padauk", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Sen", sans-serif;
   @media ${device.tablet} {
     font-size: 37.5px;
-    letter-spacing: 0.3rem;
   }
   @media ${device.laptop} {
-    font-size: 33px;
-    letter-spacing: 0.3rem;
+    font-size: 28.5px;
+    font-weight: 100;
   }
 
   span {
@@ -85,26 +82,26 @@ const Wrapper = styled.span`
   }
   span:nth-child(4) {
     animation-delay: 1s;
-    color: #5f9ea000;
   }
   span:nth-child(5) {
     animation-delay: 1.15s;
   }
   span:nth-child(6) {
     animation-delay: 1.3s;
-    color: #5f9ea000;
   }
   span:nth-child(7) {
     animation-delay: 1.45s;
   }
   span:nth-child(8) {
     animation-delay: 2s;
+    color: #5f9ea000;
   }
   span:nth-child(9) {
     animation-delay: 2.15s;
   }
   span:nth-child(10) {
     animation-delay: 2.3s;
+    color: #5f9ea000;
   }
   span:nth-child(11) {
     animation-delay: 2.45s;
