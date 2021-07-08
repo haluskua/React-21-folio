@@ -113,12 +113,10 @@ const SmallText = styled.span`
   font-size: 24px;
   color: #a86c57;
   text-align: center;
-  font-family: "Bebas neue";
-  letter-spacing: 0.24rem;
+  font-family: "Cinzel";
   text-transform: uppercase;
   font-weight: bold;
   @media ${device.laptop} {
     font-size: 34px;
-    letter-spacing: 0.45rem;
   }
 `;
