@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { device } from "../MediaQuery/device";
 
 export default function TextAnimation() {
-  const reactArray = "Hello.all.I.enjoy".split("");
+  const reactArray = "Hello.I.am.Ompa".split("");
 
   return (
     <React.Fragment>
@@ -70,11 +70,12 @@ const Wrapper = styled.span`
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
   }
+  //H
 
   span:nth-child(1) {
     animation-delay: 0.15s;
     font-family: "Caveat";
-    font-size: 1.9rem;
+    font-size: 2.1rem;
     @media ${device.tablet} {
       font-size: 3.4rem;
     }
@@ -83,40 +84,93 @@ const Wrapper = styled.span`
       font-weight: 100;
     }
   }
+  //e
   span:nth-child(2) {
     animation-delay: 0.3s;
   }
+  //l
   span:nth-child(3) {
     animation-delay: 0.45s;
+
+    font-family: "Caveat";
+    font-size: 1.45rem;
+    @media ${device.tablet} {
+      font-size: 2.4rem;
+    }
+    @media ${device.laptop} {
+      font-size: 3rem;
+      font-weight: 100;
+    }
   }
+  //l
   span:nth-child(4) {
     animation-delay: 1s;
+    font-size: 1.45rem;
+    font-family: "Caveat";
+    @media ${device.tablet} {
+      font-size: 2.4rem;
+    }
+    @media ${device.laptop} {
+      font-size: 3rem;
+      font-weight: 100;
+    }
   }
+
+  //o
   span:nth-child(5) {
     animation-delay: 1.15s;
   }
+  /* DOT */
   span:nth-child(6) {
     animation-delay: 0.5s;
     color: #5f9ea000;
   }
+  //I
   span:nth-child(7) {
     animation-delay: 1.3s;
     font-family: "Caveat";
+    /* font-style: italic; */
+    font-size: 2.4rem;
+    @media ${device.tablet} {
+      font-size: 3.4rem;
+    }
+    @media ${device.laptop} {
+      font-size: 2.5rem;
+      font-weight: 100;
+    }
   }
+  /* DOT */
   span:nth-child(8) {
+    animation-delay: 0.5s;
+    color: #5f9ea000;
+  }
+  //a
+  span:nth-child(9) {
     animation-delay: 1.45s;
     font-family: "Caveat";
+    font-size: 1.45rem;
+    @media ${device.tablet} {
+      font-size: 2.4rem;
+    }
+    @media ${device.laptop} {
+      font-size: 3rem;
+      font-weight: 100;
+    }
   }
-  span:nth-child(9) {
+  //m
+  span:nth-child(10) {
     animation-delay: 2s;
   }
-  span:nth-child(10) {
+  /* DOT */
+  span:nth-child(11) {
     animation-delay: 0.5s;
     color: #5f9ea000;
   }
-  span:nth-child(11) {
+  //O
+  span:nth-child(12) {
     animation-delay: 2.15s;
-    font-size: 1.9rem;
+    font-size: 3rem;
+    font-family: "Caveat";
     @media ${device.tablet} {
       font-size: 3.4rem;
     }
@@ -125,21 +179,9 @@ const Wrapper = styled.span`
       font-weight: 100;
     }
   }
-  span:nth-child(12) {
-    animation-delay: 0.5s;
-    color: #5f9ea000;
-  }
+  //m
   span:nth-child(13) {
-    animation-delay: 2.45s;
-  }
-  span:nth-child(14) {
-    animation-delay: 3s;
-  }
-  span:nth-child(15) {
-    animation-delay: 0.5s;
-  }
-  span:nth-child(16) {
-    animation-delay: 3.15s;
+    animation-delay: 2.3s;
     font-size: 1.9rem;
     font-family: "Caveat";
     @media ${device.tablet} {
@@ -149,10 +191,50 @@ const Wrapper = styled.span`
       font-size: 2.5rem;
       font-weight: 100;
     }
+  }
+  //p
+  span:nth-child(14) {
+    animation-delay: 2.45s;
+    font-size: 1.9rem;
+    font-family: "Caveat";
+
+    @media ${device.tablet} {
+      font-size: 3.4rem;
+    }
+    @media ${device.laptop} {
+      font-size: 2.5rem;
+      font-weight: 100;
+    }
+  }
+  //a
+  span:nth-child(15) {
+    animation-delay: 3s;
+    font-size: 2rem;
+
+    @media ${device.tablet} {
+      font-size: 3.4rem;
+    }
+    @media ${device.laptop} {
+      font-size: 2.5rem;
+      font-weight: 100;
+    }
+  }
+  /* span:nth-child(16) {
+    animation-delay: 3.15s;
+ 
   }
   span:nth-child(17) {
     animation-delay: 3.3s;
+  } */
+  /* span:nth-child(18) {
+    animation-delay: 3.45s;
   }
+  span:nth-child(19) {
+    animation-delay: 4s;
+  }
+  span:nth-child(20) {
+    animation-delay: 4.15s;
+  } */
 `;
 
 // const SmallText = styled.span`

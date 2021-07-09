@@ -29,13 +29,14 @@ export function LogoDetails(props) {
 
   return (
     <DetailsContainer>
-      <Marginer direction="vertical" margin="1em" />
-      <Box component="div" className={classes.centerLL}>
-        <SpacedHorizontalContainer>
-          <MediumText>Web Application</MediumText>
-        </SpacedHorizontalContainer>
-      </Box>
-      <SmallText>DESIGN & DEVELOPMENT</SmallText>
+      <Marginer direction="vertical" margin="0em" />
+      <Box component="div" className={classes.centerLL}></Box>
+      <SmallText>
+        I'm a developer and graphic designer based in Wellington.
+      </SmallText>
+      <SpacedHorizontalContainer>
+        <MediumText>Creativity is something I enjoy most!</MediumText>
+      </SpacedHorizontalContainer>
       <Marginer direction="vertical" margin=".5em" />
       <Toolbar>
         <Link to="/portfolio">
@@ -67,8 +68,8 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 20px;
-  color: #72cbd5;
+  font-size: 16px;
+  color: #a6b0b2;
   line-height: 2.1rem;
   font-family: "Quicksand";
   text-align: center;
@@ -77,7 +78,9 @@ const MediumText = styled.span`
     font-size: 34px;
   }
   @media ${device.laptop} {
-    font-weight: 500;
+    font-weight: 100;
+    font-size: 1.23rem;
+    line-height: 2.6rem;
   }
 `;
 
@@ -89,7 +92,6 @@ const SmallText = styled.span`
   /* letter-spacing: 0.15rem; */
   font-weight: 600;
   text-align: center;
-  text-transform: uppercase;
   font-family: "Quicksand";
   @media ${device.laptop} {
     font-size: 28px;
@@ -133,13 +135,13 @@ const useStyles = makeStyles((theme) => ({
     padding: "1rem",
   },
   title: {
-    color: "#e4c8c0",
+    color: "#f6f6fd",
     marginTop: "1rem",
     fontSize: "15.5px",
     letterSpacing: ".43px",
     marginLeft: "0.61rem",
-    fontStyle: "italic",
-    fontFamily: "Sen",
+    // fontStyle: "italic",
+    fontFamily: "Quicksand",
     lineHeight: "1.5rem",
     [theme.breakpoints.up("sm")]: {
       fontSize: "21px",

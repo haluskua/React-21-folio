@@ -77,13 +77,14 @@ const CardContainer = styled(motion.div)`
   cursor: grab;
   z-index: 16;
   overflow: hidden;
-  /* box-shadow: 0px 0px 34px 11px rgba(14, 123, 140, 0.24);
-  border-radius: 5rem 1rem 6rem 1rem;
-  border: 5px solid #04283370; */
 
   -ms-overflow-style: none;
   ::-webkit-scrollbar {
     display: none;
+  }
+  @media ${device.tablet} {
+    max-width: 63vw;
+    border-radius: 12rem 0 12rem 0;
   }
   @media ${device.laptopL} {
     min-width: 1200px;
@@ -115,7 +116,7 @@ const TopContainer = styled.div`
   flex: 1;
   position: relative;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 
   @media ${device.laptop} {
     /* padding: 8px 0 60px 0; */
@@ -127,6 +128,7 @@ const BottomContainer = styled.div`
   flex: 1;
   padding: 0 0.5rem;
   margin-bottom: -3rem;
+  margin-top: 1.25rem;
 `;
 
 const LogoWrapper = styled.div`
