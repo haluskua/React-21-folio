@@ -35,7 +35,11 @@ export function LogoDetails(props) {
         I'm a developer and graphic designer based in Wellington.
       </SmallText>
       <SpacedHorizontalContainer>
-        <MediumText>Creativity is something I enjoy most!</MediumText>
+        <MediumText>
+          As an intermediate Fullstack developer with background in graphic
+          design, I am more passionate about Frontend development with focus on
+          UX/UI.
+        </MediumText>
       </SpacedHorizontalContainer>
       <Marginer direction="vertical" margin=".5em" />
       <Toolbar>
@@ -68,12 +72,13 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 16px;
+  font-size: 15px;
   color: #a6b0b2;
-  line-height: 2.1rem;
+  line-height: 1.3rem;
   font-family: "Quicksand";
   text-align: center;
   width: 100%;
+  margin-top: 1rem;
   @media ${device.tablet} {
     font-size: 34px;
   }
@@ -85,12 +90,10 @@ const MediumText = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 21px;
+  font-size: 22px;
   color: ghostwhite;
-  font-weight: 400;
-  line-height: 1.74rem;
-  /* letter-spacing: 0.15rem; */
-  font-weight: 600;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
   text-align: center;
   font-family: "Quicksand";
   @media ${device.laptop} {
