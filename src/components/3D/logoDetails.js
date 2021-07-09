@@ -91,9 +91,8 @@ const MediumText = styled.span`
 
 const SmallText = styled.span`
   font-size: 22px;
-  color: ghostwhite;
-  line-height: 1.8rem;
-  letter-spacing: 1px;
+  color: #59daac;
+  line-height: 1.7rem;
   text-align: center;
   font-family: "Quicksand";
   @media ${device.laptop} {
