@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { device } from "../MediaQuery/device";
 
 export default function TextAnimation() {
-  const reactArray = "Wagai.weh.I.am.a".split("");
+  const reactArray = "Hello.all.I.enjoy".split("");
 
   return (
     <React.Fragment>
@@ -137,7 +137,6 @@ const Wrapper = styled.span`
   }
   span:nth-child(15) {
     animation-delay: 0.5s;
-    color: #5f9ea000;
   }
   span:nth-child(16) {
     animation-delay: 3.15s;

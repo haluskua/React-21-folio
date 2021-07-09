@@ -35,7 +35,7 @@ export function LogoDetails(props) {
           <MediumText>Web Application</MediumText>
         </SpacedHorizontalContainer>
       </Box>
-      <SmallText>DESIGNER & DEVELOPER</SmallText>
+      <SmallText>DESIGN & DEVELOPMENT</SmallText>
       <Marginer direction="vertical" margin=".5em" />
       <Toolbar>
         <Link to="/portfolio">
@@ -67,33 +67,30 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 16px;
-  color: #78bdd7;
-  font-family: "Audiowide";
+  font-size: 20px;
+  color: #72cbd5;
+  line-height: 2.1rem;
+  font-family: "Quicksand";
   text-align: center;
-  text-transform: uppercase;
   width: 100%;
   @media ${device.tablet} {
-    font-size: 21px;
+    font-size: 34px;
   }
   @media ${device.laptop} {
-    font-size: 29px;
-  }
-
-  @media ${device.laptop} {
-    font-size: 22px;
+    font-weight: 500;
   }
 `;
 
 const SmallText = styled.span`
-  font-size: 25.5px;
+  font-size: 21px;
   color: ghostwhite;
   font-weight: 400;
-  line-height: 1.8rem;
-  letter-spacing: 0.174rem;
+  line-height: 1.74rem;
+  /* letter-spacing: 0.15rem; */
+  font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Audiowide", Open Sans condensed;
+  font-family: "Quicksand";
   @media ${device.laptop} {
     font-size: 28px;
     line-height: 2.133rem;
