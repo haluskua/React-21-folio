@@ -128,7 +128,7 @@ const BottomContainer = styled.div`
   flex: 1;
   padding: 0 0.5rem;
   margin-bottom: -3rem;
-  margin-top: 1.25rem;
+  /* margin-top: 1.25rem; */
 `;
 
 const LogoWrapper = styled.div`
