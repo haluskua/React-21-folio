@@ -82,13 +82,15 @@ const CardContainer = styled(motion.div)`
   ::-webkit-scrollbar {
     display: none;
   }
+  @media ${device.mobileS} {
+    height: 100vh;
+  }
   @media ${device.tablet} {
-    max-width: 63vw;
-    border-radius: 12rem 0 12rem 0;
+    max-width: 73vw;
   }
   @media ${device.laptopL} {
-    min-width: 1200px;
-    border-radius: 12rem 0 12rem 0;
+    max-width: 44vw;
+    max-height: 85vh;
   }
 `;
 const CircleWrapper = styled.div`

@@ -14,7 +14,7 @@ export default function LogoAnimation() {
 const AniLogo = styled.div`
   display: inline-block;
   width: auto;
-  height: 264px;
+  height: 328px;
   border-radius: 1rem;
   @media ${device.tablet} {
     height: 400px;

@@ -80,12 +80,14 @@ const MediumText = styled.span`
   width: 100%;
   margin-top: 1rem;
   @media ${device.tablet} {
-    font-size: 34px;
+    font-size: 30px;
+    line-height: 2.3rem;
   }
   @media ${device.laptop} {
     font-weight: 100;
-    font-size: 1.23rem;
-    line-height: 2.6rem;
+    font-size: 1.2rem;
+    line-height: 1.72rem;
+    padding: 0 9rem;
   }
 `;
 
@@ -96,9 +98,14 @@ const SmallText = styled.span`
   line-height: 1.7rem;
   text-align: center;
   font-family: "Quicksand";
+  @media ${device.tablet} {
+    font-size: 36px;
+    line-height: 2.52rem;
+  }
   @media ${device.laptop} {
-    font-size: 28px;
-    line-height: 2.133rem;
+    font-size: 34.5px;
+    line-height: 2.7rem;
+    padding: 0 10rem;
   }
 `;
 
