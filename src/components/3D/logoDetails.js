@@ -12,17 +12,17 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import { device } from "../MediaQuery/device";
 
-const buttonVariants = {
-  hover: {
-    scale: [1, 1.03],
-    textShadow: "0 0 6px rgb(255, 255, 255)",
-    boxShadow: "0px 0px 8px rgb(179, 255, 255)",
-    transition: {
-      duration: 0.5,
-      yoyo: Infinity,
-    },
-  },
-};
+// const buttonVariants = {
+//   hover: {
+//     scale: [1, 1.03],
+//     textShadow: "0 0 6px rgb(255, 255, 255)",
+//     boxShadow: "0px 0px 8px rgb(179, 255, 255)",
+//     transition: {
+//       duration: 0.5,
+//       yoyo: Infinity,
+//     },
+//   },
+// };
 
 export function LogoDetails(props) {
   const classes = useStyles();
