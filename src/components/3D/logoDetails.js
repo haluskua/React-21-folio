@@ -95,7 +95,7 @@ const MediumText = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 18px;
+  font-size: 19px;
   color: #dacbc7;
   font-weight: 900;
   line-height: 1.6rem;
@@ -151,20 +151,20 @@ const useStyles = makeStyles((theme) => ({
     background: "#241214",
     padding: "1rem",
   },
-  title: {
-    color: "#f6f6fd",
-    marginTop: "1rem",
-    fontSize: "15.5px",
-    letterSpacing: ".43px",
-    marginLeft: "0.61rem",
-    // fontStyle: "italic",
-    fontFamily: "Quicksand",
-    lineHeight: "1.5rem",
-    [theme.breakpoints.up("sm")]: {
-      fontSize: "21px",
-    },
-    [theme.breakpoints.up("md")]: {
-      fontSize: "18px",
-    },
-  },
+  // title: {
+  //   color: "#f6f6fd",
+  //   marginTop: "1rem",
+  //   fontSize: "15.5px",
+  //   letterSpacing: ".43px",
+  //   marginLeft: "0.61rem",
+  //   // fontStyle: "italic",
+  //   fontFamily: "Quicksand",
+  //   lineHeight: "1.5rem",
+  //   [theme.breakpoints.up("sm")]: {
+  //     fontSize: "21px",
+  //   },
+  //   [theme.breakpoints.up("md")]: {
+  //     fontSize: "18px",
+  //   },
+  // },
 }));

@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     width: "auto",
   },
   appBar: {
-    background: "transparent",
+    background: "#dd57574a",
     margin: 0,
     position: "fixed",
     width: "auto",
@@ -76,12 +76,13 @@ const useStyles = makeStyles((theme) => ({
   hamburger_lines: {
     display: "flex",
     justifyContent: "center",
-    background: "rgb(48 144 169 / 58%)",
+    background: "rgb(210 190 183 / 47%)",
     color: "#fff",
     borderRadius: "50%",
     cursor: "pointer",
     padding: "5px",
-    border: "none",
+    border: "1px solid #c04e4d",
+    boxShadow: "2px 2px 3px #6d8992 ",
   },
 }));
 

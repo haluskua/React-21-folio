@@ -49,7 +49,7 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #e8b69b;
+  color: #aa6f58;
   margin: 0;
   font-size: 1.2rem;
   text-transform: uppercase;
