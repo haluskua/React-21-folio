@@ -89,7 +89,7 @@ const CardContainer = styled(motion.div)`
     max-width: 73vw;
   }
   @media ${device.laptopL} {
-    max-width: 44vw;
+    max-width: 43vw;
     max-height: 85vh;
   }
 `;

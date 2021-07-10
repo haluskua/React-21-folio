@@ -103,9 +103,9 @@ const SmallText = styled.span`
     line-height: 2.52rem;
   }
   @media ${device.laptop} {
-    font-size: 34.5px;
-    line-height: 2.7rem;
-    padding: 0 10rem;
+    font-size: 34.7px;
+    line-height: 2.5rem;
+    padding: 0 9rem;
   }
 `;
 
