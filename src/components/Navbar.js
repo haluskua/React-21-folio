@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
   textColor: {
     "& span": {
       color: "#4895ac",
-      fontFamily: "Lexend",
+      fontFamily: "Quicksand",
       fontWeight: "500",
     },
   },

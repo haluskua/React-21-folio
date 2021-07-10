@@ -3,7 +3,8 @@ import styled, { keyframes } from "styled-components";
 import { device } from "../MediaQuery/device";
 
 export default function TextAnimation() {
-  const reactArray = "Hello.I.am.Ompa".split("");
+  // const reactArray = "Hello.I.am.Ompa".split("");
+  const reactArray = "Welcome,".split("");
 
   return (
     <React.Fragment>
@@ -65,7 +66,7 @@ const Wrapper = styled.span`
     display: inline-block;
     opacity: 0;
     animation-name: ${animation};
-    animation-duration: 12s;
+    animation-duration: 7s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
@@ -91,29 +92,10 @@ const Wrapper = styled.span`
   //l
   span:nth-child(3) {
     animation-delay: 0.45s;
-
-    font-family: "Caveat";
-    font-size: 1.45rem;
-    @media ${device.tablet} {
-      font-size: 2.4rem;
-    }
-    @media ${device.laptop} {
-      font-size: 3rem;
-      font-weight: 100;
-    }
   }
   //l
   span:nth-child(4) {
     animation-delay: 1s;
-    font-size: 1.45rem;
-    font-family: "Caveat";
-    @media ${device.tablet} {
-      font-size: 2.4rem;
-    }
-    @media ${device.laptop} {
-      font-size: 3rem;
-      font-weight: 100;
-    }
   }
 
   //o
@@ -122,27 +104,15 @@ const Wrapper = styled.span`
   }
   /* DOT */
   span:nth-child(6) {
-    animation-delay: 0.5s;
-    color: #5f9ea000;
+    animation-delay: 1.35s;
   }
   //I
   span:nth-child(7) {
-    animation-delay: 1.3s;
-    font-family: "Caveat";
-    /* font-style: italic; */
-    font-size: 2.4rem;
-    @media ${device.tablet} {
-      font-size: 3.4rem;
-    }
-    @media ${device.laptop} {
-      font-size: 2.5rem;
-      font-weight: 100;
-    }
+    animation-delay: 1.45s;
   }
   /* DOT */
   span:nth-child(8) {
-    animation-delay: 0.5s;
-    color: #5f9ea000;
+    animation-delay: 1.89s;
   }
   //a
   span:nth-child(9) {

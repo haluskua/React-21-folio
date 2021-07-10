@@ -1,20 +1,20 @@
 .swiper-button-next {
-  top: 85% !important;
+  top: 92% !important;
   background-image: url("https://image.flaticon.com/icons/png/512/875/875564.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
   z-index: 9999999999999999999999999999999999999999;
-  // margin-right: 50%;
+  margin-right: 30%;
 }
 .swiper-button-prev {
-  top: 85% !important;
+  top: 92% !important;
   background-image: url("https://image.flaticon.com/icons/png/512/1622/1622029.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
   z-index: 9999999999999999999999999999999999999999;
-  // margin-left: 50%;
+  margin-left: 30%;
 }
 
 .swiper-button-next::after,

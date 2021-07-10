@@ -2,13 +2,13 @@ import React from "react";
 import Marginer from "../Marginer/index";
 import styled from "styled-components";
 import Box from "@material-ui/core/Box";
-import Toolbar from "@material-ui/core/Toolbar";
-import ArrowBack from "@material-ui/icons/ArrowBack";
-import Typography from "@material-ui/core/Typography";
+// import Toolbar from "@material-ui/core/Toolbar";
+// import ArrowBack from "@material-ui/icons/ArrowBack";
+// import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import IconButton from "@material-ui/core/IconButton";
+// import { motion } from "framer-motion";
+// import { Link } from "react-router-dom";
+// import IconButton from "@material-ui/core/IconButton";
 
 import { device } from "../MediaQuery/device";
 
@@ -42,7 +42,7 @@ export function LogoDetails(props) {
         </MediumText>
       </SpacedHorizontalContainer>
       <Marginer direction="vertical" margin=".5em" />
-      <Toolbar>
+      {/* <Toolbar>
         <Link to="/portfolio">
           <IconButton className={classes.main_button}>
             <motion.button
@@ -58,7 +58,7 @@ export function LogoDetails(props) {
         <Typography variant="h5" className={classes.title} gutterBottom>
           My Portfolio
         </Typography>
-      </Toolbar>
+      </Toolbar> */}
     </DetailsContainer>
   );
 }
@@ -72,13 +72,16 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 15px;
+  font-size: 13.5px;
   color: #a6b0b2;
   line-height: 1.3rem;
   font-family: "Quicksand";
   text-align: center;
   width: 100%;
   margin-top: 1rem;
+  @media ${device.mobileM} {
+    font-size: 15px;
+  }
   @media ${device.tablet} {
     font-size: 30px;
     line-height: 2.3rem;
@@ -92,12 +95,16 @@ const MediumText = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 22px;
+  font-size: 18px;
   color: #dacbc7;
   font-weight: 900;
-  line-height: 1.7rem;
+  line-height: 1.6rem;
   text-align: center;
   font-family: "Quicksand";
+  @media ${device.mobileM} {
+    font-size: 22px;
+    line-height: 1.7rem;
+  }
   @media ${device.tablet} {
     font-size: 36px;
     line-height: 2.52rem;
