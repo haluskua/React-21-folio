@@ -91,7 +91,8 @@ const MediumText = styled.span`
 
 const SmallText = styled.span`
   font-size: 22px;
-  color: #59daac;
+  color: #dacbc7;
+  font-weight: 900;
   line-height: 1.7rem;
   text-align: center;
   font-family: "Quicksand";
