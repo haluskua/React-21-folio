@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     width: "auto",
   },
   appBar: {
-    background: "#dd57574a",
+    background: "#dd575700",
     margin: 0,
     position: "fixed",
     width: "auto",
@@ -73,16 +73,24 @@ const useStyles = makeStyles((theme) => ({
       fontWeight: "500",
     },
   },
+
+  hamburger_lines_coat: {
+    boxShadow: "2px 2px 3px #d8a158 ",
+    borderRadius: "50%",
+    background: "rgb(38 23 22 / 45%)",
+    border: "1px solid #c04e4d",
+    padding: "12px",
+  },
   hamburger_lines: {
     display: "flex",
     justifyContent: "center",
-    background: "rgb(210 190 183 / 47%)",
+    background: "rgb(221 88 87 / 64%)",
     color: "#fff",
     borderRadius: "50%",
     cursor: "pointer",
     padding: "5px",
-    border: "1px solid #c04e4d",
-    boxShadow: "2px 2px 3px #6d8992 ",
+    border: "1px solid #dd5857",
+    boxShadow: "2px 2px 3px rgb(189 97 91) ",
   },
 }));
 
@@ -153,7 +161,7 @@ const Navbar = () => {
           <Toolbar>
             <IconButton>
               <motion.button
-                className={classes.hamburger_lines}
+                className={classes.hamburger_lines_coat}
                 onClick={() => setOpen(true)}
                 variants={buttonVariants}
                 whileHover="hover"

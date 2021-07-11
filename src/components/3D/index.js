@@ -119,6 +119,7 @@ const TopContainer = styled.div`
   position: relative;
   align-items: center;
   justify-content: flex-start;
+  height: 25%;
 
   @media ${device.laptop} {
     /* padding: 8px 0 60px 0; */

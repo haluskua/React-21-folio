@@ -91,7 +91,7 @@
   border: 1px solid azure;
   border-radius: 0.7rem 4rem 0.7rem 1rem;
   width: 79%;
-  background: linear-gradient(#ffffff, #e5f5f5);
+  background: linear-gradient(#ffffff, #dd58570f);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(2) {
   box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
@@ -99,14 +99,14 @@
 
   border-radius: 0.7rem 4rem 0.7rem 1rem;
   width: 91%;
-  background: linear-gradient(#ffffff, #e5f5f5);
+  background: linear-gradient(#ffffff, #dd58570f);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(3) {
   box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
   border: 1px solid azure;
   border-radius: 1rem 0.7rem 4rem 0.7rem;
   width: 91%;
-  background: linear-gradient(#ffffff, #e5f5f5);
+  background: linear-gradient(#ffffff, #dd58570f);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(4) {
   box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
@@ -114,7 +114,7 @@
   border-radius: 0 0 8rem 4rem;
   border-radius: 1rem 0.7rem 4rem 0.7rem;
   width: 79%;
-  background: linear-gradient(#ffffff, #e5f5f5);
+  background: linear-gradient(#ffffff, #dd58570f);
 }
 
 .MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly {
@@ -130,9 +130,9 @@
   min-width: 43px !important;
 }
 
-.MuiToolbar-gutters {
-  padding-right: 0 !important;
-}
+// .MuiToolbar-gutters {
+//   padding-right: 0 !important;
+// }
 .MuiAvatar-root {
   border-radius: 0 !important;
 }
