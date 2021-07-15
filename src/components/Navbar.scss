@@ -61,8 +61,8 @@
 .MuiList-padding {
   padding: 25px 25px 25px 3px !important;
   margin: 21px 0;
-  border-top: 1px solid #c98a529c;
-  border-right: 1px solid #a96e43db;
+  border-top: 1px solid #ffd6b29c;
+  border-right: 1px solid #ffd6b29c;
   border-radius: 0.3rem 8.7rem 5.7rem 0.3rem;
   margin-left: 0.71rem;
   width: 100%;
@@ -70,7 +70,7 @@
 }
 .MuiDrawer-paperAnchorRight {
   // background: #f8f9fd !important;
-  background: linear-gradient(#251315, #edaa64) !important;
+  background: linear-gradient(#1d0b1c, #edaa64) !important;
 }
 
 .MuiPaper-root,
@@ -92,28 +92,28 @@
   /* border: 1px solid #d3c69d; */
   border-radius: 0.3rem 4rem 0.7rem 1rem;
   width: 79%;
-  background: linear-gradient(#edaa64, #c49f6f);
+  background: linear-gradient(#edaa64, #e1c095);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(2) {
   // box-shadow: 1px 1px 2px #ac7f44, -2px -2px 5px #ffb34a;
   /* border: 1px solid #d3c69d; */
   border-radius: 0.7rem 4rem 0.2rem 1rem;
   width: 93%;
-  background: linear-gradient(#edaa64, #c49f6f);
+  background: linear-gradient(#edaa64, #e1c095);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(3) {
   // box-shadow: 1px 1px 2px #ac7f44, -2px -2px 5px #ffb34a;
   /* border: 1px solid #d3c69d; */
   border-radius: 0.7rem 0.2rem 4rem 1rem;
   width: 93%;
-  background: linear-gradient(#edaa64, #c49f6f);
+  background: linear-gradient(#edaa64, #e1c095);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(4) {
   // box-shadow: 1px 1px 2px #ac7f44, -2px -2px 5px #ffb34a;
   /* border: 1px solid #d3c69d; */
   border-radius: 0.7rem 0.2rem 4rem 0.3rem;
   width: 79%;
-  background: linear-gradient(#edaa64, #c49f6f);
+  background: linear-gradient(#edaa64, #e1c095);
 }
 
 .MuiListItemIcon-root {

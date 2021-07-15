@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     height: "auto",
     marginLeft: "-2.3rem",
     marginTop: "2px",
-    // background: "linear-gradient(#edaa64, #885032) !important",
+    background: "linear-gradient(#d7995c, #e1c095) !important",
   },
   root: {
     "& .MuiSvgIcon-root": {
