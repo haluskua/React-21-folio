@@ -49,16 +49,17 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #aa6f58;
+  color: #973e3e;
   margin: 0;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-family: "Padauk", sans-serif;
+  font-size: 2.1rem;
+  /* text-transform: uppercase; */
+  /* font-weight: bold; */
+  font-family: "Caveat", sans-serif;
   @media ${device.tablet} {
     font-size: 37.5px;
   }
   @media ${device.laptop} {
-    font-size: 28.5px;
+    font-size: 3.5rem;
     font-weight: 100;
   }
 
@@ -76,12 +77,13 @@ const Wrapper = styled.span`
   span:nth-child(1) {
     animation-delay: 0.15s;
     font-family: "Caveat";
-    font-size: 2.1rem;
+    text-transform: uppercase;
+    font-size: 2.7rem;
     @media ${device.tablet} {
       font-size: 3.4rem;
     }
     @media ${device.laptop} {
-      font-size: 2.5rem;
+      font-size: 4.25rem;
       font-weight: 100;
     }
   }

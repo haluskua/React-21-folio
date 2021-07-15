@@ -53,8 +53,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    borderRadius: "8rem 0",
-    background: "#f8f9fd",
+    borderRadius: "8rem 0 5.53rem 0",
+    background: "#170608",
   },
   avatar: {
     display: "flex",
@@ -64,13 +64,14 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "-41px",
   },
   listItem: {
-    color: "#4895ac",
+    color: "#40332b",
   },
   textColor: {
     "& span": {
-      color: "#4895ac",
+      fontSize: "1.05rem",
+      color: "#3f2818",
       fontFamily: "Quicksand",
-      fontWeight: "500",
+      fontWeight: "700",
     },
   },
 
@@ -78,19 +79,19 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "2px 2px 3px #d8a158 ",
     borderRadius: "50%",
     background: "rgb(38 23 22 / 45%)",
-    border: "1px solid #c04e4d",
+    border: "1px solid #525e62",
     padding: "12px",
   },
   hamburger_lines: {
     display: "flex",
     justifyContent: "center",
-    background: "rgb(221 88 87 / 64%)",
-    color: "#fff",
-    borderRadius: "50%",
+    background: "rgb(39 20 22)",
+    color: "#f1cd56",
+    borderRadius: "25%",
     cursor: "pointer",
     padding: "5px",
-    border: "1px solid #dd5857",
-    boxShadow: "2px 2px 3px rgb(189 97 91) ",
+    border: "1px solid #e18262",
+    boxShadow: "2px 2px 3px rgb(189 97 91)",
   },
 }));
 

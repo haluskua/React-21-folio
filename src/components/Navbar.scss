@@ -30,7 +30,7 @@
   width: 236px;
   height: auto !important;
   border-radius: 5rem 0 0 0;
-  padding: 3px 0;
+  padding: 0;
 }
 
 .MuiBottomNavigationAction-root {
@@ -59,18 +59,18 @@
 }
 
 .MuiList-padding {
-  padding: 25px 25px 25px 18px !important;
-  border-radius: 0 6rem 8rem 0;
+  padding: 25px 25px 25px 3px !important;
   margin: 21px 0;
-  // box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
-  border-radius: 1rem 8.7rem 5.7rem 1rem;
-  margin-left: 1rem;
-  width: 95%;
-  background: #f5f7ff;
+  border-top: 1px solid #c98a529c;
+  border-right: 1px solid #a96e43db;
+  border-radius: 0.3rem 8.7rem 5.7rem 0.3rem;
+  margin-left: 0.71rem;
+  width: 100%;
+  background: #1d1713;
 }
 .MuiDrawer-paperAnchorRight {
   // background: #f8f9fd !important;
-  background: #eaecf3 !important;
+  background: linear-gradient(#251315, #edaa64) !important;
 }
 
 .MuiPaper-root,
@@ -84,47 +84,36 @@
   width: 90vw !important;
 }
 .MuiList-root .MuiListItem-gutters {
-  margin: 6px 8px !important;
+  margin: 11.25px !important;
 }
 
 .MuiList-root .MuiListItem-gutters:nth-child(1) {
-  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
-  border: 1px solid azure;
-  border-radius: 0.7rem 4rem 0.7rem 1rem;
+  // box-shadow: 1px 1px 2px #ac7f44, -2px -2px 5px #ffb34a;
+  /* border: 1px solid #d3c69d; */
+  border-radius: 0.3rem 4rem 0.7rem 1rem;
   width: 79%;
-  background: linear-gradient(#ffffff, #dd58570f);
+  background: linear-gradient(#edaa64, #c49f6f);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(2) {
-  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
-  border: 1px solid azure;
-
-  border-radius: 0.7rem 4rem 0.7rem 1rem;
-  width: 91%;
-  background: linear-gradient(#ffffff, #dd58570f);
+  // box-shadow: 1px 1px 2px #ac7f44, -2px -2px 5px #ffb34a;
+  /* border: 1px solid #d3c69d; */
+  border-radius: 0.7rem 4rem 0.2rem 1rem;
+  width: 93%;
+  background: linear-gradient(#edaa64, #c49f6f);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(3) {
-  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
-  border: 1px solid azure;
-  border-radius: 1rem 0.7rem 4rem 0.7rem;
-  width: 91%;
-  background: linear-gradient(#ffffff, #dd58570f);
+  // box-shadow: 1px 1px 2px #ac7f44, -2px -2px 5px #ffb34a;
+  /* border: 1px solid #d3c69d; */
+  border-radius: 0.7rem 0.2rem 4rem 1rem;
+  width: 93%;
+  background: linear-gradient(#edaa64, #c49f6f);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(4) {
-  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
-  border: 1px solid azure;
-  border-radius: 0 0 8rem 4rem;
-  border-radius: 1rem 0.7rem 4rem 0.7rem;
+  // box-shadow: 1px 1px 2px #ac7f44, -2px -2px 5px #ffb34a;
+  /* border: 1px solid #d3c69d; */
+  border-radius: 0.7rem 0.2rem 4rem 0.3rem;
   width: 79%;
-  background: linear-gradient(#ffffff, #dd58570f);
-}
-
-.MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly {
-  border-radius: 8px 0;
-  padding: 2px 6px !important;
-  border: 0.3px solid #97b4b5;
-  margin: 10px 6px;
-  border-radius: 3rem;
-  color: cadetblue;
+  background: linear-gradient(#edaa64, #c49f6f);
 }
 
 .MuiListItemIcon-root {
@@ -136,4 +125,8 @@
 // }
 .MuiAvatar-root {
   border-radius: 0 !important;
+}
+
+.MuiBottomNavigation-root {
+  background: none !important;
 }

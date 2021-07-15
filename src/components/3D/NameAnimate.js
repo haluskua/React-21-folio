@@ -49,13 +49,14 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #5b6166;
+  color: #c9987d;
   text-transform: uppercase;
+  letter-spacing: 0.035rem;
   margin: 0;
-  font-size: 17.4px;
+  font-size: 18px;
   font-weight: bold;
   padding: 3.2em 0 0 0;
-  font-family: "Quicksand";
+  font-family: "Vollkorn";
   line-height: 1.3rem;
 
   span {
@@ -109,6 +110,6 @@ const Wrapper = styled.span`
 
 const SmallText = styled.span`
   font-size: 11.2px;
-  color: #858e91;
+  color: #a78f7e;
   text-align: center;
 `;

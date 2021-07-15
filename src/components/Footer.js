@@ -14,14 +14,12 @@ const useStyles = makeStyles({
     padding: "1px",
     height: "auto",
     marginLeft: "-2.3rem",
-    marginTop: "11px",
-    // background: "linear-gradient(180deg, #c9e9f1, #adccd4)",
-    // boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
-    background: "#f8f9fd",
+    marginTop: "2px",
+    // background: "linear-gradient(#edaa64, #885032) !important",
   },
   root: {
     "& .MuiSvgIcon-root": {
-      fill: "#588d9a",
+      fill: "#40332b",
       width: "18px",
 
       "&:hover": {
