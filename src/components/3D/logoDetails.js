@@ -36,9 +36,8 @@ export function LogoDetails(props) {
       </SmallText>
       <SpacedHorizontalContainer>
         <MediumText>
-          As an intermediate Fullstack developer with background in graphic
-          design, I am more passionate about Frontend development with focus on
-          UX/UI.
+          Creativity is something I enjoy most. I certainly appreciate Frontend
+          web development with focus on UX/UI integration.
         </MediumText>
       </SpacedHorizontalContainer>
       <Marginer direction="vertical" margin=".5em" />
@@ -73,7 +72,7 @@ const DetailsContainer = styled.div`
 
 const MediumText = styled.span`
   font-size: 13.5px;
-  color: #86a5ab;
+  color: #c68670;
   line-height: 1.3rem;
   font-family: "Quicksand";
   text-align: center;
@@ -95,7 +94,7 @@ const MediumText = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 19px;
+  font-size: 21px;
   color: #dacbc7;
   font-weight: 600;
   line-height: 1.6rem;
