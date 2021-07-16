@@ -15,11 +15,11 @@ const useStyles = makeStyles({
     height: "auto",
     marginLeft: "-2.3rem",
     marginTop: "2px",
-    background: "linear-gradient(#d7995c, #e1c095) !important",
+    background: "linear-gradient(#446259,#14120a) !important",
   },
   root: {
     "& .MuiSvgIcon-root": {
-      fill: "#40332b",
+      fill: "#e6b680",
       width: "18px",
 
       "&:hover": {

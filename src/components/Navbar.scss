@@ -55,7 +55,7 @@
 }
 
 .MuiListItem-gutters:hover {
-  background: radial-gradient(#caecf3, #7cc7dd80) !important;
+  background: linear-gradient(#39cc9f6b, #a5993357) !important;
 }
 
 .MuiList-padding {
@@ -66,11 +66,11 @@
   border-radius: 0.3rem 8.7rem 5.7rem 0.3rem;
   margin-left: 0.71rem;
   width: 100%;
-  background: #1d1713;
+  background: linear-gradient(#446259, #14120a) !important;
 }
 .MuiDrawer-paperAnchorRight {
   // background: #f8f9fd !important;
-  background: linear-gradient(#1d0b1c, #edaa64) !important;
+  background: linear-gradient(#140a0c, #446259) !important;
 }
 
 .MuiPaper-root,
@@ -89,31 +89,31 @@
 
 .MuiList-root .MuiListItem-gutters:nth-child(1) {
   // box-shadow: 1px 1px 2px #ac7f44, -2px -2px 5px #ffb34a;
-  /* border: 1px solid #d3c69d; */
+  border: 0.3px solid #40332b !important;
   border-radius: 0.3rem 4rem 0.7rem 1rem;
   width: 79%;
-  background: linear-gradient(#edaa64, #e1c095);
+  background: linear-gradient(#405a526b, #16150d57);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(2) {
   // box-shadow: 1px 1px 2px #ac7f44, -2px -2px 5px #ffb34a;
-  /* border: 1px solid #d3c69d; */
+  border: 0.3px solid #40332b !important;
   border-radius: 0.7rem 4rem 0.2rem 1rem;
   width: 93%;
-  background: linear-gradient(#edaa64, #e1c095);
+  background: linear-gradient(#405a526b, #16150d57);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(3) {
   // box-shadow: 1px 1px 2px #ac7f44, -2px -2px 5px #ffb34a;
-  /* border: 1px solid #d3c69d; */
+  border: 0.3px solid #40332b !important;
   border-radius: 0.7rem 0.2rem 4rem 1rem;
   width: 93%;
-  background: linear-gradient(#edaa64, #e1c095);
+  background: linear-gradient(#405a526b, #16150d57);
 }
 .MuiList-root .MuiListItem-gutters:nth-child(4) {
   // box-shadow: 1px 1px 2px #ac7f44, -2px -2px 5px #ffb34a;
-  /* border: 1px solid #d3c69d; */
+  border: 0.3px solid #40332b !important;
   border-radius: 0.7rem 0.2rem 4rem 0.3rem;
   width: 79%;
-  background: linear-gradient(#edaa64, #e1c095);
+  background: linear-gradient(#405a526b, #16150d57);
 }
 
 .MuiListItemIcon-root {

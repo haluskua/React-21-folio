@@ -17,7 +17,7 @@ import Home from "@material-ui/icons/Home";
 import Apps from "@material-ui/icons/Apps";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../images/crest_trans_brown.png";
+import avatar from "../images/crest_trans_white.png";
 import { motion } from "framer-motion";
 import Footer from "../../src/components/Footer";
 import "../../src/components/Navbar.scss";
@@ -64,14 +64,15 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "-41px",
   },
   listItem: {
-    color: "#40332b",
+    color: "#e6b680",
   },
   textColor: {
     "& span": {
       fontSize: "1.05rem",
-      color: "#3f2818",
+      color: "#e6b680",
       fontFamily: "Quicksand",
-      fontWeight: "700",
+      fontWeight: "600",
+      letterSpacing: ".033rem",
     },
   },
 
