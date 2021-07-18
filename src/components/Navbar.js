@@ -64,12 +64,12 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "-41px",
   },
   listItem: {
-    color: "#e6b680",
+    color: "#9aa294",
   },
   textColor: {
     "& span": {
       fontSize: "1.05rem",
-      color: "#e6b680",
+      color: "#9aa294",
       fontFamily: "Quicksand",
       fontWeight: "600",
       letterSpacing: ".033rem",
@@ -77,23 +77,22 @@ const useStyles = makeStyles((theme) => ({
   },
 
   hamburger_lines_coat: {
-    boxShadow: "2px 2px 3px rgb(189 97 91)",
+    // boxShadow: "2px 2px 2.3px rgb(93, 97, 96)",
 
     borderRadius: "50%",
-    background: "#d1e2e0",
-    border: "1px solid #525e62",
+    background: "#4561553b",
+    border: "1px solid #45615500",
     padding: "12px",
   },
   hamburger_lines: {
     display: "flex",
     justifyContent: "center",
-    background: "#07291b",
-    color: "#f1cd56",
-    borderRadius: "25%",
+    // background: "#45615547",
+    color: "#d1e2e0",
+    borderRadius: "50%",
     cursor: "pointer",
-    padding: "5px",
-    border: "1px solid #e18262",
-    boxShadow: "2px 2px 3px rgb(189 97 91)",
+    padding: "2px",
+    // boxShadow: "2px 2px 3px rgb(68, 99, 93)",
   },
 }));
 

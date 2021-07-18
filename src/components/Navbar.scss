@@ -61,16 +61,15 @@
 .MuiList-padding {
   padding: 25px 25px 25px 3px !important;
   margin: 21px 0;
-  border-top: 1px solid #ffd6b29c;
-  border-right: 1px solid #ffd6b29c;
+  border-top: 0.3px solid #455149 !important;
+  border-right: 0.3px solid #455149 !important;
   border-radius: 0.3rem 8.7rem 5.7rem 0.3rem;
   margin-left: 0.71rem;
   width: 100%;
   background: linear-gradient(#446259, #1e2621) !important;
 }
 .MuiDrawer-paperAnchorRight {
-  // background: #f8f9fd !important;
-  background: linear-gradient(#140a0c, #446259) !important;
+  background: linear-gradient(#0a1214, #446259) !important;
 }
 
 .MuiPaper-root,
@@ -88,27 +87,27 @@
 }
 
 .MuiList-root .MuiListItem-gutters:nth-child(1) {
-  border: 0.3px solid #2c3a31 !important;
+  border: 0.3px solid #4b5747 !important;
   border-radius: 0.7rem 4rem 0.2rem 1rem;
-  box-shadow: 1px 1px 2px #3b534a, -2px -2px 5px #304138;
+  box-shadow: 1px 1px 9px #252b24, -2px -2px 1px #52a478;
   width: 79%;
 }
 .MuiList-root .MuiListItem-gutters:nth-child(2) {
-  border: 0.3px solid #2c3a31 !important;
+  border: 0.3px solid #4b5747 !important;
   border-radius: 0.7rem 4rem 0.2rem 1rem;
-  box-shadow: 1px 1px 2px #3b534a, -2px -2px 5px #304138;
+  box-shadow: 1px 1px 9px #252b24, -2px -2px 1px #52a478;
   width: 93%;
 }
 .MuiList-root .MuiListItem-gutters:nth-child(3) {
-  border: 0.3px solid #2c3a31 !important;
+  border: 0.3px solid #3e423d !important;
   border-radius: 0.7rem 4rem 0.2rem 1rem;
-  box-shadow: 1px 1px 2px #141917, -2px -2px 5px #304138;
+  box-shadow: 1px 1px 9px #252b24, -2px -2px 1px #52a478;
   width: 93%;
 }
 .MuiList-root .MuiListItem-gutters:nth-child(4) {
-  border: 0.3px solid #2c3a31 !important;
+  border: 0.3px solid #3e423d !important;
   border-radius: 0.7rem 4rem 0.2rem 1rem;
-  box-shadow: 1px 1px 2px #141917, -2px -2px 5px #304138;
+  box-shadow: 1px 1px 9px #252b24, -2px -2px 1px #52a478;
   width: 79%;
 }
 
@@ -125,4 +124,7 @@
 
 .MuiBottomNavigation-root {
   background: none !important;
+}
+.MuiSvgIcon-root {
+  font-size: 2rem !important;
 }
