@@ -49,17 +49,17 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #656962;
+  color: #8aa7aa;
   margin: 0;
-  font-size: 2.1rem;
+  font-size: 1.2rem;
   /* text-transform: uppercase; */
   /* font-weight: bold; */
-  font-family: "Caveat", sans-serif;
+  font-family: "Cormarrant", sans-serif;
   @media ${device.tablet} {
     font-size: 37.5px;
   }
   @media ${device.laptop} {
-    font-size: 3.5rem;
+    font-size: 2.1rem;
     font-weight: 100;
   }
 

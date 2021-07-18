@@ -27,6 +27,11 @@ const useStyles = makeStyles({
       },
     },
   },
+  sMediaBox: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+  },
 });
 
 const Footer = () => {
@@ -34,7 +39,7 @@ const Footer = () => {
 
   return (
     <BottomNavigation className={classes.bottomNavContainer}>
-      <SclMedia>
+      <SclMedia className={classes.sMediaBox}>
         <BottomNavigationAction icon={<Facebook />} className={classes.root} />
         <BottomNavigationAction icon={<Twitter />} className={classes.root} />
         <BottomNavigationAction icon={<Instagram />} className={classes.root} />

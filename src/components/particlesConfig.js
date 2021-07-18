@@ -14,7 +14,7 @@ const particlesConfig = {
       type: "circle",
       stroke: {
         width: 0,
-        color: "#000000",
+        color: "#000000cf",
       },
       polygon: {
         nb_sides: 5,

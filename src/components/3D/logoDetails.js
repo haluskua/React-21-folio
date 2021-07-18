@@ -72,9 +72,10 @@ const DetailsContainer = styled.div`
 
 const MediumText = styled.span`
   font-size: 13.5px;
-  color: #54604b;
-  line-height: 1.3rem;
-  font-family: "Quicksand";
+  color: #3a6450;
+  line-height: 1.23rem;
+  /* font-family: "Quicksand"; */
+  font-family: "Cormarrant", sans-serif;
   text-align: center;
   width: 100%;
   margin-top: 1rem;
@@ -109,7 +110,7 @@ const SmallText = styled.span`
     line-height: 2.52rem;
   }
   @media ${device.laptop} {
-    font-size: 34.7px;
+    font-size: 35px;
     line-height: 2.5rem;
     padding: 0 9rem;
   }
