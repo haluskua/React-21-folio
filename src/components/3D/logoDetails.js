@@ -72,7 +72,7 @@ const DetailsContainer = styled.div`
 
 const MediumText = styled.span`
   font-size: 13.5px;
-  color: #c68670;
+  color: #5b605a;
   line-height: 1.3rem;
   font-family: "Quicksand";
   text-align: center;

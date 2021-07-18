@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   hamburger_lines_coat: {
-    boxShadow: "2px 2px 3px #d8a158 ",
+    boxShadow: "rgb(67 93 82) 0px 0px 7.99999px",
     borderRadius: "50%",
     background: "rgb(38 23 22 / 45%)",
     border: "1px solid #525e62",
