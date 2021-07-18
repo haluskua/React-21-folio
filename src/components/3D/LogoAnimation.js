@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../images/crest_trans_white.png";
+import Logo from "../../images/crest_trans_pure.png";
 import styled from "styled-components";
 import { device } from "../MediaQuery/device";
 
