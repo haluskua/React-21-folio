@@ -77,16 +77,17 @@ const useStyles = makeStyles((theme) => ({
   },
 
   hamburger_lines_coat: {
-    boxShadow: "rgb(67 93 82) 0px 0px 7.99999px",
+    boxShadow: "2px 2px 3px rgb(189 97 91)",
+
     borderRadius: "50%",
-    background: "rgb(38 23 22 / 45%)",
+    background: "#d1e2e0",
     border: "1px solid #525e62",
     padding: "12px",
   },
   hamburger_lines: {
     display: "flex",
     justifyContent: "center",
-    background: "rgb(39 20 22)",
+    background: "#07291b",
     color: "#f1cd56",
     borderRadius: "25%",
     cursor: "pointer",
