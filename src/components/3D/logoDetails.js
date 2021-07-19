@@ -74,8 +74,8 @@ const MediumText = styled.span`
   font-size: 13.5px;
   color: #557168;
   line-height: 1.23rem;
-  /* font-family: "Quicksand"; */
-  font-family: "Cormarrant", sans-serif;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   width: 100%;
   margin-top: 1rem;
@@ -87,7 +87,6 @@ const MediumText = styled.span`
     line-height: 2.3rem;
   }
   @media ${device.laptop} {
-    font-weight: 100;
     font-size: 1rem;
     line-height: 1.72rem;
     padding: 0 9rem;

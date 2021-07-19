@@ -37,6 +37,15 @@
   max-width: 55px !important;
   min-width: 0 !important;
 }
+.MuiList-root {
+  width: 100%;
+  border-radius: 3px;
+  .MuiListItem-gutters {
+    padding: 6px 16px !important;
+    // background: linear-gradient(#3f5b53, #a2c8b5) !important;
+    margin: 11.25px !important;
+  }
+}
 
 .MuiPaper-root {
   border-radius: 8rem 0 4rem 0;
@@ -46,17 +55,8 @@
 //   background-color: #000000cf !important;
 // }
 
-.MuiList-root {
-  width: 100%;
-  border-radius: 3px;
-  .MuiListItem-gutters {
-    padding: 4px 16px !important;
-    background: linear-gradient(#446259, #1e2621) !important;
-  }
-}
-
 .MuiListItem-gutters:hover {
-  background: linear-gradient(#39cc9f6b, #a5993357) !important;
+  background: linear-gradient(#446259, #1f1e26) !important;
 }
 
 .MuiList-padding {
@@ -67,7 +67,7 @@
   border-radius: 0.3rem 8.7rem 5.7rem 0.3rem;
   margin-left: 0.71rem;
   width: 100%;
-  background: linear-gradient(#446259, #1e2621) !important;
+  // background: linear-gradient(#d5ffe721, #051109) !important;
 }
 .MuiDrawer-paperAnchorRight {
   background: linear-gradient(#0a1214, #446259) !important;
@@ -89,34 +89,31 @@
 .makeStyles-formStyle-14 {
   width: 90vw !important;
 }
-.MuiList-root .MuiListItem-gutters {
-  margin: 11.25px !important;
-}
 
 .MuiList-root .MuiListItem-gutters:nth-child(1) {
-  border: 0.3px 0.3rem 0 0.3rem solid #626f5f !important;
-  border-radius: 0.7rem 4rem 0.2rem 1rem;
+  border: 0.3px solid #d4f9f4;
+  border-radius: 3.3rem;
   box-shadow: 1px 1px 3px #252b24, -1px -1px 1px #add2c8;
   width: 79%;
   // background: #829d5b78 !important;
 }
 .MuiList-root .MuiListItem-gutters:nth-child(2) {
-  border: 0.3px 0.3rem 0 0.3rem solid #626f5f !important;
-  border-radius: 0.7rem 4rem 0.2rem 1rem;
+  border: 0.3px solid #d4f9f4;
+  border-radius: 3.3rem;
   box-shadow: 1px 1px 3px #252b24, -1px -1px 1px #add2c8;
   width: 93%;
   // background: #829d5b78 !important;
 }
 .MuiList-root .MuiListItem-gutters:nth-child(3) {
-  border: 0.3px 0.3rem 0 0.3rem solid #626f5f !important;
-  border-radius: 0.7rem 4rem 0.2rem 1rem;
+  border: 0.3px solid #d4f9f4;
+  border-radius: 3.3rem;
   box-shadow: 1px 1px 3px #252b24, -1px -1px 1px #add2c8;
   width: 93%;
   // background: #829d5b78 !important;
 }
 .MuiList-root .MuiListItem-gutters:nth-child(4) {
-  border: 0.3px 0.3rem 0 0.3rem solid #626f5f !important;
-  border-radius: 0.7rem 4rem 0.2rem 1rem;
+  border: 0.3px solid #d4f9f4;
+  border-radius: 3.3rem;
   box-shadow: 1px 1px 3px #252b24, -1px -1px 1px #add2c8;
   width: 79%;
   // background: #829d5b78 !important;
@@ -137,5 +134,5 @@
   background: none !important;
 }
 .MuiSvgIcon-root {
-  font-size: 1.35rem !important;
+  font-size: 1.8rem !important;
 }
