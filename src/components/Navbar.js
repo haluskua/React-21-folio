@@ -80,9 +80,9 @@ const useStyles = makeStyles((theme) => ({
     // boxShadow: "2px 2px 2.3px rgb(93, 97, 96)",
 
     borderRadius: "50%",
-    background: "#4561553b",
+    background: "#456155c9",
     border: "1px solid #45615500",
-    padding: "12px",
+    padding: "6px",
   },
   hamburger_lines: {
     display: "flex",
