@@ -69,9 +69,9 @@ const useStyles = makeStyles((theme) => ({
   textColor: {
     "& span": {
       fontSize: "1.05rem",
-      color: "#9aa294",
+      color: "#bdc1b9",
       fontFamily: "vollkorn",
-      fontWeight: "600",
+      fontWeight: "500",
       letterSpacing: ".033rem",
     },
   },

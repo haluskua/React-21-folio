@@ -1,14 +1,14 @@
 const particlesConfig = {
   particles: {
     number: {
-      value: 80,
+      value: 60,
       density: {
         enable: true,
         value_area: 800,
       },
     },
     color: {
-      value: "#124a5a",
+      value: "#48595778",
     },
     shape: {
       type: "circle",
@@ -17,7 +17,7 @@ const particlesConfig = {
         color: "#000000cf",
       },
       polygon: {
-        nb_sides: 5,
+        nb_sides: 4,
       },
       image: {
         src: "img/github.svg",
@@ -48,7 +48,7 @@ const particlesConfig = {
     line_linked: {
       enable: true,
       distance: 150,
-      color: "#656962",
+      color: "#a8b3af",
       opacity: 0.34,
       width: 0.81,
     },

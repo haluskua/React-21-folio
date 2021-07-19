@@ -32,7 +32,7 @@ export function LogoDetails(props) {
       <Marginer direction="vertical" margin="0em" />
       <Box component="div" className={classes.centerLL}></Box>
       <SmallText>
-        I'm a designer and fullstack developer based in Wellington.
+        I'm a designer and fullstack web developer based in Wellington.
       </SmallText>
       <SpacedHorizontalContainer>
         <MediumText>
