@@ -88,7 +88,7 @@ const MediumText = styled.span`
   }
   @media ${device.laptop} {
     font-weight: 100;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.72rem;
     padding: 0 9rem;
   }
