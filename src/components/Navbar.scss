@@ -71,6 +71,12 @@
 }
 .MuiDrawer-paperAnchorRight {
   background: linear-gradient(#0a1214, #446259) !important;
+  border-left: 2px solid #3a514b;
+  border-bottom: 2px solid #3a514b;
+  border-left-color: rgb(58, 81, 75);
+  border-left-style: solid;
+  border-left-width: 2px;
+  box-shadow: 1px 1px 8px #202d28, 1px 1px 14px #2b2f2e;
 }
 
 .MuiPaper-root,
@@ -131,5 +137,5 @@
   background: none !important;
 }
 .MuiSvgIcon-root {
-  font-size: 2rem !important;
+  font-size: 1.35rem !important;
 }

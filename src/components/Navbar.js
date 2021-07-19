@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     "& span": {
       fontSize: "1.05rem",
       color: "#9aa294",
-      fontFamily: "Quicksand",
+      fontFamily: "vollkorn",
       fontWeight: "600",
       letterSpacing: ".033rem",
     },
@@ -80,7 +80,8 @@ const useStyles = makeStyles((theme) => ({
     // boxShadow: "2px 2px 2.3px rgb(93, 97, 96)",
 
     borderRadius: "50%",
-    background: "#456155c9",
+    //transparent
+    background: "#5f9ea000",
     border: "1px solid #45615500",
     padding: "6px",
   },
@@ -88,7 +89,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     // background: "#45615547",
-    color: "#d1e2e0",
+    color: "#8c9d99",
     borderRadius: "50%",
     cursor: "pointer",
     padding: "2px",
