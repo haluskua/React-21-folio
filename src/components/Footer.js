@@ -19,11 +19,11 @@ const useStyles = makeStyles({
   },
   root: {
     "& .MuiSvgIcon-root": {
-      fill: "#d4f9f4",
+      fill: "#b2cfcc",
       width: "18px",
 
       "&:hover": {
-        fill: "#5aaabf",
+        fill: "#e2fffc",
       },
     },
   },

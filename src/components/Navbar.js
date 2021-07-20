@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     borderRadius: "8rem 0 5.53rem 0",
-    background: "#8bcece4f",
+    background: "linear-gradient(45deg, #284d5d, #dc6a56)",
   },
   avatar: {
     display: "flex",
@@ -64,13 +64,12 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "-41px",
   },
   listItem: {
-    color: "#d4f9f4",
+    color: "#c2dad8",
   },
   textColor: {
     "& span": {
       fontSize: "1.2rem",
-      color: "#d4f9f4",
-      fontFamily: "vollkorn",
+      color: "#f3fffe;",
       fontWeight: "500",
       letterSpacing: ".033rem",
     },

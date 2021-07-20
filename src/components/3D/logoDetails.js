@@ -73,7 +73,7 @@ const DetailsContainer = styled.div`
 const MediumText = styled.span`
   font-size: 13.5px;
   color: #557168;
-  line-height: 1.23rem;
+  line-height: 1.5rem;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
   text-align: center;

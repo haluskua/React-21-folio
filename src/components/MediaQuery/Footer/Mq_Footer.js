@@ -6,11 +6,12 @@ import { device } from "../device";
 const SclMedia = styled.div`
   .MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly {
     border-radius: 8px 0;
-    padding: 2px 6px !important;
-    border: 0.3px solid #d4f9f4;
-    margin: 10px 6px;
+    padding: 2px !important;
+    border: 0.3px solid #85cec463;
+    margin: 7px 4px;
     border-radius: 3rem;
-    color: cadetblue;
+    color: #39a7aa;
+    background: #3b626f;
   }
 
   @media ${device.mobiles} {
