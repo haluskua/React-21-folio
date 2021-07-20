@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     borderRadius: "8rem 0 5.53rem 0",
-    background: "#1706083b",
+    background: "#8bcece4f",
   },
   avatar: {
     display: "flex",

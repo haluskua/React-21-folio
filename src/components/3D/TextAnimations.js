@@ -52,11 +52,11 @@ const Wrapper = styled.span`
   color: #557168;
   margin: 0;
   font-size: 1.2rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
   @media ${device.tablet} {
-    font-size: 37.5px;
+    font-size: 35.5px;
   }
   @media ${device.laptop} {
     font-size: 1.7rem;
