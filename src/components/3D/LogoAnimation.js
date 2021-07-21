@@ -20,7 +20,7 @@ const AniLogo = styled.div`
     height: 665px;
   }
   @media ${device.laptopL} {
-    height: 330px;
+    height: 450px;
   }
 
   img {
