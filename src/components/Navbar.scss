@@ -42,9 +42,9 @@
   border-radius: 3px;
   .MuiListItem-gutters {
     padding: 6px 16px !important;
-    background: linear-gradient(#3bd9ff42, #e3fffa00) !important;
-    border: 0.3px solid #b893715c;
-    border-radius: 3.3rem;
+    background: linear-gradient(#ffb67a4f, #e3fffa00) !important;
+    border: 0.3px solid #fe78788f;
+    border-radius: 1rem;
     box-shadow: -4px 6px 1px #3e484d73, -1px -1px 1px #636f6b;
     margin: 11.25px !important;
     margin-left: 0 !important;
@@ -69,15 +69,19 @@
   background: linear-gradient(#cd7e5700, #2b4e5d) !important;
   border-left: 2px solid #64412cc4;
   border-bottom: 2px solid #64412cc4;
+  padding: 7.2px;
+  margin-left: 1rem;
   box-shadow: 1px 1px 8px #202d28, 1px 1px 14px #2b2f2e;
+  left: 5px !important;
+  border-radius: 4rem;
 }
 
-.MuiPaper-root,
-.MuiDrawer-paper,
-.MuiDrawer-paperAnchorRight,
-.MuiPaper-elevation16 {
-  border-radius: 9rem 0rem 5rem 0rem !important;
-}
+// .MuiPaper-root,
+// .MuiDrawer-paper,
+// .MuiDrawer-paperAnchorRight,
+// .MuiPaper-elevation16 {
+//   border-radius: 9rem 0rem 5rem 0rem !important;
+// }
 
 .makeStyles-formStyle-14 {
   width: 90vw !important;

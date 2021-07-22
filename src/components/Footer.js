@@ -11,10 +11,10 @@ const useStyles = makeStyles({
   bottomNavContainer: {
     display: "flex",
     justifyContent: "center",
-    padding: "1px",
+    padding: "1px 1px 8px 1px",
     height: "auto",
-    marginLeft: "-2.3rem",
     marginTop: "2px",
+    borderRadius: "3px 3px 4rem 4rem",
     background: "linear-gradient(#05110900,#8bcece4f ) !important",
   },
   root: {

@@ -12,6 +12,7 @@ const SclMedia = styled.div`
     border-radius: 3rem;
     color: #39a7aa;
     background: #3b626f;
+    box-shadow: -4px 6px 1px #3e484d73, -1px -1px 1px #636f6b;
   }
 
   @media ${device.mobiles} {

@@ -48,13 +48,13 @@ const useStyles = makeStyles((theme) => ({
   },
   menuSliderContainer: {
     height: "90%",
-    marginTop: "7px",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    borderRadius: "8rem 0 5.53rem 0",
     background: "linear-gradient(45deg, #284d5d, #dc6a56)",
+    borderRadius: "1.3rem !important",
+    margin: "15px 0",
   },
   avatar: {
     display: "flex",
