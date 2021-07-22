@@ -6,16 +6,16 @@ import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../avatar.png";
+import "../components/header.scss";
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    width: theme.spacing(45),
-    height: theme.spacing(45),
+    width: theme.spacing(40),
+    height: theme.spacing(40),
     margin: theme.spacing(1),
   },
   title: {
     color: "#da5756",
-
     fontWeight: "bold",
     textTransform: "uppercase",
   },
@@ -43,16 +43,12 @@ const Header = () => {
         <Avatar className={classes.avatar} src={avatar} alt="Omphalus H. Kua" />
       </Grid>
       <Typography className={classes.title} variant="h4">
-        <Typed strings={["OMPA"]} typeSpeed={40} />
+        <Typed strings={["About Me"]} typeSpeed={40} />
       </Typography>
 
       <Typography className={classes.subtitle} variant="h5">
         <Typed
-          strings={[
-            "Frontend Developer",
-            "Backend Developer",
-            "Web & Grafix Developer",
-          ]}
+          strings={["Fun Loving", "Always Learning", "Passhionalte developer"]}
           typeSpeed={20}
           backSpeed={80}
           loop
