@@ -17,7 +17,7 @@ import Home from "@material-ui/icons/Home";
 import Apps from "@material-ui/icons/Apps";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../images/crest_trans_black.png";
+import avatar from "../images/crest_trans_fire.png";
 import { motion } from "framer-motion";
 import Footer from "../../src/components/Footer";
 import "../../src/components/Navbar.scss";
@@ -30,12 +30,12 @@ const useStyles = makeStyles((theme) => ({
     width: "auto",
   },
   appBar: {
-    background: "#dd575700",
+    background: "linear-gradient(45deg, #b5664982, #ffcec524)",
     margin: 0,
     position: "fixed",
     width: "auto",
     boxShadow: "none",
-    right: 0,
+    // right: 0,
   },
   hamburger: {
     color: "tomato",
@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
   },
   textColor: {
     "& span": {
-      fontSize: "1.2rem",
+      fontSize: "1rem",
       color: "#f3fffe;",
       fontWeight: "500",
       letterSpacing: ".033rem",
@@ -76,22 +76,20 @@ const useStyles = makeStyles((theme) => ({
   },
 
   hamburger_lines_coat: {
-    // boxShadow: "2px 2px 2.3px rgb(93, 97, 96)",
-
+    boxShadow: "2px 2px 2.3px #ffe3d8",
     borderRadius: "50%",
-    //transparent
-    background: "#5f9ea000",
-    border: "1px solid #45615500",
-    padding: "6px",
+    background: "linear-gradient(45deg, #284d5d, #dc6a56)",
+    border: "1px solid #fff1ce8c",
+    padding: "4px",
   },
   hamburger_lines: {
     display: "flex",
     justifyContent: "center",
     // background: "#45615547",
-    color: "#8c9d99",
+    color: "#ffe3d8",
     borderRadius: "50%",
     cursor: "pointer",
-    padding: "2px",
+    // padding: "2px",
     // boxShadow: "2px 2px 3px rgb(68, 99, 93)",
   },
 }));

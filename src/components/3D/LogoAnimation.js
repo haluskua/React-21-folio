@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../images/crest_trans_black.png";
+import Logo from "../../images/crest_trans_fire.png";
 import styled from "styled-components";
 import { device } from "../MediaQuery/device";
 
@@ -14,7 +14,7 @@ export default function LogoAnimation() {
 const AniLogo = styled.div`
   display: inline-block;
   width: auto;
-  height: 328px;
+  height: 402px;
   border-radius: 1rem;
   @media ${device.tablet} {
     height: 665px;
