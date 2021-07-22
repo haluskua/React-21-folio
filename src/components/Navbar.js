@@ -76,21 +76,17 @@ const useStyles = makeStyles((theme) => ({
   },
 
   hamburger_lines_coat: {
-    boxShadow: "2px 2px 2.3px #ffe3d8",
-    borderRadius: "50%",
-    background: "linear-gradient(45deg, #284d5d, #dc6a56)",
-    border: "1px solid #fff1ce8c",
-    padding: "4px",
+    border: "1px solid #e3866f",
+    padding: "5px",
+    background: " #76595a",
+    borderRadius: "31%",
   },
   hamburger_lines: {
     display: "flex",
     justifyContent: "center",
-    // background: "#45615547",
     color: "#ffe3d8",
     borderRadius: "50%",
     cursor: "pointer",
-    // padding: "2px",
-    // boxShadow: "2px 2px 3px rgb(68, 99, 93)",
   },
 }));
 

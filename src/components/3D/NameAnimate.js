@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 import Marginer from "../Marginer/index";
 
 export default function NameAnimation() {
-  const reactArray = "OMPHALUS-KUA".split("");
+  const reactArray = "WEB.&.GRAPHICS".split("");
 
   return (
     <React.Fragment>
@@ -12,7 +12,7 @@ export default function NameAnimation() {
           <span key={index}>{item}</span>
         ))}
       </Wrapper>
-      <SmallText>Designer & Developer</SmallText>
+      <SmallText>Developer & Designer</SmallText>
       <Marginer direction="vertical" margin="1.2rem" />
     </React.Fragment>
   );
@@ -49,7 +49,7 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #1c2f37;
+  color: #cb8b72;
   text-transform: uppercase;
   letter-spacing: 0.035rem;
   margin: 0;
@@ -80,12 +80,14 @@ const Wrapper = styled.span`
   }
   span:nth-child(4) {
     animation-delay: 0.6s;
+    color: #5f9ea000;
   }
   span:nth-child(5) {
     animation-delay: 1.15s;
   }
   span:nth-child(6) {
     animation-delay: 1.3s;
+    color: #5f9ea000;
   }
   span:nth-child(7) {
     animation-delay: 1.45s;
@@ -95,7 +97,6 @@ const Wrapper = styled.span`
   }
   span:nth-child(9) {
     animation-delay: 2.15s;
-    color: #5f9ea000;
   }
   span:nth-child(10) {
     animation-delay: 2.3s;
@@ -110,6 +111,6 @@ const Wrapper = styled.span`
 
 const SmallText = styled.span`
   font-size: 11.2px;
-  color: #1c2f37;
+  color: #cb8b72;
   text-align: center;
 `;

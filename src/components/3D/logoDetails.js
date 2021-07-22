@@ -71,7 +71,7 @@ const DetailsContainer = styled.div`
 
 const MediumText = styled.span`
   font-size: 13.5px;
-  color: #acb8bb;
+  color: #d5d4cd;
   line-height: 1.5rem;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
@@ -80,6 +80,7 @@ const MediumText = styled.span`
   margin-top: 1rem;
   @media ${device.mobileM} {
     font-size: 15px;
+    padding: 0 1rem;
   }
   @media ${device.tablet} {
     font-size: 30px;
@@ -94,7 +95,7 @@ const MediumText = styled.span`
 
 const SmallText = styled.span`
   font-size: 21px;
-  color: #ffe3d8;
+  color: #fffdea;
   font-weight: 600;
   line-height: 1.6rem;
   text-align: center;
