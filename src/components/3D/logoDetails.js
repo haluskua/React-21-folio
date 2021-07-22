@@ -83,7 +83,7 @@ const MediumText = styled.span`
     padding: 0 1rem;
   }
   @media ${device.tablet} {
-    font-size: 30px;
+    font-size: 20px;
     line-height: 2.3rem;
   }
   @media ${device.laptop} {

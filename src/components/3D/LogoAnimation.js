@@ -17,7 +17,7 @@ const AniLogo = styled.div`
   height: 402px;
   border-radius: 1rem;
   @media ${device.tablet} {
-    height: 665px;
+    height: 465px;
   }
   @media ${device.laptopL} {
     height: 450px;

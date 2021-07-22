@@ -59,7 +59,7 @@ const Wrapper = styled.span`
     font-size: 35.5px;
   }
   @media ${device.laptop} {
-    font-size: 1.7rem;
+    font-size: 2.37rem;
   }
 
   span {
