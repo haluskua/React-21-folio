@@ -31,10 +31,11 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     background: "linear-gradient(45deg, #b5664982, #ffcec524)",
+    boxShadow: "-4px 6px 1px #3e484d73, -1px -1px 1px #636f6b",
     margin: 0,
     position: "fixed",
     width: "auto",
-    boxShadow: "none",
+    // boxShadow: "none",
     // right: 0,
   },
   hamburger: {
@@ -76,10 +77,11 @@ const useStyles = makeStyles((theme) => ({
   },
 
   hamburger_lines_coat: {
-    border: "1px solid #e3866f",
+    border: "1px solid #b6774b",
     padding: "5px",
     background: " #76595a",
     borderRadius: "31%",
+    boxShadow: "-4px 6px 1px #3e484d73, -1px -1px 1px #636f6b",
   },
   hamburger_lines: {
     display: "flex",

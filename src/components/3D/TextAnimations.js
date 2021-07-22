@@ -51,10 +51,10 @@ const Wrapper = styled.span`
   display: inline-block;
   color: #d19f82;
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 2rem;
   /* text-transform: uppercase; */
   font-weight: 500;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Caveat", sans-serif;
   @media ${device.tablet} {
     font-size: 35.5px;
   }
