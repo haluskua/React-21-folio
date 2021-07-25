@@ -33,7 +33,7 @@ export function LogoDetails(props) {
       <Box component="div" className={classes.centerLL}></Box>
       <SmallText>
         I'm a Freelance fullstack Web Developer with experience in Graphic
-        design.
+        Design.
       </SmallText>
       <SpacedHorizontalContainer>
         <MediumText>Satisfaction for me is where design meets code.</MediumText>
@@ -69,9 +69,10 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 18.5px;
+  font-size: 16px;
   color: #241214;
   line-height: 1.5rem;
+  letter-spacing: .03rem;
   font-weight: 500;
   font-family: "Caveat", sans-serif;
   text-align: center;
@@ -82,11 +83,11 @@ const MediumText = styled.span`
     padding: 0 1rem;
   }
   @media ${device.tablet} {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 2.3rem;
   }
   @media ${device.laptop} {
-    font-size: 1.796rem;
+    font-size: 1.46rem;
     line-height: 1.72rem;
     padding: 0 3rem;
   }
@@ -105,11 +106,11 @@ const SmallText = styled.span`
     line-height: 1.92rem;
   }
   @media ${device.tablet} {
-    font-size: 36px;
+    font-size: 35px;
     line-height: 2.52rem;
   }
   @media ${device.laptop} {
-    font-size: 31px;
+    font-size: 28px;
     line-height: 2.5rem;
     padding: 0 3rem;
   }

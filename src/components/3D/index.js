@@ -86,7 +86,10 @@ const CardContainer = styled(motion.div)`
     height: 100vh;
   }
   @media ${device.tablet} {
-    max-width: 73vw;
+    max-width: 66vw;
+  }
+  @media ${device.laptop} {
+    max-width: 46vw;
   }
   @media ${device.laptopL} {
     max-width: 43vw;
@@ -120,9 +123,11 @@ const TopContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   height: 25%;
+  margin-bottom: -6rem;
 
   @media ${device.laptop} {
-    /* padding: 8px 0 60px 0; */
+    margin-bottom: -4em;
+
   }
 `;
 
