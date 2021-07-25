@@ -49,10 +49,10 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #d19f82;
+  color: #231214;
   margin: 0;
-  font-size: 2rem;
-  /* text-transform: uppercase; */
+  font-size: 1.52rem;
+  margin-left: 1rem;
   font-weight: 500;
   font-family: "Caveat", sans-serif;
   @media ${device.tablet} {

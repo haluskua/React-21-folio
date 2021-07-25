@@ -32,12 +32,11 @@ export function LogoDetails(props) {
       <Marginer direction="vertical" margin="0em" />
       <Box component="div" className={classes.centerLL}></Box>
       <SmallText>
-        I'm a designer and fullstack web developer based in Wellington.
+        I'm a Freelance fullstack Web Developer with experience in Graphic
+        design.
       </SmallText>
       <SpacedHorizontalContainer>
-        <MediumText>
-          I focus on Frontend web development with UX/UI integration.
-        </MediumText>
+        <MediumText>Satisfaction for me is where design meets code.</MediumText>
       </SpacedHorizontalContainer>
       <Marginer direction="vertical" margin=".5em" />
       {/* <Toolbar>
@@ -70,16 +69,16 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 13.5px;
-  color: #d4daee;
+  font-size: 18.5px;
+  color: #241214;
   line-height: 1.5rem;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Caveat", sans-serif;
   text-align: center;
   width: 100%;
   margin-top: 1rem;
   @media ${device.mobileM} {
-    font-size: 15px;
+    font-size: 20px;
     padding: 0 1rem;
   }
   @media ${device.tablet} {
@@ -87,22 +86,23 @@ const MediumText = styled.span`
     line-height: 2.3rem;
   }
   @media ${device.laptop} {
-    font-size: 0.96rem;
+    font-size: 1.796rem;
     line-height: 1.72rem;
     padding: 0 3rem;
   }
 `;
 
 const SmallText = styled.span`
-  font-size: 21px;
+  font-size: 23.3px;
   color: #fff7f2;
+  padding: 0 1rem;
   font-weight: 500;
   line-height: 1.6rem;
   text-align: center;
   font-family: "Vollkorn";
   @media ${device.mobileM} {
-    font-size: 24px;
-    line-height: 1.8rem;
+    font-size: 24.5px;
+    line-height: 1.92rem;
   }
   @media ${device.tablet} {
     font-size: 36px;
