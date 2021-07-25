@@ -107,6 +107,12 @@ const Wrapper = styled.span`
   span:nth-child(12) {
     animation-delay: 2.9s;
   }
+  span:nth-child(13) {
+    animation-delay: 3.14s;
+  }
+  span:nth-child(14) {
+    animation-delay: 3.29s;
+  }
 `;
 
 const SmallText = styled.span`

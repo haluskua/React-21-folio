@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    background: "linear-gradient(45deg, #284d5d, #dc6a56)",
+    background: "linear-gradient(45deg, #145e73, #fd5555)",
     borderRadius: "1.3rem !important",
     margin: "15px 0",
   },

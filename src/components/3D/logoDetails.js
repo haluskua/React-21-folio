@@ -71,7 +71,7 @@ const DetailsContainer = styled.div`
 
 const MediumText = styled.span`
   font-size: 13.5px;
-  color: #d5d4cd;
+  color: #d4daee;
   line-height: 1.5rem;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
@@ -87,16 +87,16 @@ const MediumText = styled.span`
     line-height: 2.3rem;
   }
   @media ${device.laptop} {
-    font-size: 1rem;
+    font-size: 0.96rem;
     line-height: 1.72rem;
-    padding: 0 9rem;
+    padding: 0 3rem;
   }
 `;
 
 const SmallText = styled.span`
   font-size: 21px;
-  color: #fffdea;
-  font-weight: 600;
+  color: #fff7f2;
+  font-weight: 500;
   line-height: 1.6rem;
   text-align: center;
   font-family: "Vollkorn";
@@ -109,9 +109,9 @@ const SmallText = styled.span`
     line-height: 2.52rem;
   }
   @media ${device.laptop} {
-    font-size: 35px;
+    font-size: 31px;
     line-height: 2.5rem;
-    padding: 0 9rem;
+    padding: 0 3rem;
   }
 `;
 
