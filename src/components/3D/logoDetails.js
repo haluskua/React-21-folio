@@ -98,7 +98,7 @@ const SmallText = styled.span`
   color: #fff7f2;
   padding: 0 1rem;
   font-weight: 500;
-  line-height: 1.6rem;
+  line-height: 1.65rem;
   text-align: center;
   font-family: "Vollkorn";
   @media ${device.mobileM} {
@@ -110,8 +110,8 @@ const SmallText = styled.span`
     line-height: 2.52rem;
   }
   @media ${device.laptop} {
-    font-size: 28px;
-    line-height: 2.5rem;
+    font-size: 26px;
+    line-height: 2rem;
     padding: 0 3rem;
   }
 `;

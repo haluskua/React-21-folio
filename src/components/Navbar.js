@@ -79,14 +79,14 @@ const useStyles = makeStyles((theme) => ({
   hamburger_lines_coat: {
     border: "1px solid #b6774b",
     padding: "5px",
-    background: " #76595a",
+    background: " linear-gradient(45deg, #145e73, #fd5555)",
     borderRadius: "31%",
     boxShadow: "-4px 6px 1px #3e484d73, -1px -1px 1px #636f6b",
   },
   hamburger_lines: {
     display: "flex",
     justifyContent: "center",
-    color: "#ffe3d8",
+    color: "#231214",
     borderRadius: "50%",
     cursor: "pointer",
   },
