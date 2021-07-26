@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Open Sans Condensed",
   },
   menuSliderContainer: {
-    height: "82vh",
+    height: "66vh",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
@@ -56,6 +56,12 @@ const useStyles = makeStyles((theme) => ({
     background: "linear-gradient(45deg, #145e73, #fd5555)",
     borderRadius: "1.3rem !important",
     margin: "15px 0",
+    [theme.breakpoints.up("sm")]: {
+      height: "50%",
+    },
+    [theme.breakpoints.up("lg")]: {
+      height: "60%",
+    },
   },
   avatar: {
     display: "flex",

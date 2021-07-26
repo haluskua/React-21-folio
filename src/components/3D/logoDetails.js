@@ -32,11 +32,11 @@ export function LogoDetails(props) {
       <Marginer direction="vertical" margin="0em" />
       <Box component="div" className={classes.centerLL}></Box>
       <SmallText>
-        I'm a Freelance fullstack Web Developer with background in Graphic
-        Design.
+        I'm a Freelance fullstack Web Developer with a Graphic Design
+        background.
       </SmallText>
       <SpacedHorizontalContainer>
-        <MediumText>Satisfaction for me is where design meets code.</MediumText>
+        <MediumText>I enjoy sharing the art of Design and Code.</MediumText>
       </SpacedHorizontalContainer>
       <Marginer direction="vertical" margin=".5em" />
       {/* <Toolbar>
@@ -72,7 +72,7 @@ const MediumText = styled.span`
   font-size: 16px;
   color: #241214;
   line-height: 1.5rem;
-  letter-spacing: .03rem;
+  letter-spacing: 0.03rem;
   font-weight: 500;
   padding: 0 40px;
   font-family: "Caveat", sans-serif;
@@ -88,9 +88,13 @@ const MediumText = styled.span`
     line-height: 2.3rem;
   }
   @media ${device.laptop} {
-    font-size: 1.46rem;
+    font-size: 1.6rem;
     line-height: 1.72rem;
     padding: 0 3rem;
+  }
+  @media ${device.laptopL} {
+    font-size: 1.7rem;
+    padding: 0 7.2rem;
   }
 `;
 
@@ -114,6 +118,11 @@ const SmallText = styled.span`
     font-size: 26px;
     line-height: 2rem;
     padding: 0 3rem;
+  }
+  @media ${device.laptopL} {
+    font-size: 32px;
+    line-height: 2.2rem;
+    padding: 0 7.2rem;
   }
 `;
 
