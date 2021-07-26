@@ -23,7 +23,7 @@ import Footer from "../../src/components/Footer";
 import "../../src/components/Navbar.scss";
 import NameAnimation from "../components/3D/NameAnimate";
 
-import SuperQuery from "@themgoncalves/super-query";
+// import SuperQuery from "@themgoncalves/super-query";
 
 // :::::::::::::::::::
 //--//styling
