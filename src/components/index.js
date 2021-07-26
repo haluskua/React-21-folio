@@ -1,6 +1,6 @@
 import React from "react";
 import FrontCard from "../components/3D/index";
-import Header from "./Header";
+// import Header from "./Header";
 // import Particles from './Particles';
 import Box from "@material-ui/core/Box";
 import Particles from "react-particles-js";
