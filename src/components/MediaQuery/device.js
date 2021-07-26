@@ -1,3 +1,6 @@
+// import SuperQuery from "@themgoncalves/super-query";
+// import SuperQuery, { configureBreakpoints } from '@themgoncalves/super-query';
+
 // Mobile S - 320px
 // Mobile M - 375px
 // Mobile L - 425px

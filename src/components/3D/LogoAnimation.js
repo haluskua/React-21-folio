@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../images/crest_trans_brown.png";
 import styled from "styled-components";
 import { device } from "../MediaQuery/device";
+import SuperQuery from "@themgoncalves/super-query";
 
 export default function LogoAnimation() {
   return (
@@ -12,11 +13,13 @@ export default function LogoAnimation() {
 }
 
 const AniLogo = styled.div`
-  display: inline-block;
-  width: auto;
-  height: 310px;
-  border-radius: 1rem;
-
+  /* background: orange;
+  ${SuperQuery().minWidth.sm.css`
+    background: red;
+  `};
+  ${SuperQuery().minWidth.sm.and.landscape.css`
+    background: blue;
+  `}; */
   @media ${device.mobileM} {
     height: 355px;
   }

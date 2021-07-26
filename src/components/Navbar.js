@@ -23,6 +23,8 @@ import Footer from "../../src/components/Footer";
 import "../../src/components/Navbar.scss";
 import NameAnimation from "../components/3D/NameAnimate";
 
+import SuperQuery from "@themgoncalves/super-query";
+
 // :::::::::::::::::::
 //--//styling
 const useStyles = makeStyles((theme) => ({
@@ -48,27 +50,45 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Open Sans Condensed",
   },
   menuSliderContainer: {
-    height: "66vh",
+    // height: "66vh",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
     background: "linear-gradient(45deg, #145e73, #fd5555)",
-    borderRadius: "1.3rem !important",
+    borderRadius: "4rem 4rem 3rem 3rem !important",
     margin: "15px 0",
     [theme.breakpoints.up("sm")]: {
-      height: "50%",
+      // height: "auto",
     },
-    [theme.breakpoints.up("lg")]: {
+    [`${theme.breakpoints.up("sm")} and (orientation: landscape)`]: {
+      flexDirection: "row-reverse",
+      width: "100%",
+    },
+    [`${theme.breakpoints.up("lg")} and (orientation: portrait)`]: {
       height: "60%",
+      flexDirection: "column",
     },
+    [`${theme.breakpoints.up("xl")} and (orientation: landscape)`]: {
+      height: "60%",
+      // flexDirection: "column",
+      width: "100%",
+    },
+    // [theme.breakpoints.up("lg")]: {
+    //   height: "60%",
+    // },
   },
   avatar: {
     display: "flex",
-    height: "173px",
+    height: "151px",
     border: "none",
     width: "100%",
     marginBottom: "-41px",
+    [`${theme.breakpoints.up("sm")} and (orientation: landscape)`]: {
+      width: "22%",
+      height: "200px",
+      marginBottom: "0",
+    },
   },
   listItem: {
     color: "#c2dad8",
@@ -84,7 +104,7 @@ const useStyles = makeStyles((theme) => ({
 
   hamburger_lines_coat: {
     border: "1px solid #b6774b",
-    padding: "5px",
+    padding: theme.spacing.unit,
     background: " linear-gradient(45deg, #145e73, #fd5555)",
     borderRadius: "31%",
     boxShadow: "-4px 6px 1px #5d4585a0, -1px -1px 1px #d0575bad",

@@ -1,3 +1,22 @@
+// media queries in sass
+$mobileS: 320px;
+$mobileM: 375;
+$mobileL: 425px;
+$tablet: 768px;
+$laptop: 1024px;
+$laptopL: 1440px;
+$desktop: 2560px;
+
+// .smth {
+//   //some CSS
+//   @media screen and (max-width: $small) {
+//     //do Smth
+//   }
+//   @media screen and (min-width: $medium) {
+//     //do Smth
+//   }
+// }
+
 .swiper-button-next {
   top: 92% !important;
   background-image: url("https://image.flaticon.com/icons/png/512/545/545783.png");
@@ -25,12 +44,22 @@
   opacity: 0.03%;
 }
 
-//overight MUI STYLING
+// overight MUI STYLING
 .MuiDrawer-paper {
-  width: 236px;
-  height: auto !important;
+  width: 266px;
   border-radius: 5rem 0 0 0;
   padding: 0;
+  height: auto !important;
+  @media screen and (min-width: $mobileS) and (orientation: landscape) {
+    width: auto !important;
+  }
+  @media screen and (min-width: $tablet) and (orientation: landscape) {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: $laptopL) and (orientation: landscape) {
+    width: 66% !important;
+  }
 }
 
 .MuiBottomNavigationAction-root {
@@ -40,6 +69,10 @@
 .MuiList-root {
   width: 88%;
   border-radius: 3px;
+  @media screen and (min-width: $mobileS) and (orientation: landscape) {
+    width: 30% !important;
+  }
+
   .MuiListItem-gutters {
     padding: 6px 16px !important;
     background: linear-gradient(#ffb67a4f, #e3fffa00) !important;

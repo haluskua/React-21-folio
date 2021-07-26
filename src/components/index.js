@@ -42,8 +42,8 @@ const Home = () => {
             <FrontCard />
           </SwiperSlide>
           <SwiperSlide>
-            {/* <FrontCard /> */}
-            <Header />
+            <FrontCard />
+            {/* <Header /> */}
           </SwiperSlide>
         </Swiper>
       </Box>
