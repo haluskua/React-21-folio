@@ -32,7 +32,7 @@ export function LogoDetails(props) {
       <Marginer direction="vertical" margin="0em" />
       <Box component="div" className={classes.centerLL}></Box>
       <SmallText>
-        I'm a Freelance fullstack Web Developer with experience in Graphic
+        I'm a Freelance fullstack Web Developer with background in Graphic
         Design.
       </SmallText>
       <SpacedHorizontalContainer>
@@ -74,6 +74,7 @@ const MediumText = styled.span`
   line-height: 1.5rem;
   letter-spacing: .03rem;
   font-weight: 500;
+  padding: 0 40px;
   font-family: "Caveat", sans-serif;
   text-align: center;
   width: 100%;

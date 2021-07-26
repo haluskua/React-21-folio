@@ -84,7 +84,7 @@ const CardContainer = styled(motion.div)`
   }
   @media ${device.mobileS} {
     height: 100vh;
-    max-width: 92vw;
+    max-width: 96vw;
   }
   @media ${device.tablet} {
     max-width: 66vw;

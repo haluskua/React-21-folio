@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Open Sans Condensed",
   },
   menuSliderContainer: {
-    height: "90%",
+    height: "82vh",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
@@ -81,12 +81,12 @@ const useStyles = makeStyles((theme) => ({
     padding: "5px",
     background: " linear-gradient(45deg, #145e73, #fd5555)",
     borderRadius: "31%",
-    boxShadow: "-4px 6px 1px #3e484d73, -1px -1px 1px #636f6b",
+    boxShadow: "-4px 6px 1px #5d4585a0, -1px -1px 1px #d0575bad",
   },
   hamburger_lines: {
     display: "flex",
     justifyContent: "center",
-    color: "#231214",
+    color: "#ffb8c0",
     borderRadius: "50%",
     cursor: "pointer",
   },
