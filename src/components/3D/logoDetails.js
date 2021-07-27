@@ -108,7 +108,7 @@ const SmallText = styled.span`
   line-height: 1.65rem;
   text-align: center;
   font-family: "Vollkorn";
-  ${SuperQuery().minWidth.sm.and.landscape.css`
+  ${SuperQuery().minWidth.xs.and.landscape.css`
     padding: 0 4.3rem;
     
   `};
@@ -116,10 +116,22 @@ const SmallText = styled.span`
     font-size: 24.5px;
     line-height: 1.92rem;
   }
+  ${SuperQuery().minWidth.sm.and.landscape.css`
+    font-size: 21px;
+    line-height: 1.7rem;
+    
+  `};
+
   @media ${device.tablet} {
     font-size: 35px;
     line-height: 2.52rem;
   }
+  ${SuperQuery().minWidth.md.and.landscape.css`
+    padding: 1.3rem;
+    font-size: 30px;
+    line-height: 2rem;
+    
+  `};
   @media ${device.laptop} {
     font-size: 26px;
     line-height: 2rem;

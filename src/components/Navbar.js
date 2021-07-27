@@ -50,44 +50,69 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Open Sans Condensed",
   },
   menuSliderContainer: {
-    // height: "66vh",
+    height: "auto",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
     background: "linear-gradient(45deg, #145e73, #fd5555)",
     borderRadius: "4rem 4rem 3rem 3rem !important",
-    margin: "15px 0",
+    //Portrait View Mqueries
+    [theme.breakpoints.up("xs")]: {
+      height: "85vh",
+    },
     [theme.breakpoints.up("sm")]: {
-      // height: "auto",
+      height: "60%",
+    },
+
+    //Landscape View Mqueries
+
+    [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
+      width: "100%",
+      margin: "0 auto",
+      height: "70% !important",
+      flexDirection: "row-reverse",
     },
     [`${theme.breakpoints.up("sm")} and (orientation: landscape)`]: {
       flexDirection: "row-reverse",
       width: "100%",
+      height: "auto",
     },
-    [`${theme.breakpoints.up("lg")} and (orientation: portrait)`]: {
+
+    [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
+      flexDirection: "row-reverse",
+      width: "100%",
+    },
+    [`${theme.breakpoints.up("lg")} and (orientation: landscape)`]: {
       height: "60%",
-      flexDirection: "column",
+      flexDirection: "row-reverse",
     },
     [`${theme.breakpoints.up("xl")} and (orientation: landscape)`]: {
-      height: "60%",
       // flexDirection: "column",
       width: "100%",
     },
-    // [theme.breakpoints.up("lg")]: {
-    //   height: "60%",
-    // },
   },
   avatar: {
     display: "flex",
-    height: "151px",
+    height: "auto",
     border: "none",
     width: "100%",
     marginBottom: "-41px",
-    [`${theme.breakpoints.up("sm")} and (orientation: landscape)`]: {
+
+    //Portrait View Mqueries
+    [theme.breakpoints.up("xs")]: {
+      marginBottom: "-100px",
+    },
+
+    //Landscape View Mqueries
+
+    [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
       width: "22%",
-      height: "200px",
+      height: "auto",
       marginBottom: "0",
+    },
+    [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
+      width: "27%",
     },
   },
   listItem: {

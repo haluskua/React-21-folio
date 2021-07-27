@@ -16,7 +16,7 @@ const AniLogo = styled.div`
   @media ${device.mobileS} {
     height: 325px;
   }
-  ${SuperQuery().minWidth.sm.and.landscape.css`
+  ${SuperQuery().minWidth.xs.and.landscape.css`
     height: 200px !important;
     
   `};
@@ -24,16 +24,25 @@ const AniLogo = styled.div`
   @media ${device.mobileM} {
     height: 365px;
   }
+  ${SuperQuery().minWidth.sm.and.landscape.css`
+    height: 220px !important;
+    
+  `};
+
   @media ${device.tablet} {
     height: 465px;
   }
   ${SuperQuery().minWidth.md.and.landscape.css`
-    height: 446px !important;
+    height: 256px !important;
     
   `};
   @media ${device.laptop} {
     height: 355px;
   }
+  ${SuperQuery().minWidth.lg.and.landscape.css`
+    height: 348px !important;
+    
+  `};
   @media ${device.laptopL} {
     height: 450px;
   }

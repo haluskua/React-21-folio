@@ -51,14 +51,14 @@ $desktop: 2560px;
   padding: 0;
   height: auto !important;
   @media screen and (min-width: $mobileS) and (orientation: landscape) {
-    width: auto !important;
+    width: 90% !important;
   }
   @media screen and (min-width: $tablet) and (orientation: landscape) {
-    width: 90% !important;
-    margin: 0 auto;
+    width: 66% !important;
+    margin: 0;
   }
   @media screen and (min-width: $laptopL) and (orientation: landscape) {
-    width: 66% !important;
+    width: 33% !important;
   }
 }
 
@@ -70,7 +70,7 @@ $desktop: 2560px;
   width: 88%;
   border-radius: 3px;
   @media screen and (min-width: $mobileS) and (orientation: landscape) {
-    width: 30% !important;
+    width: 36% !important;
   }
 
   .MuiListItem-gutters {
@@ -107,6 +107,9 @@ $desktop: 2560px;
   box-shadow: 1px 1px 8px #202d28, 1px 1px 14px #2b2f2e;
   left: 1px !important;
   border-radius: 4rem;
+  @media screen and (min-width: $laptopL) and (orientation: landscape) {
+    left: 15.4% !important;
+  }
 }
 
 // .MuiPaper-root,
