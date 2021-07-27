@@ -13,19 +13,24 @@ export default function LogoAnimation() {
 }
 
 const AniLogo = styled.div`
-  /* background: orange;
-  ${SuperQuery().minWidth.sm.css`
-    background: red;
-  `};
+  @media ${device.mobileS} {
+    height: 325px;
+  }
   ${SuperQuery().minWidth.sm.and.landscape.css`
-    background: blue;
-  `}; */
+    height: 200px !important;
+    
+  `};
+
   @media ${device.mobileM} {
-    height: 355px;
+    height: 365px;
   }
   @media ${device.tablet} {
     height: 465px;
   }
+  ${SuperQuery().minWidth.md.and.landscape.css`
+    height: 446px !important;
+    
+  `};
   @media ${device.laptop} {
     height: 355px;
   }

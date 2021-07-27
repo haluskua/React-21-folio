@@ -2,15 +2,16 @@ import React from "react";
 import Marginer from "../Marginer/index";
 import styled from "styled-components";
 import Box from "@material-ui/core/Box";
+import { makeStyles } from "@material-ui/core/styles";
+import SuperQuery from "@themgoncalves/super-query";
+import { device } from "../MediaQuery/device";
 // import Toolbar from "@material-ui/core/Toolbar";
 // import ArrowBack from "@material-ui/icons/ArrowBack";
 // import Typography from "@material-ui/core/Typography";
-import { makeStyles } from "@material-ui/core/styles";
+
 // import { motion } from "framer-motion";
 // import { Link } from "react-router-dom";
 // import IconButton from "@material-ui/core/IconButton";
-
-import { device } from "../MediaQuery/device";
 
 // const buttonVariants = {
 //   hover: {
@@ -79,6 +80,7 @@ const MediumText = styled.span`
   text-align: center;
   width: 100%;
   margin-top: 1rem;
+
   @media ${device.mobileM} {
     font-size: 20px;
     padding: 0 1rem;
@@ -106,6 +108,10 @@ const SmallText = styled.span`
   line-height: 1.65rem;
   text-align: center;
   font-family: "Vollkorn";
+  ${SuperQuery().minWidth.sm.and.landscape.css`
+    padding: 0 4.3rem;
+    
+  `};
   @media ${device.mobileM} {
     font-size: 24.5px;
     line-height: 1.92rem;
@@ -119,6 +125,10 @@ const SmallText = styled.span`
     line-height: 2rem;
     padding: 0 3rem;
   }
+  ${SuperQuery().minWidth.lg.and.landscape.css`
+    padding: 0 .3rem;
+    
+  `};
   @media ${device.laptopL} {
     font-size: 32px;
     line-height: 2.2rem;

@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { device } from "../MediaQuery/device";
+import SuperQuery from "@themgoncalves/super-query";
 
 export default function TextAnimation() {
   // const reactArray = "Hello.I.am.Ompa".split("");
@@ -55,9 +56,17 @@ const Wrapper = styled.span`
   margin-left: 1rem;
   font-weight: 500;
   font-family: "Caveat", sans-serif;
+  ${SuperQuery().minWidth.sm.and.landscape.css`
+    padding: 0 4.3rem !important;
+    
+  `};
   @media ${device.tablet} {
     font-size: 35.5px;
   }
+  ${SuperQuery().minWidth.md.and.landscape.css`
+    padding: 0 1.3rem !important;
+    
+  `};
   @media ${device.laptop} {
     font-size: 2.07rem;
   }
