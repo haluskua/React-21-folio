@@ -14,7 +14,7 @@ export default function LogoAnimation() {
 
 const AniLogo = styled.div`
   @media ${device.mobileS} {
-    height: 325px;
+    height: 285px;
   }
   ${SuperQuery().minWidth.xs.and.landscape.css`
     height: 200px !important;
