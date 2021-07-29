@@ -54,7 +54,7 @@ const Wrapper = styled.span`
   text-transform: uppercase;
   letter-spacing: 0.035rem;
   margin: 0;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   padding: 3.2em 0 0 0;
   font-family: "Vollkorn";

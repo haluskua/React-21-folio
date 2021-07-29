@@ -100,12 +100,12 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     height: "auto",
     border: "none",
-    width: "100%",
-    marginBottom: "-41px",
+    width: "84%",
+    marginBottom: "-51px",
 
     //Portrait View Mqueries
     [theme.breakpoints.up("xs")]: {
-      marginBottom: "-100px",
+      // marginBottom: "-100px",
     },
 
     //Landscape View Mqueries

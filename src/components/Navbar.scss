@@ -51,7 +51,7 @@ $desktop: 2560px;
   padding: 0;
   height: auto !important;
   @media screen and (min-width: $mobileS) and (orientation: landscape) {
-    width: 90% !important;
+    width: 98% !important;
   }
   @media screen and (min-width: $tablet) and (orientation: landscape) {
     width: 53% !important;
@@ -70,7 +70,7 @@ $desktop: 2560px;
   width: 88%;
   border-radius: 3px;
   @media screen and (min-width: $mobileS) and (orientation: landscape) {
-    width: 36% !important;
+    width: 32% !important;
   }
 
   @media screen and (min-width: $laptopL) and (orientation: landscape) {
