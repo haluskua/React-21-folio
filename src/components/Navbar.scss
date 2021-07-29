@@ -74,13 +74,13 @@ $desktop: 2560px;
   }
 
   .MuiListItem-gutters {
-    padding: 6px 16px !important;
-    background: linear-gradient(#ffb67a4f, #e3fffa00) !important;
-    border: 0.3px solid #975963;
-    border-radius: 1rem;
-    box-shadow: -4px 6px 1px #3e484d73, -1px -1px 1px #636f6b;
+    padding: 6px 0px 6px 14px !important;
+    // background: linear-gradient(#ffb67a4f, #e3fffa00) !important;
     margin: 11.25px !important;
     margin-left: 6px !important;
+    border: 0.3px solid #7e6f78;
+    border-radius: 1rem;
+    box-shadow: -4px 6px 1px #3e484d73, -1px -1px 1px rgba(102, 51, 102, 0.174);
   }
 }
 
@@ -106,7 +106,7 @@ $desktop: 2560px;
   padding: 7.2px;
   box-shadow: 1px 1px 8px #202d28, 1px 1px 14px #2b2f2e;
   left: 1px !important;
-  border-radius: 4rem;
+  border-radius: 2rem 2rem 4rem 4rem;
   @media screen and (min-width: $laptopL) and (orientation: landscape) {
     left: 15.4% !important;
   }

@@ -56,10 +56,14 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     background: "linear-gradient(45deg, #145e73, #fd5555)",
-    borderRadius: "4rem 4rem 3rem 3rem !important",
+    borderRadius: "2rem 2rem 3rem 3rem !important",
+    boxShadow:
+      "-4px 6px 1px #3e484d73, -1px -1px 1px rgba(102, 51, 102, 0.174)",
+
     //Portrait View Mqueries
     [theme.breakpoints.up("xs")]: {
       height: "85vh",
+      "@media (orientation: landscape)": {},
     },
     [theme.breakpoints.up("sm")]: {
       height: "60%",
@@ -120,10 +124,12 @@ const useStyles = makeStyles((theme) => ({
   },
   textColor: {
     "& span": {
-      fontSize: "1rem",
+      fontSize: "0.89rem",
+      letterSpacing: "0.3rem",
       color: "#f3fffe;",
       fontWeight: "500",
-      letterSpacing: ".033rem",
+      letterSpacing: ".085rem",
+      lineHeight: "1.2rem",
     },
   },
 
