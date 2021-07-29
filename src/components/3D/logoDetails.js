@@ -33,11 +33,10 @@ export function LogoDetails(props) {
       <Marginer direction="vertical" margin="0em" />
       <Box component="div" className={classes.centerLL}></Box>
       <SmallText>
-        I'm a Freelance fullstack Web Developer with a Graphic Design
-        background.
+        I'm a Freelance fullstack Web Developer with Graphic Design background.
       </SmallText>
       <SpacedHorizontalContainer>
-        <MediumText>I enjoy sharing the art of Design and Code.</MediumText>
+        <MediumText>I enjoy the beauty in Design and Code.</MediumText>
       </SpacedHorizontalContainer>
       <Marginer direction="vertical" margin=".5em" />
       {/* <Toolbar>
@@ -101,11 +100,11 @@ const MediumText = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 23.3px;
+  font-size: 23px;
   color: #fff7f2;
   padding: 0 1rem;
   font-weight: 500;
-  line-height: 1.65rem;
+  line-height: 1.85rem;
   text-align: center;
   font-family: "Vollkorn";
   ${SuperQuery().minWidth.xs.and.landscape.css`
