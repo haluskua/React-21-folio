@@ -17,7 +17,7 @@ import Home from "@material-ui/icons/Home";
 import Apps from "@material-ui/icons/Apps";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../images/crest_trans_fire.png";
+import avatar from "../images/crest_trans_brown.png";
 import { motion } from "framer-motion";
 import Footer from "../../src/components/Footer";
 import "../../src/components/Navbar.scss";
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     width: "auto",
   },
   appBar: {
-    background: "linear-gradient(45deg, #b5664982, #ffcec524)",
+    background: "linear-gradient(45deg, #667370, #ffcec524)",
     boxShadow: "-4px 6px 1px #3e484d73, -1px -1px 1px #636f6b",
     margin: 0,
     position: "fixed",
@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    background: "linear-gradient(45deg, #145e73, #fd5555)",
+    background: "linear-gradient(45deg, #384552, #588c90)",
     borderRadius: "2rem 2rem 3rem 3rem !important",
     boxShadow:
       "-4px 6px 1px #3e484d73, -1px -1px 1px rgba(102, 51, 102, 0.174)",
@@ -134,16 +134,16 @@ const useStyles = makeStyles((theme) => ({
   },
 
   hamburger_lines_coat: {
-    border: "1px solid #b6774b",
+    border: "1px solid #a0a8a6",
     padding: theme.spacing.unit,
-    background: " linear-gradient(45deg, #145e73, #fd5555)",
+    background: "linear-gradient(45deg, #495854, #ffcec524)",
     borderRadius: "31%",
-    boxShadow: "-4px 6px 1px #5d4585a0, -1px -1px 1px #d0575bad",
+    boxShadow: "-4px 6px 1px #606d6a, -1px -1px 1px #a1a4a2",
   },
   hamburger_lines: {
     display: "flex",
     justifyContent: "center",
-    color: "#ffb8c0",
+    color: "#e3e6e5",
     borderRadius: "50%",
     cursor: "pointer",
   },
