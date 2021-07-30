@@ -125,7 +125,6 @@ const useStyles = makeStyles((theme) => ({
   textColor: {
     "& span": {
       fontSize: "0.89rem",
-      letterSpacing: "0.3rem",
       color: "#f3fffe;",
       fontWeight: "500",
       letterSpacing: ".085rem",

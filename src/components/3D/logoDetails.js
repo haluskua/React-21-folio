@@ -32,11 +32,9 @@ export function LogoDetails(props) {
     <DetailsContainer>
       <Marginer direction="vertical" margin="0em" />
       <Box component="div" className={classes.centerLL}></Box>
-      <SmallText>
-        I'm a Freelance fullstack Web Developer and Graphic Designer
-      </SmallText>
+      <SmallText>I'm a Freelance Web Developer and Graphic Designer</SmallText>
       <SpacedHorizontalContainer>
-        <MediumText>I enjoy the beauty in Design and Code.</MediumText>
+        <MediumText>I enjoy the art of coding beautiful design</MediumText>
       </SpacedHorizontalContainer>
       <Marginer direction="vertical" margin=".5em" />
       {/* <Toolbar>
