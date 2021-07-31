@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     justifyContent: "center",
     padding: "1px 1px 8px 1px",
     height: "auto",
-    marginTop: "2px",
+    marginTop: "11px",
     borderRadius: "3px 3px 4rem 4rem",
     background: "linear-gradient(#05110900,#8bcece4f ) !important",
   },

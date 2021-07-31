@@ -32,8 +32,8 @@ const useStyles = makeStyles((theme) => ({
     width: "auto",
   },
   appBar: {
-    background: "linear-gradient(45deg, #667370, #ffcec524)",
-    boxShadow: "-4px 6px 1px #3e484d73, -1px -1px 1px #636f6b",
+    background: "linear-gradient(45deg, #5f416399, #ffcec524)",
+    boxShadow: "-4px 6px 1px #3e484d73, -1px 3px 1px #6a707345",
     margin: 0,
     position: "fixed",
     width: "auto",
@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    background: "linear-gradient(45deg, #384552, #588c90)",
+    background: "linear-gradient(45deg, #271829, #777677)",
     borderRadius: "2rem 2rem 3rem 3rem !important",
     boxShadow:
       "-4px 6px 1px #3e484d73, -1px -1px 1px rgba(102, 51, 102, 0.174)",
@@ -124,20 +124,32 @@ const useStyles = makeStyles((theme) => ({
   },
   textColor: {
     "& span": {
-      fontSize: "0.89rem",
+      fontSize: "1.23rem",
       color: "#f3fffe;",
       fontWeight: "500",
-      letterSpacing: ".085rem",
+      letterSpacing: ".05rem",
+      fontFamily: "Padauk",
       lineHeight: "1.2rem",
+      [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
+        fontSize: "1.07rem",
+        letterSpacing: ".1rem",
+      },
     },
   },
 
   hamburger_lines_coat: {
-    border: "1px solid #a0a8a6",
-    padding: theme.spacing.unit,
-    background: "linear-gradient(45deg, #495854, #ffcec524)",
-    borderRadius: "31%",
-    boxShadow: "-4px 6px 1px #606d6a, -1px -1px 1px #a1a4a2",
+    borderTop: "none",
+    borderRight: "none",
+    borderBottom: "1px solid #595f64",
+    borderLeft: "1px solid #595f64",
+
+    padding: "4px",
+    borderRadius: "10px 4px",
+    background: "linear-gradient(45deg, #2312148a, #ffcec524)",
+    boxShadow: "-4px 6px 1px #3e484d73, -1px 3px 1px #23121417",
+    [`${theme.breakpoints.up("md")} and (orientation: portrait)`]: {
+      padding: "6px",
+    },
   },
   hamburger_lines: {
     display: "flex",

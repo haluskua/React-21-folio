@@ -50,11 +50,10 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #231214;
+  color: #93ae7c;
   margin: 0;
   font-size: 1.52rem;
   margin-left: 1rem;
-  font-weight: 500;
   font-family: "Caveat", sans-serif;
   ${SuperQuery().minWidth.sm.and.landscape.css`
     padding: 0 4.3rem !important;
@@ -80,11 +79,12 @@ const Wrapper = styled.span`
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
   }
-  //H
+  //W
 
   span:nth-child(1) {
     animation-delay: 0.15s;
     font-family: "Caveat";
+    font-weight: "100";
     text-transform: uppercase;
     font-size: 2.7rem;
     @media ${device.tablet} {
@@ -92,7 +92,6 @@ const Wrapper = styled.span`
     }
     @media ${device.laptop} {
       font-size: 4.25rem;
-      font-weight: 100;
     }
   }
   //e

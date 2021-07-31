@@ -31,7 +31,7 @@ const AniLogo = styled.div`
   `};
 
   @media ${device.tablet} {
-    height: 465px;
+    height: 425px;
   }
   ${SuperQuery().minWidth.md.and.landscape.css`
     height: 256px !important;
@@ -45,7 +45,7 @@ const AniLogo = styled.div`
     
   `};
   @media ${device.laptopL} {
-    height: 450px;
+    height: 444px !important;
   }
 
   img {
