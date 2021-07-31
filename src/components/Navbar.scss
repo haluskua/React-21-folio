@@ -75,17 +75,17 @@ $desktop: 2560px;
   }
 
   @media screen and (min-width: $laptopL) and (orientation: landscape) {
-    width: 25% !important;
+    width: 30% !important;
   }
 
   .MuiListItem-gutters {
-    padding: 6px 0px 6px 14px !important;
+    padding: 8px 0px 8px 14px !important;
     margin: 11.25px !important;
     margin-left: 6px !important;
-    border: 0.3px solid #524b53;
+    // border: 0.3px solid #524b53;
     border-radius: 1rem;
-    background: linear-gradient(45deg, #2e202f91, #86bcc075);
-    box-shadow: -4px 6px 1px #2e202f94, -1px -1px 1px rgba(102, 51, 102, 0.174);
+    background: linear-gradient(#bfe3d81b, #2e1d32) !important;
+    box-shadow: -3px 6px 1px #361d388a, -2px 2px 1px #361d3869;
   }
 }
 
@@ -94,9 +94,9 @@ $desktop: 2560px;
 }
 
 .MuiListItem-gutters:hover {
-  background: linear-gradient(#bfe3d81b, #1f1e2628) !important;
+  background: linear-gradient(45deg, #2e202f91, #86bcc01f);
   color: orange !important;
-  border: 1px solid #1f1e2628;
+  // border: 1px solid #1f1e2628;
 }
 
 .MuiList-padding {
