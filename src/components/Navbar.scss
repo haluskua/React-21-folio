@@ -82,10 +82,10 @@ $desktop: 2560px;
     padding: 8px 0px 8px 14px !important;
     margin: 11.25px !important;
     margin-left: 6px !important;
-    border: 1px solid #575761;
+    border: 1px solid #322d32;
     border-radius: 1rem;
-    box-shadow: -3px 6px 1px #1b181b17, -2px 2px 1px #361d380f;
-    background: linear-gradient(45deg, #2e202f91, #86bcc01f) !important;
+    box-shadow: 4px 6px 1px #221324a3, 2px 1px 1px #180319c7;
+    background: linear-gradient(45deg, #2e202f91, #c0eec3b0) !important;
   }
 }
 .MuiListItem-gutters:hover {
@@ -107,7 +107,7 @@ $desktop: 2560px;
   }
 }
 .MuiDrawer-paperAnchorRight {
-  background: linear-gradient(#d7d5c624, #331935) !important;
+  background: linear-gradient(#d7d5c624, #231214) !important;
   // border-left: 2px solid #4f797f;
   border: 2px solid #2c193273;
   padding: 7.2px;

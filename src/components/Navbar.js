@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    background: "linear-gradient(45deg, #271829, #b2cfcc)",
+    background: "#291922",
     borderRadius: "2rem 2rem 3rem 3rem !important",
     boxShadow:
       "-4px 6px 1px #3e484d73, -1px -1px 1px rgba(102, 51, 102, 0.174)",
@@ -131,7 +131,7 @@ const useStyles = makeStyles((theme) => ({
       letterSpacing: ".085rem",
       fontFamily: "Padauk",
       lineHeight: "1.2rem",
-      textShadow: "-2px 1px 1px #3a2e40",
+      textShadow: "-2px 1px 1px #484646",
       [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
         fontSize: "1.07rem",
         letterSpacing: ".1rem",
