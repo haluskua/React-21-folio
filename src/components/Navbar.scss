@@ -82,21 +82,20 @@ $desktop: 2560px;
     padding: 8px 0px 8px 14px !important;
     margin: 11.25px !important;
     margin-left: 6px !important;
-    // border: 0.3px solid #524b53;
+    border: 1px solid #575761;
     border-radius: 1rem;
-    background: linear-gradient(#bfe3d81b, #2e1d32) !important;
-    box-shadow: -3px 6px 1px #361d388a, -2px 2px 1px #361d3869;
+    box-shadow: -3px 6px 1px #1b181b17, -2px 2px 1px #361d380f;
+    background: linear-gradient(45deg, #2e202f91, #86bcc01f) !important;
   }
+}
+.MuiListItem-gutters:hover {
+  background: linear-gradient(#9db3b330, #2e1d3263) !important;
+  color: orange !important;
+  // border: 1px solid #1f1e2628;
 }
 
 .MuiPaper-root {
   border-radius: 8rem 0 4rem 0;
-}
-
-.MuiListItem-gutters:hover {
-  background: linear-gradient(45deg, #2e202f91, #86bcc01f);
-  color: orange !important;
-  // border: 1px solid #1f1e2628;
 }
 
 .MuiList-padding {
@@ -126,6 +125,9 @@ $desktop: 2560px;
 // .MuiPaper-elevation16 {
 //   border-radius: 9rem 0rem 5rem 0rem !important;
 // }
+.MuiBackdrop-root {
+  background-color: #0000008a !important;
+}
 
 .makeStyles-formStyle-14 {
   width: 90vw !important;
