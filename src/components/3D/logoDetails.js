@@ -67,7 +67,7 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 11px;
+  font-size: 13px;
   color: #231214;
   line-height: 1.5rem;
   letter-spacing: 0.03rem;
@@ -107,7 +107,7 @@ const SmallText = styled.span`
 
   @media ${device.mobileS} {
     font-size: 20px;
-    line-height: 1.82rem;
+    line-height: 1.7rem;
   }
   @media ${device.mobileS} and (orientation: landscape) {
     font-size: 16.5px;
