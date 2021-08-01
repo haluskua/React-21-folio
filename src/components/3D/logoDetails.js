@@ -34,7 +34,7 @@ export function LogoDetails(props) {
       <Box component="div" className={classes.centerLL}></Box>
       <SmallText>I'm a Freelance Web Developer and Graphic Designer</SmallText>
       <SpacedHorizontalContainer>
-        <MediumText>Frontend Coder and Designer</MediumText>
+        <MediumText>Frontend, Fullstack, UX\UI-Design</MediumText>
       </SpacedHorizontalContainer>
       <Marginer direction="vertical" margin=".5em" />
       {/* <Toolbar>
@@ -67,20 +67,22 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 13px;
-  color: #231214;
-  line-height: 1.5rem;
-  letter-spacing: 0.03rem;
-  padding: 0 40px;
-  font-family: "Nunito Sans";
-  font-style: italic;
-  text-align: center;
-  width: 100%;
-  margin-top: 9px;
-
+  @media ${device.mobileS} {
+    font-size: 13px;
+    color: #231214;
+    line-height: 1.5rem;
+    letter-spacing: 0.2rem;
+    padding: 0 40px;
+    font-family: "Nunito Sans";
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+    margin-top: 9px;
+  }
   @media ${device.mobileM} {
     font-size: 15px;
     padding: 0 1rem;
+    letter-spacing: 0.4rem;
   }
   @media ${device.tablet} {
     font-size: 18px;
