@@ -126,9 +126,14 @@ const TopContainer = styled.div`
   height: 25%;
   margin-bottom: -6rem;
 
+  @media ${device.mobileS} and (orientation: landscape) {
+    margin-top: -4em;
+  }
+  @media ${device.mobileM} and (orientation: landscape) {
+    margin-top: -1em;
+  }
   @media ${device.laptop} {
     margin-bottom: -4em;
-
   }
 `;
 
@@ -136,8 +141,16 @@ const BottomContainer = styled.div`
   display: flex;
   flex: 1;
   padding: 0 0.5rem;
-  margin-bottom: -3rem;
-  /* margin-top: 1.25rem; */
+  margin-bottom: -13rem;
+  @media ${device.mobileS} and (orientation: landscape) {
+    margin-bottom: -3em;
+  }
+  @media ${device.mobileM} {
+    margin-bottom: -14em;
+  }
+  @media ${device.mobileM} and (orientation: landscape) {
+    margin-bottom: -8em;
+  }
 `;
 
 const LogoWrapper = styled.div`

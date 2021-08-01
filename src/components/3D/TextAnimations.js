@@ -50,7 +50,7 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #93ae7c;
+  color: #515957;
   margin: 0;
   font-size: 1.52rem;
   margin-left: 1rem;

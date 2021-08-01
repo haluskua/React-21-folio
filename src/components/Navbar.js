@@ -32,8 +32,8 @@ const useStyles = makeStyles((theme) => ({
     width: "auto",
   },
   appBar: {
-    background: "linear-gradient(45deg, #5f416399, #ffcec524)",
-    boxShadow: "-4px 6px 1px #3e484d73, -1px 3px 1px #6a707345",
+    background: "#f3f4f7a1",
+    boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff  ",
     margin: 0,
     position: "fixed",
     width: "auto",
@@ -133,15 +133,11 @@ const useStyles = makeStyles((theme) => ({
   },
 
   hamburger_lines_coat: {
-    borderTop: "none",
-    borderRight: "none",
-    borderBottom: "1px solid #595f64",
-    borderLeft: "1px solid #595f64",
-
+    border: "none",
     padding: "4px",
     borderRadius: "10px 4px",
-    background: "linear-gradient(45deg, #2312148a, #ffcec524)",
-    boxShadow: "-4px 6px 1px #3e484d73, -1px 3px 1px #23121417",
+    background: "#f3f4f7",
+    boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
     [`${theme.breakpoints.up("md")} and (orientation: portrait)`]: {
       padding: "6px",
     },
@@ -149,7 +145,7 @@ const useStyles = makeStyles((theme) => ({
   hamburger_lines: {
     display: "flex",
     justifyContent: "center",
-    color: "#e3e6e5",
+    color: "#919488",
     borderRadius: "50%",
     cursor: "pointer",
   },

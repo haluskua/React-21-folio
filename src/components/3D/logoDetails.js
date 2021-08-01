@@ -98,19 +98,31 @@ const MediumText = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 23px;
-  color: #fff7f2;
+  font-size: 18px;
+  color: #353a24;
   padding: 0 1rem;
-  line-height: 1.85rem;
+  font-weight: 500;
+  line-height: 1.588rem;
   text-align: center;
-  font-family: "Vollkorn";
+  font-family: "Nunito San", sans-serif;
   ${SuperQuery().minWidth.xs.and.landscape.css`
     padding: 0 4.3rem;
+    font-size: 20px !important;
     
   `};
+
+  @media ${device.mobileS} and (orientation: landscape) {
+    font-size: 16.5px;
+    padding: 0 4.2rem;
+    line-height: 1.5em;
+  }
   @media ${device.mobileM} {
-    font-size: 24.5px;
-    line-height: 1.92rem;
+    font-size: 21.5px;
+    line-height: 1.82rem;
+  }
+  //using both device and superQuery to create responsive code.
+  @media ${device.mobileM} and (orientation: landscape) {
+    padding: 0 2rem;
   }
   ${SuperQuery().minWidth.sm.and.landscape.css`
     font-size: 21px;
