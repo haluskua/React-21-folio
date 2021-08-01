@@ -103,8 +103,6 @@ $desktop: 2560px;
 
 .MuiPaper-root {
   border-radius: 8rem 0 4rem 0;
-  // min-width: 88% !important;
-  margin-right: 0.8rem;
 }
 
 .MuiList-padding {
@@ -129,10 +127,12 @@ $desktop: 2560px;
   border: 2px solid #2c193273;
   padding: 7.2px;
   box-shadow: 1px 1px 8px #202d28, 1px 1px 14px #2b2f2e;
-  left: 1px !important;
+  left: 2% !important;
+  right: 2% !important;
   border-radius: 2rem 2rem 4rem 4rem;
-  @media screen and (min-width: $laptopL) and (orientation: landscape) {
-    left: 5.4% !important;
+  @media screen and (min-width: $tablet) {
+    left: 5.5% !important;
+    right: 5.5% !important;
   }
 }
 
