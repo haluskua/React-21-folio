@@ -59,7 +59,7 @@ $desktop: 2560px;
     margin: 0;
   }
   @media screen and (min-width: $laptopL) and (orientation: landscape) {
-    width: 64% !important;
+    width: 50% !important;
   }
 }
 
@@ -83,7 +83,7 @@ $desktop: 2560px;
   }
 
   @media screen and (min-width: $laptopL) and (orientation: landscape) {
-    width: 30% !important;
+    width: 22% !important;
   }
 
   .MuiListItem-gutters {
@@ -104,7 +104,8 @@ $desktop: 2560px;
       padding: 13.5px 63px;
     }
     @media screen and (min-width: $tablet) and (orientation: landscape) {
-      padding: 11px 50px;
+      padding: 7px 25px;
+      margin: 13px !important;
     }
   }
 }
@@ -122,6 +123,7 @@ $desktop: 2560px;
   width: auto;
   padding: 20px;
   margin: 18px 0;
+  margin-right: 9px !important;
   border-radius: 0.3rem 8.7rem 5.7rem 0.3rem;
   @media screen and (min-width: $mobileM) and (orientation: landscape) {
     padding: 4px;
@@ -132,6 +134,7 @@ $desktop: 2560px;
 
   @media screen and (min-width: $laptopL) and (orientation: landscape) {
     margin-left: -10rem;
+    margin-right: 2rem !important;
   }
 }
 .MuiDrawer-paperAnchorRight {
