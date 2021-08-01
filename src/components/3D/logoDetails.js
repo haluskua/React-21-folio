@@ -107,7 +107,7 @@ const SmallText = styled.span`
   font-family: "Nunito San", sans-serif;
   ${SuperQuery().minWidth.xs.and.landscape.css`
     padding: 0 4.3rem;
-    font-size: 20px !important;
+    font-size: 20px;
     
   `};
 
@@ -151,7 +151,7 @@ const SmallText = styled.span`
   `};
   @media ${device.laptopL} {
     font-size: 32px;
-    line-height: 2.42rem;
+    line-height: 3.42rem;
     padding: 0 7.2rem;
   }
 `;

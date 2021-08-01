@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     background: "#f3f4f7",
     borderRadius: "2rem 2rem 3rem 3rem !important",
-    // boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff !important",
+    boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
 
     //Portrait View Mqueries
     [theme.breakpoints.up("xs")]: {

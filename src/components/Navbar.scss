@@ -55,7 +55,7 @@ $desktop: 2560px;
   }
 
   @media screen and (min-width: $tablet) and (orientation: landscape) {
-    width: 77% !important;
+    width: 92% !important;
     margin: 0;
   }
   @media screen and (min-width: $laptopL) and (orientation: landscape) {
@@ -68,10 +68,15 @@ $desktop: 2560px;
   min-width: 0 !important;
 }
 .MuiList-root {
-  width: 88%;
+  width: 29%;
   border-radius: 3px;
+  margin-left: 1rem !important;
+
   @media screen and (min-width: $mobileS) and (orientation: landscape) {
-    width: 29% !important;
+    width: 33% !important;
+  }
+  @media screen and (min-width: $mobileM) and (orientation: landscape) {
+    width: 88% !important;
   }
 
   @media screen and (min-width: $laptopL) and (orientation: landscape) {

@@ -2,6 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import Marginer from "../Marginer/index";
 import SuperQuery from "@themgoncalves/super-query";
+import { device } from "../MediaQuery/device";
 
 export default function NameAnimation() {
   const reactArray = "WEB.&.GRAPHICS".split("");
@@ -59,10 +60,17 @@ const Wrapper = styled.span`
   padding: 3.2em 0 0 0;
   font-family: "Nunito Sans ", sans-serif;
   line-height: 1.3rem;
+  @media ${device.mobileS} and (orientation: landscape) {
+    font-size: 0.7rem;
+  }
   ${SuperQuery().minWidth.lg.and.landscape.css`
     margin-left: -0.5rem;
     
   `};
+
+  @media ${device.tablet} and (orientation: landscape) {
+    font-size: 1.37rem;
+  }
 
   span {
     display: inline-block;
@@ -122,10 +130,10 @@ const Wrapper = styled.span`
 
 const SmallText = styled.span`
   font-size: 11.2px;
-  color: #9dc6c3;
+  color: #9ca3a3;
   text-align: center;
   ${SuperQuery().minWidth.md.and.landscape.css`
-    font-size: 17px;
+    font-size: 19px;
   `};
   ${SuperQuery().minWidth.lg.and.landscape.css`
     margin-right: -1.3rem;
