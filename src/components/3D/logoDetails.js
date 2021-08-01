@@ -76,7 +76,7 @@ const MediumText = styled.span`
   font-style: italic;
   text-align: center;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 9px;
 
   @media ${device.mobileM} {
     font-size: 15px;
@@ -89,6 +89,7 @@ const MediumText = styled.span`
   @media ${device.laptop} {
     line-height: 1.72rem;
     padding: 0 3rem;
+    margin-top: 0;
   }
   @media ${device.laptopL} {
     font-size: 19px;

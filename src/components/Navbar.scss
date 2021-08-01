@@ -55,7 +55,7 @@ $desktop: 2560px;
   }
 
   @media screen and (min-width: $tablet) and (orientation: landscape) {
-    width: 92% !important;
+    width: 99% !important;
     margin: 0;
   }
   @media screen and (min-width: $laptopL) and (orientation: landscape) {
@@ -78,6 +78,9 @@ $desktop: 2560px;
   @media screen and (min-width: $mobileM) and (orientation: landscape) {
     width: 88% !important;
   }
+  @media screen and (min-width: $tablet) and (orientation: landscape) {
+    width: 28% !important;
+  }
 
   @media screen and (min-width: $laptopL) and (orientation: landscape) {
     width: 30% !important;
@@ -87,17 +90,16 @@ $desktop: 2560px;
     display: flex;
     width: 100%;
     justify-content: center;
-    margin: 11.05px;
+    margin: 12.05px;
     margin-left: 0px !important;
     border-radius: 2rem;
     border: 0.0625rem solid transparent;
     box-shadow: 3px 3px 6px #cecfd4, -3px -3px 6px #fff !important;
-    padding: 8px 28px;
+    padding: 5px 28px;
     @media screen and (min-width: $mobileS) and (orientation: landscape) {
       padding: 5px 27px;
       margin: 9.25px !important;
     }
-
     @media screen and (min-width: $tablet) {
       padding: 13.5px 63px;
     }
@@ -138,16 +140,19 @@ $desktop: 2560px;
   border: 2px solid #2c193273;
   padding: 7.2px;
   box-shadow: 1px 1px 8px #202d28, 1px 1px 14px #2b2f2e;
-  left: 2%;
-  right: 2%;
+  left: 5% !important;
+  right: 5% !important;
   border-radius: 2rem 2rem 4rem 4rem;
-  @media screen and (min-width: $mobileS) {
-    left: 6.5% !important;
-    right: 6.5% !important;
+
+  @media screen and (min-width: $mobileL) {
+    left: 0.5% !important;
   }
   @media screen and (min-width: $tablet) {
     left: 5.5% !important;
     right: 5.5% !important;
+  }
+  @media screen and (min-width: $tablet) and (orientation: landscape) {
+    left: 0.5% !important;
   }
 }
 

@@ -51,14 +51,14 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #31344b;
+  color: #231214;
   text-transform: uppercase;
   letter-spacing: 0.035rem;
   margin: 0;
   font-size: 1.25rem;
   font-weight: 400;
   padding: 3.2em 0 0 0;
-  font-family: "Nunito Sans ", sans-serif;
+  font-family: "Nunito Sans";
   line-height: 1.3rem;
   @media ${device.mobileS} and (orientation: landscape) {
     font-size: 0.7rem;
