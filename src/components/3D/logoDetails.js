@@ -67,32 +67,31 @@ const DetailsContainer = styled.div`
 `;
 
 const MediumText = styled.span`
-  font-size: 16px;
-  color: #241214;
+  font-size: 11px;
+  color: #231214;
   line-height: 1.5rem;
   letter-spacing: 0.03rem;
-  font-weight: 500;
   padding: 0 40px;
-  font-family: "Caveat", sans-serif;
+  font-family: "Nunito Sans";
+  font-style: italic;
   text-align: center;
   width: 100%;
   margin-top: 1rem;
 
   @media ${device.mobileM} {
-    font-size: 20px;
+    font-size: 15px;
     padding: 0 1rem;
   }
   @media ${device.tablet} {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 2.3rem;
   }
   @media ${device.laptop} {
-    font-size: 1.6rem;
     line-height: 1.72rem;
     padding: 0 3rem;
   }
   @media ${device.laptopL} {
-    font-size: 1.7rem;
+    font-size: 19px;
     padding: 0 7.2rem;
   }
 `;
@@ -100,10 +99,10 @@ const MediumText = styled.span`
 const SmallText = styled.span`
   font-size: 18px;
   color: #231214;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.588rem;
   text-align: center;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans";
 
   @media ${device.mobileS} {
     font-size: 20px;
@@ -148,9 +147,9 @@ const SmallText = styled.span`
     
   `};
   @media ${device.laptopL} {
-    font-size: 32px;
-    line-height: 3.42rem;
-    padding: 0 7.2rem;
+    font-size: 26px;
+    line-height: 3rem;
+    padding: 0 5.2rem;
   }
 `;
 
