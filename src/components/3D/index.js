@@ -87,10 +87,11 @@ const CardContainer = styled(motion.div)`
     max-width: 96vw;
   }
   @media ${device.tablet} {
-    max-width: 66vw;
+    max-width: 73vw;
   }
+
   @media ${device.laptop} {
-    max-width: 46vw;
+    max-width: 56vw;
   }
   @media ${device.laptopL} {
     max-width: 43vw;
@@ -128,6 +129,9 @@ const TopContainer = styled.div`
 
   @media ${device.mobileS} and (orientation: landscape) {
     margin-top: -4em;
+  }
+  @media ${device.mobileM} {
+    margin-top: -2em;
   }
   @media ${device.mobileM} and (orientation: landscape) {
     margin-top: -1em;

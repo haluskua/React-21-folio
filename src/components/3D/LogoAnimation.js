@@ -25,7 +25,7 @@ const AniLogo = styled.div`
   `};
 
   @media ${device.mobileM} {
-    height: 345px;
+    height: 310px;
   }
 
   ${SuperQuery().minWidth.sm.and.landscape.css`

@@ -59,7 +59,7 @@ $desktop: 2560px;
     margin: 0;
   }
   @media screen and (min-width: $laptopL) and (orientation: landscape) {
-    width: 40% !important;
+    width: 64% !important;
   }
 }
 
@@ -84,7 +84,6 @@ $desktop: 2560px;
     justify-content: center;
     margin: 16.25px !important;
     margin-left: 0px !important;
-    padding: 10px 39px;
     border-radius: 2rem;
     border: 0.0625rem solid transparent;
     box-shadow: 3px 3px 6px #cecfd4, -3px -3px 6px #fff !important;
@@ -92,7 +91,7 @@ $desktop: 2560px;
       padding: 13.5px 63px;
     }
     @media screen and (min-width: $tablet) and (orientation: landscape) {
-      padding: 13px 50px;
+      padding: 11px 50px;
     }
   }
 }
@@ -126,7 +125,7 @@ $desktop: 2560px;
 }
 .MuiDrawer-paperAnchorRight {
   background: #f3f4f7 !important;
-  width: 90%;
+  width: auto;
   border: 2px solid #2c193273;
   padding: 7.2px;
   box-shadow: 1px 1px 8px #202d28, 1px 1px 14px #2b2f2e;
