@@ -7,14 +7,14 @@ import "../components/resume.scss";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#f3f3f3",
-    padding: "0 1rem",
+    background: "#f3f4f7",
+    padding: "0 ",
 
     [theme.breakpoints.up("sm")]: {
-      padding: "0rem 5rem",
+      padding: "0rem 3rem",
     },
     [theme.breakpoints.up("md")]: {
-      padding: "0rem 8rem",
+      padding: "0rem 5rem",
     },
     [theme.breakpoints.up("lg")]: {
       padding: "0rem 18rem",
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     padding: "1rem",
     margin: "o auto",
-    background: "#f8f9fd",
+    background: "#f3f4f7",
 
     "&:before": {
       content: "''",
@@ -56,9 +56,8 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     margin: "1rem 2rem 1rem 1rem",
     clear: "both",
-    background: "ghostwhite",
-    borderRadius: "4rem 1rem 4rem 1rem",
-    boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
+    borderRadius: "3rem 1rem 4rem 1rem",
+    boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
 
     "&:after": {
       content: "''",
@@ -161,18 +160,24 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   body1: {
-    color: "gray",
+    color: "#231214",
     textAlign: "left",
     width: "100%",
     display: "flex",
-    lineHeight: "1.4rem",
+    lineHeight: "1.5rem",
     justifyContent: "center",
-    fontFamily: "Padauk",
+    letterSpacing: "0",
+    fontFamily: "Nunito Sans",
     letterSpacing: "0",
     fontSize: "1.12rem",
     [theme.breakpoints.up("md")]: {
       fontSize: "1.1rem",
       padding: "0 1.52rem",
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "1.1rem",
+      padding: "0 1.52rem",
+      lineHeight: "1.68rem",
     },
   },
 }));
@@ -290,9 +295,9 @@ const Resume = () => {
             Bachelor in Creative Technology
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            Graduating with a major in Digital Media has allowed me to become
-            experienced with the Adobe suite. The most valuable lesson learned
-            was to do plenty of background research before starting any project.
+            Graduated with a major in Digital Media. The most valuable lesson
+            learned was to do plenty of background research before starting any
+            project.
           </Typography>
         </Box>
         <Typography

@@ -15,15 +15,15 @@ import "../components/portfolio.scss";
 //importing images from folder/files
 
 import project1 from "../images/crest_trans_ompa.png";
-import project2 from "../images/full-stack.png";
-import project3 from "../images/html-css-javascript-1.png";
+import project2 from "../images/crest_trans_ompa.png";
+import project3 from "../images/crest_trans_ompa.png";
 import project4 from "../images/crest_trans_ompa.png";
 import project5 from "../images/crest_trans_ompa.png";
 import project6 from "../images/crest_trans_ompa.png";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#f3f3f3",
+    background: "#f3f4f7",
     padding: "0 1rem",
 
     [theme.breakpoints.up("sm")]: {
@@ -46,7 +46,8 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "space-between",
     borderRadius: "3rem 0",
-    boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
+    boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
+    background: "#f3f4f7",
     [theme.breakpoints.up("md")]: {
       maxWidth: "90% ",
     },
@@ -68,9 +69,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#2f859b",
     fontSize: "1.35rem",
     lineHeight: "1.41rem",
-    fontFamily: "Audiowide",
+    fontFamily: "Nunito Sans",
     textTransform: "uppercase",
-    fontWeight: "600",
+    fontWeight: "700",
     padding: "0px 0 22px 0",
     textAlign: "center",
     [theme.breakpoints.up("md")]: {
@@ -80,13 +81,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   pro_text: {
-    color: "gray",
+    color: "#231214",
     textAlign: "left",
     width: "100%",
     display: "flex",
-    lineHeight: "1.4rem",
+    lineHeight: "1.5rem",
     justifyContent: "center",
-    fontFamily: "Padauk",
+    letterSpacing: "0",
+    fontFamily: "Nunito Sans",
     letterSpacing: "0",
     fontSize: "1.12rem",
     [theme.breakpoints.up("md")]: {
@@ -95,17 +97,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
-  cardImage: {
+  imgBox: {
     display: "flex",
+    justifyContent: "center",
     width: "100%",
-    justifyContent: "flex-start",
-    backgroundColor: "#cacaca24",
-    margin: "0.51rem",
-    borderRadius: "8rem 0 3rem 0",
   },
-  imgComponent: {
-    width: "40%",
-    border: "2px solid red !important",
+  imgItem: {
+    width: "65%",
   },
 }));
 
@@ -170,12 +168,15 @@ const Portfolio = () => {
           <Grid item xs={12} sm={8} md={4} key={i}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
-                <CardMedia
-                  component="img"
-                  alt="Project 1"
-                  height="auto"
-                  image={project.image}
-                />
+                <Box component="div" className={classes.imgBox}>
+                  <CardMedia
+                    component="img"
+                    alt="Project 1"
+                    height="auto"
+                    image={project.image}
+                    className={classes.imgItem}
+                  ></CardMedia>
+                </Box>
 
                 <CardContent>
                   <Typography
