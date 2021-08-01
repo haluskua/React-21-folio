@@ -87,7 +87,6 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     lineHeight: "1.5rem",
     justifyContent: "center",
-    letterSpacing: "0",
     fontFamily: "Nunito Sans",
     letterSpacing: "0",
     fontSize: "1.12rem",
