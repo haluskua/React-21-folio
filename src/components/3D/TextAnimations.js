@@ -83,15 +83,13 @@ const Wrapper = styled.span`
 
   span:nth-child(1) {
     animation-delay: 0.15s;
-    font-family: "Caveat";
+    font-family: "Nunito Sans";
     font-weight: "100";
     text-transform: uppercase;
-    font-size: 2.7rem;
+    font-size: 1.07rem;
     @media ${device.tablet} {
-      font-size: 3.4rem;
-    }
-    @media ${device.laptop} {
-      font-size: 4.25rem;
+      font-size: 2.04rem;
+      letter-spacing: -0.04rem;
     }
   }
   //e
@@ -126,7 +124,7 @@ const Wrapper = styled.span`
   //a
   span:nth-child(9) {
     animation-delay: 1.45s;
-    font-family: "Caveat";
+    font-family: "Nunito Sans";
     font-size: 1.45rem;
     @media ${device.tablet} {
       font-size: 2.4rem;
@@ -149,7 +147,7 @@ const Wrapper = styled.span`
   span:nth-child(12) {
     animation-delay: 2.15s;
     font-size: 3rem;
-    font-family: "Caveat";
+    font-family: "Nunito Sans";
     @media ${device.tablet} {
       font-size: 3.4rem;
     }
@@ -162,7 +160,7 @@ const Wrapper = styled.span`
   span:nth-child(13) {
     animation-delay: 2.3s;
     font-size: 1.9rem;
-    font-family: "Caveat";
+    font-family: "Nunito Sans";
     @media ${device.tablet} {
       font-size: 3.4rem;
     }
@@ -175,7 +173,7 @@ const Wrapper = styled.span`
   span:nth-child(14) {
     animation-delay: 2.45s;
     font-size: 1.9rem;
-    font-family: "Caveat";
+    font-family: "Nunito Sans";
 
     @media ${device.tablet} {
       font-size: 3.4rem;

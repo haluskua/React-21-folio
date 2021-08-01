@@ -102,7 +102,7 @@ const MediumText = styled.span`
 const SmallText = styled.span`
   font-size: 18px;
   color: #231214;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.588rem;
   text-align: center;
   font-family: "Nunito Sans";
@@ -111,6 +111,7 @@ const SmallText = styled.span`
     font-size: 20px;
     line-height: 1.7rem;
   }
+
   @media ${device.mobileS} and (orientation: landscape) {
     font-size: 16.5px;
     padding: 0 4.2rem;
@@ -131,8 +132,8 @@ const SmallText = styled.span`
   `};
 
   @media ${device.tablet} {
-    font-size: 35px;
-    line-height: 2.52rem;
+    font-size: 32px;
+    line-height: 2.75rem;
   }
   ${SuperQuery().minWidth.md.and.landscape.css`
     padding: 1.3rem;
