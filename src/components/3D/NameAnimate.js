@@ -50,14 +50,14 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #9dc6c3;
+  color: #31344b;
   text-transform: uppercase;
   letter-spacing: 0.035rem;
   margin: 0;
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 1.25rem;
+  font-weight: 400;
   padding: 3.2em 0 0 0;
-  font-family: "Vollkorn";
+  font-family: "Nunito Sans ", sans-serif;
   line-height: 1.3rem;
   ${SuperQuery().minWidth.lg.and.landscape.css`
     margin-left: -0.5rem;
@@ -124,8 +124,10 @@ const SmallText = styled.span`
   font-size: 11.2px;
   color: #9dc6c3;
   text-align: center;
+  ${SuperQuery().minWidth.md.and.landscape.css`
+    font-size: 17px;
+  `};
   ${SuperQuery().minWidth.lg.and.landscape.css`
     margin-right: -1.3rem;
-    
   `};
 `;

@@ -37,8 +37,6 @@ const useStyles = makeStyles((theme) => ({
     margin: 0,
     position: "fixed",
     width: "auto",
-    // boxShadow: "none",
-    // right: 0,
   },
   hamburger: {
     color: "tomato",
@@ -55,10 +53,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    background: "#291922",
+    background: "#f3f4f7",
     borderRadius: "2rem 2rem 3rem 3rem !important",
-    boxShadow:
-      "-4px 6px 1px #3e484d73, -1px -1px 1px rgba(102, 51, 102, 0.174)",
+    // boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff !important",
 
     //Portrait View Mqueries
     [theme.breakpoints.up("xs")]: {
@@ -100,21 +97,18 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     height: "auto",
     border: "none",
-    width: "84%",
+    width: "65%",
     marginBottom: "-51px",
-
-    //Portrait View Mqueries
-    [theme.breakpoints.up("xs")]: {
-      // marginBottom: "-100px",
+    [`${theme.breakpoints.up("sm")} `]: {
+      width: "55%",
     },
-
-    //Landscape View Mqueries
 
     [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
       width: "22%",
       height: "auto",
       marginBottom: "0",
     },
+
     [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
       width: "27%",
     },
@@ -126,12 +120,11 @@ const useStyles = makeStyles((theme) => ({
     "& span": {
       fontSize: "1rem",
       textTransform: "uppercase",
-      color: "#f3fffe;",
-      fontWeight: "500",
-      letterSpacing: ".085rem",
-      fontFamily: "Padauk",
-      lineHeight: "1.2rem",
-      textShadow: "-2px 1px 1px #484646",
+      color: "#697272;",
+      fontWeight: "600",
+      fontFamily: "Nunito Sans",
+      letterSpacing: ".052em",
+      lineHeight: "1.5rem",
       [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
         fontSize: "1.07rem",
         letterSpacing: ".1rem",
