@@ -114,14 +114,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   listItem: {
-    color: "#abc5c4",
+    color: "#231214",
   },
   textColor: {
     "& span": {
       fontSize: "1rem",
       textTransform: "uppercase",
-      color: "#697272;",
-      fontWeight: "600",
+      color: "#231214;",
       fontFamily: "Nunito Sans",
       letterSpacing: ".052em",
       lineHeight: "1.5rem",

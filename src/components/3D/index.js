@@ -68,7 +68,7 @@ const CardWrapper = styled.div`
   }
 `;
 const CardContainer = styled(motion.div)`
-  width: 100vw;
+  max-width: 95vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -85,6 +85,10 @@ const CardContainer = styled(motion.div)`
   @media ${device.mobileS} {
     height: 100vh;
     max-width: 96vw;
+  }
+  @media ${device.mobileM} {
+    height: 100vh;
+    max-width: 90vw;
   }
   @media ${device.tablet} {
     max-width: 73vw;
