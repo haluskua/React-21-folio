@@ -113,33 +113,36 @@ const useStyles = makeStyles((theme) => ({
 
 const projects = [
   {
-    name: "Initial Portfolio",
+    name: "Old Portfolio",
     description: `Updating this site over the years has improved my coding ability as a developer. Built with Html, Sass, Js, Autoprefixer, version control with Git and hosted with gh-pages on github, This has been the foundation for my passion web development. `,
     image: project1,
-    github: `https://github.com/haluskua`,
+    github: `https://github.com/haluskua/mywebsite`,
     site: `https://haluskua.github.io/mywebsite`,
   },
   {
-    name: "NextJS",
+    name: "Meetups",
     description: `Production Frameword! Server-side (Pre-) Rendering of Pages of File based Routing. Adding nested, dynamic and Routing between pages. Exploring (SSG) with getStaticProps and ServerSideProps.
     Working With Dynamic Path Params in getStaticProps. Connecting  Quering a MongoDB Database. Sending HTTP Requests to API Routes`,
     image: project2,
+    github: `https://github.com/haluskua/Meetups`,
+    site: `https://meetups-lime.vercel.app/`,
   },
   {
-    name: "Project 3",
+    name: "Monsters",
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-        consequatur magni quod nesciunt necessitatibus molestiae non
-        eligendi, magnam est aliquam recusandae? Magnam soluta minus
-        iste alias sunt veritatis nisi dolores!`,
+    consequatur magni quod nesciunt necessitatibus molestiae non
+    eligendi, magnam est aliquam recusandae? Magnam soluta minus
+    iste alias sunt veritatis nisi dolores!`,
     image: project3,
+    github: `https://github.com/haluskua/Monsters-Rolodex`,
+    site: `https://meetups-lime.vercel.app/`,
   },
   {
-    name: "Project 4",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-        consequatur magni quod nesciunt necessitatibus molestiae non
-        eligendi, magnam est aliquam recusandae? Magnam soluta minus
-        iste alias sunt veritatis nisi dolores!`,
+    name: "Travel Website",
+    description: `Dynamic website using Javascript library: GSAP, ScrollMagic and barba-core to apply page transitions, and smooth animations`,
     image: project4,
+    github: `https://github.com/haluskua/travel-site`,
+    site: `https://haluskua.github.io/travel-site/`,
   },
   {
     name: "Project 5",
