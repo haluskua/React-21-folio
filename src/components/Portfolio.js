@@ -93,10 +93,15 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Nunito Sans",
     letterSpacing: "0",
     fontSize: "1.12rem",
+    padding: "0 1rem",
     [theme.breakpoints.up("md")]: {
       fontSize: "1.1rem",
-      padding: "0 1.52rem",
+      padding: "0 1.2rem",
     },
+    // [theme.breakpoints.up("lg")]: {
+    //   fontSize: "1.1rem",
+    //   padding: "0 1.52rem",
+    // },
   },
 
   imgBox: {
