@@ -21,6 +21,9 @@ import project4 from "../images/crest_trans_ompa.png";
 import project5 from "../images/crest_trans_ompa.png";
 import project6 from "../images/crest_trans_ompa.png";
 
+let link1 = "https://haluskua.github.com";
+
+
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#f3f4f7",
@@ -113,13 +116,13 @@ const projects = [
     name: "Initial Portfolio",
     description: `Updating this site over the years has improved my coding ability as a developer. Built with Html, Sass, Js, Autoprefixer, version control with Git and hosted with gh-pages on github, This has been the foundation for my passion web development. `,
     image: project1,
+    github: `https://github.com/haluskua`,
+    site: `https://haluskua.github.io/mywebsite`,
   },
   {
-    name: "Project 2",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-        consequatur magni quod nesciunt necessitatibus molestiae non
-        eligendi, magnam est aliquam recusandae? Magnam soluta minus
-        iste alias sunt veritatis nisi dolores!`,
+    name: "NextJS",
+    description: `Production Frameword! Server-side (Pre-) Rendering of Pages of File based Routing. Adding nested, dynamic and Routing between pages. Exploring (SSG) with getStaticProps and ServerSideProps.
+    Working With Dynamic Path Params in getStaticProps. Connecting  Quering a MongoDB Database. Sending HTTP Requests to API Routes`,
     image: project2,
   },
   {
@@ -199,8 +202,8 @@ const Portfolio = () => {
                   className={classes.github}
                   size="small"
                   color="primary"
-                  href="https://github.com/haluskua/mywebsite"
                   target="_blank"
+                  href={project.github}
                 >
                   Code+Github
                 </Button>
@@ -208,7 +211,7 @@ const Portfolio = () => {
                   className={classes.boldTypo}
                   size="small"
                   color="primary"
-                  href="https://haluskua.github.io/mywebsite"
+                  href={project.site}
                   target="_blank"
                 >
                   Live Demo
