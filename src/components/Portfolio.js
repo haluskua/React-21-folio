@@ -14,12 +14,12 @@ import "../components/portfolio.scss";
 
 //importing images from folder/files
 
-import project1 from "../images/crest_trans_ompa.png";
-import project2 from "../images/crest_trans_ompa.png";
-import project3 from "../images/crest_trans_ompa.png";
-import project4 from "../images/crest_trans_ompa.png";
-import project5 from "../images/crest_trans_ompa.png";
-import project6 from "../images/crest_trans_ompa.png";
+import project1 from "../images/crest_trans_black.png";
+import project2 from "../images/crest_trans_black.png";
+import project3 from "../images/crest_trans_black.png";
+import project4 from "../images/crest_trans_black.png";
+import project5 from "../images/crest_trans_black.png";
+import project6 from "../images/crest_trans_black.png";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -55,22 +55,42 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: "90% ",
     },
   },
+  buttonContainer: {
+    display: "flex",
+    justifyContent: "space-between",
+    margin: "2.2rem 0rem",
+  },
+
   boldTypo: {
+    width: "66%",
+    fontFamily: "Nunito Sans",
     fontWeight: "bolder",
+    color: "#241214",
     fontSize: "0.9rem",
+    boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
+    padding: "7px",
+    borderRadius: "10px 4px",
     "&:hover": {
+      boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
       color: "#00e6e6",
     },
   },
   github: {
+    width: "66%",
+    fontFamily: "Nunito Sans",
     fontSize: "0.9rem",
+    boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
+    padding: "7px",
+    color: "#241214",
+    borderRadius: "10px 4px",
     "&:hover": {
+      boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
       color: "orange",
     },
   },
   projectName: {
-    color: "#2f859b",
-    fontSize: "1.35rem",
+    color: "#241214",
+    fontSize: "1.5rem",
     lineHeight: "1.41rem",
     fontFamily: "Nunito Sans",
     textTransform: "uppercase",
@@ -202,7 +222,7 @@ const Portfolio = () => {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
+              <CardActions className={classes.buttonContainer}>
                 <Button
                   className={classes.github}
                   size="small"
