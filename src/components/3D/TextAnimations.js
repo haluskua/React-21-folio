@@ -84,12 +84,11 @@ const Wrapper = styled.span`
   span:nth-child(1) {
     animation-delay: 0.15s;
     font-family: "Nunito Sans";
-    font-weight: "100";
     text-transform: uppercase;
-    font-size: 1.07rem;
+    font-size: 1.3rem;
+    letter-spacing: -0.04rem;
     @media ${device.tablet} {
       font-size: 2.04rem;
-      letter-spacing: -0.04rem;
     }
   }
   //e
