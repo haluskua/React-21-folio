@@ -21,7 +21,6 @@ import project4 from "../images/crest_trans_ompa.png";
 import project5 from "../images/crest_trans_ompa.png";
 import project6 from "../images/crest_trans_ompa.png";
 
-let link1 = "https://haluskua.github.com";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -129,10 +128,9 @@ const projects = [
   },
   {
     name: "Monsters",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-    consequatur magni quod nesciunt necessitatibus molestiae non
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus
-    iste alias sunt veritatis nisi dolores!`,
+    description: `React - state, props, using 'this' and filter.
+
+    `,
     image: project3,
     github: `https://github.com/haluskua/Monsters-Rolodex`,
     site: `https://meetups-lime.vercel.app/`,
@@ -145,12 +143,11 @@ const projects = [
     site: `https://haluskua.github.io/travel-site/`,
   },
   {
-    name: "Project 5",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-        consequatur magni quod nesciunt necessitatibus molestiae non
-        eligendi, magnam est aliquam recusandae? Magnam soluta minus
-        iste alias sunt veritatis nisi dolores!`,
+    name: "Clothing shop",
+    description: `React with Redux with Firebase storage API. Responsive design config`,
     image: project5,
+    github: `https://github.com/haluskua/crwn-clothing`,
+    site: `https://haluskua.github.com`,
   },
   {
     name: "Project 6",
