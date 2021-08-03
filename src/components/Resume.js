@@ -11,10 +11,10 @@ const useStyles = makeStyles((theme) => ({
     padding: "0 ",
 
     [theme.breakpoints.up("sm")]: {
-      padding: "0rem 3rem",
+      padding: "0rem 2rem",
     },
     [theme.breakpoints.up("md")]: {
-      padding: "0rem 5rem",
+      padding: "0rem 1rem",
     },
     [theme.breakpoints.up("lg")]: {
       padding: "0rem 18rem",
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   timeLine: {
     position: "relative",
     padding: "1rem",
-    margin: "o auto",
+    margin: "0",
     background: "#f3f4f7",
 
     "&:before": {
@@ -43,20 +43,27 @@ const useStyles = makeStyles((theme) => ({
       clear: "both",
     },
     [theme.breakpoints.up("md")]: {
-      padding: "2rem",
+      padding: "1.5rem",
       "&:before": {
         left: "calc(50% - 1px)",
         right: "auto",
       },
     },
+    [theme.breakpoints.up("lg")]: {
+      padding: "0",
+   
+    },
   },
+
   timeLineItem: {
-    padding: "1rem",
+    padding: "1.5rem",
     marginLeft: "0",
     position: "relative",
-    margin: "1rem 2rem 1rem 1rem",
+    margin: "2rem",
     clear: "both",
+    borderRight: "1px solid #ff6347",
     borderRadius: "3rem 1rem 4rem 1rem",
+    background: "#f3f4f7",
     boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
 
     "&:after": {
@@ -72,23 +79,25 @@ const useStyles = makeStyles((theme) => ({
       borderColor: "tomato tomato transparent transparent",
       borderWidth: "0.625rem",
       transform: "rotate(45deg)",
+
     },
 
     [theme.breakpoints.up("md")]: {
-      width: "44%",
-      margin: "1rem",
-      padding: "1.7rem",
+      width: "80%",
+      margin: "2.1rem 0",
       "&:nth-of-type(2n)": {
         float: "right",
-        margin: "1rem",
+        margin: "2.2rem 0" ,
         borderColor: "tan",
       },
       "&:nth-of-type(2n):before": {
         right: "auto",
         left: "-0.625rem",
+        margin: "2.2rem 0" ,
         borderColor: "transparent transparent tomato tomato",
       },
     },
+
   },
   timeLineYear: {
     textAlign: "center",
@@ -96,11 +105,13 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 3rem 0 auto",
     fontSize: "1.74rem",
     fontWeight: "bold",
-    color: "#fff",
+    background: "#f3f4f7",
+    color: "#ff6347",
+    borderBottom: "1px solid #ff6347",
     fontFamily: "Caveat",
-    background: "rgb(47 133 155)",
     lineHeight: "1rem",
     padding: "1rem",
+    boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
     "&:before": {
       display: "none",
     },
@@ -120,12 +131,12 @@ const useStyles = makeStyles((theme) => ({
   },
 
   heading: {
-    fontSize: "1.6rem",
-    color: "mintcream",
-    padding: "1rem",
+    fontSize: "1.73rem",
+    color: "tomato",
     fontWeight: "bold",
+    padding: "2rem 0",
     textTransform: "uppercase",
-    background: "#2e7587",
+    background: "#f3f4f7",
     fontFamily: "'Audiowide', Open Sans",
     [theme.breakpoints.up("md")]: {
       fontSize: "2.6rem",
@@ -168,15 +179,13 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     letterSpacing: "0",
     fontFamily: "Nunito Sans",
-    fontSize: "1.12rem",
+    fontSize: "1rem",
     [theme.breakpoints.up("md")]: {
       fontSize: "1.1rem",
-      padding: "0 1.52rem",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "1.1rem",
-      padding: "0 1.52rem",
       lineHeight: "1.68rem",
+
     },
   },
 }));
@@ -186,7 +195,7 @@ const Resume = () => {
   return (
     <Box component="header" className={classes.mainContainer}>
       <Typography variant="h4" align="center" className={classes.heading}>
-        Learning experiences
+        Experiences
       </Typography>
       <Box component="div" className={classes.timeLine}>
         <Typography
@@ -294,7 +303,7 @@ const Resume = () => {
             Bachelor in Creative Technology
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            Graduated with a major in Digital Media. The most valuable lesson
+            Graduated with a major in Digital Media. A good lesson 
             learned was to do plenty of background research before starting any
             project.
           </Typography>
