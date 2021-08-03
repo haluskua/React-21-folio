@@ -131,7 +131,6 @@ $desktop: 2560px;
   @media screen and (min-width: $tablet) {
     max-width: 55%;
   }
-
   @media screen and (min-width: $laptopL) and (orientation: landscape) {
     margin-left: -10rem;
     margin-right: 2rem !important;

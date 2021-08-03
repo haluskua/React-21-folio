@@ -213,15 +213,3 @@ const Wrapper = styled.span`
     animation-delay: 4.15s;
   } */
 `;
-
-// const SmallText = styled.span`
-//   font-size: 24px;
-//   color: #a86c57;
-//   text-align: center;
-//   font-family: "Cinzel";
-//   text-transform: uppercase;
-//   font-weight: bold;
-//   @media ${device.laptop} {
-//     font-size: 34px;
-//   }
-// `;

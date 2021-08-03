@@ -118,12 +118,12 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     width: "90%",
     padding: "2rem",
-    boxShadow: "2px 2px 21px -1px #1e2121a8",
+    boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
     borderRadius: "3rem 0",
-    background: "linear-gradient(58deg, #00151b, transparent)",
+    background: "linear-gradient(58deg, #f3f4f7, transparent)",
   },
   heading: {
-    color: "#fbfbfb",
+    color: "#919488",
     marginBottom: "1rem",
     fontFamily: "Asap",
     fontWeight: "normal",
@@ -134,8 +134,8 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     marginTop: "1rem",
-    color: "#f6f6f9",
-    background: "radial-gradient(#24363c, transparent)",
+    color: "#919488",
+    background: "linear-gradient(58deg, #f3f4f7, transparent))",
     border: "1px solid",
     "&:hover": {
       background: "white",
@@ -149,7 +149,7 @@ const InputField = withStyles({
       color: "tomato",
     },
     "& label": {
-      color: "#acc2c7",
+      color: "#919488",
     },
     "& .MuiOutlinedInput-root": {
       "& fieldset": {
