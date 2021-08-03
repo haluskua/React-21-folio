@@ -21,18 +21,19 @@ import project4 from "../images/crest_trans_ompa.png";
 import project5 from "../images/crest_trans_ompa.png";
 import project6 from "../images/crest_trans_ompa.png";
 
-
-
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#f3f4f7",
-    padding: "0 1rem",
 
     [theme.breakpoints.up("sm")]: {
-      padding: "0rem ",
+      padding: "0rem",
     },
+    [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
+      padding: "0 2.2rem",
+    },
+
     [theme.breakpoints.up("md")]: {
-      padding: "0",
+      // padding: "0 2rem",
     },
     [theme.breakpoints.up("lg")]: {
       padding: "0rem 8rem",
@@ -132,8 +133,8 @@ const projects = [
 
     `,
     image: project3,
-    github: `https://github.com/haluskua/React-Task-Tester`,
-    site: `https://fervent-davinci-59240b.netlify.app/`,
+    github: `https://wordpress.com`,
+    site: `https://khanakhazana.co.nz/`,
   },
   {
     name: "Travel Website",

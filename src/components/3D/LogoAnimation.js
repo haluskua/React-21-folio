@@ -30,7 +30,6 @@ const AniLogo = styled.div`
 
   ${SuperQuery().minWidth.sm.and.landscape.css`
     height: 220px !important;
-    
   `};
 
   @media ${device.tablet} {
