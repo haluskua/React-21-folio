@@ -1,9 +1,8 @@
 import React from "react";
 import FrontCard from "../components/3D/index";
 // import Header from "./Header";
-// import Particles from './Particles';
 import Box from "@material-ui/core/Box";
-import Particles from "react-particles-js";
+// import Particles from "react-particles-js";
 import particlesConfig from "./particlesConfig";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -14,6 +13,7 @@ import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
+import Particles from "./Particles";
 
 // Import Swiper styles
 
@@ -26,9 +26,9 @@ const Home = () => {
     <React.Fragment>
       <Box component="div" className={classes.indexContainer}>
         {/* <Particles /> */}
-        <div style={{ position: "absolute", overflow: "hidden" }}>
+        {/* <div style={{ position: "absolute", overflow: "hidden" }}>
           <Particles height="90vh" width="90vw" params={particlesConfig} />
-        </div>
+        </div> */}
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
@@ -42,8 +42,8 @@ const Home = () => {
             <FrontCard />
           </SwiperSlide>
           <SwiperSlide>
-            <FrontCard />
             {/* <Header /> */}
+            <Particles />
           </SwiperSlide>
         </Swiper>
       </Box>

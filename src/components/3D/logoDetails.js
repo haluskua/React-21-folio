@@ -13,17 +13,17 @@ import { device } from "../MediaQuery/device";
 // import { Link } from "react-router-dom";
 // import IconButton from "@material-ui/core/IconButton";
 
-// const buttonVariants = {
-//   hover: {
-//     scale: [1, 1.03],
-//     textShadow: "0 0 6px rgb(255, 255, 255)",
-//     boxShadow: "0px 0px 8px rgb(179, 255, 255)",
-//     transition: {
-//       duration: 0.5,
-//       yoyo: Infinity,
-//     },
-//   },
-// };
+const buttonVariants = {
+  hover: {
+    scale: [1, 1.03],
+    textShadow: "0 0 6px rgb(255, 255, 255)",
+    boxShadow: "0px 0px 8px rgb(179, 255, 255)",
+    transition: {
+      duration: 0.5,
+      yoyo: Infinity,
+    },
+  },
+};
 
 export function LogoDetails(props) {
   const classes = useStyles();
@@ -34,7 +34,7 @@ export function LogoDetails(props) {
       <Box component="div" className={classes.centerLL}></Box>
       <SmallText>I'm a Freelance Web Developer and Graphic Designer</SmallText>
       <SpacedHorizontalContainer>
-        <MediumText>Frontend, Fullstack, UX\UI-Design</MediumText>
+        <MediumText>Frontend-Fullstack-UX\UI-Design</MediumText>
       </SpacedHorizontalContainer>
       <Marginer direction="vertical" margin=".5em" />
       {/* <Toolbar>
@@ -189,23 +189,23 @@ const useStyles = makeStyles((theme) => ({
   },
 
   main_button: {
-    background: "#241214",
-    padding: "1rem",
+    background: "#e6e8e3",
+    padding: "0.8rem",
   },
-  // title: {
-  //   color: "#f6f6fd",
-  //   marginTop: "1rem",
-  //   fontSize: "15.5px",
-  //   letterSpacing: ".43px",
-  //   marginLeft: "0.61rem",
-  //   // fontStyle: "italic",
-  //   fontFamily: "Quicksand",
-  //   lineHeight: "1.5rem",
-  //   [theme.breakpoints.up("sm")]: {
-  //     fontSize: "21px",
-  //   },
-  //   [theme.breakpoints.up("md")]: {
-  //     fontSize: "18px",
-  //   },
-  // },
+  title: {
+    color: "#2c2925",
+    marginTop: "1rem",
+    fontSize: "15.5px",
+    letterSpacing: ".43px",
+    marginLeft: "0.61rem",
+    // fontStyle: "italic",
+    fontFamily: "Nunito Sans",
+    lineHeight: "1.5rem",
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "21px",
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: "18px",
+    },
+  },
 }));

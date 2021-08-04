@@ -117,6 +117,7 @@ $desktop: 2560px;
 
 .MuiPaper-root {
   border-radius: 8rem 0 4rem 0;
+  background: rgba(255, 247, 247, 0);
 }
 
 .MuiList-padding {
@@ -211,6 +212,6 @@ $desktop: 2560px;
 }
 .swiper-slide {
   overflow: hidden !important;
-  margin-right: 0px !important;
+  // margin-right: 0px !important;
   width: 100vw !important;
 }

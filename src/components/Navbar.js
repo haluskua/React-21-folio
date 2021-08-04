@@ -120,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
     "& span": {
       fontSize: "1rem",
       textTransform: "uppercase",
-      color: "#231214;",
+      color: "#231214",
       fontFamily: "Nunito Sans",
       letterSpacing: ".052em",
       lineHeight: "1.5rem",
