@@ -21,15 +21,16 @@ const useStyles = makeStyles((theme) => ({
   title: {
     alignSelf: "center",
     color: "#231214",
-    fontWeight: "bold",
     fontFamily: "Nunito Sans",
     textTransform: "uppercase",
+    h4: {
+      fontSize: "1.8rem",
+    },
   },
   subtitle: {
     alignSelf: "center",
     color: "#231214",
-    // textTransform: "uppercase",
-    fontSize: "1.4rem",
+    fontSize: "1rem",
   },
   boxed: {
     display: "flex",
@@ -200,12 +201,12 @@ const Particles = () => {
             <Avatar className={classes.avatar} src={avatar} alt="Logo" />
           </Grid>
           <Typography className={classes.title} variant="h4">
-            <Typed strings={["About Me"]} typeSpeed={20} />
+            ABOUT ME
           </Typography>
 
           <Typography className={classes.subtitle} variant="h5">
             <Typed
-              strings={["A little background info won't hurt "]}
+              strings={["My background in short "]}
               typeSpeed={90}
               backSpeed={20}
               loop

@@ -3,7 +3,7 @@ import FrontCard from "../components/3D/index";
 // import Header from "./Header";
 import Box from "@material-ui/core/Box";
 // import Particles from "react-particles-js";
-import particlesConfig from "./particlesConfig";
+// import particlesConfig from "./particlesConfig";
 import { makeStyles } from "@material-ui/core/styles";
 
 // Import Swiper React components
