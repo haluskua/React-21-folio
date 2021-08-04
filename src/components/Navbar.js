@@ -14,7 +14,8 @@ import Divider from "@material-ui/core/Divider";
 import MenuIcon from "@material-ui/icons/Menu";
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import Home from "@material-ui/icons/Home";
-import Apps from "@material-ui/icons/Apps";
+import NoteIcon from "@material-ui/icons/Note";
+import WorkIcon from "@material-ui/icons/Work";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../images/crest_trans_black.png";
@@ -114,7 +115,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   listItem: {
-    color: "#231214",
+    color: "#b1a172",
   },
   textColor: {
     "& span": {
@@ -144,7 +145,7 @@ const useStyles = makeStyles((theme) => ({
   hamburger_lines: {
     display: "flex",
     justifyContent: "center",
-    color: "#919488",
+    color: "#b1a172",
     borderRadius: "50%",
     cursor: "pointer",
   },
@@ -155,9 +156,14 @@ const useStyles = makeStyles((theme) => ({
 
 const menuItems = [
   { listIcon: <Home />, listText: "Home", listPath: "/" },
-  { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
-  { listIcon: <Apps />, listText: "Portfolio", listPath: "/portfolio" },
+  { listIcon: <NoteIcon />, listText: "Resume", listPath: "/resume" },
+  { listIcon: <WorkIcon />, listText: "Portfolio", listPath: "/portfolio" },
   { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
+  {
+    listIcon: <AssignmentInd />,
+    listText: "Background",
+    listPath: "/background",
+  },
 ];
 
 const buttonVariants = {

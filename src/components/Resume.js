@@ -51,7 +51,6 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("lg")]: {
       padding: "0",
-   
     },
   },
 
@@ -61,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     margin: "2rem",
     clear: "both",
-    borderRight: "1px solid #ff6347",
+    borderRight: "1px solid #bda55d",
     borderRadius: "3rem 1rem 4rem 1rem",
     background: "#f3f4f7",
     boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
@@ -76,10 +75,9 @@ const useStyles = makeStyles((theme) => ({
       right: "-0.625rem",
       top: "calc(50% - 5px)",
       borderStyle: "solid",
-      borderColor: "tomato tomato transparent transparent",
+      borderColor: "#bda55d #bda55d transparent transparent",
       borderWidth: "0.625rem",
       transform: "rotate(45deg)",
-
     },
 
     [theme.breakpoints.up("md")]: {
@@ -87,17 +85,16 @@ const useStyles = makeStyles((theme) => ({
       margin: "2.1rem 0",
       "&:nth-of-type(2n)": {
         float: "right",
-        margin: "2.2rem 0" ,
+        margin: "2.2rem 0",
         borderColor: "tan",
       },
       "&:nth-of-type(2n):before": {
         right: "auto",
         left: "-0.625rem",
-        margin: "2.2rem 0" ,
-        borderColor: "transparent transparent tomato tomato",
+        margin: "2.2rem 0",
+        borderColor: "transparent transparent #bda55d #bda55d",
       },
     },
-
   },
   timeLineYear: {
     textAlign: "center",
@@ -106,8 +103,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.74rem",
     fontWeight: "bold",
     background: "#f3f4f7",
-    color: "#ff6347",
-    borderBottom: "1px solid #ff6347",
+    color: "#2f859b",
+    borderBottom: "1px solid #2f859b",
     fontFamily: "Caveat",
     lineHeight: "1rem",
     padding: "1rem",
@@ -131,14 +128,19 @@ const useStyles = makeStyles((theme) => ({
   },
 
   heading: {
-    fontSize: "1.73rem",
-    color: "tomato",
+    fontSize: "1.72rem",
+    color: "#2f859b",
     fontWeight: "bold",
     padding: "2rem 0",
     textTransform: "uppercase",
+    letterSpacing: "0.1rem",
     background: "#f3f4f7",
     fontFamily: "'Audiowide', Open Sans",
+
     [theme.breakpoints.up("md")]: {
+      fontSize: "2.6rem",
+    },
+    [theme.breakpoints.up("lg")]: {
       fontSize: "2.6rem",
     },
   },
@@ -156,7 +158,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   subtitle1: {
-    color: "#2f859b",
+    color: "#bda55d",
     fontSize: "1.35rem",
     lineHeight: "1.41rem",
     fontFamily: "Oxygen",
@@ -185,7 +187,6 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("lg")]: {
       lineHeight: "1.68rem",
-
     },
   },
 }));
@@ -303,9 +304,8 @@ const Resume = () => {
             Bachelor in Creative Technology
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            Graduated with a major in Digital Media. A good lesson 
-            learned was to do plenty of background research before starting any
-            project.
+            Graduated with a major in Digital Media. A good lesson learned was
+            to do plenty of background research before starting any project.
           </Typography>
         </Box>
         <Typography
