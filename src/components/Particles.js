@@ -63,7 +63,6 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh !important",
     // backgroundImage: `url(${face})`,
     backgroundPosition: "center",
-    backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     // width: "calc(20vw * 0.54 - 2%)",
     borderRadius: 8,
