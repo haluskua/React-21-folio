@@ -50,7 +50,7 @@ const Contact = () => {
             </p>
 
             <Typography variant="h5" className={classes.heading}>
-              Send me a message if you like.
+              Say Hi, or work with me.
             </Typography>
 
             <InputField

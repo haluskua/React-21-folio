@@ -31,6 +31,7 @@ const Background = () => {
           <Particles height="90vh" width="90vw" params={particlesConfig} />
         </div> */}
         <Swiper
+          className={classes.slide_box}
           spaceBetween={50}
           slidesPerView={1}
           navigation
@@ -64,6 +65,9 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     width: "100%",
     backgroundSize: "cover",
+  },
+  slide_box: {
+    display: "flex",
   },
 }));
 

@@ -16,17 +16,29 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     width: "90%",
     height: "auto",
-    margin: theme.spacing(1),
+    boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
+
     [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
-      width: "60%",
+      width: "23%",
     },
-    [`${theme.breakpoints.up("lg")}`]: {
-      width: "35%",
+    [`${theme.breakpoints.up("sm")}`]: {
+      width: "65%",
+    },
+    [`${theme.breakpoints.up("md")}`]: {
+      width: "44%",
     },
   },
+  [`${theme.breakpoints.up("lg")}`]: {
+    width: "44%",
+  },
+  [`${theme.breakpoints.up("xl")}`]: {
+    width: "44%",
+  },
+
   title: {
     alignSelf: "center",
     color: "#231214",
+    marginTop: "2rem",
     fontFamily: "Nunito Sans",
     textTransform: "uppercase",
     h4: {
@@ -50,23 +62,35 @@ const useStyles = makeStyles((theme) => ({
   },
   center_box: {
     width: "100%",
+    padding: "10px",
     position: "relative",
     display: "flex",
     justifyContent: "center",
-    marginTop: "2.2rem",
-    padding: "0",
+    alignSelf: "center",
+    padding: "8px",
+    // boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
   },
   typedContainer: {
     display: "flex",
     flexDirection: "column",
     position: "relative",
-    top: "5%",
     alignItems: "flex-start",
     width: "100%",
+    height: "90vh",
     textAlign: "center",
     zIndex: 1,
+    // boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
   },
-
+  column_space: {
+    display: "flex",
+    flexDirection: "column",
+  },
+  img_box: {
+    // boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
+    flexDirection: "column",
+    borderRadius: "12.2px",
+    padding: ".5rem",
+  },
   // particlesCanvas: {
   //   // backgroundColor: "#f3f4f7",
   //   zIndex: "-1",
@@ -207,21 +231,24 @@ const Particles = () => {
         /> */}
 
         <Box className={classes.typedContainer}>
-          <Grid container justify="center">
+          <Grid container justify="center" className={classes.img_box}>
             <Avatar className={classes.avatar} src={avatar} alt="Logo" />
-          </Grid>
-          <Typography className={classes.title} variant="h4">
-            ABOUT ME
-          </Typography>
+            <Box className={classes.column_space}>
+              <Typography className={classes.title} variant="h4">
+                ABOUT ME
+              </Typography>
 
-          <Typography className={classes.subtitle} variant="h5">
-            <Typed
-              strings={["My background in short "]}
-              typeSpeed={96}
-              backSpeed={50}
-              loop
-            />
-          </Typography>
+              <Typography className={classes.subtitle} variant="h5">
+                <Typed
+                  strings={["My background in short "]}
+                  typeSpeed={96}
+                  backSpeed={50}
+                  loop
+                />
+              </Typography>
+            </Box>
+          </Grid>
+
           <Box className={classes.center_box}>
             <MediaCard />
           </Box>
