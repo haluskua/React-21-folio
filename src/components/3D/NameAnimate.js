@@ -13,8 +13,8 @@ export default function NameAnimation() {
         {reactArray.map((item, index) => (
           <span key={index}>{item}</span>
         ))}
+        <SmallText>Developer & Designer</SmallText>
       </Wrapper>
-      <SmallText>Developer & Designer</SmallText>
       <Marginer direction="vertical" margin="1.2rem" />
     </React.Fragment>
   );
@@ -50,16 +50,21 @@ const animation = keyframes`
 `;
 
 const Wrapper = styled.span`
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   color: #231214;
   text-transform: uppercase;
   letter-spacing: 0.035rem;
   margin: 0;
   font-size: 1.25rem;
+  width: 88%;
   font-weight: 400;
   padding: 3.2em 0 0 0;
   font-family: "Nunito Sans";
   line-height: 1.3rem;
+
   @media ${device.mobileS} and (orientation: landscape) {
     font-size: 0.7rem;
   }
@@ -138,6 +143,6 @@ const SmallText = styled.span`
     padding: 0 9px;
   `};
   ${SuperQuery().minWidth.lg.and.landscape.css`
-    margin-right: -1.3rem;
+    font-size: 14px;
   `};
 `;
