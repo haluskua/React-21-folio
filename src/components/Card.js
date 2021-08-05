@@ -9,9 +9,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: "90%",
     background: "none",
-    margin: "0",
     boxShadow: "none",
-    padding: "1rem",
     // boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
     borderRadius: "3rem 1rem 3rem 1rem",
     padding: "2rem",

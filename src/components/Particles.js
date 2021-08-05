@@ -62,7 +62,6 @@ const useStyles = makeStyles((theme) => ({
   },
   center_box: {
     width: "100%",
-    padding: "10px",
     position: "relative",
     display: "flex",
     justifyContent: "center",
