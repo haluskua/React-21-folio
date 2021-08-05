@@ -20,7 +20,7 @@ const AniLogo = styled.div`
     height: 120px;
   }
   ${SuperQuery().minWidth.xs.and.landscape.css`
-    height: 200px !important;
+    height: 112px !important;
     
   `};
 

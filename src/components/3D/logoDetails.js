@@ -124,9 +124,10 @@ const SmallText = styled.span`
   //using both device and superQuery to create responsive code.
   @media ${device.mobileM} and (orientation: landscape) {
     padding: 0 2.2rem;
+    font-size: 16px;
   }
   ${SuperQuery().minWidth.sm.and.landscape.css`
-    font-size: 21px;
+    font-size: 16px;
     line-height: 1.7rem;
     
   `};
