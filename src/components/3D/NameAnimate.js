@@ -59,8 +59,8 @@ const Wrapper = styled.span`
   letter-spacing: 0.035rem;
   margin: 0;
   font-size: 1.25rem;
-  width: 88%;
-  font-weight: 400;
+  width: 71%;
+  font-weight: 300;
   padding: 3.2em 0 0 0;
   font-family: "Nunito Sans";
   line-height: 1.3rem;
