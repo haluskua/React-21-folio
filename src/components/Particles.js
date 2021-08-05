@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     width: "44%",
   },
   [`${theme.breakpoints.up("xl")}`]: {
-    width: "44%",
+    width: "35%",
   },
 
   title: {
@@ -79,6 +79,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     zIndex: 1,
     // boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
+    overflow: "scroll",
   },
   column_space: {
     display: "flex",

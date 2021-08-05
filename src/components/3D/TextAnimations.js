@@ -50,24 +50,35 @@ const animation = keyframes`
 
 const Wrapper = styled.span`
   display: inline-block;
-  color: #515957;
-  margin: 0;
-  font-size: 1.52rem;
-  margin-left: 1rem;
-  font-family: "Caveat", sans-serif;
-  ${SuperQuery().minWidth.sm.and.landscape.css`
-    padding: 0 4.3rem !important;
-    
-  `};
-  @media ${device.tablet} {
-    font-size: 35.5px;
+  @media ${device.mobileS} {
+    font-size: 13px;
+    color: #231214;
+    line-height: 1.5rem;
+    letter-spacing: 0.2rem;
+    padding: 0 40px;
+    font-family: "Nunito Sans";
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+    margin-top: 9px;
   }
-  ${SuperQuery().minWidth.md.and.landscape.css`
-    padding: 0 1.3rem !important;
-    
-  `};
+  @media ${device.mobileM} {
+    font-size: 15px;
+    padding: 0 1rem;
+    letter-spacing: 0.4rem;
+  }
+  @media ${device.tablet} {
+    font-size: 18px;
+    line-height: 2.3rem;
+  }
   @media ${device.laptop} {
-    font-size: 2.07rem;
+    line-height: 1.72rem;
+    padding: 0 3rem;
+    margin-top: 0;
+  }
+  @media ${device.laptopL} {
+    font-size: 19px;
+    padding: 0 7.2rem;
   }
 
   span {
