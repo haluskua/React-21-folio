@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
@@ -9,8 +10,6 @@ import Button from "@material-ui/core/Button";
 import Send from "@material-ui/icons/Send";
 import Particles from "react-particles-js";
 import particlesConfig from "./particlesConfig";
-
-import { useState, useEffect } from "react";
 
 import "../components/contact.scss";
 
@@ -38,8 +37,8 @@ const Contact = () => {
             className={classes.formStyle}
             name="portfolio-form"
             method="POST"
-            data-netlify="true"
             action="/contact/?success=true"
+            data-netlify="true"
           >
             <input type="hidden" name="form-name" value="portfolio-form" />
 
