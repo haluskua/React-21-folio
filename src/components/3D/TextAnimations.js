@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { device } from "../MediaQuery/device";
-import SuperQuery from "@themgoncalves/super-query";
+// import SuperQuery from "@themgoncalves/super-query";
 
 export default function TextAnimation() {
   // const reactArray = "Hello.I.am.Ompa".split("");
