@@ -69,7 +69,7 @@ const Wrapper = styled.span`
   `};
 
   @media ${device.tablet} and (orientation: landscape) {
-    font-size: 1.37rem;
+    font-size: 1.117rem;
   }
 
   span {
@@ -131,9 +131,11 @@ const Wrapper = styled.span`
 const SmallText = styled.span`
   font-size: 11.2px;
   color: #9ca3a3;
+  padding: 0 11px;
   text-align: center;
   ${SuperQuery().minWidth.md.and.landscape.css`
     font-size: 19px;
+    padding: 0 9px;
   `};
   ${SuperQuery().minWidth.lg.and.landscape.css`
     margin-right: -1.3rem;

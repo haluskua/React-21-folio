@@ -39,14 +39,17 @@ const useStyles = makeStyles((theme) => ({
     color: "#231214",
     fontSize: "1rem",
     textAlign: "left",
+    padding: "4px",
     [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
       display: "flex",
       width: "100%",
       alignSelf: "center",
+      padding: "10px",
     },
     [`${theme.breakpoints.up("sm")} `]: {
       fontSize: "1.19rem",
       lineHeight: "1.8rem",
+      padding: "6px",
     },
     [`${theme.breakpoints.up("md")} `]: {
       fontSize: "1.13rem",

@@ -65,7 +65,10 @@ const Wrapper = styled.span`
   @media ${device.mobileM} {
     font-size: 15px;
     padding: 0 1rem;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.2rem;
+  }
+  @media ${device.mobileM} and (orientation: landscape) {
+    font-size: 12px;
   }
   @media ${device.tablet} {
     font-size: 18px;

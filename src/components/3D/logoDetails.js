@@ -32,7 +32,7 @@ export function LogoDetails(props) {
     <DetailsContainer>
       <Marginer direction="vertical" margin="0em" />
       <Box component="div" className={classes.centerLL}></Box>
-      <SmallText>I'm a Freelance Web Developer and Graphic Designer</SmallText>
+      <SmallText>I'm a Freelance Web Developer & Graphic Designer</SmallText>
       <SpacedHorizontalContainer>
         <MediumText>Frontend-Fullstack-UX\UI-Design</MediumText>
       </SpacedHorizontalContainer>
@@ -79,10 +79,18 @@ const MediumText = styled.span`
     width: 100%;
     margin-top: 9px;
   }
-  @media ${device.mobileM} {
+  @media ${device.mobileS} {
     font-size: 15px;
     padding: 0 1rem;
     letter-spacing: 0.4rem;
+  }
+
+  @media ${device.mobileS} and (orientation: landscape) {
+    font-size: 11px;
+  }
+  @media ${device.mobileM} and (orientation: landscape) {
+    font-size: 12px;
+    margin: 0;
   }
   @media ${device.tablet} {
     font-size: 18px;
@@ -137,8 +145,8 @@ const SmallText = styled.span`
     line-height: 2.75rem;
   }
   ${SuperQuery().minWidth.md.and.landscape.css`
-    padding: 1.3rem;
-    font-size: 30px;
+    padding: .13rem;
+    font-size: 20px;
     line-height: 2rem;
     
   `};
@@ -186,7 +194,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "5px",
     padding: "1px",
     border: "none",
-    boxShadow: "2px 5px 10px rgba(0, 0, 0, 0.32)",
+    // boxShadow: "2px 5px 10px rgba(0, 0, 0, 0.32)",
   },
 
   main_button: {
@@ -194,19 +202,38 @@ const useStyles = makeStyles((theme) => ({
     padding: "0.8rem",
   },
   title: {
-    color: "#2c2925",
+    color: "#231214",
     marginTop: "1rem",
     fontSize: "15.5px",
+    fontWeight: "200",
     letterSpacing: ".43px",
     marginLeft: "0.61rem",
-    // fontStyle: "italic",
+    fontStyle: "italic",
     fontFamily: "Nunito Sans",
     lineHeight: "1.5rem",
-    [theme.breakpoints.up("sm")]: {
-      fontSize: "21px",
+    [theme.breakpoints.up("xs")]: {
+      fontSize: "14.5px",
     },
+
+    [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
+      fontSize: "16px",
+    },
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "16.5px",
+    },
+    [`${theme.breakpoints.up("sm")} and (orientation: landscape)`]: {
+      fontSize: "14px",
+    },
+
     [theme.breakpoints.up("md")]: {
-      fontSize: "18px",
+      fontSize: "16px",
+    },
+
+    [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
+      fontSize: "15px",
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "14px",
     },
   },
 }));

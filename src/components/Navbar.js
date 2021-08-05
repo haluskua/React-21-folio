@@ -114,6 +114,10 @@ const useStyles = makeStyles((theme) => ({
       width: "27%",
     },
   },
+
+  divider_one: {
+    height: "7px",
+  },
   listItem: {
     color: "#b1a172",
   },
@@ -190,7 +194,7 @@ const Navbar = () => {
     <Box className={classes.menuSliderContainer} component="div">
       <Avatar className={classes.avatar} src={avatar} alt="Ompa" />
       <NameAnimation />
-      <Divider />
+      <Divider className={classes.divider_one} />
       <List>
         {menuItems.map((item, i) => (
           <ListItem

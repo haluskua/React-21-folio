@@ -138,7 +138,7 @@ const TopContainer = styled.div`
     margin-top: -2em;
   }
   @media ${device.mobileM} and (orientation: landscape) {
-    margin-top: -1em;
+    margin-top: -6em;
   }
   @media ${device.laptop} {
     margin-bottom: -4em;
