@@ -54,7 +54,7 @@ const Wrapper = styled.span`
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  color: #231214;
+  color: #525252;
   text-transform: uppercase;
   letter-spacing: 0.035rem;
   margin: 0;
