@@ -107,6 +107,9 @@ $desktop: 2560px;
       padding: 7px 25px;
       margin: 13px !important;
     }
+    @media screen and (min-width: $laptopL) {
+      padding: 7px 8px;
+    }
   }
 }
 .MuiListItem-gutters:hover {

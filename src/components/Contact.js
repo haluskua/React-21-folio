@@ -120,6 +120,9 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
     borderRadius: "3rem 0",
     background: "linear-gradient(58deg, #f3f4f7, transparent)",
+    [`${theme.breakpoints.up("lg")} `]: {
+      width: "50%",
+    },
   },
   heading: {
     color: "#919488",
