@@ -72,7 +72,6 @@ const useStyles = makeStyles((theme) => ({
   },
 
   textBar: {
-    background: "rgb(0 0 0 / 28%)",
     height: "55px",
     padding: "4px",
     background: "#4c4e5633",

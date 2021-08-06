@@ -1,5 +1,5 @@
-import image0 from "../images/crest_trans_black.png";
-import image1 from "../images/banner_trans.png";
+// import image0 from "../images/crest_trans_black.png";
+// import image1 from "../images/banner_trans.png";
 import image2 from "../images/gallery/gallery1.jpg";
 import image3 from "../images/crest_trans_brown.png";
 import image4 from "../images/gallery/gallery2.jpg";
@@ -12,7 +12,7 @@ import image10 from "../images/gallery/gallery7.jpg";
 import image11 from "../images/gallery/gallery8.jpg";
 import image12 from "../images/gallery/gallery9.jpg";
 import image13 from "../images/gallery/gallery10.jpg";
-import image14 from "../images/gallery/gallery11.jpg";
+// import image14 from "../images/gallery/gallery11.jpg";
 import image15 from "../images/gallery/gallery12.jpg";
 
 export const itemData = [
