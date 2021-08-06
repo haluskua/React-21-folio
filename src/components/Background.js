@@ -14,6 +14,8 @@ import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import Particles from "./Particles";
+import TitlebarImageList from "./Gallery";
+
 import Contact from "./Contact";
 
 // Import Swiper styles
@@ -44,8 +46,9 @@ const Background = () => {
             <Particles />
           </SwiperSlide>
           <SwiperSlide>
-            {/* <Particles /> */}
-            {/* <FrontCard /> */}
+            <TitlebarImageList />
+          </SwiperSlide>
+          <SwiperSlide>
             <Contact />
           </SwiperSlide>
         </Swiper>
