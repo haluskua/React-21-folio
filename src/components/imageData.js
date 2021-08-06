@@ -16,84 +16,99 @@ import image14 from "../images/gallery/gallery11.jpg";
 import image15 from "../images/gallery/gallery12.jpg";
 
 export const itemData = [
+  // {
+  //   img: image0,
+  //   title: "Banner",
+  //   author: "OHK",
+  //   column: 2,
+  // },
+  // {
+  //   img: image1,
+  //   title: "Banner",
+  //   author: "OHK",
+  //   column: 2,
+  // },
+
   {
-    img: image0,
-    title: "Banner",
+    img: image4,
+    title: "Certificate",
     author: "OHK",
+    column: 2,
   },
   {
-    img: image1,
-    title: "Banner",
+    img: image5,
+    title: "Video-animation",
     author: "OHK",
+    column: 2,
   },
+  {
+    img: image6,
+    title: "Poster",
+    author: "OHK",
+    column: 2,
+  },
+  {
+    img: image7,
+    title: "Branding",
+    author: "OHK",
+    column: 2,
+  },
+  {
+    img: image9,
+    title: "Moving Text",
+    author: "OHK",
+    column: 2,
+  },
+
+  {
+    img: image13,
+    title: "Branding",
+    author: "OHK",
+    column: 2,
+  },
+  {
+    img: image8,
+    title: "3D modelling",
+    author: "OHK",
+    column: 2,
+  },
+  {
+    img: image11,
+    title: "Logo",
+    author: "OHK",
+    column: 2,
+  },
+
+  {
+    img: image12,
+    title: "Character Design",
+    author: "OHK",
+    column: 2,
+  },
+  {
+    img: image10,
+    title: "Playing Card",
+    author: "OHK",
+    column: 2,
+  },
+
+  {
+    img: image15,
+    title: "Ticket",
+    author: "OHK",
+    column: 2,
+  },
+
   {
     img: image2,
-    title: "Banner",
+    title: "T-Shirt",
     author: "OHK",
+    column: 2,
   },
   {
     img: image3,
     title: "Logo",
     author: "OHK",
-  },
-  {
-    img: image4,
-    title: "Friends",
-    author: "OHK",
-  },
-  {
-    img: image5,
-    title: "House",
-    author: "OHK",
-  },
-  {
-    img: image6,
-    title: "House",
-    author: "OHK",
-  },
-  {
-    img: image7,
-    title: "House",
-    author: "OHK",
-  },
-  {
-    img: image8,
-    title: "House",
-    author: "OHK",
-  },
-  {
-    img: image9,
-    title: "House",
-    author: "OHK",
-  },
-  {
-    img: image10,
-    title: "House",
-    author: "OHK",
-  },
-  {
-    img: image11,
-    title: "House",
-    author: "OHK",
-  },
-  {
-    img: image12,
-    title: "House",
-    author: "OHK",
-  },
-  {
-    img: image13,
-    title: "House",
-    author: "OHK",
-  },
-  {
-    img: image14,
-    title: "House",
-    author: "OHK",
-  },
-  {
-    img: image15,
-    title: "House",
-    author: "OHK",
+    column: 2,
   },
 ];

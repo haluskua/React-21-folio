@@ -7,6 +7,7 @@ import ListSubheader from "@material-ui/core/ListSubheader";
 import IconButton from "@material-ui/core/IconButton";
 import InfoIcon from "@material-ui/icons/Info";
 import { itemData } from "./imageData";
+// import Box from "@material-ui/core/Box";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,40 +17,72 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     overflow: "hidden",
     height: "100vh",
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: "#f2f3f6",
+  },
+  imgListBox: {
+    boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
   },
   imageList: {
     [`${theme.breakpoints.up("xs")}`]: {
-      width: "90%",
+      width: "94%",
       height: "90%",
       overflow: "scroll",
       margin: "0 !important",
+      boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
+      padding: "10px",
     },
 
-    [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
-      width: "95%",
-    },
     [`${theme.breakpoints.up("sm")}`]: {
-      width: "75%",
+      width: "71%",
     },
 
     [`${theme.breakpoints.up("md")}`]: {
-      width: "56%",
+      width: "66%",
+    },
+    [`${theme.breakpoints.up("lg")}`]: {
+      width: "77%",
+    },
+    [`${theme.breakpoints.up("xl")}`]: {
+      width: "35%",
     },
   },
-  [`${theme.breakpoints.up("lg")}`]: {
-    width: "44%",
+  imBoxContainer: {
+    padding: "2px",
+    height: "auto",
+    width: "100vw",
+    background: "#000",
   },
-  [`${theme.breakpoints.up("xl")}`]: {
-    width: "35%",
+  image_item: {
+    width: "100% !important",
+    height: "auto !important",
+    padding: "9px",
+    marginBottom: "20px",
+    [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
+      width: "50% !important",
+    },
+    [`${theme.breakpoints.up("md")}`]: {
+      display: "flex !important",
+      alignItems: "center !important",
+      flexWrap: "wrap-reverse !important",
+    },
+  },
+  textColor: {
+    fontSize: "1rem",
+    fontFamily: "Nunito Sans",
   },
 
   textBar: {
     background: "rgb(0 0 0 / 28%)",
+    height: "55px",
+    padding: "4px",
+    background: "#4c4e5633",
+    // background: "orange",
+    // boxShadow: "inset 2px 2px 5px #74aeb773, inset -3px -3px 7px #fff",
+  },
 
-    [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
-      background: "rgb(0 0 0 / 11%)",
-    },
+  img_image: {
+    height: "fit-content",
+    width: "100%",
   },
 
   icon: {
@@ -60,6 +93,14 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.6rem",
     fontFamily: "Nunito Sans",
   },
+  titleName: {
+    fontSize: ".9rem",
+    color: "#f4fffe",
+  },
+  author: {
+    fontSize: ".65rem",
+    color: "#f4fffe",
+  },
 }));
 
 export default function TitlebarImageList() {
@@ -68,18 +109,29 @@ export default function TitlebarImageList() {
   return (
     <div className={classes.root}>
       <ImageList rowHeight={180} className={classes.imageList}>
-        <ImageListItem key="Subheader" cols={2} style={{ height: "auto" }}>
+        <ImageListItem
+          className={classes.imgListBox}
+          key="Subheader"
+          cols={2}
+          style={{ height: "auto" }}
+        >
           <ListSubheader component="div" className={classes.page_title}>
             Gallery
           </ListSubheader>
         </ImageListItem>
         {itemData.map((item) => (
-          <ImageListItem key={item.img}>
-            <img src={item.img} alt={item.title} />
+          <ImageListItem className={classes.image_item} key={item.img}>
+            <img
+              className={classes.img_image}
+              src={item.img}
+              alt={item.title}
+            />
             <ImageListItemBar
               className={classes.textBar}
-              title={item.title}
-              subtitle={<span>by: {item.author}</span>}
+              title={<span className={classes.titleName}>{item.title}</span>}
+              subtitle={
+                <span className={classes.author}>by: {item.author}</span>
+              }
               actionIcon={
                 <IconButton
                   aria-label={`info about ${item.title}`}
