@@ -10,6 +10,7 @@ import Button from "@material-ui/core/Button";
 import Send from "@material-ui/icons/Send";
 import Particles from "react-particles-js";
 import particlesConfig from "./particlesConfig";
+import DownloadButton from "./DownloadButton";
 
 import "../components/contact.scss";
 
@@ -31,7 +32,14 @@ const Contact = () => {
           <Particles height="100vh" width="100vw" params={particlesConfig} />
         </div>
         {success && (
-          <p style={{ color: "green", marginBottom: "1.2rem" }}>
+          <p
+            style={{
+              color: "green",
+              top: "2rem",
+              position: "absolute%",
+              right: "22%",
+            }}
+          >
             Thanks for your message!{" "}
           </p>
         )}
@@ -89,15 +97,18 @@ const Contact = () => {
               rows={4}
               inputProps={{ className: classes.input }}
             />
-            <Button
-              halfWidth={true}
-              // variant="outlined"
-              type="submit"
-              endIcon={<Send />}
-              className={classes.button}
-            >
-              Contact Me
-            </Button>
+            <Box component="div" className={classes.flexWide}>
+              <Button
+                halfWidth={true}
+                // variant="outlined"
+                type="submit"
+                endIcon={<Send />}
+                className={classes.button}
+              >
+                Contact Me
+              </Button>
+              <DownloadButton />
+            </Box>
           </Box>
         </Grid>
       </Box>
@@ -142,6 +153,13 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       background: "white",
     },
+  },
+  flexWide: {
+    display: "flex",
+    width: "100%",
+    justifyContent: "space-between",
+    alignItems: "center",
+    flexWrap: "wrap",
   },
 }));
 

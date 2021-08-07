@@ -62,7 +62,8 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     display: "flex",
     justifyContent: "center",
-    alignSelf: "center",
+    alignItems: "center",
+    flexDirection: "column",
     padding: "8px",
   },
   typedContainer: {
