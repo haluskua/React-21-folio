@@ -36,9 +36,7 @@ const animation = keyframes`
       transform: translateY(0px) skewY(0deg) skewX(0deg) rotateZ(0deg);
       filter: blur(1px) 
       }
-
 `;
-
 const Wrapper = styled.span`
   display: inline-block;
   color: #25373c;
@@ -50,8 +48,6 @@ const Wrapper = styled.span`
   font-size: 15.25px;
   font-weight: 600;
   font-family: "Padauk";
-  // font-family: Zilla Slab Highlight;
-
   span {
     display: inline-block;
     opacity: 0;
@@ -61,7 +57,6 @@ const Wrapper = styled.span`
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
   }
-
   span:nth-child(1) {
     animation-delay: 0.15s;
   }

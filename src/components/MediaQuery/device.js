@@ -1,6 +1,3 @@
-// import SuperQuery from "@themgoncalves/super-query";
-// import SuperQuery, { configureBreakpoints } from '@themgoncalves/super-query';
-
 const breakpoints = {
   mobileS: 320,
   mobileM: 375,

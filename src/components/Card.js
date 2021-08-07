@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "90%",
     background: "none",
     boxShadow: "none",
-    // boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
     borderRadius: "3rem 1rem 3rem 1rem",
 
     [`${theme.breakpoints.up("xs")} `]: {

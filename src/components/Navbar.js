@@ -24,8 +24,6 @@ import Footer from "../../src/components/Footer";
 import "../../src/components/Navbar.scss";
 import NameAnimation from "../components/3D/NameAnimate";
 
-// import SuperQuery from "@themgoncalves/super-query";
-
 // :::::::::::::::::::
 //--//styling
 const useStyles = makeStyles((theme) => ({
@@ -90,7 +88,6 @@ const useStyles = makeStyles((theme) => ({
       flexDirection: "row-reverse",
     },
     [`${theme.breakpoints.up("xl")} and (orientation: landscape)`]: {
-      // flexDirection: "column",
       width: "100%",
     },
   },

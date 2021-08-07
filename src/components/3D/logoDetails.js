@@ -194,7 +194,6 @@ const useStyles = makeStyles((theme) => ({
     margin: "5px",
     padding: "1px",
     border: "none",
-    // boxShadow: "2px 5px 10px rgba(0, 0, 0, 0.32)",
   },
 
   main_button: {

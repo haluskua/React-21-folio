@@ -115,7 +115,6 @@ $desktop: 2560px;
 .MuiListItem-gutters:hover {
   background: #fff;
   color: orange !important;
-  // border: 1px solid #1f1e2628;
 }
 
 .MuiPaper-root {
@@ -162,38 +161,12 @@ $desktop: 2560px;
   }
 }
 
-// .MuiPaper-root,
-// .MuiDrawer-paper,
-// .MuiDrawer-paperAnchorRight,
-// .MuiPaper-elevation16 {
-//   border-radius: 9rem 0rem 5rem 0rem !important;
-// }
 .MuiBackdrop-root {
-  background-color: #0000008a !important;
+  background-color: #181f2f8a !important;
 }
 
 .makeStyles-formStyle-14 {
   width: 90vw !important;
-}
-
-.MuiList-root .MuiListItem-gutters:nth-child(1) {
-  // border-radius: 3.3rem 4.5rem 4px 3.3rem;
-  // width: 88%;
-}
-.MuiList-root .MuiListItem-gutters:nth-child(2) {
-  // border-radius: 3.3rem 5rem 4px 3.3rem;
-  // width: 98%;
-}
-.MuiList-root .MuiListItem-gutters:nth-child(3) {
-  // border-radius: 3.3rem 4px 5rem 3.3rem;
-  // width: 98%;
-
-  // background: #829d5b78 !important;
-}
-.MuiList-root .MuiListItem-gutters:nth-child(4) {
-  // border-radius: 3.3rem 4px 4.5rem 3.3rem;
-  // width: 88%;
-  // background: #829d5b78 !important;
 }
 
 .MuiListItemIcon-root {
@@ -215,6 +188,5 @@ $desktop: 2560px;
 }
 .swiper-slide {
   overflow: hidden !important;
-  // margin-right: 0px !important;
   width: 100vw !important;
 }

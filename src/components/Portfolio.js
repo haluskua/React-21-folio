@@ -118,10 +118,6 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "1.1rem",
       padding: "0 1.2rem",
     },
-    // [theme.breakpoints.up("lg")]: {
-    //   fontSize: "1.1rem",
-    //   padding: "0 1.52rem",
-    // },
   },
 
   imgBox: {

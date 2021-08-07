@@ -3,8 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 
-import "../components/resume.scss";
-
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#f3f4f7",
@@ -56,10 +54,12 @@ const useStyles = makeStyles((theme) => ({
 
   timeLineItem: {
     padding: "1.5rem",
+    paddingTop: "5px",
     marginLeft: "0",
     position: "relative",
     margin: "2rem",
     clear: "both",
+    marginTop: "3.4px",
     borderRight: "1px solid #bda55d",
     borderRadius: "3rem 1rem 4rem 1rem",
     background: "#f3f4f7",
@@ -98,16 +98,14 @@ const useStyles = makeStyles((theme) => ({
   },
   timeLineYear: {
     textAlign: "center",
-    maxWidth: "10.375rem",
-    margin: "0 3rem 0 auto",
-    fontSize: "1.74rem",
-    fontWeight: "bold",
+    maxWidth: "7.375rem",
+    margin: "0 2rem 0 auto",
+    fontSize: "1.075rem",
     background: "#f3f4f7",
     color: "#2f859b",
     borderBottom: "1px solid #2f859b",
-    fontFamily: "Caveat",
     lineHeight: "1rem",
-    padding: "1rem",
+    padding: "13px",
     boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
     "&:before": {
       display: "none",
@@ -116,6 +114,7 @@ const useStyles = makeStyles((theme) => ({
       textAlign: "center",
       maxWidth: "14.375rem",
       margin: "0 auto",
+      fontSize: "1.17rem",
       "&:nth-of-type(2n)": {
         float: "none",
         margin: "0 auto",
