@@ -97,18 +97,15 @@ const Contact = () => {
               rows={4}
               inputProps={{ className: classes.input }}
             />
-            <Box component="div" className={classes.flexWide}>
-              <Button
-                halfWidth={true}
-                // variant="outlined"
-                type="submit"
-                endIcon={<Send />}
-                className={classes.button}
-              >
-                Contact Me
-              </Button>
-              <DownloadButton />
-            </Box>
+            <Button
+              halfWidth={true}
+              // variant="outlined"
+              type="submit"
+              endIcon={<Send />}
+              className={classes.button}
+            >
+              Contact Me
+            </Button>
           </Box>
         </Grid>
       </Box>
@@ -153,13 +150,6 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       background: "white",
     },
-  },
-  flexWide: {
-    display: "flex",
-    width: "100%",
-    justifyContent: "space-between",
-    alignItems: "center",
-    flexWrap: "wrap",
   },
 }));
 

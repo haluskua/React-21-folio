@@ -6,6 +6,7 @@ import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../images/profile.jpg";
+import DownloadButton from "./DownloadButton";
 
 import MediaCard from "./Card";
 
@@ -38,9 +39,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "2rem",
     fontFamily: "Nunito Sans",
     textTransform: "uppercase",
-    h4: {
-      fontSize: "1.8rem",
-    },
+    fontSize: "1.72rem",
   },
   subtitle: {
     alignSelf: "center",
@@ -100,8 +99,9 @@ const About = () => {
             <Avatar className={classes.avatar} src={avatar} alt="Logo" />
             <Box className={classes.column_space}>
               <Typography className={classes.title} variant="h4">
-                ABOUT ME
+                Artist Statement
               </Typography>
+              <DownloadButton />
 
               <Typography className={classes.subtitle} variant="h5">
                 <Typed
