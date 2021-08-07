@@ -88,7 +88,8 @@ const useStyles = makeStyles((theme) => ({
   img_box: {
     // boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
     flexDirection: "column",
-    borderRadius: "12.2px",
+    borderRadius: "12.2px",align
+    alignItem: "center",
     padding: ".5rem",
   },
   // particlesCanvas: {
