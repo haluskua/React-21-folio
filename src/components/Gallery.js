@@ -55,8 +55,9 @@ const useStyles = makeStyles((theme) => ({
   image_item: {
     width: "100% !important",
     height: "auto !important",
-    padding: "9px",
+    padding: "14px !important",
     marginBottom: "20px",
+    boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
     [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
       width: "50% !important",
     },
