@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: ".88rem",
     padding: "0.6rem",
     margin: "1rem 0px",
-    width: "auto",
     height: "auto",
     border: "none",
     borderRadius: "4px",
