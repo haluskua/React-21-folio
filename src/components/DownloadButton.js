@@ -51,6 +51,7 @@ const DownloadButton = (props) => {
       <a
         className={classes.linkButton}
         href={CvPdf}
+        rel="noreferrer noopener"
         download="My CV"
         target="_blank"
       >
