@@ -50,6 +50,7 @@ const Contact = () => {
             method="POST"
             action="/contact/?success=true"
             data-netlify="true"
+            onSubmit="submit"
           >
             <input type="hidden" name="form-name" value="portfolio-form" />
 
@@ -66,8 +67,8 @@ const Contact = () => {
             <InputField
               fullWidth={true}
               label="First name"
+              type="text"
               name="name"
-              // variant="outlined"
               inputProps={{ className: classes.input }}
               className={classes.field}
             />
@@ -96,6 +97,7 @@ const Contact = () => {
               rows={4}
               inputProps={{ className: classes.input }}
             />
+            <div data-netlify-recaptcha="true"></div>
             <Button
               halfWidth={true}
               // variant="outlined"
