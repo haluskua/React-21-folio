@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import CvPdf from "../images/2021_CV.pdf";
 
 const useStyles = makeStyles((theme) => ({
   margin: {
@@ -7,6 +8,9 @@ const useStyles = makeStyles((theme) => ({
   },
   extendedIcon: {
     marginRight: theme.spacing(1),
+  },
+  linkButton: {
+    textDecoration: "none",
   },
   buttonDownload: {
     fontFamily: "Nunito Sans",
@@ -38,15 +42,22 @@ const useStyles = makeStyles((theme) => ({
 const DownloadButton = (props) => {
   const classes = useStyles();
 
-  const downloadFile = () => {
-    window.location.href =
-      "https://halus_folio21.netlify.app/src/images/2021_CV.pdf";
-  };
+  // const downloadFile = () => {
+  //   window.location.href =
+  //     "https://halus_folio21.netlify.app/src/images/2021_CV.pdf";
+  // };
   return (
     <React.Fragment>
-      <button className={classes.buttonDownload} onClick={downloadFile}>
-        <span className={classes.buttonText}>Download My CV</span>
-      </button>
+      <a
+        className={classes.linkButton}
+        href={CvPdf}
+        download="My CV"
+        target="_blank"
+      >
+        <button className={classes.buttonDownload}>
+          <span className={classes.buttonText}>Download My CV</span>
+        </button>
+      </a>
     </React.Fragment>
   );
 };
