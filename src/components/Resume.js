@@ -95,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
       margin: "2.1rem 0",
       "&:before": {
         top: "calc(-6% - 1px)",
-        right: "50%",
+        right: "48.9%",
         transform: "rotate(135deg)",
       },
 
