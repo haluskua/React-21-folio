@@ -48,7 +48,7 @@ const Contact = () => {
             className={classes.formStyle}
             name="portfolio-form"
             method="POST"
-            action="/contact/?success=true"
+            action="/contact"
             data-netlify="true"
             onSubmit="submit"
           >
