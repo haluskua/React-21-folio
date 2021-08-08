@@ -1,6 +1,6 @@
 ## Material UI Portfolio
 
-A portfolio single page application using React and Material UI
+A portfolio application using React and Material UI
 
 ### Demof of this site is available here https://haluskua.github.io/React-21-folio/
 
