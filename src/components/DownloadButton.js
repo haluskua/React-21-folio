@@ -40,7 +40,7 @@ const DownloadButton = (props) => {
 
   const downloadFile = () => {
     window.location.href =
-      "https://Halus_folio21.netlify.app/src/images/2021_CV.pdf";
+      "https://halus_folio21.netlify.app/src/images/2021_CV.pdf";
   };
   return (
     <React.Fragment>
