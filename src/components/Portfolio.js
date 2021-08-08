@@ -147,14 +147,7 @@ const projects = [
     github: `https://github.com/haluskua/React-21-folio`,
     site: `https://haluskua-folio21.netlify.app/`,
   },
-  {
-    name: "Meetups",
-    description: `Youtube-Code-along: Production Framework! Server-side (Pre-) Rendering of Pages of File based Routing. Adding nested, dynamic and Routing between pages. Exploring (SSG) with getStaticProps and ServerSideProps.
-    Working With Dynamic Path Params in getStaticProps. Connecting Quering a MongoDB Database. Sending HTTP Requests to API Routes (Not Mobile Friendly yet)`,
-    image: project2,
-    github: `https://github.com/haluskua/Meetups`,
-    site: `https://meetups-lime.vercel.app/`,
-  },
+
   {
     name: "Restaurant",
     description: `Using Wordpress, with online ordering system by Gloria Foods. Also took photos for content.
@@ -172,18 +165,26 @@ const projects = [
     site: `https://haluskua.github.io/travel-site/`,
   },
   {
-    name: "Clothing shop",
-    description: `Youtube-Code-along: React with Redux with Firebase storage API. Responsive design config`,
-    image: project5,
-    github: `https://github.com/haluskua/crwn-clothing`,
-    site: `https://gracious-kilby-61782e.netlify.app/`,
-  },
-  {
     name: "Financial Company",
     description: `Build with Wordpress (CMS). Implementing Mailchimp for email marketing and Blog setup.`,
     image: project6,
     github: `https://wordpress.com`,
     site: `https://pecxer.co.nz`,
+  },
+  {
+    name: "Meetups",
+    description: `Youtube-Code-along: Production Framework! Server-side (Pre-) Rendering of Pages of File based Routing. Adding nested, dynamic and Routing between pages. Exploring (SSG) with getStaticProps and ServerSideProps.
+    Working With Dynamic Path Params in getStaticProps. Connecting Quering a MongoDB Database. Sending HTTP Requests to API Routes (Not Mobile Friendly yet)`,
+    image: project2,
+    github: `https://github.com/haluskua/Meetups`,
+    site: `https://meetups-lime.vercel.app/`,
+  },
+  {
+    name: "Clothing shop",
+    description: `Youtube-Code-along: React with Redux with Firebase storage API. Responsive design config`,
+    image: project5,
+    github: `https://github.com/haluskua/crwn-clothing`,
+    site: `https://gracious-kilby-61782e.netlify.app/`,
   },
 ];
 
