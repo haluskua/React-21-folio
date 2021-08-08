@@ -42,10 +42,6 @@ const useStyles = makeStyles((theme) => ({
 const DownloadButton = (props) => {
   const classes = useStyles();
 
-  // const downloadFile = () => {
-  //   window.location.href =
-  //     "https://halus_folio21.netlify.app/src/images/2021_CV.pdf";
-  // };
   return (
     <React.Fragment>
       <a

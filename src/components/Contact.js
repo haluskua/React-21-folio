@@ -11,8 +11,6 @@ import Send from "@material-ui/icons/Send";
 import Particles from "react-particles-js";
 import particlesConfig from "./particlesConfig";
 
-import "../components/contact.scss";
-
 const Contact = () => {
   const classes = useStyles();
 

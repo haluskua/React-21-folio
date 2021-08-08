@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
     background: "#f3f4f7",
     height: "100%",
     width: "100%",
-    backgroundSize: "cover",
   },
 }));
 
