@@ -101,7 +101,6 @@ const About = () => {
               <Typography className={classes.title} variant="h4">
                 Artist Statement
               </Typography>
-              <DownloadButton />
 
               <Typography className={classes.subtitle} variant="h5">
                 <Typed
@@ -111,6 +110,7 @@ const About = () => {
                   loop
                 />
               </Typography>
+              <DownloadButton />
             </Box>
           </Grid>
 

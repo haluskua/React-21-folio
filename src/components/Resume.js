@@ -7,7 +7,7 @@ import DownloadButton from "./DownloadButton";
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#f3f4f7",
-    padding: "0 ",
+    padding: "0 0 1.2rem 0",
 
     [theme.breakpoints.up("sm")]: {
       padding: "0rem 2rem",
@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("xl")]: {
       padding: "0rem 22rem",
+      paddingBottom: "1.6rem",
     },
   },
   timeLine: {
