@@ -23,7 +23,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   timeLine: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     position: "relative",
+    flexDirection: "column",
     padding: "1rem",
     margin: "0",
     background: "#f3f4f7",
@@ -41,7 +45,11 @@ const useStyles = makeStyles((theme) => ({
       display: "table",
       clear: "both",
     },
+    [theme.breakpoints.up("sm")]: {
+      alignItems: "flex-end",
+    },
     [theme.breakpoints.up("md")]: {
+      alignItems: "center",
       padding: "1.5rem",
       "&:before": {
         left: "calc(50% - 1px)",
@@ -84,17 +92,23 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       width: "80%",
       margin: "2.1rem 0",
-      "&:nth-of-type(2n)": {
-        float: "right",
-        margin: "2.2rem 0",
-        borderColor: "tan",
+      "&:before": {
+        top: "calc(-6% - 1px)",
+        right: "50%",
+        transform: "rotate(135deg)",
       },
-      "&:nth-of-type(2n):before": {
-        right: "auto",
-        left: "-0.625rem",
-        margin: "2.2rem 0",
-        borderColor: "transparent transparent #bda55d #bda55d",
-      },
+
+      // "&:nth-of-type(2n)": {
+      //   float: "right",
+      //   margin: "2.2rem 0",
+      //   borderColor: "tan",
+      // },
+      // "&:nth-of-type(2n):before": {
+      //   right: "auto",
+      //   left: "-0.625rem",
+      //   margin: "2.2rem 0",
+      //   borderColor: "transparent transparent #bda55d #bda55d",
+      // },
     },
   },
   timeLineYear: {
@@ -104,7 +118,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.075rem",
     background: "#f3f4f7",
     color: "#2f859b",
-    borderBottom: "1px solid #2f859b",
+    // borderBottom: "1px solid #2f859b",
     lineHeight: "1rem",
     padding: "13px",
     boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
@@ -147,7 +161,7 @@ const useStyles = makeStyles((theme) => ({
   subHeading: {
     fontSize: "1rem",
     color: "rgb(47 133 155)",
-    padding: "9px 0 1px 0",
+    padding: "19px 0 1px 0",
     lineHeight: "1.5rem",
     textShadow: "0px 0px rgb(34 16 18)",
     textAlign: "left",
@@ -161,7 +175,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#bda55d",
     fontSize: "1.35rem",
     lineHeight: "1.41rem",
-    fontFamily: "Oxygen",
+    fontFamily: "Nunito Sans",
     fontWeight: "600",
     padding: "0px 0 22px 0",
     textAlign: "left",
@@ -173,7 +187,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   body1: {
-    color: "#231214",
+    color: "#4a3c3c",
     textAlign: "left",
     width: "100%",
     display: "flex",
