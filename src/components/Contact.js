@@ -10,7 +10,6 @@ import Button from "@material-ui/core/Button";
 import Send from "@material-ui/icons/Send";
 import Particles from "react-particles-js";
 import particlesConfig from "./particlesConfig";
-import DownloadButton from "./DownloadButton";
 
 import "../components/contact.scss";
 
