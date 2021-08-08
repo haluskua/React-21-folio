@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+import DownloadButton from "./DownloadButton";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -358,6 +359,7 @@ const Resume = () => {
           </Typography>
         </Box>
       </Box>
+      <DownloadButton />
     </Box>
   );
 };

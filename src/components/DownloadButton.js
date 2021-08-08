@@ -20,9 +20,18 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "4px",
     cursor: "pointer",
     background: "none",
+    display: "flex",
+    justifyContent: "space-around",
+    width: "100%",
     "&:hover": {
-      boxShadow: "inset 3px 3px 6px #b8b9be, -3px -3px 6px #fff",
+      boxShadow: "inset 3px 3npx 6px #b8b9be, -3px -3px 6px #fff",
       color: "#00e6e6",
+    },
+  },
+  buttonText: {
+    width: "auto",
+    "&:hover": {
+      color: "orange",
     },
   },
 }));
@@ -37,7 +46,7 @@ const DownloadButton = (props) => {
   return (
     <React.Fragment>
       <button className={classes.buttonDownload} onClick={downloadFile}>
-        Download My CV
+        <span className={classes.buttonText}>Download My CV</span>
       </button>
     </React.Fragment>
   );
