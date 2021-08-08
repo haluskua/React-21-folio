@@ -134,16 +134,23 @@ const useStyles = makeStyles((theme) => ({
 
 const projects = [
   {
-    name: "Portfolio",
-    description: `Building my portfolio has improved my coding ability as a developer. From my older portfolio which was built with Html, Sass, Js, Autoprefixer, version control with Git and hosted with gh-pages on github to the more recent one which is the one you are on is built with React and is a prgression from my older one. `,
+    name: "Old Portfolio",
+    description: `Building my old portfolio has improved my coding ability as a developer. Built built with Html, Sass, Js, Autoprefixer, version control with Git and hosted with gh-pages on github. `,
     image: project1,
+    github: `https://github.com/haluskua/mywebsite`,
+    site: `https://haluskua.github.io/mywebsite/`,
+  },
+  {
+    name: "Current Portfolio",
+    description: `Built with React, using Material-UI, Link and React-router-dom making it a Responsive website`,
+    image: project6,
     github: `https://github.com/haluskua/React-21-folio`,
     site: `https://haluskua-folio21.netlify.app/`,
   },
   {
     name: "Meetups",
-    description: `Production Framework! Server-side (Pre-) Rendering of Pages of File based Routing. Adding nested, dynamic and Routing between pages. Exploring (SSG) with getStaticProps and ServerSideProps.
-    Working With Dynamic Path Params in getStaticProps. Connecting  Quering a MongoDB Database. Sending HTTP Requests to API Routes`,
+    description: `Youtube-Code-along: Production Framework! Server-side (Pre-) Rendering of Pages of File based Routing. Adding nested, dynamic and Routing between pages. Exploring (SSG) with getStaticProps and ServerSideProps.
+    Working With Dynamic Path Params in getStaticProps. Connecting Quering a MongoDB Database. Sending HTTP Requests to API Routes (Not Mobile Friendly yet)`,
     image: project2,
     github: `https://github.com/haluskua/Meetups`,
     site: `https://meetups-lime.vercel.app/`,
@@ -159,14 +166,14 @@ const projects = [
   },
   {
     name: "Travel Website",
-    description: `Dynamic website using Javascript library: GSAP, ScrollMagic and barba-core to apply page transitions, and smooth animations`,
+    description: `Youtube-Code-along: Dynamic website using Javascript library: GSAP, ScrollMagic and babel-core to apply page transitions, and smooth animations`,
     image: project4,
     github: `https://github.com/haluskua/travel-site`,
     site: `https://haluskua.github.io/travel-site/`,
   },
   {
     name: "Clothing shop",
-    description: `React with Redux with Firebase storage API. Responsive design config`,
+    description: `Youtube-Code-along: React with Redux with Firebase storage API. Responsive design config`,
     image: project5,
     github: `https://github.com/haluskua/crwn-clothing`,
     site: `https://gracious-kilby-61782e.netlify.app/`,

@@ -119,7 +119,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.075rem",
     background: "#f3f4f7",
     color: "#2f859b",
-    // borderBottom: "1px solid #2f859b",
     lineHeight: "1rem",
     padding: "13px",
     boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",

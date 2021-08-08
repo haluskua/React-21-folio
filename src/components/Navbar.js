@@ -124,7 +124,7 @@ const useStyles = makeStyles((theme) => ({
       textTransform: "uppercase",
       color: "#231214",
       fontFamily: "Nunito Sans",
-      letterSpacing: ".052em",
+      letterSpacing: ".0152em",
       lineHeight: "1.5rem",
       [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
         fontSize: "1.07rem",
