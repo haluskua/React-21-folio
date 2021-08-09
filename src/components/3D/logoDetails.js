@@ -197,8 +197,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   main_button: {
-    background: "#eeeff2",
-    padding: "0.8rem",
+    background: "#f5f6f9",
+    padding: "0.48rem",
     boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
   },
   title: {
