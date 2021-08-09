@@ -102,7 +102,7 @@ const MediumText = styled.span`
     margin-top: 0;
   }
   @media ${device.laptopL} {
-    font-size: 19px;
+    font-size: 16px;
     padding: 0 7.2rem;
   }
 `;
@@ -160,7 +160,7 @@ const SmallText = styled.span`
     
   `};
   @media ${device.laptopL} {
-    font-size: 26px;
+    font-size: 27.5px;
     line-height: 3rem;
     padding: 0 5.2rem;
   }
@@ -199,6 +199,7 @@ const useStyles = makeStyles((theme) => ({
   main_button: {
     background: "#eeeff2",
     padding: "0.8rem",
+    boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
   },
   title: {
     color: "#231214",
