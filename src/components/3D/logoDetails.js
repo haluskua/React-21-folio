@@ -73,7 +73,7 @@ const MediumText = styled.span`
     line-height: 1.5rem;
     letter-spacing: 0.2rem;
     padding: 0 40px;
-    font-family: "Nunito Sans";
+    font-family: "var(--font-family)";
     font-style: italic;
     text-align: center;
     width: 100%;
@@ -113,7 +113,7 @@ const SmallText = styled.span`
   font-weight: 300;
   line-height: 1.588rem;
   text-align: center;
-  font-family: "Nunito Sans";
+  font-family: var(--font-family);
 
   @media ${device.mobileS} {
     font-size: 20px;
@@ -209,7 +209,7 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: ".43px",
     marginLeft: "0.61rem",
     fontStyle: "italic",
-    fontFamily: "Nunito Sans",
+    fontFamily: "var(--font-family)",
     lineHeight: "1.5rem",
     [theme.breakpoints.up("xs")]: {
       fontSize: "14.5px",

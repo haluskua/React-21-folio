@@ -62,7 +62,7 @@ const Wrapper = styled.span`
   width: 71%;
   font-weight: 300;
   padding: 3.2em 0 0 0;
-  font-family: "Nunito Sans";
+  font-family: var(---font-family);
   line-height: 1.3rem;
 
   @media ${device.mobileS} and (orientation: landscape) {

@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     alignSelf: "center",
     color: "#231214",
     marginTop: "2rem",
-    fontFamily: "Nunito Sans",
+    fontFamily: "var(---font-family)",
     textTransform: "uppercase",
     fontSize: "1.72rem",
   },
@@ -87,6 +87,8 @@ const useStyles = makeStyles((theme) => ({
     padding: ".5rem",
   },
 }));
+
+
 
 const About = () => {
   const classes = useStyles();

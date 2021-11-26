@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../images/crest_trans_black.png";
+import Logo from "../../images/crest3.png";
 import styled from "styled-components";
 import { device } from "../MediaQuery/device";
 import SuperQuery from "@themgoncalves/super-query";

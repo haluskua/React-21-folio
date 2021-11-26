@@ -54,7 +54,7 @@ const Wrapper = styled.span`
     line-height: 1.5rem;
     letter-spacing: 0.2rem;
     padding: 0 40px;
-    font-family: "Nunito Sans";
+    font-family: var(---font-family);
     font-style: italic;
     text-align: center;
     width: 100%;
@@ -94,7 +94,7 @@ const Wrapper = styled.span`
 
   span:nth-child(1) {
     animation-delay: 0.15s;
-    font-family: "Nunito Sans";
+    font-family: var(---font-family);
     text-transform: uppercase;
     font-size: 1.3rem;
     letter-spacing: -0.04rem;
@@ -126,7 +126,7 @@ const Wrapper = styled.span`
   }
   span:nth-child(9) {
     animation-delay: 1.45s;
-    font-family: "Nunito Sans";
+    font-family: var(---font-family);
     font-size: 1.45rem;
     @media ${device.tablet} {
       font-size: 2.4rem;
@@ -146,7 +146,7 @@ const Wrapper = styled.span`
   span:nth-child(12) {
     animation-delay: 2.15s;
     font-size: 3rem;
-    font-family: "Nunito Sans";
+    font-family: var(---font-family);
     @media ${device.tablet} {
       font-size: 3.4rem;
     }
@@ -158,7 +158,7 @@ const Wrapper = styled.span`
   span:nth-child(13) {
     animation-delay: 2.3s;
     font-size: 1.9rem;
-    font-family: "Nunito Sans";
+    font-family: var(---font-family);
     @media ${device.tablet} {
       font-size: 3.4rem;
     }
@@ -170,7 +170,7 @@ const Wrapper = styled.span`
   span:nth-child(14) {
     animation-delay: 2.45s;
     font-size: 1.9rem;
-    font-family: "Nunito Sans";
+    font-family: var(---font-family);
 
     @media ${device.tablet} {
       font-size: 3.4rem;
