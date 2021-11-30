@@ -8,6 +8,53 @@ import IconButton from "@material-ui/core/IconButton";
 import InfoIcon from "@material-ui/icons/Info";
 import { itemData } from "./imageData";
 
+
+export default function TitlebarImageList() {
+  const classes = useStyles();
+
+  return (
+    
+      <div className={classes.root}>
+        <ImageList rowHeight={180} className={classes.imageList}>
+          <ImageListItem
+            className={classes.imgListBox}
+            key="Subheader"
+            cols={2}
+            style={{ height: "auto" }}
+          >
+            <ListSubheader component="div" className={classes.page_title}>
+              Gallery
+            </ListSubheader>
+          </ImageListItem>
+          {itemData.map((item) => (
+            <ImageListItem className={classes.image_item} key={item.img}>
+              <img
+                className={classes.img_image}
+                src={item.img}
+                alt={item.title}
+              />
+              <ImageListItemBar
+                className={classes.textBar}
+                title={<span className={classes.titleName}>{item.title}</span>}
+                subtitle={
+                  <span className={classes.author}>by: {item.author}</span>
+                }
+                actionIcon={
+                  <IconButton
+                    aria-label={`info about ${item.title}`}
+                    className={classes.icon}
+                  >
+                    <InfoIcon />
+                  </IconButton>
+                }
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      </div>
+  );
+}
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -16,11 +63,10 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     overflow: "hidden",
     height: "100vh",
-    
+    background: "none",
   },
   imgListBox: {
     boxShadow: "3px 3px 18px #005ba7, -3px -3px 6px  #734b6a",
-
   },
   imageList: {
     [`${theme.breakpoints.up("xs")}`]: {
@@ -30,6 +76,7 @@ const useStyles = makeStyles((theme) => ({
       margin: "0 !important",
       boxShadow: "3px 3px 6px #3f627e, -3px -3px 6px #3e77bf",
       padding: "10px",
+      borderRadius: "6px",
     },
 
     [`${theme.breakpoints.up("sm")}`]: {
@@ -57,7 +104,8 @@ const useStyles = makeStyles((theme) => ({
     height: "auto !important",
     padding: "14px !important",
     marginBottom: "20px",
-    boxShadow: "3px 3px 6px #3f627e, -3px -3px 6px #3e77bf",
+    borderRadius: "7px",
+    boxShadow: "1px 1px 2px #3f627e, -1px -1px 14px #3e77bf",
 
     [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
       width: "50% !important",
@@ -76,7 +124,7 @@ const useStyles = makeStyles((theme) => ({
   textBar: {
     height: "55px",
     padding: "4px",
-    background: "#4c4e5633",
+    background: "#03396a70",
     // background: "orange",
     // boxShadow: "inset 2px 2px 5px #74aeb773, inset -3px -3px 7px #fff",
   },
@@ -94,7 +142,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.6rem",
     color: "rgb(163 185 187)",
     fontFamily: "var(--font-family)",
-
   },
   titleName: {
     fontSize: ".9rem",
@@ -105,48 +152,3 @@ const useStyles = makeStyles((theme) => ({
     color: "#f4fffe",
   },
 }));
-
-export default function TitlebarImageList() {
-  const classes = useStyles();
-
-  return (
-    <div className={classes.root}>
-      <ImageList rowHeight={180} className={classes.imageList}>
-        <ImageListItem
-          className={classes.imgListBox}
-          key="Subheader"
-          cols={2}
-          style={{ height: "auto" }}
-        >
-          <ListSubheader component="div" className={classes.page_title}>
-            Gallery
-          </ListSubheader>
-        </ImageListItem>
-        {itemData.map((item) => (
-          <ImageListItem className={classes.image_item} key={item.img}>
-            <img
-              className={classes.img_image}
-              src={item.img}
-              alt={item.title}
-            />
-            <ImageListItemBar
-              className={classes.textBar}
-              title={<span className={classes.titleName}>{item.title}</span>}
-              subtitle={
-                <span className={classes.author}>by: {item.author}</span>
-              }
-              actionIcon={
-                <IconButton
-                  aria-label={`info about ${item.title}`}
-                  className={classes.icon}
-                >
-                  <InfoIcon />
-                </IconButton>
-              }
-            />
-          </ImageListItem>
-        ))}
-      </ImageList>
-    </div>
-  );
-}

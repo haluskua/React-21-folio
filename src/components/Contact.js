@@ -113,25 +113,7 @@ const Contact = () => {
 
 const useStyles = makeStyles((theme) => ({
   contactContainer: {
-    // //background
-    // background:
-    //   "-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
-
-    // /* safari 5.1+,chrome 10+ */
-    // background:
-    //   "-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
-
-    // /* opera 11.10+ */
-    // background:
-    //   "-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
-
-    // /* ie 10+ */
-    // background:
-    //   "-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
-
-    // /* global 92%+ browsers support */
-    // background:
-    //   "radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
+   //
   },
 
   formStyle: {
@@ -143,26 +125,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "2rem",
     boxShadow: "3px 3px 22px #005ba7, -3px -3px 6px #734b6a",
     borderRadius: "3rem 0",
-    //background
-    // background:
-    //   "-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
-
-    // /* safari 5.1+,chrome 10+ */
-    // background:
-    //   "-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
-
-    // /* opera 11.10+ */
-    // background:
-    //   "-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
-
-    // /* ie 10+ */
-    // background:
-    //   "-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
-
-    // /* global 92%+ browsers support */
-    // background:
-    //   "radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
-
+   
     [`${theme.breakpoints.up("lg")} `]: {
       width: "50%",
     },

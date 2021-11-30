@@ -19,6 +19,7 @@ const AniLogo = styled.div`
   @media ${device.mobileS} and (orientation: landscape) {
     height: 120px;
   }
+  
   ${SuperQuery().minWidth.xs.and.landscape.css`
     height: 112px !important;
     

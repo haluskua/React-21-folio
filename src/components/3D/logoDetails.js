@@ -32,7 +32,7 @@ export function LogoDetails(props) {
     <DetailsContainer>
       <Marginer direction="vertical" margin="0em" />
       <Box component="div" className={classes.centerLL}></Box>
-      <SmallText>I'm a Freelance Web Developer & Graphic Designer</SmallText>
+      <SmallText>Hi, I am Omphalus Harkie Kua</SmallText>
       <SpacedHorizontalContainer>
         <MediumText>Frontend-Fullstack-UX\UI-Design</MediumText>
       </SpacedHorizontalContainer>
@@ -49,7 +49,7 @@ export function LogoDetails(props) {
             </motion.button>
           </IconButton>
         </Link>
-        <Marginer direction="vertical" margin="8.2em" />
+        <Marginer direction="vertical" margin="12.2em" />
         <Typography variant="h5" className={classes.title} gutterBottom>
           Background
         </Typography>
@@ -142,7 +142,7 @@ const SmallText = styled.span`
   `};
 
   @media ${device.tablet} {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 2.75rem;
   }
   ${SuperQuery().minWidth.md.and.landscape.css`
@@ -161,9 +161,9 @@ const SmallText = styled.span`
     
   `};
   @media ${device.laptopL} {
-    font-size: 27.5px;
+    font-size: 28.5px;
     line-height: 3rem;
-    padding: 0 5.2rem;
+    padding: 0 0.03rem;
   }
 `;
 

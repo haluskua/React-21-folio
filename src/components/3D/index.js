@@ -6,8 +6,9 @@ import { LogoDetails } from "./logoDetails";
 import TextAnimation from "./TextAnimations";
 import LogoAnimation from "./LogoAnimation";
 import { device } from "../MediaQuery/device";
+import NameAnimation from "./NameAnimate";
 
-export default function FrontCard(props) {
+export default function FrontCard() {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const rotateX = useTransform(y, [-100, 100], [30, -30]);
@@ -26,6 +27,7 @@ export default function FrontCard(props) {
           <CircleWrapper>
             <Circle />
           </CircleWrapper>
+
           <LogoWrapper>
             <MyLogo
               style={{
@@ -44,13 +46,14 @@ export default function FrontCard(props) {
               <LogoAnimation />
             </MyLogo>
           </LogoWrapper>
-          <Marginer direction="vertical" margin="1em" />
+          <Marginer direction="vertical" margin="0.5em" />
         </TopContainer>
-        <TextAnimation />
-        <Marginer direction="vertical" margin="0.5em" />
+        <NameAnimation />
+        <Marginer direction="vertical" margin="0.05em" />
         <BottomContainer>
           <LogoDetails />
         </BottomContainer>
+        <TextAnimation />
       </CardContainer>
     </CardWrapper>
   );

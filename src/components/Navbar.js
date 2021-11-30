@@ -21,7 +21,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../images/crest3.png";
 import { motion } from "framer-motion";
 import Footer from "../../src/components/Footer";
-import "../../src/components/Navbar.scss";
 import NameAnimation from "../components/3D/NameAnimate";
 
 // :::::::::::::::::::

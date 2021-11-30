@@ -3,11 +3,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import DownloadButton from "./DownloadButton";
-import '../components/resume.css';
+import "../components/resume.css";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-
     padding: "0 0 1.2rem 0",
 
     [theme.breakpoints.up("sm")]: {
@@ -70,9 +69,9 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     margin: "2rem",
     clear: "both",
-    background: '#031021',
+    background: "#031021",
     marginTop: "3.4px",
-    borderRight: "1px solid #bda55d",
+    borderLeft: "1px solid #bda55d",
     borderRadius: "3rem 1rem 4rem 1rem",
     // background: "#f3f4f7",
     boxShadow: "3px 3px 6px #111c50, -3px -3px 6px #002852",
@@ -87,14 +86,13 @@ const useStyles = makeStyles((theme) => ({
       right: "-0.625rem",
       top: "calc(50% - 5px)",
       borderStyle: "solid",
-      borderColor: "#bda55d #bda55d transparent transparent",
+      borderColor: "#8eb4dd #7d68d3 transparent transparent",
       borderWidth: "0.625rem",
       transform: "rotate(45deg)",
     },
     [theme.breakpoints.up("sm")]: {
       width: "55%",
-
-      },
+    },
 
     [theme.breakpoints.up("md")]: {
       width: "60%",
@@ -104,9 +102,11 @@ const useStyles = makeStyles((theme) => ({
         right: "48.9%",
         transform: "rotate(135deg)",
       },
-    [theme.breakpoints.up("lg")]: {
-      width: "80%",
-
+      [theme.breakpoints.up("lg")]: {
+        width: "80%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-start",
       },
 
       // "&:nth-of-type(2n)": {
@@ -127,8 +127,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "7.375rem",
     margin: "13px 2rem 8px auto",
     fontSize: "1.075rem",
-    background: "#011e3f",
-    color: "#c074d3",
+    color: "#8eb4dd",
     lineHeight: "1rem",
     padding: "13px",
     boxShadow: "outset 2px 2px 5px #bda553, outset -3px -3px 7px #0f1b47",
@@ -170,7 +169,7 @@ const useStyles = makeStyles((theme) => ({
   },
   subHeading: {
     fontSize: "1rem",
-    color: "rgb(119 159 114)",
+    color: "rgb(138 154 171)",
     padding: "19px 0 1px 0",
     lineHeight: "1.5rem",
     textShadow: "0px 0px rgb(34 16 18)",
@@ -197,20 +196,21 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   body1: {
-    color: "rgb(190, 228, 243)",
+    color: "rgb(142 192 241)",
     textAlign: "left",
     width: "100%",
     display: "flex",
     lineHeight: "1.5rem",
     justifyContent: "center",
-    letterSpacing: "0",
-    fontFamily: "Nunito Sans",
-    fontSize: "1rem",
+    letterSpacing: "0.03rem",
+    fontFamily: "var(--font-family)",
+    fontSize: "15.3px",
     [theme.breakpoints.up("md")]: {
-      fontSize: "1.1rem",
+      fontSize: "15.5px",
     },
     [theme.breakpoints.up("lg")]: {
       lineHeight: "1.68rem",
+      justifyContent: "flex-start",
     },
   },
 }));
@@ -219,7 +219,12 @@ const Resume = () => {
   const classes = useStyles();
   return (
     <Box component="header" className={classes.mainContainer}>
-      <Typography variant="h4" align="center" className={classes.heading} id="gradient__text" >
+      <Typography
+        variant="h4"
+        align="center"
+        className={classes.heading}
+        id="gradient__text"
+      >
         Experiences
       </Typography>
       <Box component="div" className={classes.timeLine}>
@@ -242,6 +247,7 @@ const Resume = () => {
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
+            id="gradient__text"
           >
             Freelancer
           </Typography>
@@ -269,6 +275,7 @@ const Resume = () => {
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
+            id="gradient__text"
           >
             App Development - Bootcamp
           </Typography>
@@ -298,6 +305,7 @@ const Resume = () => {
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
+            id="gradient__text"
           >
             Diploma in Web Design
           </Typography>
@@ -324,6 +332,7 @@ const Resume = () => {
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
+            id="gradient__text"
           >
             Bachelor in Creative Technology
           </Typography>
@@ -350,6 +359,7 @@ const Resume = () => {
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
+            id="gradient__text"
           >
             Bachelor in Exercise Science
           </Typography>
@@ -375,6 +385,7 @@ const Resume = () => {
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
+            id="gradient__text"
           >
             Semi-Pro Rugby League Player
           </Typography>

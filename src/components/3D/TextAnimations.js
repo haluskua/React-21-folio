@@ -73,7 +73,7 @@ const Wrapper = styled.span`
   }
   @media ${device.laptop} {
     line-height: 1.72rem;
-    padding: 0 3rem;
+    padding: 0 1rem;
     margin-top: 0;
   }
   @media ${device.laptopL} {

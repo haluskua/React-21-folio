@@ -8,78 +8,6 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import ReadMore from "./ReadMore";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    maxWidth: "90%",
-    background: "none",
-    boxShadow: "none",
-    borderRadius: "3rem 1rem 3rem 1rem",
-
-    [`${theme.breakpoints.up("xs")} `]: {
-      maxWidth: "90%",
-    },
-    [`${theme.breakpoints.up("sm")} `]: {
-      maxWidth: "70%",
-    },
-    [`${theme.breakpoints.up("md")} `]: {
-      maxWidth: "68%",
-    },
-    [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
-      maxWidth: "52%",
-      padding: "2rem",
-      margin: "2rem",
-    },
-    [`${theme.breakpoints.up("lg")} and (orientation: landscape)`]: {
-      maxWidth: "85%",
-    },
-  },
-  cardContainer: {
-    
-    maxWidth: "88%",
-    margin: "3rem auto",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-    borderRadius: "2rem 0",
-    boxShadow: "3px 3px 6px #03162e, -3px -3px 6px #044179",
-    background: "#031021",
-    height: "auto",
-    [theme.breakpoints.up("md")]: {
-      maxWidth: "88% ",
-    },
-  },
-  title:{
-    color: "#85b9f9",
-  },
-
-  cardContent: {
-    margin: "0",
-  },
-  bio: {
-    fontFamily: "var(--font-family",
-    color: "rgb(190, 228, 243)",
-    fontSize: "1rem",
-    textAlign: "left",
-    padding: "4px",
-    [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
-      display: "flex",
-      width: "100%",
-      alignSelf: "center",
-      padding: "10px",
-    },
-    [`${theme.breakpoints.up("sm")} `]: {
-      fontSize: "1.19rem",
-      lineHeight: "1.8rem",
-      padding: "6px",
-    },
-    [`${theme.breakpoints.up("md")} `]: {
-      fontSize: "1.13rem",
-    },
-    [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
-      fontSize: "1.05rem",
-    },
-  },
-}));
 
 // Data
 const backgrounds = [
@@ -129,3 +57,76 @@ export default function MediaCard() {
     </Card>
   );
 }
+
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    maxWidth: "90%",
+    background: "none",
+    boxShadow: "none",
+    borderRadius: "3rem 1rem 3rem 1rem",
+
+    [`${theme.breakpoints.up("xs")} `]: {
+      maxWidth: "90%",
+    },
+    [`${theme.breakpoints.up("sm")} `]: {
+      maxWidth: "70%",
+    },
+    [`${theme.breakpoints.up("md")} `]: {
+      maxWidth: "68%",
+    },
+    [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
+      maxWidth: "52%",
+      padding: "2rem",
+      margin: "2rem",
+    },
+    [`${theme.breakpoints.up("lg")} and (orientation: landscape)`]: {
+      maxWidth: "54%",
+    },
+  },
+  cardContainer: {
+    maxWidth: "88%",
+    margin: "3rem auto",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    borderRadius: "2rem 0",
+    background: "#040c18",
+    boxShadow: "3px 3px 6px #03162e, -3px -3px 6px #044179",
+    height: "auto",
+    [theme.breakpoints.up("md")]: {
+      maxWidth: "88% ",
+    },
+  },
+  title:{
+    color: "#85b9f9",
+  },
+
+  cardContent: {
+    margin: "0",
+  },
+  bio: {
+    fontFamily: "var(--font-family",
+    color: "rgb(190, 228, 243)",
+    fontSize: "1rem",
+    textAlign: "left",
+    padding: "4px",
+    [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
+      display: "flex",
+      width: "100%",
+      alignSelf: "center",
+      padding: "10px",
+    },
+    [`${theme.breakpoints.up("sm")} `]: {
+      fontSize: "1.19rem",
+      lineHeight: "1.8rem",
+      padding: "6px",
+    },
+    [`${theme.breakpoints.up("md")} `]: {
+      fontSize: "1.13rem",
+    },
+    [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
+      fontSize: "1.05rem",
+    },
+  },
+}));

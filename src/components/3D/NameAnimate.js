@@ -15,7 +15,7 @@ export default function NameAnimation() {
         ))}
         <SmallText>Developer & Designer</SmallText>
       </Wrapper>
-      <Marginer direction="vertical" margin="1.2rem" />
+      <Marginer direction="vertical" margin=".2rem" />
     </React.Fragment>
   );
 }
@@ -30,7 +30,7 @@ const animation = keyframes`
 20% { 
      opacity: 1; 
      transform: translateY(-1.3px) skewY(0deg) skewX(0deg) rotateZ(1deg);
-   filter: blur(0px) }
+     filter: blur(0px) }
 
 65% { 
      opacity: 1; 
@@ -59,11 +59,14 @@ const Wrapper = styled.span`
   letter-spacing: 0.035rem;
   margin: 0;
   font-size: 1.25rem;
-  width: 71%;
   font-weight: 300;
   padding: 3.2em 0 0 0;
   font-family: var(---font-family);
   line-height: 1.3rem;
+  width: 100%;
+  padding: 1.8rem;
+  z-index: 999;
+  background: #000000a3;
 
   @media ${device.mobileS} and (orientation: landscape) {
     font-size: 0.7rem;
