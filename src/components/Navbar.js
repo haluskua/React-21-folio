@@ -31,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
     width: "auto",
   },
   appBar: {
-    background: "#f3f4f7",
     background: "var(--color-blog)",
     boxShadow: "3px 3px 22px #005ba7, -3px -3px 6px  #734b6a",
     margin: 0,
