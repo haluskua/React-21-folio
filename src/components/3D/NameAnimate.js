@@ -66,7 +66,7 @@ const Wrapper = styled.span`
   width: 100%;
   padding: 1.8rem;
   z-index: 999;
-  background: #000000a3;
+  background: #00000057;
 
   @media ${device.mobileS} and (orientation: landscape) {
     font-size: 0.7rem;
