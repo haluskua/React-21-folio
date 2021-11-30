@@ -185,7 +185,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.35rem",
     lineHeight: "1.41rem",
     fontFamily: "var(---font-family)",
-    fontWeight: "600",
     padding: "0px 0 22px 0",
     textAlign: "left",
     [theme.breakpoints.up("md")]: {
