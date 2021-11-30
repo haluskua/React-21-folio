@@ -169,7 +169,7 @@ const useStyles = makeStyles((theme) => ({
   },
   subHeading: {
     fontSize: "1rem",
-    color: "rgb(142 192 241)",
+    color: "rgb(147 150 253)",
     padding: "19px 0 1px 0",
     lineHeight: "1.5rem",
     textShadow: "0px 0px rgb(34 16 18)",
