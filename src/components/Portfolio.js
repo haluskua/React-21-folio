@@ -10,12 +10,12 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-import project1 from "../images/crest_trans_black.png";
-import project2 from "../images/crest_trans_black.png";
-import project3 from "../images/crest_trans_black.png";
-import project4 from "../images/crest_trans_black.png";
-import project5 from "../images/crest_trans_black.png";
-import project6 from "../images/crest_trans_black.png";
+import project1 from "../images/crest3.png";
+import project2 from "../images/crest3.png";
+import project3 from "../images/crest3.png";
+import project4 from "../images/crest3.png";
+import project5 from "../images/crest3.png";
+import project6 from "../images/crest3.png";
 
 import ReadMore from "../components/ReadMore";
 
