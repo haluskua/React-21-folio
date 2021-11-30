@@ -62,7 +62,7 @@ const Wrapper = styled.span`
   font-weight: 300;
   padding: 3.2em 0 0 0;
   font-family: var(---font-family);
-  line-height: 1.3rem;
+  line-height: 1.6rem;
   width: 100%;
   padding: 1.8rem;
   z-index: 999;
@@ -137,7 +137,7 @@ const Wrapper = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 11.2px;
+  font-size: 12.52px;
   color: #9ca3a3;
   padding: 0 11px;
   text-align: center;
