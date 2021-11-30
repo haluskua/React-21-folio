@@ -10,10 +10,6 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-import "../components/portfolio.scss";
-
-//importing images from folder/files
-
 import project1 from "../images/crest_trans_black.png";
 import project2 from "../images/crest_trans_black.png";
 import project3 from "../images/crest_trans_black.png";
@@ -21,10 +17,12 @@ import project4 from "../images/crest_trans_black.png";
 import project5 from "../images/crest_trans_black.png";
 import project6 from "../images/crest_trans_black.png";
 
+import ReadMore from "../components/ReadMore";
+
+// import {useState } from 'react';
+
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#f3f4f7",
-
     [theme.breakpoints.up("sm")]: {
       padding: "0rem",
     },
@@ -48,51 +46,54 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    borderRadius: "3rem 0",
-    boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
-    background: "#f3f4f7",
+    borderRadius: "2rem 0",
+    boxShadow: "3px 3px 6px #03162e, -3px -3px 6px #044179",
+    background: "#031021",
+    height: "auto",
     [theme.breakpoints.up("md")]: {
-      maxWidth: "90% ",
+      maxWidth: "71% ",
     },
   },
   buttonContainer: {
     display: "flex",
     justifyContent: "space-between",
-    margin: "2.2rem 0rem",
+    margin: ".2rem 0rem",
   },
 
   boldTypo: {
     width: "66%",
-    fontFamily: "Nunito Sans",
+    fontFamily: "var(---font-family)",
     fontWeight: "bolder",
-    color: "#241214",
+    color: "#85929f",
     fontSize: "0.9rem",
-    boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
+    boxShadow: "3px 3px 6px #03162e, -2px -2px 4px #044179",
     padding: "7px",
     borderRadius: "10px 4px",
     "&:hover": {
-      boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
+      background: "var(--color-blog)",
+      boxShadow: "3px 3px 18px #005ba7, -3px -3px 6px  #734b6a",
       color: "#00e6e6",
     },
   },
   github: {
     width: "66%",
-    fontFamily: "Nunito Sans",
+    fontFamily: "var(--font-family)",
     fontSize: "0.9rem",
-    boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
+    boxShadow: "3px 3px 6px #03162e, -2px -2px 4px #044179",
     padding: "7px",
-    color: "#241214",
+    color: "#85929f",
     borderRadius: "10px 4px",
     "&:hover": {
-      boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
+      background: "var(--color-blog)",
+      boxShadow: "3px 3px 18px #c56741, -3px -3px 6px  #ff8b28",
       color: "orange",
     },
   },
   projectName: {
-    color: "#241214",
+    color: "#ffe5ca",
     fontSize: "1.5rem",
     lineHeight: "1.41rem",
-    fontFamily: "Nunito Sans",
+    fontFamily: "var(--font-family)",
     textTransform: "uppercase",
     fontWeight: "700",
     padding: "0px 0 22px 0",
@@ -104,13 +105,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   pro_text: {
-    color: "#231214",
+    color: "#da8a67",
     textAlign: "left",
     width: "100%",
     display: "flex",
     lineHeight: "1.5rem",
     justifyContent: "center",
-    fontFamily: "Nunito Sans",
+    fontFamily: "var(--font-family)",
     letterSpacing: "0",
     fontSize: "1.12rem",
     padding: "0 1rem",
@@ -188,6 +189,7 @@ const projects = [
   },
 ];
 
+
 const Portfolio = () => {
   const classes = useStyles();
 
@@ -208,7 +210,6 @@ const Portfolio = () => {
                     className={classes.imgItem}
                   ></CardMedia>
                 </Box>
-
                 <CardContent>
                   <Typography
                     variant="h5"
@@ -222,7 +223,8 @@ const Portfolio = () => {
                     color="textSecondary"
                     className={classes.pro_text}
                   >
-                    {project.description}
+                    <ReadMore>{project.description}</ReadMore>
+                    
                   </Typography>
                 </CardContent>
               </CardActionArea>

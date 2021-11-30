@@ -15,10 +15,11 @@ const useStyles = makeStyles({
     height: "auto",
     marginTop: "11px",
     borderRadius: "3px 3px 4rem 4rem",
+    // boxShadow: '3px 3px 6px #031730, -3px -3px 6px #1d3b63',
   },
   root: {
     "& .MuiSvgIcon-root": {
-      fill: "#b1a172",
+      fill: "#6d7578",
       width: "18px",
 
       "&:hover": {

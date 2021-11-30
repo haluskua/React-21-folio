@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { device } from "../MediaQuery/device";
 
 export default function TextAnimation() {
-  const reactArray = "Welcome,".split("");
+  const reactArray = "Wagai weh,".split("");
 
   return (
     <React.Fragment>
@@ -50,12 +50,11 @@ const Wrapper = styled.span`
   display: inline-block;
   @media ${device.mobileS} {
     font-size: 13px;
-    color: #231214;
+    color: #48a13e;
     line-height: 1.5rem;
     letter-spacing: 0.2rem;
     padding: 0 40px;
     font-family: var(---font-family);
-    font-style: italic;
     text-align: center;
     width: 100%;
     margin-top: 9px;

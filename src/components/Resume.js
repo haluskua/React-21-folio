@@ -3,10 +3,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import DownloadButton from "./DownloadButton";
+import '../components/resume.css';
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#f3f4f7",
+
     padding: "0 0 1.2rem 0",
 
     [theme.breakpoints.up("sm")]: {
@@ -31,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     padding: "1rem",
     margin: "0",
-    background: "#f3f4f7",
+    // background: "#f3f4f7",
 
     "&:before": {
       content: "''",
@@ -69,11 +70,12 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     margin: "2rem",
     clear: "both",
+    background: '#031021',
     marginTop: "3.4px",
     borderRight: "1px solid #bda55d",
     borderRadius: "3rem 1rem 4rem 1rem",
-    background: "#f3f4f7",
-    boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
+    // background: "#f3f4f7",
+    boxShadow: "3px 3px 6px #111c50, -3px -3px 6px #002852",
 
     "&:after": {
       content: "''",
@@ -89,14 +91,22 @@ const useStyles = makeStyles((theme) => ({
       borderWidth: "0.625rem",
       transform: "rotate(45deg)",
     },
+    [theme.breakpoints.up("sm")]: {
+      width: "55%",
+
+      },
 
     [theme.breakpoints.up("md")]: {
-      width: "80%",
+      width: "60%",
       margin: "2.1rem 0",
       "&:before": {
         top: "calc(-6% - 1px)",
         right: "48.9%",
         transform: "rotate(135deg)",
+      },
+    [theme.breakpoints.up("lg")]: {
+      width: "80%",
+
       },
 
       // "&:nth-of-type(2n)": {
@@ -115,13 +125,13 @@ const useStyles = makeStyles((theme) => ({
   timeLineYear: {
     textAlign: "center",
     maxWidth: "7.375rem",
-    margin: "0 2rem 0 auto",
+    margin: "13px 2rem 8px auto",
     fontSize: "1.075rem",
-    background: "#f3f4f7",
-    color: "#2f859b",
+    background: "#011e3f",
+    color: "#c074d3",
     lineHeight: "1rem",
     padding: "13px",
-    boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
+    boxShadow: "outset 2px 2px 5px #bda553, outset -3px -3px 7px #0f1b47",
     "&:before": {
       display: "none",
     },
@@ -148,7 +158,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "2rem 0",
     textTransform: "uppercase",
     letterSpacing: "0.1rem",
-    background: "#f3f4f7",
+    // background: "#f4f7ff",
     fontFamily: "'Audiowide', Open Sans",
 
     [theme.breakpoints.up("md")]: {
@@ -160,7 +170,7 @@ const useStyles = makeStyles((theme) => ({
   },
   subHeading: {
     fontSize: "1rem",
-    color: "rgb(47 133 155)",
+    color: "rgb(119 159 114)",
     padding: "19px 0 1px 0",
     lineHeight: "1.5rem",
     textShadow: "0px 0px rgb(34 16 18)",
@@ -172,10 +182,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   subtitle1: {
-    color: "#bda55d",
+    color: "#b7e4f5",
     fontSize: "1.35rem",
     lineHeight: "1.41rem",
-    fontFamily: "Nunito Sans",
+    fontFamily: "var(---font-family)",
     fontWeight: "600",
     padding: "0px 0 22px 0",
     textAlign: "left",
@@ -187,7 +197,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   body1: {
-    color: "#4a3c3c",
+    color: "rgb(190, 228, 243)",
     textAlign: "left",
     width: "100%",
     display: "flex",
@@ -209,7 +219,7 @@ const Resume = () => {
   const classes = useStyles();
   return (
     <Box component="header" className={classes.mainContainer}>
-      <Typography variant="h4" align="center" className={classes.heading}>
+      <Typography variant="h4" align="center" className={classes.heading} id="gradient__text" >
         Experiences
       </Typography>
       <Box component="div" className={classes.timeLine}>

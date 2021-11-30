@@ -53,6 +53,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     width: "100%",
     backgroundSize: "cover",
+ 
   },
   slide_box: {
     display: "flex",

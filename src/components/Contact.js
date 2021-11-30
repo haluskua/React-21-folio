@@ -113,7 +113,25 @@ const Contact = () => {
 
 const useStyles = makeStyles((theme) => ({
   contactContainer: {
-    background: "#f3f4f7",
+    //background
+    background:
+      "-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
+
+    /* safari 5.1+,chrome 10+ */
+    background:
+      "-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
+
+    /* opera 11.10+ */
+    background:
+      "-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
+
+    /* ie 10+ */
+    background:
+      "-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
+
+    /* global 92%+ browsers support */
+    background:
+      "radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
   },
 
   formStyle: {
@@ -123,15 +141,34 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     width: "90%",
     padding: "2rem",
-    boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
+    boxShadow: "3px 3px 22px #005ba7, -3px -3px 6px #734b6a",
     borderRadius: "3rem 0",
-    background: "linear-gradient(58deg, #f3f4f7, transparent)",
+    //background
+    background:
+      "-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
+
+    /* safari 5.1+,chrome 10+ */
+    background:
+      "-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
+
+    /* opera 11.10+ */
+    background:
+      "-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
+
+    /* ie 10+ */
+    background:
+      "-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
+
+    /* global 92%+ browsers support */
+    background:
+      "radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
+
     [`${theme.breakpoints.up("lg")} `]: {
       width: "50%",
     },
   },
   heading: {
-    color: "#919488",
+    color: "#cacfbc",
     marginBottom: "1rem",
     fontFamily: "Asap",
     fontWeight: "normal",
@@ -143,10 +180,14 @@ const useStyles = makeStyles((theme) => ({
   button: {
     marginTop: "1rem",
     color: "#919488",
-    background: "linear-gradient(58deg, #f3f4f7, transparent))",
     border: "1px solid",
+    boxShadow: "3px 3px 6px #03162e, -2px -2px 4px #044179",
+    fontFamily: "var(--font-family)",
+    background: "linear-gradient(58deg, #f3f4f7, transparent))",
     "&:hover": {
-      background: "white",
+      background: "var(--color-blog)",
+      boxShadow: "3px 3px 18px #005ba7, -3px -3px 6px  #734b6a",
+      color: "#00e6e6",
     },
   },
 }));

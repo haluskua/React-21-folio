@@ -49,7 +49,7 @@ $desktop: 2560px;
     margin: 0;
   }
   @media screen and (min-width: $laptopL) and (orientation: landscape) {
-    width: 50% !important;
+    width: 67% !important;
   }
 }
 
@@ -84,7 +84,8 @@ $desktop: 2560px;
     margin-left: 0px !important;
     border-radius: 2rem;
     border: 0.0625rem solid transparent;
-    box-shadow: 3px 3px 6px #cecfd4, -3px -3px 6px #fff !important;
+    box-shadow: inset 2px 2px 0px #305e97, inset -3px -3px 3px #091236 !important;
+    // box-shadow: 3px 3px 6px #cecfd4, -3px -3px 6px #fff !important;
     padding: 5px 28px;
     @media screen and (min-width: $mobileS) and (orientation: landscape) {
       padding: 5px 27px;
@@ -103,14 +104,11 @@ $desktop: 2560px;
   }
 }
 .MuiListItem-gutters:hover {
-  background: #fff;
-  color: orange !important;
+  background: rgba(42, 25, 201, 0.26) !important ;
+  background: var(--color-blog) !important ;
+  box-shadow: 3px 3px 15px #73aaca , -3px -3px 5px #005ba7  !important;
 }
 
-.MuiPaper-root {
-  border-radius: 27rem 0 4rem 0;
-  background: rgba(255, 247, 247, 0);
-}
 
 .MuiList-padding {
   width: auto;
@@ -130,7 +128,6 @@ $desktop: 2560px;
   }
 }
 .MuiDrawer-paperAnchorRight {
-  background: #f3f4f7 !important;
   width: auto;
   border: 2px solid #2c193273;
   padding: 7.2px;
@@ -149,6 +146,21 @@ $desktop: 2560px;
   @media screen and (min-width: $tablet) and (orientation: landscape) {
     left: 0.5% !important;
   }
+  //background
+  background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  
 }
 
 .MuiBackdrop-root {
@@ -179,4 +191,9 @@ $desktop: 2560px;
 .swiper-slide {
   overflow: hidden !important;
   width: 100vw !important;
+}
+
+.MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly {
+  border: 1px solid #152c4b;
+ box-shadow:  none !important;
 }

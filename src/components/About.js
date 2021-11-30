@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
 
   title: {
     alignSelf: "center",
-    color: "#231214",
+    color: "#bab4ac",
     marginTop: "2rem",
     fontFamily: "var(---font-family)",
     textTransform: "uppercase",
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
   },
   subtitle: {
     alignSelf: "center",
-    color: "#231214",
+    color: "#388fa3",
     fontSize: "1rem",
   },
   boxed: {

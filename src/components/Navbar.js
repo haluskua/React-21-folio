@@ -18,7 +18,7 @@ import NoteIcon from "@material-ui/icons/Note";
 import WorkIcon from "@material-ui/icons/Work";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../images/crest_trans_black.png";
+import avatar from "../images/crest3.png";
 import { motion } from "framer-motion";
 import Footer from "../../src/components/Footer";
 import "../../src/components/Navbar.scss";
@@ -32,7 +32,8 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     background: "#f3f4f7",
-    boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff  ",
+    background: "var(--color-blog)",
+    boxShadow: "3px 3px 22px #005ba7, -3px -3px 6px  #734b6a",
     margin: 0,
     position: "fixed",
     width: "auto",
@@ -52,9 +53,24 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    background: "#f3f4f7",
+    background: "#0d1625",
     borderRadius: "2rem 2rem 3rem 3rem !important",
-    // boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
+    boxShadow: "inset 2px 2px 5px #11243c, inset -3px -3px 7px #061628",
+    //background
+  background:"-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
+
+  /* safari 5.1+,chrome 10+ */
+  background:"-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
+
+  /* opera 11.10+ */
+  background:"-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
+
+  /* ie 10+ */
+  background:"-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
+
+  /* global 92%+ browsers support */
+  background:"radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%)",
+
 
     //Portrait View Mqueries
     [theme.breakpoints.up("xs")]: {
@@ -116,13 +132,13 @@ const useStyles = makeStyles((theme) => ({
     height: "7px",
   },
   listItem: {
-    color: "#b1a172",
+    color: "#5375a0",
   },
   textColor: {
     "& span": {
       fontSize: "1rem",
       textTransform: "uppercase",
-      color: "#231214",
+      color: "#85b9f9",
       fontFamily: "Nunito Sans",
       letterSpacing: ".0152em",
       lineHeight: "1.5rem",
@@ -137,8 +153,8 @@ const useStyles = makeStyles((theme) => ({
     border: "none",
     padding: "4px",
     borderRadius: "10px 4px",
-    background: "#f3f4f7",
-    boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
+    background: "var(--color-blog)",
+    boxShadow: "3px 3px 22px #005ba7, -3px -3px 6px  #734b6a",
     [`${theme.breakpoints.up("md")} and (orientation: portrait)`]: {
       padding: "6px",
     },
@@ -188,7 +204,7 @@ const Navbar = () => {
   const classes = useStyles();
 
   const sideList = () => (
-    <Box className={classes.menuSliderContainer} component="div">
+    <Box className={classes.menuSliderContainer} id="menuSliderContainer" component="div">
       <Avatar className={classes.avatar} src={avatar} alt="Ompa" />
       <NameAnimation />
       <Divider className={classes.divider_one} />

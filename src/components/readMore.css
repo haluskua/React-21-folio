@@ -1,0 +1,21 @@
+.container{
+    position: relative;
+    width: 96%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+    
+  .text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: rgb(190, 228, 243);
+    font-weight: normal;
+    padding: 1rem;
+  }
+    
+  .read-or-hide{
+    color: rgb(192,192,192);
+    cursor: pointer;
+  }

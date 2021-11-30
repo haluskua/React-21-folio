@@ -69,7 +69,7 @@ const DetailsContainer = styled.div`
 const MediumText = styled.span`
   @media ${device.mobileS} {
     font-size: 13px;
-    color: #231214;
+    color: #f5f6f9;
     line-height: 1.5rem;
     letter-spacing: 0.2rem;
     padding: 0 40px;
@@ -109,8 +109,9 @@ const MediumText = styled.span`
 
 const SmallText = styled.span`
   font-size: 18px;
-  color: #231214;
-  font-weight: 300;
+  color: #bddcf9;
+  font-weight: bold;
+  letter-spacing: .03rem;
   line-height: 1.588rem;
   text-align: center;
   font-family: var(--font-family);
@@ -188,7 +189,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     background: "#dfe1dc",
-    color: "#fff",
+    color: "#1d2744",
     borderRadius: "50%",
     cursor: "pointer",
     margin: "5px",
@@ -197,12 +198,11 @@ const useStyles = makeStyles((theme) => ({
   },
 
   main_button: {
-    background: "#f5f6f9",
     padding: "0.48rem",
-    boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
+    background:" #033a6c",
   },
   title: {
-    color: "#231214",
+    color: "#69849f",
     marginTop: "1rem",
     fontSize: "15.5px",
     fontWeight: "200",

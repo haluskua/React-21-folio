@@ -16,10 +16,11 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     overflow: "hidden",
     height: "100vh",
-    backgroundColor: "#f2f3f6",
+    
   },
   imgListBox: {
-    boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
+    boxShadow: "3px 3px 18px #005ba7, -3px -3px 6px  #734b6a",
+
   },
   imageList: {
     [`${theme.breakpoints.up("xs")}`]: {
@@ -27,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
       height: "90%",
       overflow: "scroll",
       margin: "0 !important",
-      boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
+      boxShadow: "3px 3px 6px #3f627e, -3px -3px 6px #3e77bf",
       padding: "10px",
     },
 
@@ -56,7 +57,8 @@ const useStyles = makeStyles((theme) => ({
     height: "auto !important",
     padding: "14px !important",
     marginBottom: "20px",
-    boxShadow: "3px 3px 6px #cecfd4, -3px -3px 6px #fff",
+    boxShadow: "3px 3px 6px #3f627e, -3px -3px 6px #3e77bf",
+
     [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
       width: "50% !important",
     },
@@ -68,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
   },
   textColor: {
     fontSize: "1rem",
-    fontFamily: "Nunito Sans",
+    fontFamily: "var(--font-family)",
   },
 
   textBar: {
@@ -90,7 +92,9 @@ const useStyles = makeStyles((theme) => ({
   page_title: {
     textAlign: "center",
     fontSize: "1.6rem",
-    fontFamily: "Nunito Sans",
+    color: "rgb(163 185 187)",
+    fontFamily: "var(--font-family)",
+
   },
   titleName: {
     fontSize: ".9rem",
