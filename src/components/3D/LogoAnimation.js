@@ -26,7 +26,7 @@ const AniLogo = styled.div`
   `};
 
   @media ${device.mobileM} {
-    height: 400px;
+    height: 340px;
   }
   @media ${device.mobileL} {
     height: 426px;

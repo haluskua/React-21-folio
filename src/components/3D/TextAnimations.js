@@ -50,14 +50,14 @@ const Wrapper = styled.span`
   display: inline-block;
   @media ${device.mobileS} {
     font-size: 13px;
-    color: #48a13e;
+    color: #78989f;
     line-height: 1.5rem;
     letter-spacing: 0.2rem;
     padding: 0 40px;
     font-family: var(---font-family);
     text-align: center;
     width: 100%;
-    margin-top: 9px;
+    margin-top: -10px;
   }
   @media ${device.mobileM} {
     font-size: 15px;

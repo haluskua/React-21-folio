@@ -53,7 +53,7 @@ export default function FrontCard() {
         <BottomContainer>
           <LogoDetails />
         </BottomContainer>
-        <TextAnimation />
+          <TextAnimation />
       </CardContainer>
     </CardWrapper>
   );
@@ -174,8 +174,8 @@ const LogoWrapper = styled.div`
 `;
 
 const MyLogo = styled(motion.div)`
-  z-index: 99;
   user-select: none;
+  z-index: 99;
   margin-top: 0em;
   position: absolute;
 `;
