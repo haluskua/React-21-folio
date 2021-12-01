@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../images/crest2.png";
+import Logo from "../../images/crest1.png";
 import styled from "styled-components";
 import { device } from "../MediaQuery/device";
 import SuperQuery from "@themgoncalves/super-query";
@@ -14,10 +14,10 @@ export default function LogoAnimation() {
 
 const AniLogo = styled.div`
   @media ${device.mobileS} {
-    height: 285px;
+    height: 360px;
   }
   @media ${device.mobileS} and (orientation: landscape) {
-    height: 120px;
+    height: 160px;
   }
   
   ${SuperQuery().minWidth.xs.and.landscape.css`
@@ -26,7 +26,10 @@ const AniLogo = styled.div`
   `};
 
   @media ${device.mobileM} {
-    height: 310px;
+    height: 400px;
+  }
+  @media ${device.mobileL} {
+    height: 426px;
   }
 
   ${SuperQuery().minWidth.sm.and.landscape.css`
@@ -44,11 +47,11 @@ const AniLogo = styled.div`
     height: 355px;
   }
   ${SuperQuery().minWidth.lg.and.landscape.css`
-    height: 348px !important;
+    height: 300px !important;
     
   `};
   @media ${device.laptopL} {
-    height: 444px !important;
+    height: 380px !important;
   }
 
   img {

@@ -18,7 +18,7 @@ import NoteIcon from "@material-ui/icons/Note";
 import WorkIcon from "@material-ui/icons/Work";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../images/crest2.png";
+import avatar from "../images/crest1.png";
 import { motion } from "framer-motion";
 import Footer from "../../src/components/Footer";
 import NameAnimation from "../components/3D/NameAnimate";
