@@ -15,7 +15,6 @@ export default function LogoAnimation() {
 const AniLogo = styled.div`
   @media ${device.mobileS} {
     height: 260px;
-    margin-top: -3rem;
   }
   @media ${device.mobileS} and (orientation: landscape) {
     height: 160px;
@@ -27,7 +26,7 @@ const AniLogo = styled.div`
   `};
 
   @media ${device.mobileM} {
-    height: 340px;
+    height: 326px;
   }
   @media ${device.mobileL} {
     height: 426px;

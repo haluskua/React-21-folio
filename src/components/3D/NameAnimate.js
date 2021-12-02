@@ -5,7 +5,7 @@ import SuperQuery from "@themgoncalves/super-query";
 import { device } from "../MediaQuery/device";
 
 export default function NameAnimation() {
-  const reactArray = "WEB+GRAPHICS".split("");
+  const reactArray = "WEB - DEVELOPER".split("");
 
   return (
     <React.Fragment>
@@ -13,7 +13,7 @@ export default function NameAnimation() {
         {reactArray.map((item, index) => (
           <span id="gradient__text" key={index}>{item}</span>
         ))}
-        <SmallText id="gradient__text">Developer & Designer</SmallText>
+        <SmallText id="gradient__text">& Graphics Designer</SmallText>
       </Wrapper>
       <Marginer direction="vertical" margin=".2rem" />
     </React.Fragment>
@@ -57,18 +57,19 @@ const Wrapper = styled.span`
   color: #f50057;
   text-transform: uppercase;
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   font-weight: 300;
   /* font-family: var(---font-family); */
   line-height: 1.6rem;
   width: 100%;
-  padding: 8px 62;
+  padding: 8px 22px;
   font-weight: 900;
   z-index: 999;
   /* background: #00000077; */
   
   @media ${device.mobileS} and (orientation: portrait) {
     padding: 8px 52px;
+    font-size: 1.2rem;
   }
 
   @media ${device.mobileS} and (orientation: landscape) {

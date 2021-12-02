@@ -31,11 +31,10 @@ export function LogoDetails(props) {
   return (
     <DetailsContainer>
       <Marginer direction="vertical" margin="0em" />
-      <Box component="div" className={classes.centerLL} ></Box>
+      <Box component="div" className={classes.centerLL} >
       <SmallText  >Omphalus Harkie Kua</SmallText>
-      <SpacedHorizontalContainer>
-        <MediumText>Frontend-Fullstack-UX\UI-DESIGN</MediumText>
-      </SpacedHorizontalContainer>
+      </Box>
+
       <Marginer direction="vertical" margin=".5em" />
       <Toolbar>
         <Link to="/background">
@@ -106,8 +105,8 @@ const MediumText = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 20px;
-  color: #84c141;
+  font-size: 17px;
+  color: #f5f6f9;
   font-weight: bold;
   letter-spacing: .1rem;
   line-height: 1.588rem;
@@ -126,7 +125,7 @@ const SmallText = styled.span`
     line-height: 1.5em;
   }
   @media ${device.mobileM} {
-    font-size: 22px;
+    font-size: 21px;
     line-height: 1.82rem;
   }
   //using both device and superQuery to create responsive code.
@@ -191,14 +190,18 @@ const useStyles = makeStyles((theme) => ({
     color: "#1d2744",
     borderRadius: "50%",
     cursor: "pointer",
-    margin: "5px",
+    margin: "9px",
     padding: "1px",
     border: "none",
+ 
   },
-
+  
   main_button: {
     padding: "0.48rem",
-    background:"#e3c5cf",
+    background:"#41555e",
+    "&:hover": {
+      boxShadow: "3px 3px 22px #005ba7, -3px -3px 6px #734b6a",
+    }
   },
   title: {
     color: "#69849f",
