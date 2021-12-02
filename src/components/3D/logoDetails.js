@@ -31,15 +31,15 @@ export function LogoDetails(props) {
   return (
     <DetailsContainer>
       <Marginer direction="vertical" margin="0em" />
-      <Box component="div" className={classes.centerLL}></Box>
-      <SmallText>Hi, I am Omphalus Harkie Kua</SmallText>
+      <Box component="div" className={classes.centerLL} ></Box>
+      <SmallText  >Omphalus Harkie Kua</SmallText>
       <SpacedHorizontalContainer>
-        <MediumText>Frontend-Fullstack-UX\UI-Design</MediumText>
+        <MediumText>Frontend-Fullstack-UX\UI-DESIGN</MediumText>
       </SpacedHorizontalContainer>
       <Marginer direction="vertical" margin=".5em" />
       <Toolbar>
         <Link to="/background">
-          <IconButton className={classes.main_button}>
+          <IconButton className={classes.main_button} >
             <motion.button
               className={classes.hamburger_lines}
               variants={buttonVariants}
@@ -68,21 +68,19 @@ const DetailsContainer = styled.div`
 
 const MediumText = styled.span`
   @media ${device.mobileS} {
-    font-size: 13px;
+    font-size: 13.5px;
     color: #f5f6f9;
     line-height: 1.5rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.05rem;
     padding: 0 40px;
-    font-family: "var(--font-family)";
-    font-style: italic;
+    font-family: var(--font-family);
     text-align: center;
     width: 100%;
-    margin-top: 9px;
+    margin-top: 0px;
   }
   @media ${device.mobileS} {
     font-size: 15px;
     padding: 0 1rem;
-    letter-spacing: 0.4rem;
   }
 
   @media ${device.mobileS} and (orientation: landscape) {
@@ -108,16 +106,17 @@ const MediumText = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 18px;
-  color: #bddcf9;
+  font-size: 20px;
+  color: #84c141;
   font-weight: bold;
-  letter-spacing: .03rem;
+  letter-spacing: .1rem;
   line-height: 1.588rem;
   text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
   font-family: var(--font-family);
 
   @media ${device.mobileS} {
-    font-size: 20px;
     line-height: 1.7rem;
   }
 
@@ -127,7 +126,7 @@ const SmallText = styled.span`
     line-height: 1.5em;
   }
   @media ${device.mobileM} {
-    font-size: 21.5px;
+    font-size: 22px;
     line-height: 1.82rem;
   }
   //using both device and superQuery to create responsive code.
@@ -199,7 +198,7 @@ const useStyles = makeStyles((theme) => ({
 
   main_button: {
     padding: "0.48rem",
-    background:" #033a6c",
+    background:"#e3c5cf",
   },
   title: {
     color: "#69849f",

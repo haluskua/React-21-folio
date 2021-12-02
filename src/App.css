@@ -12,3 +12,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+#bronze__text {
+  background: linear-gradient(89.97deg, #f49867 1.84%, #0d69bd 102.67%);;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

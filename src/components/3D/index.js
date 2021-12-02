@@ -152,7 +152,7 @@ const BottomContainer = styled.div`
   display: flex;
   flex: 1;
   padding: 0 0.5rem;
-  margin-bottom: -13rem;
+  margin-bottom: -1rem;
   @media ${device.mobileS} and (orientation: landscape) {
     margin-bottom: -3em;
   }

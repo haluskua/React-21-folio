@@ -5,15 +5,15 @@ import SuperQuery from "@themgoncalves/super-query";
 import { device } from "../MediaQuery/device";
 
 export default function NameAnimation() {
-  const reactArray = "WEB.&.GRAPHICS".split("");
+  const reactArray = "WEB+GRAPHICS".split("");
 
   return (
     <React.Fragment>
-      <Wrapper>
+      <Wrapper >
         {reactArray.map((item, index) => (
-          <span key={index}>{item}</span>
+          <span id="gradient__text" key={index}>{item}</span>
         ))}
-        <SmallText>Developer & Designer</SmallText>
+        <SmallText id="gradient__text">Developer & Designer</SmallText>
       </Wrapper>
       <Marginer direction="vertical" margin=".2rem" />
     </React.Fragment>
@@ -54,22 +54,25 @@ const Wrapper = styled.span`
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  color: #f2daa2;
+  color: #f50057;
   text-transform: uppercase;
-  letter-spacing: 0.035rem;
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 300;
-  padding: 3.2em 0 0 0;
-  font-family: var(---font-family);
+  /* font-family: var(---font-family); */
   line-height: 1.6rem;
   width: 100%;
-  padding: 1.8rem;
+  padding: 8px 62;
+  font-weight: 900;
   z-index: 999;
-  background: #00000057;
+  /* background: #00000077; */
+  
+  @media ${device.mobileS} and (orientation: portrait) {
+    padding: 8px 52px;
+  }
 
   @media ${device.mobileS} and (orientation: landscape) {
-    font-size: 0.7rem;
+    font-size: 1.17rem;
   }
   ${SuperQuery().minWidth.lg.and.landscape.css`
     margin-left: -0.5rem;
@@ -77,7 +80,9 @@ const Wrapper = styled.span`
   `};
 
   @media ${device.tablet} and (orientation: landscape) {
-    font-size: 1.117rem;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 3rem;
   }
 
   span {
@@ -137,16 +142,20 @@ const Wrapper = styled.span`
 `;
 
 const SmallText = styled.span`
-  font-size: 14.52px;
-  color: #9ca3a3;
+  font-size: 14px;
+  font-weight: normal;
+  color: #f50057;
   padding: 0 11px;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.07rem;
   text-align: center;
+
+  font-weight: 600;
+  font-family: var(--font-family);
   ${SuperQuery().minWidth.md.and.landscape.css`
     font-size: 15px;
     padding: 0 9px;
   `};
   ${SuperQuery().minWidth.lg.and.landscape.css`
-    font-size: 14.3px;
+    font-size: 18.3px;
   `};
 `;

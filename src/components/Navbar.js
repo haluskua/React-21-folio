@@ -18,10 +18,81 @@ import NoteIcon from "@material-ui/icons/Note";
 import WorkIcon from "@material-ui/icons/Work";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../images/crest1.png";
+import avatar from "../images/crest4.png";
 import { motion } from "framer-motion";
 import Footer from "../../src/components/Footer";
 import NameAnimation from "../components/3D/NameAnimate";
+
+
+
+// :::::::::::::::::::
+//--//component initiated
+
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
+  const classes = useStyles();
+
+  const sideList = () => (
+    <Box
+      className={classes.menuSliderContainer}
+      id="menuSliderContainer"
+      component="div"
+    >
+      <Avatar className={classes.avatar} src={avatar} alt="Ompa" />
+      <NameAnimation />
+      <Divider className={classes.divider_one} />
+      <List>
+        {menuItems.map((item, i) => (
+          <ListItem
+            variants={buttonVariants}
+            whileHover="hover"
+            button
+            key={i}
+            className={classes.listItem}
+            onClick={() => setOpen(false)}
+            component={Link}
+            to={item.listPath}
+          >
+            <ListItemIcon className={classes.listItem}>
+              {item.listIcon}
+            </ListItemIcon>
+            <ListItemText
+              primary={item.listText}
+              className={classes.textColor}
+            />
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
+
+  return (
+    <React.Fragment>
+      <Box component="nav" className={classes.navbar}>
+        <AppBar position="static" className={classes.appBar}>
+          <Toolbar>
+            <IconButton>
+              <motion.button
+                className={classes.hamburger_lines_coat}
+                onClick={() => setOpen(true)}
+                variants={buttonVariants}
+                whileHover="hover"
+              >
+                <MenuIcon className={classes.hamburger_lines} />
+              </motion.button>
+            </IconButton>
+          </Toolbar>
+        </AppBar>
+      </Box>
+      <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>
+        {sideList()}
+        <Footer />
+      </Drawer>
+    </React.Fragment>
+  );
+};
+
 
 // :::::::::::::::::::
 //--//styling
@@ -175,74 +246,6 @@ const buttonVariants = {
       yoyo: Infinity,
     },
   },
-};
-
-// :::::::::::::::::::
-//--//component initiated
-
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
-
-  const classes = useStyles();
-
-  const sideList = () => (
-    <Box
-      className={classes.menuSliderContainer}
-      id="menuSliderContainer"
-      component="div"
-    >
-      <Avatar className={classes.avatar} src={avatar} alt="Ompa" />
-      <NameAnimation />
-      <Divider className={classes.divider_one} />
-      <List>
-        {menuItems.map((item, i) => (
-          <ListItem
-            variants={buttonVariants}
-            whileHover="hover"
-            button
-            key={i}
-            className={classes.listItem}
-            onClick={() => setOpen(false)}
-            component={Link}
-            to={item.listPath}
-          >
-            <ListItemIcon className={classes.listItem}>
-              {item.listIcon}
-            </ListItemIcon>
-            <ListItemText
-              primary={item.listText}
-              className={classes.textColor}
-            />
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
-
-  return (
-    <React.Fragment>
-      <Box component="nav" className={classes.navbar}>
-        <AppBar position="static" className={classes.appBar}>
-          <Toolbar>
-            <IconButton>
-              <motion.button
-                className={classes.hamburger_lines_coat}
-                onClick={() => setOpen(true)}
-                variants={buttonVariants}
-                whileHover="hover"
-              >
-                <MenuIcon className={classes.hamburger_lines} />
-              </motion.button>
-            </IconButton>
-          </Toolbar>
-        </AppBar>
-      </Box>
-      <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>
-        {sideList()}
-        <Footer />
-      </Drawer>
-    </React.Fragment>
-  );
 };
 
 export default Navbar;
