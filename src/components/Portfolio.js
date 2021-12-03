@@ -10,12 +10,12 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-import project1 from "../images/crest4.png";
-import project2 from "../images/crest4.png";
-import project3 from "../images/crest4.png";
-import project4 from "../images/crest4.png";
-import project5 from "../images/crest4.png";
-import project6 from "../images/crest4.png";
+import project1 from "../images/crest5.png";
+import project2 from "../images/crest5.png";
+import project3 from "../images/crest5.png";
+import project4 from "../images/crest5.png";
+import project5 from "../images/crest5.png";
+import project6 from "../images/crest5.png";
 
 import ReadMore from "../components/ReadMore";
 
@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   cardContainer: {
-    maxWidth: "88%",
+    maxWidth: "80%",
     margin: "3rem auto",
     display: "flex",
     flexDirection: "column",
@@ -50,6 +50,9 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "3px 3px 6px #03162e, -3px -3px 6px #044179",
     background: "#031021",
     height: "auto",
+    [theme.breakpoints.up("sm")]: {
+      maxWidth: "88% ",
+    },
     [theme.breakpoints.up("md")]: {
       maxWidth: "71% ",
     },
@@ -96,12 +99,10 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "var(--font-family)",
     textTransform: "uppercase",
     fontWeight: "700",
-    padding: "0px 0 22px 0",
     textAlign: "center",
     [theme.breakpoints.up("md")]: {
       fontSize: "1.65rem",
       lineHeight: "1.55rem",
-      paddingTop: "3px",
     },
   },
   pro_text: {
@@ -113,7 +114,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     fontFamily: "var(--font-family)",
     letterSpacing: "0",
-    fontSize: "1.12rem",
+    fontSize: "14px",
     padding: "0 1rem",
     [theme.breakpoints.up("md")]: {
       fontSize: "1.1rem",

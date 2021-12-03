@@ -7,6 +7,7 @@ import TextAnimation from "./TextAnimations";
 import LogoAnimation from "./LogoAnimation";
 import { device } from "../MediaQuery/device";
 import NameAnimation from "./NameAnimate";
+import BcgArt from "../BcgArt";
 
 export default function FrontCard() {
   const x = useMotionValue(0);
@@ -53,13 +54,15 @@ export default function FrontCard() {
         <BottomContainer>
           <LogoDetails />
         </BottomContainer>
-          <TextAnimation />
+        <TextAnimation />
       </CardContainer>
+      <BcgArt />
     </CardWrapper>
   );
 }
 
 const CardWrapper = styled.div`
+  position: relative;
   width: 100%;
   perspective: 2000;
   display: flex;

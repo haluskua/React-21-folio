@@ -12,6 +12,7 @@ import particlesConfig from "./particlesConfig";
 
 import MediaCard from "./Card";
 import Particles from "react-particles-js";
+import BcgArt from "./BcgArt";
 
 const About = () => {
   const classes = useStyles();
@@ -19,6 +20,7 @@ const About = () => {
   return (
     <React.Fragment>
       <Box className={classes.boxed}>
+      <BcgArt />
       <div className={classes.particles_box}>
       <Particles height="100vh" width="100vw" params={particlesConfig} />
       </div>
@@ -52,6 +54,7 @@ const About = () => {
 
 const useStyles = makeStyles((theme) => ({
   boxed: {
+    position: "relative",
     display: "flex",
     height: "100%",
     width: "100%",

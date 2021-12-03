@@ -5,8 +5,11 @@ import Box from "@material-ui/core/Box";
 import DownloadButton from "./DownloadButton";
 import "../components/resume.css";
 
+import BcgArt from "./BcgArt";
+
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
+    position: "relative",
     padding: "0 0 1.2rem 0",
 
     [theme.breakpoints.up("sm")]: {
@@ -23,6 +26,8 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: "1.6rem",
     },
   },
+
+  
   timeLine: {
     display: "flex",
     justifyContent: "center",
@@ -47,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
       clear: "both",
     },
     [theme.breakpoints.up("sm")]: {
-      alignItems: "flex-end",
+      alignItems: "flex-center",
     },
     [theme.breakpoints.up("md")]: {
       alignItems: "center",
@@ -169,9 +174,10 @@ const useStyles = makeStyles((theme) => ({
   },
   subHeading: {
     fontSize: "1rem",
-    color: "rgb(147 150 253)",
+    color: "rgb(180 221 192)",
     padding: "19px 0 1px 0",
     lineHeight: "1.5rem",
+    fontWeight: 'bold',
     textShadow: "0px 0px rgb(34 16 18)",
     textAlign: "left",
     [theme.breakpoints.up("md")]: {
@@ -218,6 +224,7 @@ const Resume = () => {
   const classes = useStyles();
   return (
     <Box component="header" className={classes.mainContainer}>
+    <BcgArt />
       <Typography
         variant="h4"
         align="center"
