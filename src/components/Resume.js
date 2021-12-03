@@ -27,7 +27,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
-  
   timeLine: {
     display: "flex",
     justifyContent: "center",
@@ -74,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     margin: "2rem",
     clear: "both",
-    background: "#031021",
+    background: "#03102185",
     marginTop: "3.4px",
     borderLeft: "1px solid #bda55d",
     borderRadius: "3rem 1rem 4rem 1rem",
@@ -174,10 +173,11 @@ const useStyles = makeStyles((theme) => ({
   },
   subHeading: {
     fontSize: "1rem",
-    padding: "19px 0 1px 0",
+    padding: "9px 0 1px 0",
     lineHeight: "1.5rem",
-    color: "#a97b27",
-    fontWeight: 'bold',
+    color: "#a1b9b1",
+    textTransform: "uppercase",
+    fontWeight: "bold",
     textAlign: "left",
     [theme.breakpoints.up("md")]: {
       fontSize: "1.14rem",
@@ -186,12 +186,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   subtitle1: {
-    color: "#b7e4f5",
-    fontSize: "1.15rem",
+    fontSize: "1.25rem",
     lineHeight: "1.41rem",
     fontFamily: "var(---font-family)",
-    padding: "0px 0 22px 0",
+    fontWeight: "bold",
+    padding: "5px 0 5px 0",
     textAlign: "left",
+
     [theme.breakpoints.up("md")]: {
       textAlign: "center",
       fontSize: "1.65rem",
@@ -200,7 +201,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   body1: {
-    color: "rgb(161 161 161)",
+    color: "rgb(131 179 157)",
     textAlign: "left",
     width: "100%",
     display: "flex",
@@ -223,12 +224,12 @@ const Resume = () => {
   const classes = useStyles();
   return (
     <Box component="header" className={classes.mainContainer}>
-    <BcgArt />
+      <BcgArt />
       <Typography
         variant="h4"
         align="center"
         className={classes.heading}
-        id="gradient__text"
+        id="bronze__text"
       >
         Experiences
       </Typography>
@@ -241,6 +242,14 @@ const Resume = () => {
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+            id="bronze__text"
+          >
+            Freelancer
+          </Typography>
+          <Typography
             variant="h5"
             align="center"
             className={classes.subHeading}
@@ -248,14 +257,6 @@ const Resume = () => {
             Web & Grafix Designer
           </Typography>
 
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-            id="gradient__text"
-          >
-            Freelancer
-          </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
             I am currently a Freelance web app developer and designer.
           </Typography>
@@ -268,6 +269,15 @@ const Resume = () => {
           2019
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
+        
+        <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+            id="bronze__text"
+          >
+            App Development - Bootcamp
+          </Typography>
           <Typography
             variant="h5"
             align="center"
@@ -276,14 +286,6 @@ const Resume = () => {
             Enspiral Dev Academy
           </Typography>
 
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-            id="gradient__text"
-          >
-            App Development - Bootcamp
-          </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
             Certificate in Full stack web development. Coded more than 700+
             hours with ReactJs, API, NodeJs and Knex database with
@@ -299,20 +301,21 @@ const Resume = () => {
           2016
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
+          
+          <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+            id="bronze__text"
+          >
+            Diploma in Web Design
+          </Typography>
           <Typography
             variant="h5"
             align="center"
             className={classes.subHeading}
           >
             Yoobee School of Design
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-            id="gradient__text"
-          >
-            Diploma in Web Design
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
             Introduction to Web Design. Html, css, Javascript, Php, Jquery,
@@ -326,20 +329,21 @@ const Resume = () => {
           2014
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
+          
+          <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+            id="bronze__text"
+          >
+            Bachelor in Creative Technology
+          </Typography>
           <Typography
             variant="h5"
             align="center"
             className={classes.subHeading}
           >
             Wellington Institute of Technology
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-            id="gradient__text"
-          >
-            Bachelor in Creative Technology
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
             Graduated with a major in Digital Media. A good lesson learned was
@@ -353,20 +357,21 @@ const Resume = () => {
           2011
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-            
-          >
-            Wellington Institute of Technology
-          </Typography>
+          
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
+            id="bronze__text"
           >
             Bachelor in Exercise Science
+          </Typography>
+          <Typography
+            variant="h5"
+            align="center"
+            className={classes.subHeading}
+          >
+            Wellington Institute of Technology
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
             Personal Trainer: Sports Science
@@ -379,20 +384,21 @@ const Resume = () => {
           2008
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
+          
+          <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+            id="bronze__text"
+          >
+            Semi-Pro Rugby League Player
+          </Typography>
           <Typography
             variant="h5"
             align="center"
             className={classes.subHeading}
           >
             Canberra Raiders Reserve Grade
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-            id="gradient__text"
-          >
-            Semi-Pro Rugby League Player
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
             Contracted to play Rugby League for the Queenbean Roos in Canberra.
