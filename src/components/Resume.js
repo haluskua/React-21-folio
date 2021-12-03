@@ -174,11 +174,10 @@ const useStyles = makeStyles((theme) => ({
   },
   subHeading: {
     fontSize: "1rem",
-    color: "rgb(180 221 192)",
     padding: "19px 0 1px 0",
     lineHeight: "1.5rem",
+    color: "#a97b27",
     fontWeight: 'bold',
-    textShadow: "0px 0px rgb(34 16 18)",
     textAlign: "left",
     [theme.breakpoints.up("md")]: {
       fontSize: "1.14rem",
@@ -201,7 +200,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   body1: {
-    color: "rgb(174 202 233)",
+    color: "rgb(161 161 161)",
     textAlign: "left",
     width: "100%",
     display: "flex",
@@ -358,6 +357,7 @@ const Resume = () => {
             variant="h5"
             align="center"
             className={classes.subHeading}
+            
           >
             Wellington Institute of Technology
           </Typography>
@@ -365,7 +365,6 @@ const Resume = () => {
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
-            id="gradient__text"
           >
             Bachelor in Exercise Science
           </Typography>
