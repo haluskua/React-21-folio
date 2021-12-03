@@ -24,6 +24,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("xl")]: {
       padding: "0rem 22rem",
       paddingBottom: "1.6rem",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "flex-end",
+      alignItems: "flex-end",
     },
   },
 
@@ -106,25 +110,26 @@ const useStyles = makeStyles((theme) => ({
         right: "48.9%",
         transform: "rotate(135deg)",
       },
-      [theme.breakpoints.up("lg")]: {
-        width: "80%",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "flex-start",
-      },
-
-      // "&:nth-of-type(2n)": {
-      //   float: "right",
-      //   margin: "2.2rem 0",
-      //   borderColor: "tan",
-      // },
-      // "&:nth-of-type(2n):before": {
-      //   right: "auto",
-      //   left: "-0.625rem",
-      //   margin: "2.2rem 0",
-      //   borderColor: "transparent transparent #bda55d #bda55d",
-      // },
     },
+    [theme.breakpoints.up("lg")]: {
+      width: "50%",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      padding: "32px",
+    },
+
+    // "&:nth-of-type(2n)": {
+    //   float: "right",
+    //   margin: "2.2rem 0",
+    //   borderColor: "tan",
+    // },
+    // "&:nth-of-type(2n):before": {
+    //   right: "auto",
+    //   left: "-0.625rem",
+    //   margin: "2.2rem 0",
+    //   borderColor: "transparent transparent #bda55d #bda55d",
+    // },
   },
   timeLineYear: {
     textAlign: "center",
@@ -214,8 +219,9 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "15.5px",
     },
     [theme.breakpoints.up("lg")]: {
-      lineHeight: "1.68rem",
+      lineHeight: "1.55rem",
       justifyContent: "flex-start",
+      fontSize: "18.5px",
     },
   },
 }));
@@ -269,8 +275,7 @@ const Resume = () => {
           2019
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
-        
-        <Typography
+          <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
@@ -301,7 +306,6 @@ const Resume = () => {
           2016
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
-          
           <Typography
             variant="subtitle1"
             align="center"
@@ -329,7 +333,6 @@ const Resume = () => {
           2014
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
-          
           <Typography
             variant="subtitle1"
             align="center"
@@ -357,7 +360,6 @@ const Resume = () => {
           2011
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
-          
           <Typography
             variant="subtitle1"
             align="center"
@@ -384,7 +386,6 @@ const Resume = () => {
           2008
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
-          
           <Typography
             variant="subtitle1"
             align="center"
