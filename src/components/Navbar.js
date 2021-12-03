@@ -22,8 +22,6 @@ import avatar from "../images/crest5.png";
 import { motion } from "framer-motion";
 import Footer from "../../src/components/Footer";
 import NameAnimation from "../components/3D/NameAnimate";
-import BcgArt from "./BcgArt";
-import { mergeClasses } from "@material-ui/styles";
 
 
 

@@ -58,7 +58,6 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     height: "100%",
     width: "100%",
-    position: "relative",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "space-between",

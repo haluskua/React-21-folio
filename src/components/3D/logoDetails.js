@@ -65,44 +65,44 @@ const DetailsContainer = styled.div`
   padding: 0em;
 `;
 
-const MediumText = styled.span`
-  @media ${device.mobileS} {
-    font-size: 13.5px;
-    color: #f5f6f9;
-    line-height: 1.5rem;
-    letter-spacing: 0.05rem;
-    padding: 0 40px;
-    font-family: var(--font-family);
-    text-align: center;
-    width: 100%;
-    margin-top: 0px;
-  }
-  @media ${device.mobileS} {
-    font-size: 15px;
-    padding: 0 1rem;
-  }
+// const MediumText = styled.span`
+//   @media ${device.mobileS} {
+//     font-size: 13.5px;
+//     color: #f5f6f9;
+//     line-height: 1.5rem;
+//     letter-spacing: 0.05rem;
+//     padding: 0 40px;
+//     font-family: var(--font-family);
+//     text-align: center;
+//     width: 100%;
+//     margin-top: 0px;
+//   }
+//   @media ${device.mobileS} {
+//     font-size: 15px;
+//     padding: 0 1rem;
+//   }
 
-  @media ${device.mobileS} and (orientation: landscape) {
-    font-size: 11px;
-  }
-  @media ${device.mobileM} and (orientation: landscape) {
-    font-size: 12px;
-    margin: 0;
-  }
-  @media ${device.tablet} {
-    font-size: 18px;
-    line-height: 2.3rem;
-  }
-  @media ${device.laptop} {
-    line-height: 1.72rem;
-    padding: 0 3rem;
-    margin-top: 0;
-  }
-  @media ${device.laptopL} {
-    font-size: 16px;
-    padding: 0 7.2rem;
-  }
-`;
+//   @media ${device.mobileS} and (orientation: landscape) {
+//     font-size: 11px;
+//   }
+//   @media ${device.mobileM} and (orientation: landscape) {
+//     font-size: 12px;
+//     margin: 0;
+//   }
+//   @media ${device.tablet} {
+//     font-size: 18px;
+//     line-height: 2.3rem;
+//   }
+//   @media ${device.laptop} {
+//     line-height: 1.72rem;
+//     padding: 0 3rem;
+//     margin-top: 0;
+//   }
+//   @media ${device.laptopL} {
+//     font-size: 16px;
+//     padding: 0 7.2rem;
+//   }
+// `;
 
 const SmallText = styled.span`
   font-size: 17px;
@@ -165,12 +165,12 @@ const SmallText = styled.span`
   }
 `;
 
-const SpacedHorizontalContainer = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-`;
+// const SpacedHorizontalContainer = styled.div`
+//   width: 100%;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: flex-end;
+// `;
 
 const useStyles = makeStyles((theme) => ({
   centerLL: {
