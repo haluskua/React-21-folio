@@ -106,6 +106,7 @@ const useStyles = makeStyles((theme) => ({
     margin: 0,
     position: "fixed",
     width: "auto",
+    borderRadius: "2rem 0",
   },
   hamburger: {
     color: "tomato",

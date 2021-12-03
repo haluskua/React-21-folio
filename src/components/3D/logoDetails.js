@@ -106,7 +106,7 @@ const DetailsContainer = styled.div`
 
 const SmallText = styled.span`
   font-size: 17px;
-  color: #f5f6f9;
+  color: #9086c9;
   font-weight: bold;
   letter-spacing: .1rem;
   line-height: 1.588rem;
@@ -125,7 +125,7 @@ const SmallText = styled.span`
     line-height: 1.5em;
   }
   @media ${device.mobileM} {
-    font-size: 21px;
+    font-size: 14px;
     line-height: 1.82rem;
   }
   //using both device and superQuery to create responsive code.
@@ -211,7 +211,6 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "200",
     letterSpacing: ".43px",
     marginLeft: "0.61rem",
-    fontStyle: "italic",
     fontFamily: "var(--font-family)",
     lineHeight: "1.5rem",
     [theme.breakpoints.up("xs")]: {
@@ -229,14 +228,14 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up("md")]: {
-      fontSize: "16px",
+      fontSize: "22px",
     },
 
     [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
       fontSize: "15px",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "14px",
+      fontSize: "22px",
     },
   },
 }));

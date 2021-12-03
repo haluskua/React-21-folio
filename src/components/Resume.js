@@ -187,7 +187,7 @@ const useStyles = makeStyles((theme) => ({
   },
   subtitle1: {
     color: "#b7e4f5",
-    fontSize: "1.35rem",
+    fontSize: "1.15rem",
     lineHeight: "1.41rem",
     fontFamily: "var(---font-family)",
     padding: "0px 0 22px 0",

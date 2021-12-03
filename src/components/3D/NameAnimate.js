@@ -5,7 +5,7 @@ import SuperQuery from "@themgoncalves/super-query";
 import { device } from "../MediaQuery/device";
 
 export default function NameAnimation() {
-  const reactArray = "WEB - DEVELOPER".split("");
+  const reactArray = "WEB  DEVELOPER".split("");
 
   return (
     <React.Fragment>
@@ -57,23 +57,26 @@ const Wrapper = styled.span`
   color: #f50057;
   text-transform: uppercase;
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 1.16rem;
+  padding: 8px 30px;
   font-weight: 300;
   /* font-family: var(---font-family); */
   line-height: 1.6rem;
   width: 100%;
-  padding: 8px 22px;
   font-weight: 900;
   z-index: 999;
   /* background: #00000077; */
   
-  @media ${device.mobileS} and (orientation: portrait) {
-    padding: 8px 52px;
-    font-size: 1.2rem;
-  }
 
-  @media ${device.mobileS} and (orientation: landscape) {
-    font-size: 1.17rem;
+   @media ${device.mobileS} and (orientation: portrait) {
+    padding: 8px 60px;
+    font-size: 1.28rem;
+  } 
+
+  @media ${device.mobileM} and (orientation: portrait) {
+    font-size: 1.43rem;
+    padding: 8px 51px;
+    line-height: 2.2rem;
   }
   ${SuperQuery().minWidth.lg.and.landscape.css`
     margin-left: -0.5rem;
@@ -84,6 +87,10 @@ const Wrapper = styled.span`
     font-size: 3rem;
     font-weight: 900;
     line-height: 3rem;
+  }
+  @media ${device.laptop} and (orientation: portrait) {
+    padding: 8px 95px;
+    
   }
 
   span {
@@ -152,11 +159,16 @@ const SmallText = styled.span`
 
   font-weight: 600;
   font-family: var(--font-family);
+  ${SuperQuery().minWidth.md.and.portrait.css`
+    font-size: 20px;
+    padding: 0 9px;
+    line-height: 3.5rem;
+  `};
   ${SuperQuery().minWidth.md.and.landscape.css`
     font-size: 15px;
     padding: 0 9px;
   `};
-  ${SuperQuery().minWidth.lg.and.landscape.css`
-    font-size: 18.3px;
+  ${SuperQuery().minWidth.lg.and.portrait.css`
+    font-size: 23.3px;
   `};
 `;
