@@ -7,6 +7,7 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import ReadMore from "./ReadMore";
+import Animista, {AnimistaTypes} from 'react-animista';
 
 
 // Data
@@ -31,6 +32,14 @@ export default function MediaCard() {
 
   return (
     <Card className={classes.root}>
+     <Animista
+          type={AnimistaTypes.SCALE_UP_BR}
+          duration="0.851s"
+          style={{
+            width: '100%',
+            height: "auto",
+          }}
+        >
       {backgrounds.map((text, i) => (
         <Grid item xs={12} sm={8} md={12}  key={i}>
           <Card className={classes.cardContainer}>
@@ -54,6 +63,7 @@ export default function MediaCard() {
           </Card>
         </Grid>
       ))}
+      </Animista>
     </Card>
   );
 }

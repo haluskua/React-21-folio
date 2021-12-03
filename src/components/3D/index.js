@@ -17,6 +17,7 @@ export default function FrontCard() {
 
   return (
     <CardWrapper>
+    <BcgArt />
       <CardContainer
         style={{ x, y, rotateX, rotateY, z: 100 }}
         drag
@@ -54,15 +55,14 @@ export default function FrontCard() {
         <BottomContainer>
           <LogoDetails />
         </BottomContainer>
-        <TextAnimation />
+          <TextAnimation />
       </CardContainer>
-      <BcgArt />
     </CardWrapper>
   );
 }
 
 const CardWrapper = styled.div`
-  position: relative;
+position: relative;
   width: 100%;
   perspective: 2000;
   display: flex;

@@ -5,6 +5,7 @@ import Box from "@material-ui/core/Box";
 import DownloadButton from "./DownloadButton";
 import "../components/resume.css";
 
+import Animista, {AnimistaTypes} from 'react-animista';
 import BcgArt from "./BcgArt";
 
 const useStyles = makeStyles((theme) => ({
@@ -231,6 +232,14 @@ const Resume = () => {
   return (
     <Box component="header" className={classes.mainContainer}>
       <BcgArt />
+      <Animista
+          type={AnimistaTypes.SCALE_UP_BR}
+          duration="0.851s"
+          style={{
+            width: '100%',
+            height: "auto",
+          }}
+        >
       <Typography
         variant="h4"
         align="center"
@@ -406,6 +415,7 @@ const Resume = () => {
           </Typography>
         </Box>
       </Box>
+      </Animista>
       <DownloadButton />
     </Box>
   );

@@ -10,6 +10,8 @@ import Send from "@material-ui/icons/Send";
 import Particles from "react-particles-js";
 import particlesConfig from "./particlesConfig";
 
+import Animista, {AnimistaTypes} from 'react-animista';
+
 const Contact = () => {
   const classes = useStyles();
 
@@ -39,7 +41,16 @@ const Contact = () => {
             Thanks for your message!{" "}
           </p>
         )}
+      
         <Grid container justify="center">
+        <Animista
+          type={AnimistaTypes.SCALE_UP_BR}
+          duration="0.851s"
+          style={{
+            width: '100%',
+            height: "auto",
+          }}
+        >
           <Box
             component="form"
             className={classes.formStyle}
@@ -105,6 +116,7 @@ const Contact = () => {
               Contact Me
             </Button>
           </Box>
+        </Animista>
         </Grid>
       </Box>
     </React.Fragment>

@@ -2,15 +2,28 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import { device } from "../MediaQuery/device";
 
+import Animista, { AnimistaTypes } from "react-animista";
+
 export default function TextAnimation() {
   const reactArray = "Wagai weh,".split("");
 
   return (
     <React.Fragment>
       <Wrapper>
-        {reactArray.map((item, index) => (
-          <span key={index}>{item}</span>
-        ))}
+        <Animista
+          type={AnimistaTypes.SCALE_UP_TOP}
+          duration="10s"
+          
+          style={{
+            width: '100%',
+            height: "auto",
+            backgroundColor: "#041020",
+          }}
+        >
+          {reactArray.map((item, index) => (
+            <span key={index}>{item}</span>
+          ))}
+        </Animista>
       </Wrapper>
       {/* <SmallText> Web Applications </SmallText> */}
     </React.Fragment>

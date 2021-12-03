@@ -18,6 +18,7 @@ import project5 from "../images/crest5.png";
 import project6 from "../images/crest5.png";
 
 import ReadMore from "../components/ReadMore";
+import Animista, { AnimistaTypes } from "react-animista";
 
 // import {useState } from 'react';
 
@@ -190,69 +191,76 @@ const projects = [
   },
 ];
 
-
 const Portfolio = () => {
   const classes = useStyles();
 
   return (
     <Box component="div" className={classes.mainContainer}>
-      <Grid container justify="center">
-        {/* Projects */}
-        {projects.map((project, i) => (
-          <Grid item xs={12} sm={8} md={4} key={i}>
-            <Card className={classes.cardContainer}>
-              <CardActionArea>
-                <Box component="div" className={classes.imgBox}>
-                  <CardMedia
-                    component="img"
-                    alt="Project 1"
-                    height="auto"
-                    image={project.image}
-                    className={classes.imgItem}
-                  ></CardMedia>
-                </Box>
-                <CardContent>
-                  <Typography
-                    variant="h5"
-                    gutterBottom
-                    className={classes.projectName}
+      <Animista
+        type={AnimistaTypes.SCALE_UP_BR}
+        duration="0.851s"
+        style={{
+          width: "100%",
+          height: "auto",
+        }}
+      >
+        <Grid container justify="center">
+          {/* Projects */}
+          {projects.map((project, i) => (
+            <Grid item xs={12} sm={8} md={4} key={i}>
+              <Card className={classes.cardContainer}>
+                <CardActionArea>
+                  <Box component="div" className={classes.imgBox}>
+                    <CardMedia
+                      component="img"
+                      alt="Project 1"
+                      height="auto"
+                      image={project.image}
+                      className={classes.imgItem}
+                    ></CardMedia>
+                  </Box>
+                  <CardContent>
+                    <Typography
+                      variant="h5"
+                      gutterBottom
+                      className={classes.projectName}
+                    >
+                      {project.name}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="textSecondary"
+                      className={classes.pro_text}
+                    >
+                      <ReadMore>{project.description}</ReadMore>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions className={classes.buttonContainer}>
+                  <Button
+                    className={classes.github}
+                    size="small"
+                    color="primary"
+                    target="_blank"
+                    href={project.github}
                   >
-                    {project.name}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    className={classes.pro_text}
+                    Code+Github
+                  </Button>
+                  <Button
+                    className={classes.boldTypo}
+                    size="small"
+                    color="primary"
+                    href={project.site}
+                    target="_blank"
                   >
-                    <ReadMore>{project.description}</ReadMore>
-                    
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions className={classes.buttonContainer}>
-                <Button
-                  className={classes.github}
-                  size="small"
-                  color="primary"
-                  target="_blank"
-                  href={project.github}
-                >
-                  Code+Github
-                </Button>
-                <Button
-                  className={classes.boldTypo}
-                  size="small"
-                  color="primary"
-                  href={project.site}
-                  target="_blank"
-                >
-                  Live Demo
-                </Button>
-              </CardActions>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
+                    Live Demo
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Animista>
     </Box>
   );
 };

@@ -11,8 +11,9 @@ import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import About from "./About";
 import TitlebarImageList from "./Gallery";
-
 import Contact from "./Contact";
+
+
 
 // Import Swiper styles
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
