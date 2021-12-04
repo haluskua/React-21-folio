@@ -65,7 +65,7 @@ const Wrapper = styled.span`
   width: 100%;
   font-weight: 900;
   z-index: 999;
-  /* background: #00000077; */
+  background: #00000077;
   
 
    @media ${device.mobileS} and (orientation: portrait) {
@@ -75,7 +75,7 @@ const Wrapper = styled.span`
 
   @media ${device.mobileM} and (orientation: portrait) {
     font-size: 1.43rem;
-    padding: 8px 51px;
+    padding: 8px 15px;
     line-height: 2.2rem;
   }
   ${SuperQuery().minWidth.lg.and.landscape.css`
@@ -84,7 +84,7 @@ const Wrapper = styled.span`
   `};
 
   @media ${device.tablet} and (orientation: landscape) {
-    font-size: 3rem;
+    font-size: 1.33rem;
     font-weight: 900;
     line-height: 3rem;
   }
@@ -169,6 +169,6 @@ const SmallText = styled.span`
     padding: 0 9px;
   `};
   ${SuperQuery().minWidth.lg.and.portrait.css`
-    font-size: 23.3px;
+    font-size: 18.3px;
   `};
 `;

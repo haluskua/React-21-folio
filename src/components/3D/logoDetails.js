@@ -106,7 +106,7 @@ const DetailsContainer = styled.div`
 
 const SmallText = styled.span`
   font-size: 17px;
-  color: #9086c9;
+  color: #c0fff9;
   font-weight: bold;
   letter-spacing: .1rem;
   line-height: 1.588rem;
