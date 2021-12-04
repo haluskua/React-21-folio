@@ -248,6 +248,7 @@ const Resume = () => {
       >
         Experiences
       </Typography>
+      
       <Box component="div" className={classes.timeLine}>
         <Typography
           variant="h2"
@@ -255,6 +256,14 @@ const Resume = () => {
         >
           2021
         </Typography>
+        <Animista
+              type={AnimistaTypes.SCALE_UP_BR}
+              duration="0.851s"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            >
         <Box component="div" className={classes.timeLineItem}>
           <Typography
             variant="subtitle1"
@@ -276,6 +285,7 @@ const Resume = () => {
             I am currently a Freelance web app developer and designer.
           </Typography>
         </Box>
+        </Animista>
 
         <Typography
           variant="h2"
@@ -283,6 +293,14 @@ const Resume = () => {
         >
           2019
         </Typography>
+        <Animista
+              type={AnimistaTypes.SCALE_UP_BR}
+              duration="0.951s"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            >
         <Box component="div" className={classes.timeLineItem}>
           <Typography
             variant="subtitle1"
@@ -308,12 +326,21 @@ const Resume = () => {
             projects.
           </Typography>
         </Box>
+        </Animista>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
           2016
         </Typography>
+        <Animista
+              type={AnimistaTypes.SCALE_UP_BR}
+              duration="1s"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            >
         <Box component="div" className={classes.timeLineItem}>
           <Typography
             variant="subtitle1"
@@ -335,12 +362,21 @@ const Resume = () => {
             WordPress (CMS) and version control with Git & github.
           </Typography>
         </Box>
+        </Animista>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
           2014
         </Typography>
+        <Animista
+              type={AnimistaTypes.SCALE_UP_BR}
+              duration="1.15s"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            >
         <Box component="div" className={classes.timeLineItem}>
           <Typography
             variant="subtitle1"
@@ -362,12 +398,21 @@ const Resume = () => {
             to do plenty of background research before starting any project.
           </Typography>
         </Box>
+        </Animista>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
           2011
         </Typography>
+        <Animista
+              type={AnimistaTypes.SCALE_UP_BR}
+              duration="1.2s"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            >
         <Box component="div" className={classes.timeLineItem}>
           <Typography
             variant="subtitle1"
@@ -388,12 +433,21 @@ const Resume = () => {
             Personal Trainer: Sports Science
           </Typography>
         </Box>
+        </Animista>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
           2008
         </Typography>
+        <Animista
+              type={AnimistaTypes.SCALE_UP_BR}
+              duration="1.3s"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            >
         <Box component="div" className={classes.timeLineItem}>
           <Typography
             variant="subtitle1"
@@ -414,6 +468,7 @@ const Resume = () => {
             Contracted to play Rugby League for the Queenbean Roos in Canberra.
           </Typography>
         </Box>
+        </Animista>
       </Box>
       </Animista>
       <DownloadButton />

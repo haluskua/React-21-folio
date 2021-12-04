@@ -10,7 +10,7 @@ import Send from "@material-ui/icons/Send";
 import Particles from "react-particles-js";
 import particlesConfig from "./particlesConfig";
 
-import Animista, {AnimistaTypes} from 'react-animista';
+import Animista, { AnimistaTypes } from "react-animista";
 
 const Contact = () => {
   const classes = useStyles();
@@ -41,16 +41,8 @@ const Contact = () => {
             Thanks for your message!{" "}
           </p>
         )}
-      
+
         <Grid container justify="center">
-        <Animista
-          type={AnimistaTypes.SCALE_UP_BR}
-          duration="0.851s"
-          style={{
-            width: '100%',
-            height: "auto",
-          }}
-        >
           <Box
             component="form"
             className={classes.formStyle}
@@ -106,17 +98,25 @@ const Contact = () => {
               inputProps={{ className: classes.input }}
             />
             <div data-netlify-recaptcha="true"></div>
-            <Button
-              halfWidth={true}
-              // variant="outlined"
-              type="submit"
-              endIcon={<Send />}
-              className={classes.button}
+            <Animista
+              type={AnimistaTypes.SCALE_UP_BR}
+              duration="0.851s"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
             >
-              Contact Me
-            </Button>
+              <Button
+                halfWidth={true}
+                // variant="outlined"
+                type="submit"
+                endIcon={<Send />}
+                className={classes.button}
+              >
+                Contact Me
+              </Button>
+            </Animista>
           </Box>
-        </Animista>
         </Grid>
       </Box>
     </React.Fragment>
@@ -125,7 +125,7 @@ const Contact = () => {
 
 const useStyles = makeStyles((theme) => ({
   contactContainer: {
-   //
+    //
   },
 
   formStyle: {
@@ -137,7 +137,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "2rem",
     boxShadow: "3px 3px 22px #005ba7, -3px -3px 6px #734b6a",
     borderRadius: "3rem 0",
-   
+
     [`${theme.breakpoints.up("lg")} `]: {
       width: "50%",
     },
