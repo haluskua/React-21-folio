@@ -23,6 +23,8 @@ import { motion } from "framer-motion";
 import Footer from "../../src/components/Footer";
 import NameAnimation from "../components/3D/NameAnimate";
 
+import Animista, {AnimistaTypes} from 'react-animista';
+
 
 
 // :::::::::::::::::::
@@ -44,6 +46,14 @@ const Navbar = () => {
       <Divider className={classes.divider_one} />
       <List>
         {menuItems.map((item, i) => (
+      <Animista
+              type={AnimistaTypes.SCALE_UP_BR}
+              duration="0.851s"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            >
           <ListItem
             variants={buttonVariants}
             whileHover="hover"
@@ -62,6 +72,7 @@ const Navbar = () => {
               className={classes.textColor}
             />
           </ListItem>
+        </Animista>
         ))}
       </List>
     </Box>
@@ -194,8 +205,8 @@ const useStyles = makeStyles((theme) => ({
     "& span": {
       fontSize: "1rem",
       textTransform: "uppercase",
-      color: "#85b9f9",
-      fontFamily: "Nunito Sans",
+      color: "#eacfbe",
+      fontFamily: "var(--font-family)",
       letterSpacing: ".0152em",
       lineHeight: "1.5rem",
       [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
