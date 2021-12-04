@@ -141,9 +141,14 @@ $desktop: 2560px;
     border: none;
     box-shadow: inset 2px 2px 0px #333738, inset -3px -3px 3px #0e384c !important;
     padding: 5px 28px;
+    margin: 15px 0;
+    @media screen and (min-width: $mobileS) and (orientation: portrait) {
+      padding: 3px 27px ;
+      margin: 6.25px !important;
+    }
     @media screen and (min-width: $mobileS) and (orientation: landscape) {
-      padding: 5px 27px;
-      margin: 9.25px !important;
+      padding: 5px 27px !important;
+      margin: 4.25px !important;
     }
     @media screen and (min-width: $tablet) {
       padding: 13.5px 63px;
