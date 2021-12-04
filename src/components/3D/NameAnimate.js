@@ -61,7 +61,6 @@ const Wrapper = styled.span`
   padding: 8px 30px;
   font-weight: 300;
   /* font-family: var(---font-family); */
-  line-height: 1.6rem;
   width: 100%;
   font-weight: 900;
   z-index: 999;
@@ -69,14 +68,14 @@ const Wrapper = styled.span`
   
 
    @media ${device.mobileS} and (orientation: portrait) {
-    padding: 8px 60px;
+    padding: 8px 37px;
     font-size: 1.28rem;
   } 
 
   @media ${device.mobileM} and (orientation: portrait) {
     font-size: 1.43rem;
-    padding: 8px 15px;
-    line-height: 2.2rem;
+    padding: 8px 50px;
+    line-height: 1.72rem;
   }
   ${SuperQuery().minWidth.lg.and.landscape.css`
     margin-left: -0.5rem;
