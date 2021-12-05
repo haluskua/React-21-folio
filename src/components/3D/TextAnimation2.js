@@ -47,7 +47,7 @@ const Wrapper = styled.span`
   z-index: 10;
   font-size: 15.25px;
   font-weight: 600;
-  font-family: "Padauk";
+  font-family: var(--font-family);
   span {
     display: inline-block;
     opacity: 0;

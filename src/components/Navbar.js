@@ -23,9 +23,7 @@ import { motion } from "framer-motion";
 import Footer from "../../src/components/Footer";
 import NameAnimation from "../components/3D/NameAnimate";
 
-import Animista, {AnimistaTypes} from 'react-animista';
-
-
+import Animista, { AnimistaTypes } from "react-animista";
 
 // :::::::::::::::::::
 //--//component initiated
@@ -46,33 +44,33 @@ const Navbar = () => {
       <Divider className={classes.divider_one} />
       <List>
         {menuItems.map((item, i) => (
-      <Animista
-              type={AnimistaTypes.SCALE_UP_BR}
-              duration="0.851s"
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            >
-          <ListItem
-            variants={buttonVariants}
-            whileHover="hover"
-            button
-            key={i}
-            className={classes.listItem}
-            onClick={() => setOpen(false)}
-            component={Link}
-            to={item.listPath}
+          <Animista
+            type={AnimistaTypes.SCALE_UP_BR}
+            duration="0.851s"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
           >
-            {/* <ListItemIcon className={classes.listItem}>
+            <ListItem
+              variants={buttonVariants}
+              whileHover="hover"
+              button
+              key={i}
+              className={classes.listItem}
+              onClick={() => setOpen(false)}
+              component={Link}
+              to={item.listPath}
+            >
+              {/* <ListItemIcon className={classes.listItem}>
               {item.listIcon}
             </ListItemIcon> */}
-            <ListItemText
-              primary={item.listText}
-              className={classes.textColor}
-            />
-          </ListItem>
-        </Animista>
+              <ListItemText
+                primary={item.listText}
+                className={classes.textColor}
+              />
+            </ListItem>
+          </Animista>
         ))}
       </List>
     </Box>
@@ -104,7 +102,6 @@ const Navbar = () => {
   );
 };
 
-
 // :::::::::::::::::::
 //--//styling
 const useStyles = makeStyles((theme) => ({
@@ -113,7 +110,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     background: "var(--color-blog)",
-    boxShadow: "3px 3px 22px #005ba7, -3px -3px 6px  #734b6a",
+    boxShadow: "var(--color-shadow)",
     margin: 0,
     position: "fixed",
     width: "auto",
@@ -221,7 +218,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "4px",
     borderRadius: "10px 4px",
     background: "var(--color-blog)",
-    boxShadow: "3px 3px 22px #005ba7, -3px -3px 6px  #734b6a",
+    boxShadow: "var(--color-shadow)",
     [`${theme.breakpoints.up("md")} and (orientation: portrait)`]: {
       padding: "6px",
     },

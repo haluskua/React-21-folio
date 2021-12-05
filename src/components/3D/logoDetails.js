@@ -198,7 +198,7 @@ const useStyles = makeStyles((theme) => ({
   main_button: {
     padding: "1px",
     background: "#161111",
-    boxShadow: "0px 0px 10px #021c39, 0px 0px 19px #042e57",
+    boxShadow: "var(--color-shadow)",
     "&:hover": {
       boxShadow: "3px 3px 22px #005ba7, -3px -3px 6px #734b6a",
     },

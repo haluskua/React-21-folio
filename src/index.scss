@@ -6,11 +6,12 @@
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
 
-  --color-bg: #dfcca1;
+  --color-bg: #162420;
   --color-footer: #fffaee;
-  --color-blog: #042c54;
+  --color-blog: #1f3730;
   --color-text: #302314;
   --color-subtext: #ff8a71;
+  --color-shadow: 3px 3px 22px #0a140f, -3px -3px 6px #42554c;
 }
 
 
@@ -24,19 +25,19 @@ body{
   line-height: 0;
   
 
-  background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  background:-moz-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
 
   /* safari 5.1+,chrome 10+ */
-  background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  background:-webkit-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
 
   /* opera 11.10+ */
-  background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  background:-o-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
 
   /* ie 10+ */
-  background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  background:-ms-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
 
   /* global 92%+ browsers support */
-  background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  background:radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
 }
 
 code {
@@ -144,7 +145,7 @@ $desktop: 2560px;
     margin: 15px 0;
     @media screen and (min-width: $mobileS) and (orientation: portrait) {
       padding: 3px 27px ;
-      margin: 6.25px !important;
+      margin: 14px !important;
     }
     @media screen and (min-width: $mobileS) and (orientation: landscape) {
       padding: 5px 27px !important;
@@ -206,24 +207,24 @@ $desktop: 2560px;
     left: 0.5% !important;
   }
   //background
-  background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  background:-moz-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
 
   /* safari 5.1+,chrome 10+ */
-  background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  background:-webkit-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
 
   /* opera 11.10+ */
-  background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  background:-o-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
 
   /* ie 10+ */
-  background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  background:-ms-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
 
   /* global 92%+ browsers support */
-  background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  background:radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
   
 }
 
 .MuiBackdrop-root {
-  background-color: #040e26eb !important;
+  background-color: #111612 !important;
 }
 
 .makeStyles-formStyle-14 {
