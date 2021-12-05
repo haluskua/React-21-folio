@@ -89,12 +89,16 @@ const Wrapper = styled.span`
   @media ${device.mobileS} and (orientation: portrait) {
     padding: 8px 37px;
   }
+  @media ${device.mobileS} and (orientation: landscape) {
+    padding: 2px 7px;
+  }
 
   @media ${device.mobileM} and (orientation: portrait) {
     font-size: 1.43rem;
     padding: 0px 50px;
     line-height: 1.5rem;
   }
+  
   ${SuperQuery().minWidth.lg.and.landscape.css`
     // margin-left: -0.5rem;
     
@@ -105,6 +109,7 @@ const Wrapper = styled.span`
     font-weight: 900;
     line-height: 25px;
   }
+  
   @media ${device.laptop} and (orientation: portrait) {
     padding: 8px 95px;
     line-height: 30px;
@@ -172,7 +177,6 @@ const SmallText = styled.span`
   padding: 5px 11px;
   letter-spacing: 0.07rem;
   text-align: center;
-
   font-weight: 600;
   font-family: var(--font-family);
   ${SuperQuery().minWidth.md.and.portrait.css`
