@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     margin: ".2rem 0rem",
   },
-
+ 
   boldTypo: {
     width: "66%",
     fontFamily: "var(---font-family)",

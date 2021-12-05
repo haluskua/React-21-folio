@@ -74,7 +74,6 @@ const Wrapper = styled.span`
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  color: #f50057;
   text-transform: uppercase;
   margin: 0;
   font-size: 1.16rem;
@@ -85,7 +84,7 @@ const Wrapper = styled.span`
   width: 100%;
   font-weight: 900;
   z-index: 999;
-  background: #6e1e21;
+  background: #161111;
 
   @media ${device.mobileS} and (orientation: portrait) {
     padding: 8px 37px;
@@ -103,9 +102,11 @@ const Wrapper = styled.span`
   @media ${device.tablet} and (orientation: landscape) {
     font-size: 1.33rem;
     font-weight: 900;
+    line-height: 25px;
   }
   @media ${device.laptop} and (orientation: portrait) {
     padding: 8px 95px;
+    line-height: 30px;
   }
 
   span {

@@ -105,14 +105,15 @@ const DetailsContainer = styled.div`
 // `;
 
 const SmallText = styled.span`
-  font-size: 17px;
-  color: #e95f40;
-  letter-spacing: 0.1rem;
+  font-size: 15.5px;
+  color: #ada9a8;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
   line-height: 1.588rem;
   text-align: center;
   text-transform: uppercase;
   margin-top: 15px;
-  font-family: var(--font-family);
+  /* font-family: var(--font-family); */
 
   @media ${device.mobileS} {
     line-height: 1.7rem;
@@ -185,7 +186,7 @@ const useStyles = makeStyles((theme) => ({
   hamburger_lines: {
     display: "flex",
     justifyContent: "center",
-    background: "#dfe1dc",
+    background: "#c6c0ab",
     color: "#1d2744",
     borderRadius: "50%",
     cursor: "pointer",
@@ -196,7 +197,7 @@ const useStyles = makeStyles((theme) => ({
 
   main_button: {
     padding: "1px",
-    background: "#41555e",
+    background: "#161111",
     boxShadow: "0px 0px 10px #021c39, 0px 0px 19px #042e57",
     "&:hover": {
       boxShadow: "3px 3px 22px #005ba7, -3px -3px 6px #734b6a",
