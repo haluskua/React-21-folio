@@ -3,16 +3,23 @@ import styled, { keyframes } from "styled-components";
 import Marginer from "../Marginer/index";
 import SuperQuery from "@themgoncalves/super-query";
 import { device } from "../MediaQuery/device";
+import { Box } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
 export default function NameAnimation() {
-  const reactArray = "WEB  DEVELOPER".split("");
+  const reactArray = "WEB - DEVELOPER".split("");
+  const classes = useStyles();
 
   return (
     <React.Fragment>
-      <Wrapper >
-        {reactArray.map((item, index) => (
-          <span id="gradient__text" key={index}>{item}</span>
-        ))}
+      <Wrapper>
+        <Box component="div" className={classes.wordwrap}>
+          {reactArray.map((item, index) => (
+            <span id="gradient__text" key={index}>
+              {item}
+            </span>
+          ))}
+        </Box>
         <SmallText id="gradient__text">& Graphics Designer</SmallText>
       </Wrapper>
       <Marginer direction="vertical" margin=".2rem" />
@@ -49,6 +56,19 @@ const animation = keyframes`
       }
 `;
 
+const useStyles = makeStyles((theme) => ({
+  wordwrap: {
+    height: "auto",
+    width: "100%",
+    padding: "18px",
+
+    display: "flex",
+    justifyContent: "space-around",
+    background: "#2a2521",
+    marginBottom: "0.41rem",
+  },
+}));
+
 const Wrapper = styled.span`
   display: flex;
   flex-wrap: wrap;
@@ -60,36 +80,32 @@ const Wrapper = styled.span`
   font-size: 1.16rem;
   padding: 8px 30px;
   font-weight: 300;
+  line-height: 13px;
   /* font-family: var(---font-family); */
   width: 100%;
   font-weight: 900;
   z-index: 999;
-  background: #00000077;
-  
+  background: #6e1e21;
 
-   @media ${device.mobileS} and (orientation: portrait) {
+  @media ${device.mobileS} and (orientation: portrait) {
     padding: 8px 37px;
-    font-size: 1.28rem;
-  } 
+  }
 
   @media ${device.mobileM} and (orientation: portrait) {
     font-size: 1.43rem;
     padding: 8px 50px;
-    line-height: 1.72rem;
   }
   ${SuperQuery().minWidth.lg.and.landscape.css`
-    margin-left: -0.5rem;
+    // margin-left: -0.5rem;
     
   `};
 
   @media ${device.tablet} and (orientation: landscape) {
     font-size: 1.33rem;
     font-weight: 900;
-    line-height: 3rem;
   }
   @media ${device.laptop} and (orientation: portrait) {
     padding: 8px 95px;
-    
   }
 
   span {
@@ -113,9 +129,9 @@ const Wrapper = styled.span`
   }
   span:nth-child(4) {
     animation-delay: 0.6s;
-    color: #5f9ea000;
   }
   span:nth-child(5) {
+    font-size: 0.01px;
     animation-delay: 1.15s;
   }
   span:nth-child(6) {
@@ -151,8 +167,7 @@ const Wrapper = styled.span`
 const SmallText = styled.span`
   font-size: 14px;
   font-weight: normal;
-  color: #f50057;
-  padding: 0 11px;
+  padding: 5px 11px;
   letter-spacing: 0.07rem;
   text-align: center;
 

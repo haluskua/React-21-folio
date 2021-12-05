@@ -19,7 +19,7 @@ const AniLogo = styled.div`
   @media ${device.mobileS} and (orientation: landscape) {
     height: 160px;
   }
-  
+
   ${SuperQuery().minWidth.xs.and.landscape.css`
     height: 112px !important;
     
@@ -47,7 +47,7 @@ const AniLogo = styled.div`
     height: 509px;
   }
   ${SuperQuery().minWidth.lg.and.landscape.css`
-    height: 300px !important;
+    height: 233px !important;
     
   `};
   @media ${device.laptopL} {

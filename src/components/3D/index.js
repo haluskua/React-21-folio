@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import Marginer from "../Marginer/index";
 import { LogoDetails } from "./logoDetails";
-import TextAnimation from "./TextAnimations";
+// import TextAnimation from "./TextAnimations";
 import LogoAnimation from "./LogoAnimation";
 import { device } from "../MediaQuery/device";
 import NameAnimation from "./NameAnimate";
@@ -17,7 +17,7 @@ export default function FrontCard() {
 
   return (
     <CardWrapper>
-    <BcgArt />
+      <BcgArt />
       <CardContainer
         style={{ x, y, rotateX, rotateY, z: 100 }}
         drag
@@ -55,20 +55,21 @@ export default function FrontCard() {
         <BottomContainer>
           <LogoDetails />
         </BottomContainer>
-          <TextAnimation />
       </CardContainer>
+      {/* <TextAnimation /> */}
     </CardWrapper>
   );
 }
 
 const CardWrapper = styled.div`
-position: relative;
+  position: relative;
   width: 100%;
   perspective: 2000;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
   @media ${device.tablet} {
     padding-top: 2rem;
   }

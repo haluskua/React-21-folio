@@ -31,14 +31,14 @@ export function LogoDetails(props) {
   return (
     <DetailsContainer>
       <Marginer direction="vertical" margin="0em" />
-      <Box component="div" className={classes.centerLL} >
-      <SmallText  >Omphalus Harkie Kua</SmallText>
+      <Box component="div" className={classes.centerLL}>
+        <SmallText>Omphalus Harkie Kua</SmallText>
       </Box>
 
       <Marginer direction="vertical" margin=".5em" />
       <Toolbar>
         <Link to="/background">
-          <IconButton className={classes.main_button} >
+          <IconButton className={classes.main_button}>
             <motion.button
               className={classes.hamburger_lines}
               variants={buttonVariants}
@@ -106,9 +106,8 @@ const DetailsContainer = styled.div`
 
 const SmallText = styled.span`
   font-size: 17px;
-  color: #c0fff9;
-  font-weight: bold;
-  letter-spacing: .1rem;
+  color: #e95f40;
+  letter-spacing: 0.1rem;
   line-height: 1.588rem;
   text-align: center;
   text-transform: uppercase;
@@ -150,7 +149,7 @@ const SmallText = styled.span`
     
   `};
   @media ${device.laptop} {
-    font-size: 26px;
+    font-size: 17px;
     line-height: 2rem;
     padding: 0 3rem;
   }
@@ -159,7 +158,7 @@ const SmallText = styled.span`
     
   `};
   @media ${device.laptopL} {
-    font-size: 28.5px;
+    font-size: 16.5px;
     line-height: 3rem;
     padding: 0 0.03rem;
   }
@@ -193,16 +192,15 @@ const useStyles = makeStyles((theme) => ({
     margin: "9px",
     padding: "1px",
     border: "none",
- 
   },
-  
+
   main_button: {
     padding: "1px",
-    background:"#41555e",
+    background: "#41555e",
     boxShadow: "0px 0px 10px #021c39, 0px 0px 19px #042e57",
     "&:hover": {
       boxShadow: "3px 3px 22px #005ba7, -3px -3px 6px #734b6a",
-    }
+    },
   },
   title: {
     color: "#69849f",
@@ -228,14 +226,14 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up("md")]: {
-      fontSize: "22px",
+      fontSize: "17px",
     },
 
     [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
-      fontSize: "15px",
+      fontSize: "16px",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "22px",
+      fontSize: "16px",
     },
   },
 }));

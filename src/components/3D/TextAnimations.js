@@ -13,11 +13,9 @@ export default function TextAnimation() {
         <Animista
           type={AnimistaTypes.SCALE_UP_TOP}
           duration="10s"
-          
           style={{
-            width: '100%',
+            width: "100%",
             height: "auto",
-            backgroundColor: "#041020",
           }}
         >
           {reactArray.map((item, index) => (
