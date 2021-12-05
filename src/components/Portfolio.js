@@ -48,8 +48,8 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "space-between",
     borderRadius: "2rem 0",
-    boxShadow: "3px 3px 6px #03162e, -3px -3px 6px #044179",
-    background: "#031021",
+    boxShadow: "var(--color-shadow)",
+    background: "#031f2185",
     height: "auto",
     [theme.breakpoints.up("sm")]: {
       maxWidth: "88% ",
@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bolder",
     color: "#85929f",
     fontSize: "0.9rem",
-    boxShadow: "3px 3px 6px #03162e, -2px -2px 4px #044179",
+    boxShadow: "var(--color-shadow)",
     padding: "7px",
     borderRadius: "10px 4px",
     "&:hover": {
@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
     width: "66%",
     fontFamily: "var(--font-family)",
     fontSize: "0.9rem",
-    boxShadow: "3px 3px 6px #03162e, -2px -2px 4px #044179",
+    boxShadow: "var(--color-shadow)",
     padding: "7px",
     color: "#85929f",
     borderRadius: "10px 4px",

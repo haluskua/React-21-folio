@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
     background: "none",
   },
   imgListBox: {
-    boxShadow: "3px 3px 18px #005ba7, -3px -3px 6px  #734b6a",
+    boxShadow: "var(--color-shadow)",
   },
   imageList: {
     [`${theme.breakpoints.up("xs")}`]: {
@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
       height: "90%",
       overflow: "scroll",
       margin: "0 !important",
-      boxShadow: "3px 3px 6px #3f627e, -3px -3px 6px #3e77bf",
+      boxShadow: "var(--color-shadow)",
       padding: "10px",
       borderRadius: "6px",
     },
@@ -108,7 +108,8 @@ const useStyles = makeStyles((theme) => ({
     padding: "14px !important",
     marginBottom: "20px",
     borderRadius: "7px",
-    boxShadow: "1px 1px 2px #3f627e, -1px -1px 14px #3e77bf",
+    boxShadow: "var(--color-shadow)",
+
 
     [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
       width: "50% !important",
@@ -127,7 +128,7 @@ const useStyles = makeStyles((theme) => ({
   textBar: {
     height: "55px",
     padding: "4px",
-    background: "#03396a70",
+    background: "#036a6170",
     // background: "orange",
     // boxShadow: "inset 2px 2px 5px #74aeb773, inset -3px -3px 7px #fff",
   },

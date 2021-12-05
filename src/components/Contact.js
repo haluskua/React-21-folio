@@ -135,7 +135,7 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     width: "90%",
     padding: "2rem",
-    boxShadow: "3px 3px 22px #005ba7, -3px -3px 6px #734b6a",
+    boxShadow: "var(--color-shadow)",
     borderRadius: "3rem 0",
 
     [`${theme.breakpoints.up("lg")} `]: {
@@ -156,7 +156,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "1rem",
     color: "#919488",
     border: "1px solid",
-    boxShadow: "3px 3px 6px #03162e, -2px -2px 4px #044179",
+    boxShadow: "var(--color-shadow)",
     fontFamily: "var(--font-family)",
     background: "linear-gradient(58deg, #f3f4f7, transparent))",
     "&:hover": {

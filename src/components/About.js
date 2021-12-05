@@ -107,7 +107,7 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     width: "90%",
     height: "auto",
-    boxShadow: "-4px 9px 45px #033c71, 8px 4px 54px #044179",
+    boxShadow: "var(--color-shadow)",
 
     [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
       width: "23%",

@@ -101,8 +101,8 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "space-between",
     borderRadius: "2rem 0",
-    background: "#040c18",
-    boxShadow: "3px 3px 6px #03162e, -3px -3px 6px #044179",
+    background: "#031f2185",
+    boxShadow: "var(--color-shadow)",
     height: "auto",
     [theme.breakpoints.up("md")]: {
       maxWidth: "88% ",

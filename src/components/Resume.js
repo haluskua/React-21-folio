@@ -78,12 +78,12 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     margin: "2rem",
     clear: "both",
-    background: "#03102185",
+    background: "#031f2185",
     marginTop: "3.4px",
     borderLeft: "1px solid #bda55d",
     borderRadius: "3rem 1rem 4rem 1rem",
     // background: "#f3f4f7",
-    boxShadow: "3px 3px 6px #111c50, -3px -3px 6px #002852",
+    boxShadow: "var(--color-shadow)",
 
     "&:after": {
       content: "''",
@@ -181,10 +181,11 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1rem",
     padding: "9px 0 1px 0",
     lineHeight: "1.5rem",
-    color: "#a1b9b1",
+    color: "#43936b",
     textTransform: "uppercase",
-    fontWeight: "bold",
+    fontWeight: "500",
     textAlign: "left",
+    fontFamily: "var(--font-family)",
     [theme.breakpoints.up("md")]: {
       fontSize: "1.14rem",
       lineHeight: "1.2rem",
@@ -207,7 +208,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   body1: {
-    color: "rgb(131 179 157)",
+    color: "rgb(189 195 193)",
     textAlign: "left",
     width: "100%",
     display: "flex",
