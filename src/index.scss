@@ -139,13 +139,12 @@ $desktop: 2560px;
     margin: 12.05px;
     margin-left: 0px !important;
     border-radius: 0.5rem;
-    background: #3c575a69 !important;
     border: none;
-    box-shadow: inset 2px 2px 0px #333738, inset -3px -3px 3px #0e384c !important;
+    box-shadow: var(--color-shadow) !important;
     padding: 5px 28px;
     margin: 15px 0;
     @media screen and (min-width: $mobileS) and (orientation: portrait) {
-      padding: 3px 27px ;
+      padding: 3px 27px;
       margin: 14px !important;
     }
     @media screen and (min-width: $mobileS) and (orientation: landscape) {
@@ -167,7 +166,7 @@ $desktop: 2560px;
 .MuiListItem-gutters:hover {
   background: rgba(42, 25, 201, 0.26) !important ;
   background: var(--color-blog) !important ;
-  box-shadow: 3px 3px 15px #73aaca , -3px -3px 5px #005ba7  !important;
+  box-shadow: 3px 3px 15px #2e504a , -3px -3px 5px #00a783  !important;
 }
 
 
@@ -192,7 +191,7 @@ $desktop: 2560px;
   width: auto;
   border: 2px solid #2c193273;
   padding: 7.2px;
-  box-shadow: 1px 1px 8px #202d28, 1px 1px 14px #2b2f2e;
+  box-shadow: var(--color-shadow);
   left: 5% !important;
   right: 5% !important;
   border-radius: 2rem 2rem 4rem 4rem;
@@ -255,7 +254,7 @@ $desktop: 2560px;
 }
 
 .MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly {
-  border: 1px solid #152c4b;
+  border: 1px solid #1b3d30;
  box-shadow:  none !important;
 }
 

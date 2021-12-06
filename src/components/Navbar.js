@@ -134,7 +134,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     borderRadius: "2rem 2rem 3rem 3rem !important",
-    boxShadow: "inset 2px 2px 5px #11243c, inset -3px -3px 7px #061628",
+    boxShadow: "var(--color-shadow)",
 
     //Portrait View Mqueries
     [theme.breakpoints.up("xs")]: {
