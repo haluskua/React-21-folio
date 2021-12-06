@@ -16,7 +16,7 @@
 }
 
 
-body{
+body {
   margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -24,21 +24,21 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 0;
-  
 
-  background:-moz-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
+
+  background: -moz-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
 
   /* safari 5.1+,chrome 10+ */
-  background:-webkit-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
+  background: -webkit-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
 
   /* opera 11.10+ */
-  background:-o-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
+  background: -o-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
 
   /* ie 10+ */
-  background:-ms-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
+  background: -ms-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
 
   /* global 92%+ browsers support */
-  background:radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
+  background: radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
 }
 
 code {
@@ -72,6 +72,7 @@ $desktop: 2560px;
   z-index: 9999999999999999999999999999999999999999;
   margin-right: 30%;
 }
+
 .swiper-button-prev {
   top: 92% !important;
 
@@ -96,6 +97,7 @@ $desktop: 2560px;
   border-radius: 5rem 0 0 0;
   padding: 0;
   height: auto !important;
+
   @media screen and (min-width: $mobileS) and (orientation: landscape) {
     width: 98% !important;
   }
@@ -104,6 +106,7 @@ $desktop: 2560px;
     width: 99% !important;
     margin: 0;
   }
+
   @media screen and (min-width: $laptopL) and (orientation: landscape) {
     width: 67% !important;
   }
@@ -113,6 +116,7 @@ $desktop: 2560px;
   max-width: 55px !important;
   min-width: 0 !important;
 }
+
 .MuiList-root {
   width: 29%;
   border-radius: 3px;
@@ -121,9 +125,11 @@ $desktop: 2560px;
   @media screen and (min-width: $mobileS) and (orientation: landscape) {
     width: 33% !important;
   }
+
   @media screen and (min-width: $mobileM) and (orientation: landscape) {
     width: 88% !important;
   }
+
   @media screen and (min-width: $tablet) and (orientation: landscape) {
     width: 28% !important;
   }
@@ -141,52 +147,72 @@ $desktop: 2560px;
     border-radius: 0.5rem;
     border: none;
     box-shadow: var(--color-shadow) !important;
-    padding: 5px 28px;
-    margin: 15px 0;
+    padding: 3px 27px;
+    margin: 5px 14px !important;
+
     @media screen and (min-width: $mobileS) and (orientation: portrait) {
       padding: 3px 27px;
-      margin: 14px !important;
+      margin: 5px 14px !important;
     }
+    
+
     @media screen and (min-width: $mobileS) and (orientation: landscape) {
       padding: 5px 27px !important;
       margin: 4.25px !important;
     }
+
+    @media screen and (min-width: $mobileM) and (orientation: portrait) {
+      padding: 3px 27px;
+      margin: 9px 14px !important;
+    }
+
     @media screen and (min-width: $tablet) {
       padding: 13.5px 63px;
     }
+
     @media screen and (min-width: $tablet) and (orientation: landscape) {
       padding: 7px 25px;
       margin: 13px !important;
     }
+
     @media screen and (min-width: $laptopL) {
       padding: 7px 8px;
     }
   }
 }
+
 .MuiListItem-gutters:hover {
-  background: rgba(42, 25, 201, 0.26) !important ;
-  background: var(--color-blog) !important ;
-  box-shadow: 3px 3px 15px #2e504a , -3px -3px 5px #00a783  !important;
+  background: rgba(42, 25, 201, 0.26) !important;
+  background: var(--color-blog) !important;
+  box-shadow: 3px 3px 15px #2e504a, -3px -3px 5px #00a783 !important;
 }
 
 
 .MuiList-padding {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: auto;
   padding: 20px;
   margin: 18px 0;
   margin-right: 9px !important;
   border-radius: 0.3rem 8.7rem 5.7rem 0.3rem;
+
   @media screen and (min-width: $mobileM) and (orientation: landscape) {
     padding: 4px;
   }
+
   @media screen and (min-width: $tablet) {
     max-width: 55%;
+    flex-direction: row;
   }
+
   @media screen and (min-width: $laptopL) and (orientation: landscape) {
     margin-left: -10rem;
     margin-right: 2rem !important;
   }
 }
+
 .MuiDrawer-paperAnchorRight {
   width: auto;
   border: 2px solid #2c193273;
@@ -199,13 +225,16 @@ $desktop: 2560px;
   @media screen and (min-width: $mobileL) {
     left: 0.82% !important;
   }
+
   @media screen and (min-width: $tablet) {
     left: 5.5% !important;
     right: 5.5% !important;
   }
+
   @media screen and (min-width: $tablet) and (orientation: landscape) {
     left: 0.5% !important;
   }
+
   //background
   background:-moz-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
 
@@ -220,11 +249,11 @@ $desktop: 2560px;
 
   /* global 92%+ browsers support */
   background:radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
-  
+
 }
 
 .MuiBackdrop-root {
-  background-color: #111612 !important;
+  background-color: #11141675 !important;
 }
 
 .makeStyles-formStyle-14 {
@@ -242,12 +271,15 @@ $desktop: 2560px;
 .MuiBottomNavigation-root {
   background: none !important;
 }
+
 .MuiSvgIcon-root {
   font-size: 1.38rem !important;
 }
+
 .MuiToolbar-gutters {
   padding-right: 0px !important;
 }
+
 .swiper-slide {
   overflow: hidden !important;
   width: 100vw !important;
@@ -255,7 +287,7 @@ $desktop: 2560px;
 
 .MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly {
   border: 1px solid #1b3d30;
- box-shadow:  none !important;
+  box-shadow: none !important;
 }
 
 

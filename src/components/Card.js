@@ -7,8 +7,7 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import ReadMore from "./ReadMore";
-import Animista, {AnimistaTypes} from 'react-animista';
-
+import Animista, { AnimistaTypes } from "react-animista";
 
 // Data
 const backgrounds = [
@@ -32,42 +31,46 @@ export default function MediaCard() {
 
   return (
     <Card className={classes.root}>
-     <Animista
-          type={AnimistaTypes.SCALE_UP_BR}
-          duration="0.851s"
-          style={{
-            width: '100%',
-            height: "auto",
-          }}
-        >
-      {backgrounds.map((text, i) => (
-        <Grid item xs={12} sm={8} md={12}  key={i}>
-          <Card className={classes.cardContainer}>
-            <CardActionArea>
-              <CardContent className={classes.cardContent}>
-                <Typography gutterBottom variant="h5" component="h2" className={classes.title}>
-                  About Me
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="textSecondary"
-                  component="p"
-                  className={classes.bio}
-                >
-                  <Typography>
-                    <ReadMore>{text.bios}</ReadMore>
+      <Animista
+        type={AnimistaTypes.SCALE_UP_BR}
+        duration="0.851s"
+        style={{
+          width: "100%",
+          height: "auto",
+        }}
+      >
+        {backgrounds.map((text, i) => (
+          <Grid item xs={12} sm={8} md={12} key={i}>
+            <Card className={classes.cardContainer}>
+              <CardActionArea>
+                <CardContent className={classes.cardContent}>
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    component="h2"
+                    className={classes.title}
+                  >
+                    About Me
                   </Typography>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </Grid>
-      ))}
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                    className={classes.bio}
+                  >
+                    <Typography>
+                      <ReadMore>{text.bios}</ReadMore>
+                    </Typography>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+        ))}
       </Animista>
     </Card>
   );
 }
-
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -108,7 +111,7 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: "88% ",
     },
   },
-  title:{
+  title: {
     color: "#85b9f9",
   },
 
