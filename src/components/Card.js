@@ -9,36 +9,37 @@ import Typography from "@material-ui/core/Typography";
 import ReadMore from "./ReadMore";
 import Animista, { AnimistaTypes } from "react-animista";
 
-// Data
-const backgrounds = [
-  {
-    bios: `My name is Omphalus Harkie Kua. I am a freelance Web developer 
-    and Graphics designer. My goal is to one day own my own business in the creative industry 
-    like a media agency focussed on keeping the culture and heritage of the people of 
-    Papua New Guinea from being lost completely.  
-    I have always been very fascinated with the web and the languages that make
-    the web. My area of expertise is in the frontend development, but not without the UX-UI design process and method.
-    My background in Graphic design directs most of my creativity in the realm of a frontend developer.
-    I appreciate the creative aspects in life, whether it be in
-    sports/outdoors, board-games, cooking to music yet nothing beats my interest in 
-    Design and Coding. I know of this because I am constantly trying to stay on top of the 
-    tech stack that I am involved in.
-    My greatest achievement was becoming a father to my son who is now 18years old. I would also consider
-    an international League test with the Kangaroos as another great achievement. Also at 14 I won a
-    art competition in my age group in my country( PNG ).
-    
-    All my friends call me Ompa. I am a chill easy going guy that loves to laugh and have a good time with
-    friends and family. I play the guitar and enjoy painting as my two main hobbies. 
-    I live with my Son, nephew partner and our new born daughter in Wellington.
-     
- `,
-    github: `https://github.com/haluskua/crwn-clothing`,
-    site: `https://gracious-kilby-61782e.netlify.app/`,
-  },
-];
+let bio = `My name is Omphalus Harkie Kua.\n 
+I am a freelance Web developer and Graphics designer. My goal is to one day own a design and development firm in Papua New Guinea(PNG) where I would like to give back by helping to preserve the culture and heritage of the people of PNG.
 
+I have always been fascinated with the web and the languages that create content on the web. My area of expertise is in the frontend development, but not without the UX-UI design process and methods. My background in Graphic design directs most of my creativity in the realm of a frontend developer.
+
+My greatest achievement was to play for my country in an international Rugby League test against the Australian Kangaroos. At 14 I won a national art competition for my age group.
+
+I enjoy outdoors, board-games, cooking, playing guitar and spending time with family and friends. If I am not doing any of my hobbies, I am constantly trying to stay on top of the technology within my field by learning new tricks.
+I live with my small family in Wellington New Zealand. `;
+
+export const parsLineBreak = (txt) => {
+  return txt?.split("\n").map(function (item, idx) {
+    return (
+      <React.Fragment key={"line_br_" + idx}>
+          {item}
+          <br />
+      </React.Fragment>
+    );
+  });
+};
 export default function MediaCard() {
   const classes = useStyles();
+
+  // Data
+  const backgrounds = [
+    {
+      bios: `${bio}`,
+      github: `https://github.com/haluskua/React-21-folio`,
+      site: `https://https://haluskua-folio21.netlify.app/`,
+    },
+  ];
 
   return (
     <Card className={classes.root}>
@@ -69,8 +70,8 @@ export default function MediaCard() {
                     component="p"
                     className={classes.bio}
                   >
-                    <Typography>
-                      <ReadMore>{text.bios}</ReadMore>
+                    <Typography component="p" className={classes.bios_box}>
+                      {parsLineBreak(text.bios)}
                     </Typography>
                   </Typography>
                 </CardContent>
@@ -123,7 +124,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   title: {
-    color: "#66835c",
+    color: "#437e5b",
+  },
+  bios_box: {
+    maxWidth: "500px",
+    [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
+      maxWidth: "740px",
+    },
   },
 
   cardContent: {

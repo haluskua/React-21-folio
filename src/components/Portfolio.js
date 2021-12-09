@@ -24,6 +24,7 @@ import Animista, { AnimistaTypes } from "react-animista";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
+    position: "relative",
     [theme.breakpoints.up("sm")]: {
       padding: "0rem",
     },
@@ -63,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     margin: ".2rem 0rem",
   },
- 
+
   boldTypo: {
     width: "66%",
     fontFamily: "var(---font-family)",

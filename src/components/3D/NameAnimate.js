@@ -12,7 +12,7 @@ export default function NameAnimation() {
 
   return (
     <React.Fragment>
-      <Wrapper l>
+      <Wrapper>
         <Box component="div" className={classes.wordwrap}>
           {reactArray.map((item, index) => (
             <span id="gradient__text" key={index}>
@@ -87,21 +87,22 @@ const Wrapper = styled.span`
   background: #111612;
 
   @media ${device.mobileS} and (orientation: portrait) {
-    padding: 8px 37px;
+    padding: 9px;
   }
   @media ${device.mobileS} and (orientation: landscape) {
-    padding: 2px 7px;
+    padding: 13px;
   }
 
   @media ${device.mobileM} and (orientation: portrait) {
     font-size: 1.43rem;
-    padding: 0px 50px;
+    padding: 15px;
     line-height: 1.5rem;
   }
-  
+
   ${SuperQuery().minWidth.lg.and.landscape.css`
     // margin-left: -0.5rem;
     
+    max-width: 66%;
   `};
 
   @media ${device.tablet} and (orientation: landscape) {
@@ -109,10 +110,11 @@ const Wrapper = styled.span`
     font-weight: 900;
     line-height: 25px;
   }
-  
-  @media ${device.laptop} and (orientation: portrait) {
-    padding: 8px 95px;
+
+  @media ${device.laptop} and (orientation: landscape) {
+    padding: 10px;
     line-height: 30px;
+    max-width: 76%;
   }
 
   span {
@@ -168,6 +170,9 @@ const Wrapper = styled.span`
   }
   span:nth-child(14) {
     animation-delay: 3.29s;
+  }
+  span:nth-child(15) {
+    animation-delay: 3.5s;
   }
 `;
 

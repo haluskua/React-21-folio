@@ -127,7 +127,6 @@ const useStyles = makeStyles((theme) => ({
   contactContainer: {
     //
   },
-
   formStyle: {
     top: "50%",
     left: "50%",

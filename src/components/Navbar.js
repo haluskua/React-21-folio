@@ -131,7 +131,7 @@ const useStyles = makeStyles((theme) => ({
     height: "auto",
     display: "flex",
     justifyContent: "center",
-    flexDirection: "column",
+    flexDirection: "column-reverse",
     alignItems: "center",
     borderRadius: "2rem 2rem 3rem 3rem !important",
     boxShadow: "var(--color-shadow)",
@@ -139,7 +139,7 @@ const useStyles = makeStyles((theme) => ({
     //Portrait View Mqueries
     [theme.breakpoints.up("xs")]: {
       height: "85vh",
-      "@media (orientation: landscape)": {},
+      "@media (orientation: portrait)": {},
     },
     [theme.breakpoints.up("sm")]: {
       height: "60%",
@@ -160,12 +160,12 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
-      flexDirection: "row-reverse",
+      flexDirection: "column-reverse",
       width: "100%",
     },
     [`${theme.breakpoints.up("lg")} and (orientation: landscape)`]: {
       height: "60%",
-      flexDirection: "row-reverse",
+      flexDirection: "column-reverse",
     },
     [`${theme.breakpoints.up("xl")} and (orientation: landscape)`]: {
       width: "100%",
