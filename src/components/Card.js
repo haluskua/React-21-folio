@@ -6,7 +6,6 @@ import Grid from "@material-ui/core/Grid";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import ReadMore from "./ReadMore";
 import Animista, { AnimistaTypes } from "react-animista";
 
 let bio = `My name is Omphalus Harkie Kua.\n 
