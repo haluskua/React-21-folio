@@ -47,11 +47,11 @@ const AniLogo = styled.div`
     height: 509px;
   }
   ${SuperQuery().minWidth.lg.and.landscape.css`
-    height: 233px !important;
+    height: 210px !important;
     
   `};
   @media ${device.laptopL} {
-    height: 444px !important;
+    height: 314px !important;
   }
 
   img {

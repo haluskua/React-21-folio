@@ -15,8 +15,8 @@ const ReadMore = ({ children, description, bio}) => {
       <span onClick={toggleReadMore} className="read-or-hide">
         {isReadMore ? "...read more" : " show less"}
       </span>
-      <h2>{description}</h2>
-      <h2>{bio}</h2>
+      {/* <h2>{description}</h2>
+      <h2>{bio}</h2> */}
 
 
     </p>

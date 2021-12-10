@@ -175,7 +175,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     height: "auto",
     border: "none",
-    width: "65%",
+    width: "36%",
     marginBottom: "-51px",
     [`${theme.breakpoints.up("sm")} `]: {
       width: "55%",
