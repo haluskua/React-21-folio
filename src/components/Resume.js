@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
@@ -7,6 +7,261 @@ import "../components/resume.css";
 
 import Animista, {AnimistaTypes} from 'react-animista';
 import BcgArt from "./BcgArt";
+import ReadTrunk from './TrimcateText';
+
+
+
+
+const Resume = (props) => {
+  const classes = useStyles();
+  return (
+    <Box component="header" className={classes.mainContainer}>
+      <BcgArt />
+      <Animista
+          type={AnimistaTypes.SCALE_UP_BR}
+          duration="0.851s"
+          style={{
+            width: '100%',
+            height: "auto",
+          }}
+        >
+      <Typography
+        variant="h4"
+        align="center"
+        className={classes.heading}
+        id="bronze__text"
+      >
+        Experiences
+      </Typography>
+      
+      <Box component="div" className={classes.timeLine}>
+        <Typography
+          variant="h2"
+          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+        >
+          2021
+        </Typography>
+        <Animista
+              type={AnimistaTypes.SCALE_UP_BR}
+              duration="0.851s"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            >
+        <Box component="div" className={classes.timeLineItem}>
+          <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+            id="bronze__text"
+          >
+            Freelancer
+          </Typography>
+          <Typography
+            variant="h5"
+            align="center"
+            className={classes.subHeading}
+          >
+            Web & Grafix Designer
+          </Typography>
+
+          <Typography variant="body1" align="center" className={classes.body1}>
+            I am currently a Freelance web app developer and designer.
+          </Typography>
+        </Box>
+        </Animista>
+
+        <Typography
+          variant="h2"
+          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+        >
+          2019
+        </Typography>
+        <Animista
+              type={AnimistaTypes.SCALE_UP_BR}
+              duration="0.951s"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            >
+        <Box component="div" className={classes.timeLineItem}>
+          <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+            id="bronze__text"
+          >
+            App Development - Bootcamp
+          </Typography>
+          <Typography
+            variant="h5"
+            align="center"
+            className={classes.subHeading}
+          >
+            Enspiral Dev Academy
+          </Typography>
+
+          <Typography  variant="body1" align="center" className={classes.body1}>
+           <ReadTrunk maxCharacterCount={88}>
+            Certificate in Full stack web development. Coded more than 700+
+            hours with ReactJs, API, NodeJs and Knex database with
+            server-side-rendering and more. Simulated work environment included
+            Agile development, sprints and Kanban board with 10+ group and solo
+            projects.
+           </ReadTrunk>
+          </Typography>
+        </Box>
+        </Animista>
+        <Typography
+          variant="h2"
+          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+        >
+          2016
+        </Typography>
+        <Animista
+              type={AnimistaTypes.SCALE_UP_BR}
+              duration="1s"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            >
+        <Box component="div" className={classes.timeLineItem}>
+          <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+            id="bronze__text"
+          >
+            Diploma in Web Design
+          </Typography>
+          <Typography
+            variant="h5"
+            align="center"
+            className={classes.subHeading}
+          >
+            Yoobee School of Design
+          </Typography>
+          <Typography variant="body1" align="center" className={classes.body1}>
+            Introduction to Web Design. Html, css, Javascript, Php, Jquery,
+            WordPress (CMS) and version control with Git & github.
+          </Typography>
+        </Box>
+        </Animista>
+        <Typography
+          variant="h2"
+          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+        >
+          2014
+        </Typography>
+        <Animista
+              type={AnimistaTypes.SCALE_UP_BR}
+              duration="1.15s"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            >
+        <Box component="div" className={classes.timeLineItem}>
+          <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+            id="bronze__text"
+          >
+            Bachelor in Creative Technology
+          </Typography>
+          <Typography
+            variant="h5"
+            align="center"
+            className={classes.subHeading}
+          >
+            Wellington Institute of Technology
+          </Typography>
+          <Typography variant="body1" align="center" className={classes.body1}>
+            Graduated with a major in Digital Media. A good lesson learned was
+            to do plenty of background research before starting any project.
+          </Typography>
+        </Box>
+        </Animista>
+        <Typography
+          variant="h2"
+          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+        >
+          2011
+        </Typography>
+        <Animista
+              type={AnimistaTypes.SCALE_UP_BR}
+              duration="1.2s"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            >
+        <Box component="div" className={classes.timeLineItem}>
+          <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+            id="bronze__text"
+          >
+            Bachelor in Exercise Science
+          </Typography>
+          <Typography
+            variant="h5"
+            align="center"
+            className={classes.subHeading}
+          >
+            Wellington Institute of Technology
+          </Typography>
+          <Typography variant="body1" align="center" className={classes.body1}>
+            Personal Trainer: Sports Science
+          </Typography>
+        </Box>
+        </Animista>
+        <Typography
+          variant="h2"
+          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+        >
+          2008
+        </Typography>
+        <Animista
+              type={AnimistaTypes.SCALE_UP_BR}
+              duration="1.3s"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            >
+        <Box component="div" className={classes.timeLineItem}>
+          <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+            id="bronze__text"
+          >
+            Semi-Pro Rugby League Player
+          </Typography>
+          <Typography
+            variant="h5"
+            align="center"
+            className={classes.subHeading}
+          >
+            Canberra Raiders Reserve Grade
+          </Typography>
+          <Typography variant="body1" align="center" className={classes.body1}>
+            Contracted to play Rugby League for the Queenbean Roos in Canberra.
+          </Typography>
+        </Box>
+        </Animista>
+      </Box>
+      </Animista>
+      <DownloadButton />
+    </Box>
+  );
+};
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -228,253 +483,5 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Resume = () => {
-  const classes = useStyles();
-  return (
-    <Box component="header" className={classes.mainContainer}>
-      <BcgArt />
-      <Animista
-          type={AnimistaTypes.SCALE_UP_BR}
-          duration="0.851s"
-          style={{
-            width: '100%',
-            height: "auto",
-          }}
-        >
-      <Typography
-        variant="h4"
-        align="center"
-        className={classes.heading}
-        id="bronze__text"
-      >
-        Experiences
-      </Typography>
-      
-      <Box component="div" className={classes.timeLine}>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2021
-        </Typography>
-        <Animista
-              type={AnimistaTypes.SCALE_UP_BR}
-              duration="0.851s"
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            >
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-            id="bronze__text"
-          >
-            Freelancer
-          </Typography>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            Web & Grafix Designer
-          </Typography>
-
-          <Typography variant="body1" align="center" className={classes.body1}>
-            I am currently a Freelance web app developer and designer.
-          </Typography>
-        </Box>
-        </Animista>
-
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2019
-        </Typography>
-        <Animista
-              type={AnimistaTypes.SCALE_UP_BR}
-              duration="0.951s"
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            >
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-            id="bronze__text"
-          >
-            App Development - Bootcamp
-          </Typography>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            Enspiral Dev Academy
-          </Typography>
-
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Certificate in Full stack web development. Coded more than 700+
-            hours with ReactJs, API, NodeJs and Knex database with
-            server-side-rendering and more. Simulated work environment included
-            Agile development, sprints and Kanban board with 10+ group and solo
-            projects.
-          </Typography>
-        </Box>
-        </Animista>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2016
-        </Typography>
-        <Animista
-              type={AnimistaTypes.SCALE_UP_BR}
-              duration="1s"
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            >
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-            id="bronze__text"
-          >
-            Diploma in Web Design
-          </Typography>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            Yoobee School of Design
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Introduction to Web Design. Html, css, Javascript, Php, Jquery,
-            WordPress (CMS) and version control with Git & github.
-          </Typography>
-        </Box>
-        </Animista>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2014
-        </Typography>
-        <Animista
-              type={AnimistaTypes.SCALE_UP_BR}
-              duration="1.15s"
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            >
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-            id="bronze__text"
-          >
-            Bachelor in Creative Technology
-          </Typography>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            Wellington Institute of Technology
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Graduated with a major in Digital Media. A good lesson learned was
-            to do plenty of background research before starting any project.
-          </Typography>
-        </Box>
-        </Animista>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2011
-        </Typography>
-        <Animista
-              type={AnimistaTypes.SCALE_UP_BR}
-              duration="1.2s"
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            >
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-            id="bronze__text"
-          >
-            Bachelor in Exercise Science
-          </Typography>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            Wellington Institute of Technology
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Personal Trainer: Sports Science
-          </Typography>
-        </Box>
-        </Animista>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2008
-        </Typography>
-        <Animista
-              type={AnimistaTypes.SCALE_UP_BR}
-              duration="1.3s"
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            >
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-            id="bronze__text"
-          >
-            Semi-Pro Rugby League Player
-          </Typography>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            Canberra Raiders Reserve Grade
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Contracted to play Rugby League for the Queenbean Roos in Canberra.
-          </Typography>
-        </Box>
-        </Animista>
-      </Box>
-      </Animista>
-      <DownloadButton />
-    </Box>
-  );
-};
 
 export default Resume;
