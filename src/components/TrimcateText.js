@@ -20,7 +20,7 @@ function ReadTrunk({children, maxCharacterCount = 300}) {
       <p className={classes.truncate}>
       {resultingString}
       <span onClick = {toggleIsTruncated} className={classes.toggleIsTruncated}>
-        {isTruncated ? "READ MORE" : "READ LESS"}
+        {isTruncated ? "Read more" : "Read less"}
       </span>
       </p>
       </React.Fragment>
@@ -36,14 +36,18 @@ function ReadTrunk({children, maxCharacterCount = 300}) {
     toggleIsTruncated: {
         padding: "4px",
         background: "var(--color-bg)",
-        width: "23%",
+        width: "33%",
+        color: "var(--color-widget) !important",
         borderRadius: "7px",
         margin: "20px",
         fontSize: "11.5px",
         textAlign: "center",
         cursor: "pointer",
-        boxShadow: "var(--color-shadow2)",
+        // boxShadow: "var(--color-shadow2)",
         fontStyle: "italic",
+        [theme.breakpoints.up("md")]: {
+          width: "24%",  
+        },
         "&:hover": {
             boxShadow: "var(--color-shadow)",
             fontStyle: "normal",
