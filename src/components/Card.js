@@ -7,6 +7,7 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Animista, { AnimistaTypes } from "react-animista";
+import ReadTrunk from "./TrimcateText";
 
 let bio = `My name is Omphalus Harkie Kua.\n 
 I am a freelance Web developer and Graphics designer. My goal is to one day own a design and development firm in Papua New Guinea(PNG) where I would like to give back by helping to preserve the culture and heritage of the people of PNG.
@@ -21,14 +22,14 @@ I live with my small family in Wellington New Zealand. `;
 export const parsLineBreak = (txt) => {
   return txt?.split("\n").map(function (item, idx) {
     return (
-      <React.Fragment key={"line_br_" + idx}>
+      <React.Fragment key={"line_br_" + idx} maxCharacterCount={40}>
           {item}
           <br />
       </React.Fragment>
     );
   });
 };
-export default function MediaCard() {
+export default function MediaCard(props) {
   const classes = useStyles();
 
   // Data
@@ -70,7 +71,11 @@ export default function MediaCard() {
                     className={classes.bio}
                   >
                     <Typography component="p" className={classes.bios_box}>
-                      {parsLineBreak(text.bios)}
+                     {parsLineBreak(text.bios)}
+                    </Typography>
+                    <br />
+                    <Typography component="p" className={classes.github}>
+                     {text.github}
                     </Typography>
                   </Typography>
                 </CardContent>
@@ -127,9 +132,14 @@ const useStyles = makeStyles((theme) => ({
   },
   bios_box: {
     maxWidth: "500px",
-    [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
-      maxWidth: "740px",
+    [`${theme.breakpoints.up("md")} and (orientation: portrait)`]: {
+      maxWidth: "700px",
     },
+  },
+  github: {
+    color: "#ffc",
+    fontSize: "13px",
+    fontStyle: "italic",
   },
 
   cardContent: {

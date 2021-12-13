@@ -44,6 +44,8 @@ function ReadTrunk({children, maxCharacterCount = 300}) {
         textAlign: "center",
         cursor: "pointer",
         // boxShadow: "var(--color-shadow2)",
+        boxShadow: "var(--color-shadow)",
+        
         fontStyle: "italic",
         [theme.breakpoints.up("md")]: {
           width: "24%",  

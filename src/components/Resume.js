@@ -433,11 +433,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   subHeading: {
-    fontSize: "1rem",
-    padding: "9px 0 1px 0",
-    lineHeight: "1.5rem",
-    color: "#43936b",
-    textTransform: "uppercase",
+    fontSize: "0.881rem",
+    padding: "2px 0 8px 0",
+    lineHeight: "1.25rem",
+    color: "#77b8c7",
     fontWeight: "500",
     textAlign: "left",
     fontFamily: "var(--font-family)",
@@ -448,11 +447,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   subtitle1: {
-    fontSize: "1.25rem",
-    lineHeight: "1.41rem",
-    fontFamily: "var(---font-family)",
-    fontWeight: "bold",
-    padding: "5px 0 5px 0",
+    fontSize: "1.5rem",
+    lineHeight: "1.51rem",
+    fontFamily: "manrope",
+    fontWeight: "900",
+    padding: "10px 0 5px 0",
     textAlign: "left",
 
     [theme.breakpoints.up("md")]: {
