@@ -30,28 +30,22 @@ function ReadTrunk({children, maxCharacterCount = 300}) {
 
   const useStyles = makeStyles((theme) => ({
     truncate: {
-        display: "flex",
-        flexDirection: "column",
+        display: "block",
     },
     toggleIsTruncated: {
-        padding: "4px",
-        background: "var(--color-bg)",
         width: "33%",
-        color: "var(--color-widget) !important",
         borderRadius: "7px",
-        margin: "20px",
+        margin: "10px",
+        color: "var(--color-widget)",
         fontSize: "11.5px",
         textAlign: "center",
         cursor: "pointer",
-        // boxShadow: "var(--color-shadow2)",
-        boxShadow: "var(--color-shadow)",
         
         fontStyle: "italic",
         [theme.breakpoints.up("md")]: {
           width: "24%",  
         },
         "&:hover": {
-            boxShadow: "var(--color-shadow)",
             fontStyle: "normal",
         }
     }
