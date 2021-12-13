@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Background from "./components/Background";
+import Gallery from "./components/Gallery";
 
 import "./App.css";
 
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/resume" component={Resume} />
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/gallery" component={Gallery} />
           <Route exact path="/background" component={Background} />
         </Switch>
       </BrowserRouter>

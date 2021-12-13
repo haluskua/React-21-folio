@@ -19,6 +19,7 @@ import project6 from "../images/crest5.png";
 
 import ReadMore from "../components/ReadMore";
 import Animista, { AnimistaTypes } from "react-animista";
+import BcgArt from "./BcgArt";
 
 // import {useState } from 'react';
 
@@ -197,6 +198,7 @@ const Portfolio = () => {
 
   return (
     <Box component="div" className={classes.mainContainer}>
+    <BcgArt />
       <Animista
         type={AnimistaTypes.SCALE_UP_BR}
         duration="0.851s"

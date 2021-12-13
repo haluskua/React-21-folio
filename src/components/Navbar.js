@@ -239,6 +239,7 @@ const menuItems = [
   { listIcon: <Home />, listText: "Home", listPath: "/" },
   { listIcon: <NoteIcon />, listText: "Resume", listPath: "/resume" },
   { listIcon: <WorkIcon />, listText: "Portfolio", listPath: "/portfolio" },
+  { listIcon: <WorkIcon />, listText: "Gallery", listPath: "/gallery" },
   { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
   {
     listIcon: <AssignmentInd />,
