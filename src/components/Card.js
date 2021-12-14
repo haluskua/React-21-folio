@@ -7,7 +7,6 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Animista, { AnimistaTypes } from "react-animista";
-import ReadTrunk from "./TrimcateText";
 
 let bio = `My name is Omphalus Harkie Kua.\n 
 I am a freelance Web developer and Graphics designer. My goal is to one day own a design and development firm in Papua New Guinea(PNG) where I would like to give back by helping to preserve the culture and heritage of the people of PNG.
