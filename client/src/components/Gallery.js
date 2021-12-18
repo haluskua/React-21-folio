@@ -77,7 +77,14 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignSelf: "center",
     color: "var(--color-widget)",
-  }
+    [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
+      width: "11%",
+    },
+  
+  },
+
+
+
 }));
 
 // export default function TitlebarImageList() {
