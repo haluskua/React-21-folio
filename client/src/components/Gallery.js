@@ -11,64 +11,117 @@ import { makeStyles } from "@material-ui/core/styles";
 // import { FormHelperText } from "@material-ui/core";
 
 import { getImages } from "../api";
+import { ImageList, ImageListItem } from "@material-ui/core";
 
 export default function TitlebarImageList() {
   const classes = useStyles();
   const [imageList, setImageList] = useState([]);
-  const [nextCursor, setNextCursor ]= useState(null)
+  const [nextCursor, setNextCursor] = useState(null);
   useEffect(() => {
     const fetchData = async () => {
       const responseJson = await getImages();
       setImageList(responseJson.resources);
-      setNextCursor(responseJson.next_cursor)
+      setNextCursor(responseJson.next_cursor);
     };
 
     fetchData();
   }, []);
-  
+
   const handleLoadMoreButtonClick = async () => {
-    const responseJson = await getImages(nextCursor)
-    setImageList((currentImageList)=>[
-      ...currentImageList, 
-      ...responseJson.resources
-      ]);
-    setNextCursor(responseJson.next_cursor)
-  }
+    const responseJson = await getImages(nextCursor);
+    setImageList((currentImageList) => [
+      ...currentImageList,
+      ...responseJson.resources,
+    ]);
+    setNextCursor(responseJson.next_cursor);
+  };
 
   return (
     <>
-    <div className={classes.image_grid}>
-      {imageList.map((image) => (
-        <img
-        src={image.url}
-        alt={image.public_id}
-        className={classes.img_item}
-        ></img>
-        ))}
-    </div>
-    <div >
-    {nextCursor && <button onClick ={handleLoadMoreButtonClick} className={classes.gal_button}>Load More</button>}
-    </div>
-        </>
+      <div className={classes.root}>
+        <ImageList rowHeight={180} className={classes.imageList}>
+          <div className={classes.image_grid}>
+            {imageList.map((image) => (
+              <ImageListItem className={classes.image_item}>
+                <img
+                  src={image.url}
+                  alt={image.public_id}
+                  className={classes.img_item}
+                ></img>
+              </ImageListItem>
+            ))}
+          </div>
+        </ImageList>
+
+        <div>
+          {nextCursor && (
+            <button
+              onClick={handleLoadMoreButtonClick}
+              className={classes.gal_button}
+            >
+              Load More
+            </button>
+          )}
+        </div>
+      </div>
+    </>
   );
 }
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    height: "100vh",
+    width: "100vw",
+  },
+  imageList: {
+    [`${theme.breakpoints.up("xs")}`]: {
+      display: "flex",
+      justifyContent: "center",
+      width: "97%",
+      height: "907",
+      overflow: "hidden",
+      margin: "0 !important",
+      boxShadow: "var(--color-shadow)",
+      padding: "10px",
+      borderRadius: "6px",
+      border: "3px solid orange",
+    },
+
+    [`${theme.breakpoints.up("sm")}`]: {
+      width: "100%",
+    },
+
+    [`${theme.breakpoints.up("md")}`]: {
+      width: "100%",
+    },
+    [`${theme.breakpoints.up("lg")}`]: {
+      width: "100%",
+    },
+    [`${theme.breakpoints.up("xl")}`]: {
+      width: "35%",
+    },
+  },
+
   image_grid: {
+    width: "100% !important",
+    height: "100% !important",
     display: "grid",
     gap: ".5rem",
-    gridTemplateColumns: "repeat(auto-fill, minmax(450px, 1fr))",
+    gridTemplateColumns: "repeat(auto-fill, minmax(100%, 1fr))",
   },
 
   img_item: {
     width: "100%",
-    height: "100%",
+    height: "auto",
     objectFit: "cover",
   },
-  
+
   gal_button: {
     display: "flex",
-    width: "30%", 
+    width: "30%",
     padding: "0.61rem",
     margin: "1rem",
     borderRadius: "8px",
@@ -80,11 +133,7 @@ const useStyles = makeStyles((theme) => ({
     [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
       width: "11%",
     },
-  
   },
-
-
-
 }));
 
 // export default function TitlebarImageList() {
@@ -92,7 +141,7 @@ const useStyles = makeStyles((theme) => ({
 
 //   return (
 
-//       <div className={classes.root}>
+//       <div className={classes.root}>\
 //       <BcgArt />
 //         <ImageList rowHeight={180} className={classes.imageList}>
 //           <ImageListItem
