@@ -6,7 +6,8 @@ const useStyles = makeStyles((theme) => ({
   imgBcg: {
     position: "absolute",
     width: "auto",
-    height: "90vh",
+    height: "100vh",
+    right: "20%",
   },
   img: {
     width: "100%",

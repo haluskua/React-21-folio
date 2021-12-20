@@ -51,7 +51,6 @@ export default function TitlebarImageList() {
             ))}
           </div>
         </ImageList>
-
         <div>
           {nextCursor && (
             <button
@@ -85,7 +84,6 @@ const useStyles = makeStyles((theme) => ({
       height: "auto",
       overflow: "hidden",
       margin: "0 !important",
-      boxShadow: "var(--color-shadow)",
       padding: "8px",
       borderRadius: "6px",
     },
@@ -107,11 +105,14 @@ const useStyles = makeStyles((theme) => ({
 
   image_grid: {
     width: "100% !important",
-    height: "100% !important",
-    boxShadow: "var(--color-shadow)",
+    height: "100vh !important",
+    boxShadow: "none !important",
+    background: "#92a9a0 !important",
     display: "grid",
     margin: "1.2px",
+    overflow: "scroll !important ",
     gap: ".5rem",
+    padding: "10px !important",
     gridTemplateColumns: "repeat(auto-fill, minmax(100%, 1fr))",
   },
 
@@ -119,17 +120,15 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     height: "auto",
     objectFit: "cover",
-    padding: "4px",
-    borderRadius: "9px",
-    boxShadow: "var(--color-shadow)",
+    borderRadius: "5px",
   },
   image_item: {
     width: "100%",
     height: "auto",
     padding: "9px !important",
     marginBottom: "18px",
-    borderRadius: "17px",
-    boxShadow: "var(--color-shadow)",
+    borderRadius: "11px",
+    boxShadow: "var(--color-shadow2)",
   },
 
   gal_button: {
