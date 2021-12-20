@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-// import ImageList from "@material-ui/core/ImageList";
-// import ImageListItem from "@material-ui/core/ImageListItem";
 // import ImageListItemBar from "@material-ui/core/ImageListItemBar";
 // import ListSubheader from "@material-ui/core/ListSubheader";
 // import IconButton from "@material-ui/core/IconButton";
 // import InfoIcon from "@material-ui/icons/Info";
 // import { itemData } from "./imageData";
-// import BcgArt from "./BcgArt";
+import BcgArt from "./BcgArt";
 // import { FormHelperText } from "@material-ui/core";
 
 import { getImages } from "../api";
@@ -39,6 +37,7 @@ export default function TitlebarImageList() {
   return (
     <>
       <div className={classes.root}>
+        <BcgArt />
         <ImageList rowHeight={180} className={classes.imageList}>
           <div className={classes.image_grid}>
             {imageList.map((image) => (
@@ -75,19 +74,20 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     height: "100vh",
     width: "100vw",
+    overflow: "scroll",
+    position: "relative",
   },
   imageList: {
     [`${theme.breakpoints.up("xs")}`]: {
       display: "flex",
       justifyContent: "center",
-      width: "97%",
-      height: "907",
+      width: "100%",
+      height: "auto",
       overflow: "hidden",
       margin: "0 !important",
       boxShadow: "var(--color-shadow)",
-      padding: "10px",
+      padding: "8px",
       borderRadius: "6px",
-      border: "3px solid orange",
     },
 
     [`${theme.breakpoints.up("sm")}`]: {
@@ -108,7 +108,9 @@ const useStyles = makeStyles((theme) => ({
   image_grid: {
     width: "100% !important",
     height: "100% !important",
+    boxShadow: "var(--color-shadow)",
     display: "grid",
+    margin: "1.2px",
     gap: ".5rem",
     gridTemplateColumns: "repeat(auto-fill, minmax(100%, 1fr))",
   },
@@ -117,11 +119,22 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     height: "auto",
     objectFit: "cover",
+    padding: "4px",
+    borderRadius: "9px",
+    boxShadow: "var(--color-shadow)",
+  },
+  image_item: {
+    width: "100%",
+    height: "auto",
+    padding: "9px !important",
+    marginBottom: "18px",
+    borderRadius: "17px",
+    boxShadow: "var(--color-shadow)",
   },
 
   gal_button: {
     display: "flex",
-    width: "30%",
+    width: "100%",
     padding: "0.61rem",
     margin: "1rem",
     borderRadius: "8px",
