@@ -114,6 +114,11 @@ const useStyles = makeStyles((theme) => ({
     gap: ".5rem",
     padding: "10px !important",
     gridTemplateColumns: "repeat(auto-fill, minmax(100%, 1fr))",
+    [`${theme.breakpoints.up("lg")} and (orientation: landscape)`]: {
+      width: "66% !important",
+      background: "#d9971d ",
+      gridTemplateColumns: "repeat,(2, minmax(100%, 1fr))",
+    },
   },
 
   img_item: {
@@ -144,6 +149,10 @@ const useStyles = makeStyles((theme) => ({
     color: "var(--color-widget)",
     [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
       width: "11%",
+    },
+    [`${theme.breakpoints.up("lg")} and (orientation: landscape)`]: {
+      width: "77%",
+      border: ".83px solid gold",
     },
   },
 }));
