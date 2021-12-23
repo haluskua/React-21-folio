@@ -9,7 +9,6 @@ import avatar from "../images/profile.jpg";
 import DownloadButton from "./DownloadButton";
 import particlesConfig from "./particlesConfig";
 
-
 import MediaCard from "./Card";
 import Particles from "react-particles-js";
 import BcgArt from "./BcgArt";
@@ -20,10 +19,10 @@ const About = () => {
   return (
     <React.Fragment>
       <Box className={classes.boxed}>
-      <BcgArt />
-      <div className={classes.particles_box}>
-      <Particles height="100vh" width="100vw" params={particlesConfig} />
-      </div>
+        <BcgArt />
+        <div className={classes.particles_box}>
+          <Particles height="100vh" width="100vw" params={particlesConfig} />
+        </div>
         <Box className={classes.typedContainer}>
           <Grid container justify="center" className={classes.img_box}>
             <Avatar className={classes.avatar} src={avatar} alt="Logo" />

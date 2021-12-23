@@ -84,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
       height: "auto",
       overflow: "hidden",
       margin: "0 !important",
-      padding: "8px",
+      padding: "9px",
       borderRadius: "6px",
     },
 
@@ -107,7 +107,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100% !important",
     height: "100vh !important",
     boxShadow: "none !important",
-    background: "#92a9a0 !important",
+    background: "var(--color-opacity)",
     display: "grid",
     margin: "1.2px",
     overflow: "scroll !important ",
