@@ -69,8 +69,9 @@ export default function TitlebarImageList() {
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
-    flexWrap: "wrap",
     justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
     height: "100vh",
     width: "100vw",
     overflow: "scroll",
@@ -88,36 +89,54 @@ const useStyles = makeStyles((theme) => ({
       borderRadius: "6px",
     },
 
-    [`${theme.breakpoints.up("sm")}`]: {
-      width: "100%",
+    [`${theme.breakpoints.up("sm")} and (orientation: portrait)`]: {
+      width: "78%",
+    },
+    [`${theme.breakpoints.up("sm")} and (orientation: landscape)`]: {
+      width: "66%",
+    },
+    [`${theme.breakpoints.up("md")} and (orientation: portrait)`]: {
+      width: "88%",
+    },
+    [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
+      width: "78%",
     },
 
-    [`${theme.breakpoints.up("md")}`]: {
-      width: "100%",
-    },
     [`${theme.breakpoints.up("lg")}`]: {
-      width: "100%",
+      width: "90%",
     },
     [`${theme.breakpoints.up("xl")}`]: {
-      width: "35%",
+      width: "75%",
     },
   },
 
   image_grid: {
     width: "100% !important",
-    height: "100vh !important",
+    height: "100% !important",
     boxShadow: "none !important",
-    background: "var(--color-opacity)",
     display: "grid",
     margin: "1.2px",
     overflow: "scroll !important ",
     gap: ".5rem",
     padding: "10px !important",
     gridTemplateColumns: "repeat(auto-fill, minmax(100%, 1fr))",
+    [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
+      gridTemplateColumns: "repeat(2, minmax(50px, 1fr)) ",
+    },
+    [`${theme.breakpoints.up("sm")} and (orientation: portrait)`]: {
+      gridTemplateColumns: "repeat(2, minmax(50px, 1fr)) ",
+    },
+    [`${theme.breakpoints.up("sm")} and (orientation: landscape)`]: {
+      gridTemplateColumns: "repeat(2, minmax(66px, 1fr)) !important",
+    },
+    [`${theme.breakpoints.up("md")} and (orientation: portrait)`]: {
+      gridTemplateColumns: "repeat(3, minmax(80px, 1fr)) !important",
+    },
+    [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
+      gridTemplateColumns: "repeat(3, minmax(80px, 1fr)) !important",
+    },
     [`${theme.breakpoints.up("lg")} and (orientation: landscape)`]: {
-      width: "66% !important",
-      background: "#d9971d ",
-      gridTemplateColumns: "repeat,(2, minmax(100%, 1fr))",
+      gridTemplateColumns: "repeat(4s, minmax(150px, 1fr)) !important",
     },
   },
 
