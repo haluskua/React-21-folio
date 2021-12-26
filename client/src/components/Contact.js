@@ -64,7 +64,7 @@ const Contact = () => {
             </p>
 
             <Typography variant="h5" className={classes.heading}>
-              Say Hi, or work with me.
+              Contact me
             </Typography>
 
             <InputField
@@ -116,7 +116,7 @@ const Contact = () => {
                 endIcon={<Send />}
                 className={classes.button}
               >
-                Contact Me
+                Send
               </Button>
             </Animista>
           </Box>
@@ -151,7 +151,7 @@ const useStyles = makeStyles((theme) => ({
   heading: {
     color: "#cacfbc",
     marginBottom: "1rem",
-    fontFamily: "Asap",
+    fontFamily: "var(--font-family)",
     fontWeight: "normal",
     fontSize: "1.72rem",
   },
