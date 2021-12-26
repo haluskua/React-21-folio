@@ -4,10 +4,13 @@
   --font-family: "Manrope", sans-serif;
 
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
-  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #166942 99.55%);
+  --gradient-button: linear-gradient(103.22deg, #577a49 -13.86%, #36498a 99.55%);
 
   --color-bg: #162420;
   --color-footer: #fffaee;
+  --color-white: #f7fdfc;
+
   --color-widget: #54a19c;
   --color-opacity: #1b332b9f;
 
@@ -307,4 +310,12 @@ $desktop: 2560px;
 
 .MuiGrid-grid-sm-8 {
   max-width: 90% !important;
+}
+
+////////////
+
+// innput text color
+
+.MuiInputBase-input {
+  color: white !important;
 }

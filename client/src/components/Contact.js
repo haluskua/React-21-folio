@@ -10,6 +10,7 @@ import Send from "@material-ui/icons/Send";
 import Particles from "react-particles-js";
 import particlesConfig from "./particlesConfig";
 
+import BcgArt from "./BcgArt";
 import Animista, { AnimistaTypes } from "react-animista";
 
 const Contact = () => {
@@ -29,6 +30,8 @@ const Contact = () => {
         <div>
           <Particles height="100vh" width="100vw" params={particlesConfig} />
         </div>
+        <BcgArt />
+
         {success && (
           <p
             style={{
@@ -107,7 +110,7 @@ const Contact = () => {
               }}
             >
               <Button
-                halfWidth={true}
+                fullwidth={true}
                 // variant="outlined"
                 type="submit"
                 endIcon={<Send />}
@@ -125,6 +128,9 @@ const Contact = () => {
 
 const useStyles = makeStyles((theme) => ({
   contactContainer: {
+    position: "relative",
+    display: "flex",
+
     //
   },
   formStyle: {
@@ -134,7 +140,8 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     width: "90%",
     padding: "2rem",
-    boxShadow: "var(--color-shadow)",
+    // background: "var(--color-opacity)",
+    // boxShadow: "var(--color-shadow)",
     borderRadius: "3rem 0",
 
     [`${theme.breakpoints.up("lg")} `]: {
@@ -149,15 +156,15 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.72rem",
   },
   field: {
-    margin: "0rem",
+    margin: "11srem",
   },
   button: {
     marginTop: "1rem",
-    color: "#919488",
-    border: "1px solid",
+    color: "var(--color-white)",
     boxShadow: "var(--color-shadow)",
+    cursor: "pointer",
     fontFamily: "var(--font-family)",
-    background: "linear-gradient(58deg, #f3f4f7, transparent))",
+    background: "var(--gradient-button)",
     "&:hover": {
       background: "var(--color-blog)",
       boxShadow: "3px 3px 18px #005ba7, -3px -3px 6px  #734b6a",
@@ -176,7 +183,7 @@ const InputField = withStyles({
     },
     "& .MuiOutlinedInput-root": {
       "& fieldset": {
-        borderColor: "#233",
+        borderColor: "#bcdddd",
         borderRadius: "0 3rem 0 1.3rem ",
       },
       "&:hover fieldset": {

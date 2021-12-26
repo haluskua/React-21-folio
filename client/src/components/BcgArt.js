@@ -6,8 +6,13 @@ const useStyles = makeStyles((theme) => ({
   imgBcg: {
     position: "absolute",
     width: "auto",
-    height: "100vh",
-    // right: "20%",
+    height: "100%",
+    [`${theme.breakpoints.up("xs")} and (orientation: portrait)`]: {
+      right: "0%",
+    },
+    [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
+      right: "6%",
+    },
   },
   img: {
     width: "100%",
