@@ -4,9 +4,9 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   imgBcg: {
-    position: "absolute",
+    position: "fixed",
     width: "auto",
-    height: "100%",
+    height: "auto",
     [`${theme.breakpoints.up("xs")} and (orientation: portrait)`]: {
       right: "0%",
     },
@@ -16,7 +16,8 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     width: "100%",
-    height: "100%",
+    height: "auto",
+    objectFit: "cover",
   },
 }));
 

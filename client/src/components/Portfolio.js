@@ -26,6 +26,7 @@ import BcgArt from "./BcgArt";
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     position: "relative",
+    overflow: "hidden",
     [theme.breakpoints.up("sm")]: {
       padding: "0rem",
     },
@@ -198,7 +199,7 @@ const Portfolio = () => {
 
   return (
     <Box component="div" className={classes.mainContainer}>
-    <BcgArt />
+      <BcgArt />
       <Animista
         type={AnimistaTypes.SCALE_UP_BR}
         duration="0.851s"
