@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-// import ImageListItemBar from "@material-ui/core/ImageListItemBar";
-// import ListSubheader from "@material-ui/core/ListSubheader";
-// import IconButton from "@material-ui/core/IconButton";
-// import InfoIcon from "@material-ui/icons/Info";
+import ImageListItemBar from "@material-ui/core/ImageListItemBar";
+import ListSubheader from "@material-ui/core/ListSubheader";
+import IconButton from "@material-ui/core/IconButton";
+import InfoIcon from "@material-ui/icons/Info";
 // import { itemData } from "./imageData";
 import BcgArt from "./BcgArt";
 // import { FormHelperText } from "@material-ui/core";
@@ -21,7 +21,6 @@ export default function TitlebarImageList() {
       setImageList(responseJson.resources);
       setNextCursor(responseJson.next_cursor);
     };
-
     fetchData();
   }, []);
 
@@ -37,20 +36,9 @@ export default function TitlebarImageList() {
   return (
     <>
       <div className={classes.root}>
-        <BcgArt />
-        <ImageList rowHeight={180} className={classes.imageList}>
-          <div className={classes.image_grid}>
-            {imageList.map((image) => (
-              <ImageListItem className={classes.image_item}>
-                <img
-                  src={image.url}
-                  alt={image.public_id}
-                  className={classes.img_item}
-                ></img>
-              </ImageListItem>
-            ))}
-          </div>
-        </ImageList>
+        <ListSubheader component="div" className={classes.page_title}>
+          Gallery
+        </ListSubheader>
         <div>
           {nextCursor && (
             <button
@@ -61,6 +49,35 @@ export default function TitlebarImageList() {
             </button>
           )}
         </div>
+        <BcgArt />
+        <ImageList rowHeight={180} className={classes.imageList}>
+          <div className={classes.image_grid}>
+            {imageList.map((image) => (
+              <ImageListItem className={classes.image_item}>
+                <img
+                  src={image.url}
+                  alt={image.public_id}
+                  className={classes.img_item}
+                ></img>
+                <ImageListItemBar
+                  className={classes.textBar}
+                  title={
+                    <span className={classes.titleName}>{image.title}</span>
+                  }
+                  subtitle={<span className={classes.author}>by: Ompa</span>}
+                  actionIcon={
+                    <IconButton
+                      aria-label={`info about ${image.title}`}
+                      className={classes.icon}
+                    >
+                      <InfoIcon />
+                    </IconButton>
+                  }
+                />
+              </ImageListItem>
+            ))}
+          </div>
+        </ImageList>
       </div>
     </>
   );
@@ -76,6 +93,12 @@ const useStyles = makeStyles((theme) => ({
     width: "100vw",
     overflow: "scroll",
     position: "relative",
+  },
+  page_title: {
+    textAlign: "center",
+    fontSize: "1.6rem",
+    color: "rgb(163 185 187)",
+    fontFamily: "var(--font-family)",
   },
   imageList: {
     [`${theme.breakpoints.up("xs")}`]: {
@@ -146,23 +169,38 @@ const useStyles = makeStyles((theme) => ({
     objectFit: "cover",
     borderRadius: "5px",
   },
+
+  textBar: {
+    height: "45px",
+    padding: "4px",
+    background: "#036a6170",
+    boxShadow: "var(--color-shadow2)",
+  },
+  icon: {
+    color: "rgba(255, 255, 255, 0.54)",
+  },
+  author: {
+    fontSize: ".65rem",
+    color: "#f4fffe",
+  },
   image_item: {
     width: "100%",
     height: "auto",
     padding: "9px !important",
     marginBottom: "18px",
-    borderRadius: "11px",
+    borderRadius: "6px",
     boxShadow: "var(--color-shadow2)",
   },
 
   gal_button: {
     display: "flex",
-    width: "100%",
+    width: "140px !important",
     padding: "0.61rem",
-    margin: "1rem",
     borderRadius: "8px",
-    boxShadow: "var(--color-shadow)",
-    background: "var(--color-blog)",
+    cursor: "pointer",
+    border: "none",
+    background: "none",
+    outline: "none",
     justifyContent: "center",
     alignSelf: "center",
     color: "var(--color-widget)",
@@ -171,7 +209,6 @@ const useStyles = makeStyles((theme) => ({
     },
     [`${theme.breakpoints.up("lg")} and (orientation: landscape)`]: {
       width: "77%",
-      border: ".83px solid gold",
     },
   },
 }));
