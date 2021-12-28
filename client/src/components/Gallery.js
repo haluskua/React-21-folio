@@ -6,7 +6,6 @@ import IconButton from "@material-ui/core/IconButton";
 import InfoIcon from "@material-ui/icons/Info";
 // import { itemData } from "./imageData";
 import BcgArt from "./BcgArt";
-// import { FormHelperText } from "@material-ui/core";
 
 import { getImages } from "../api";
 import { ImageList, ImageListItem } from "@material-ui/core";
@@ -39,16 +38,14 @@ export default function TitlebarImageList() {
         <ListSubheader component="div" className={classes.page_title}>
           Gallery
         </ListSubheader>
-        <div>
-          {nextCursor && (
-            <button
-              onClick={handleLoadMoreButtonClick}
-              className={classes.gal_button}
-            >
-              Load More
-            </button>
-          )}
-        </div>
+        {nextCursor && (
+          <button
+            onClick={handleLoadMoreButtonClick}
+            className={classes.gal_button}
+          >
+            Load More
+          </button>
+        )}
         <BcgArt />
         <ImageList rowHeight={180} className={classes.imageList}>
           <div className={classes.image_grid}>
@@ -203,6 +200,7 @@ const useStyles = makeStyles((theme) => ({
     outline: "none",
     justifyContent: "center",
     alignSelf: "center",
+    zIndex: "99999",
     color: "var(--color-widget)",
     [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
       width: "11%",
@@ -218,7 +216,7 @@ const useStyles = makeStyles((theme) => ({
 
 //   return (
 
-//       <div className={classes.root}>\
+//       <div className={classes.root}>
 //       <BcgArt />
 //         <ImageList rowHeight={180} className={classes.imageList}>
 //           <ImageListItem
