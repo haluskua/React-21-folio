@@ -15,12 +15,12 @@ export default function NameAnimation() {
       <Wrapper>
         <Box component="div" className={classes.wordwrap}>
           {reactArray.map((item, index) => (
-            <span id="gradient__text" key={index}>
+            <span id="bronze__text" key={index}>
               {item}
             </span>
           ))}
         </Box>
-        <SmallText id="gradient__text">& Graphics Designer</SmallText>
+        <SmallText id="bronze__text">& Graphics Designer</SmallText>
       </Wrapper>
       <Marginer direction="vertical" margin=".2rem" />
     </React.Fragment>
@@ -61,10 +61,9 @@ const useStyles = makeStyles((theme) => ({
     height: "auto",
     width: "100%",
     padding: "18px",
-
     display: "flex",
     justifyContent: "space-around",
-    background: "#1a2e283d",
+    background: "var(--bg-color)",
     marginBottom: "0.41rem",
   },
 }));
@@ -84,7 +83,6 @@ const Wrapper = styled.span`
   width: 100%;
   font-weight: 900;
   z-index: 999;
-  background: #111612;
 
   @media ${device.mobileS} and (orientation: portrait) {
     padding: 9px;
@@ -101,8 +99,8 @@ const Wrapper = styled.span`
 
   ${SuperQuery().minWidth.lg.and.landscape.css`
     // margin-left: -0.5rem;
+    width: 70%;
     
-    max-width: 66%;
   `};
 
   @media ${device.tablet} and (orientation: landscape) {
@@ -114,11 +112,11 @@ const Wrapper = styled.span`
   @media ${device.laptop} and (orientation: landscape) {
     padding: 10px;
     line-height: 30px;
-    max-width: 76%;
   }
 
   span {
     display: inline-block;
+    font-size: 24px;
     opacity: 0;
     animation-name: ${animation};
     animation-duration: 8s;

@@ -9,7 +9,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 // import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import Avatar from "@material-ui/core/Avatar";
+// import Avatar from "@material-ui/core/Avatar";
 import Divider from "@material-ui/core/Divider";
 import MenuIcon from "@material-ui/icons/Menu";
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
@@ -18,7 +18,7 @@ import NoteIcon from "@material-ui/icons/Note";
 import WorkIcon from "@material-ui/icons/Work";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../images/crest5.png";
+// import avatar from "../images/crest5.png";
 import { motion } from "framer-motion";
 import Footer from "../../src/components/Footer";
 import NameAnimation from "../components/3D/NameAnimate";
@@ -39,7 +39,7 @@ const Navbar = () => {
       id="menuSliderContainer"
       component="div"
     >
-      <Avatar className={classes.avatar} src={avatar} alt="Ompa" />
+      {/* <Avatar className={classes.avatar} src={avatar} alt="Ompa" /> */}
       <NameAnimation />
       <Divider className={classes.divider_one} />
       <List>
@@ -109,8 +109,8 @@ const useStyles = makeStyles((theme) => ({
     width: "auto",
   },
   appBar: {
-    background: "var(--color-blog)",
-    boxShadow: "var(--color-shadow)",
+    background: "var(--bg-color)",
+    boxShadow: "var(--color-shadow2)",
     margin: 0,
     position: "fixed",
     width: "auto",
@@ -138,11 +138,11 @@ const useStyles = makeStyles((theme) => ({
 
     //Portrait View Mqueries
     [theme.breakpoints.up("xs")]: {
-      height: "85vh",
+      height: "auto",
       "@media (orientation: portrait)": {},
     },
     [theme.breakpoints.up("sm")]: {
-      height: "60%",
+      height: "auto",
     },
 
     //Landscape View Mqueries
@@ -171,26 +171,26 @@ const useStyles = makeStyles((theme) => ({
       width: "100%",
     },
   },
-  avatar: {
-    display: "flex",
-    height: "auto",
-    border: "none",
-    width: "36%",
-    marginBottom: "-51px",
-    [`${theme.breakpoints.up("sm")} `]: {
-      width: "55%",
-    },
+  // avatar: {
+  //   display: "flex",
+  //   height: "auto",
+  //   border: "none",
+  //   width: "36%",
+  //   marginBottom: "-51px",
+  //   [`${theme.breakpoints.up("sm")} `]: {
+  //     width: "55%",
+  //   },
 
-    [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
-      width: "22%",
-      height: "auto",
-      marginBottom: "0",
-    },
+  //   [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
+  //     width: "22%",
+  //     height: "auto",
+  //     marginBottom: "0",
+  //   },
 
-    [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
-      width: "27%",
-    },
-  },
+  //   [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
+  //     width: "27%",
+  //   },
+  // },
 
   divider_one: {
     height: "7px",
@@ -202,7 +202,7 @@ const useStyles = makeStyles((theme) => ({
     "& span": {
       fontSize: "1rem",
       textTransform: "uppercase",
-      color: "#eacfbe",
+      color: "var(--color-blog)",
       fontFamily: "var(--font-family)",
       letterSpacing: ".0152em",
       lineHeight: "1.5rem",
@@ -216,8 +216,8 @@ const useStyles = makeStyles((theme) => ({
   hamburger_lines_coat: {
     border: "none",
     padding: "4px",
-    borderRadius: "10px 4px",
-    background: "var(--color-blog)",
+    borderRadius: "5px 4px 15px 4px",
+    background: "var(--bg-color)",
     boxShadow: "var(--color-shadow)",
     [`${theme.breakpoints.up("md")} and (orientation: portrait)`]: {
       padding: "6px",

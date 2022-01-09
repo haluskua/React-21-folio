@@ -13,13 +13,12 @@
   -webkit-text-fill-color: transparent;
 }
 #bronze__text {
+  font-size: 1.32rem;
+  line-height: 1.5rem;
   background: linear-gradient(89.97deg, #f49867 1.84%, #0d69bd 102.67%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-#main__bg {
-  background: linear-gradient(89.97deg, #3b352b 1.84%, #27211e 102.67%);;
 
-}

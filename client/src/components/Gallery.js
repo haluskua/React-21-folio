@@ -35,19 +35,11 @@ export default function TitlebarImageList() {
   return (
     <>
       <div className={classes.root}>
+        <BcgArt />
         <ListSubheader component="div" className={classes.page_title}>
           Gallery
         </ListSubheader>
-        {nextCursor && (
-          <button
-            onClick={handleLoadMoreButtonClick}
-            className={classes.gal_button}
-          >
-            Load More
-          </button>
-        )}
-        <BcgArt />
-        <ImageList rowHeight={180} className={classes.imageList}>
+        <ImageList className={classes.imageList}>
           <div className={classes.image_grid}>
             {imageList.map((image) => (
               <ImageListItem className={classes.image_item}>
@@ -73,6 +65,14 @@ export default function TitlebarImageList() {
                 />
               </ImageListItem>
             ))}
+            {nextCursor && (
+              <button
+                onClick={handleLoadMoreButtonClick}
+                className={classes.gal_button}
+              >
+                Load More
+              </button>
+            )}
           </div>
         </ImageList>
       </div>
@@ -96,6 +96,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.6rem",
     color: "rgb(163 185 187)",
     fontFamily: "var(--font-family)",
+    margin: "0",
+    height: "!important",
+    // background: "var(--color-blog)",
   },
   imageList: {
     [`${theme.breakpoints.up("xs")}`]: {
@@ -197,10 +200,12 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
     border: "none",
     background: "none",
+    marginLeft: "3rem",
     outline: "none",
     justifyContent: "center",
     alignSelf: "center",
     zIndex: "99999",
+    boxShadow: "var(--color-shadow)",
     color: "var(--color-widget)",
     [`${theme.breakpoints.up("md")} and (orientation: landscape)`]: {
       width: "11%",
