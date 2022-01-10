@@ -9,7 +9,7 @@
 
   --color-footer: #fffaee;
   --color-white: #f7fdfc;
-
+  
   --color-widget: #54a19c;
   --color-opacity: #1b332b9f;
 
@@ -188,7 +188,7 @@ $desktop: 2560px;
 }
 
 .MuiListItem-gutters:hover {
-  background: white !important;
+  background: rgb(43, 53, 58) !important;
   box-shadow: var(--color-shadow2);
 }
 
