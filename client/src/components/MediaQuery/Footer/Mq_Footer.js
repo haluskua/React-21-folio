@@ -7,7 +7,7 @@ const SclMedia = styled.div`
     margin: 7px 4px;
     color: #39a7aa;
     border-radius: 4rem;
-    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    box-shadow: 3px 3px 5px #b8b9be, -3px -3px 6px #fff;
   }
 `;
 
